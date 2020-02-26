@@ -4,3 +4,86 @@ Add styles or override variables from the theme here.
 
 */
 
+$primary: #00bcd4;
+$info: #00000099;
+
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 10)
+  ),
+  $spacers
+);
+
+$font-family-base: helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
+$headings-font-family: Open sans,helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
+
+$headings-margin-bottom: 1rem;
+
+.unmot{
+    display: inline-block;
+}
+
+.table-responsive{
+    th,td {
+        white-space: nowrap;
+    }
+}
+
+.section > h2{
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem 1.5rem -1.5rem;
+    border-left: 0.5rem solid $primary;
+    background: #d3f3ee;
+    filter: drop-shadow(3px 3px 2px grey);
+}
+
+.section > h3{
+    margin-left: -1.25rem;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    border-left: 0.25rem solid $primary;
+    border-bottom: 3px solid #eee;
+}
+
+.section > h4{
+    margin-left: -1rem;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    border-bottom: 3px solid #eee;
+}
+
+p{
+    font-size: large;
+}
+
+.note{
+    border-width: 2px !important;
+    filter: drop-shadow(2px 2px 1px grey);
+}
+
+.title-animation{
+    transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, opacity 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    animation: show 1s both;
+}
+
+@keyframes show {
+    from{
+        transform: rotate(-10deg) scale(1.1);
+        opacity: 0;
+    }
+    to{
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.embed-responsive{
+    max-width: 500px;
+}
