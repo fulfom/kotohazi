@@ -1,3 +1,25 @@
+# サイト
+
+## 道具
+
+Hugo というフレームワークと，Docsy というテーマを使っています．
+
+content/ja の中の md, html ファイルをマークダウン(htmlもマークダウンでOK)で書いていけば，あとは Hugo と Docsy がいい感じのウェブページにしてくれます．GitHub に push すると勝手に netlify がビルドとデプロイをしてくれます．
+
+なのでやることは マークダウンで記事を書く → ローカルで add, commit, push → おしまい
+
+branch 切ったりした方が良いけど，
+
+## 内容
+
+[About のページ](https://kotohazi.netlify.com/about/) を読んでください．
+
+## ディレクトリ
+
+ファイル
+
+詳しくは [Docsy のドキュメンテーション](https://www.docsy.dev/docs/) を参照
+
 # Docsy Example
 
 [Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
