@@ -63,6 +63,12 @@ p{
     font-size: large;
 }
 
+.pageinfo{
+    margin: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    @extend .m-md-4, .pl-md-4;
+}
+
 .note{
     border-width: 2px !important;
     filter: drop-shadow(2px 2px 1px grey);
