@@ -1,0 +1,225 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $color := .Get "color" | default "primary" }}
+
+{{$prob := newScratch}}
+{{$year := newScratch}}
+{{range $.Site.Data.problems}}
+    {{with (index . "venue")}}{{ $prob.Add "venue" (slice . )}}{{end}}
+    {{with (index . "year")}}{{ $prob.Add "year" (slice . )}}{{end}}
+    {{with (index . "category")}}{{ $prob.Add "category" . }}{{end}}
+{{end}}
+{{$prob.Set "venue" (uniq ($prob.Get "venue")) }}
+{{$prob.Set "year" (uniq ($prob.Get "year")) }}
+{{$prob.Set "category" (uniq ($prob.Get "category")) }}
+
+
+
+{{range ($prob.Get "year")}}
+{{$temp := .}}
+{{range where $.Site.Data.problems "year" $temp}}
+    {{ $year.Add $temp (slice (index . "venue")) }}
+{{end}}
+{{$year.Set $temp (uniq ($year.Get $temp)) }}
+{{$year.Add "group" ($year.Get $temp)}}
+{{end}}
+{{$year.Set "group" (uniq ($year.Get "group")) }}
+
+<p><input type="text" class="quicksearch form-control" placeholder="検索" /></p>
+
+<div id="filter">
+{{range .Site.Params.prob}}
+{{$datakey := (index . 0).datakey}}
+{{$value := (index . 0).value}}
+<div class="filter-group{{if eq $datakey "team"}} hide showIOL{{else if eq $datakey "year"}} hide{{range ($year.Get "group")}} show{{.}}{{end}}{{end}}" id="filter-{{$datakey}}" data-filter-group="{{$datakey}}">
+    <span>
+        {{(index . 0).name}}
+    </span>
+    {{with $value}}
+        {{range .}}
+            <input type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
+            <label class="{{.}}" for="{{.}}">{{.}}</label>
+        {{end}}
+    {{else}}
+        {{range ($prob.Get $datakey)}}
+        {{$temp := .}}
+            <input class="{{with ($year.Get $temp)}}hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
+            <label class="{{.}}{{with ($year.Get $temp)}} hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" for="{{.}}">{{.}}</label>
+        {{end}}
+    {{end}}
+</div>
+{{end}}
+</div>
+
+<div id="categoryFilter">
+    <div class="filter-group" id="filter-category" data-filter-group="category">
+        <span>
+            {{.Site.Params.probCategory.name}}
+        </span>
+        {{range .Site.Params.probCategory.value}}
+            <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}{{if eq . "その他"}}{{range ($prob.Get "category")}}{{if in $.Site.Params.probCategory.value .}}{{else}}, .{{.}}{{end}}{{end}}{{end}}" autocomplete="off">
+            <label class="{{.}}" for="{{.}}">{{.}}</label>
+        {{end}}
+    </div>
+</div>
+<div>
+    <span>ソート</span>
+    <div class="btn-group btn-group-toggle sort-by-button-group" data-toggle="buttons">
+        {{range .Site.Params.sort}}
+        <label for="{{(index . 0).dataSortBy}}" class="btn sort isSortAscending" data-sort-by="{{(index . 0).dataSortBy}}">
+            <input hidden type="radio" name="sort" id="{{(index . 0).dataSortBy}}" autocomplete="off">{{(index . 0).name}}<i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i>
+        </label>
+        {{end}}
+    </div>
+    <button class="btn btn-primary" id="shuffle"><i class="fas fa-random"></i></button>
+</div>
+
+<p id="output">--</p>
+
+<div class="filter-container row">
+{{range $.Site.Data.problems}}
+<div class="filter-item col-md-4 {{index . "venue"}} {{index . "year"}} {{with (index . "team")}}団体{{else}}個人{{end}} {{range .category}} {{.}}{{end}}">
+    <div class="card">
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted"><span class="sort-venue">{{index . "venue"}}</span><span class="sort-year">{{index . "year"}}</span>-<span class="sort-team">{{index . "team"}}</span><span class="sort-num">{{index . "number"}}</span></h6>
+        <h5 class="card-title">{{index . "title"}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted {{(index . "difficulty").averageStar}}">{{(index . "difficulty").averageStar}} <span class="sort-difficulty">{{(index . "difficulty").average}}</span> {{range .category}}<span class="tag m-1 unmot">{{.}}</span> {{end}}</h6>
+        <a href="{{index . "link"}}" class="card-link">問題</a>
+        <a href="#" class="card-link">詳細</a>
+    </div>
+    </div>
+</div>
+{{end}}
+</div>
+
+<script language="JavaScript" type="text/javascript">
+    $(function() {
+        var $iso = $('.filter-container').isotope({
+            // options
+            itemSelector: '.filter-item',
+            layoutMode: 'fitRows',
+            fitRows: {
+                gutter: 10 
+            },
+            filter: function() {
+                var $this = $(this);
+                var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+                var filterResult = filterValue ? $this.is( filterValue ) : true;
+                var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
+                return searchResult && filterResult && categoryFilterResult;
+            },
+            getSortData: {
+                venue: '.sort-venue',
+                year: '.sort-year parseInt',
+                team: '.sort-team',
+                num: '.sort-num parseInt',
+                title: '.card-title',
+                difficulty: '.sort-difficulty parseInt',
+            },
+        });
+
+        //sort
+        $('.sort-by-button-group').on( 'click', 'label', function() {
+            var $this = $(this);
+            var sortByValue = $this.attr('data-sort-by');
+            if (sortByValue.match(/-/g)) sortByValue = sortByValue.split('-');
+            var isSortAscending = $this.hasClass('isSortAscending');
+            if($this.hasClass('active')){
+                isSortAscending = !isSortAscending;
+                $this.toggleClass('isSortAscending');
+            }
+            $iso.isotope({ sortBy: sortByValue, sortAscending: isSortAscending });
+        });
+        $('#shuffle').on( 'click', function() {
+            $('.sort-by-button-group label').removeClass('active');
+            $('.sort-by-button-group input').removeProp('checked');
+            $iso.isotope('shuffle');
+        });
+
+        var filterValue = '*';
+        var categoryFilterValue = '*';
+        var qsRegex;
+        var $checkboxes = $('#filter input[type="checkbox"]');
+        var $categoryCheckboxes = $('#categoryFilter input[type="checkbox"]');
+
+        var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+            qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+            $iso.isotope();
+        }) );
+
+        function debounce( fn, threshold ) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+                clearTimeout( timeout );
+                var args = arguments;
+                var _this = this;
+                function delayed() {
+                fn.apply( _this, args );
+                }
+                timeout = setTimeout( delayed, threshold );
+            };
+        }
+
+        $checkboxes.change(function(){
+            var filters = [];
+            var $this = $(this);
+            var text ='';
+
+            //反転
+            if(false == $this.prop('checked')){
+                reverse($this);
+            }
+
+            //要らないフィルターを消す class で hide を指定すると消えうるものになり, showVENUE でその venue のときだけ表示されるように
+            var showCls = '';
+            var $checkedVenue = $('#filter-venue input[type="checkbox"]:checked');
+            $checkedVenue.each(function(i,elem){
+                showCls += '.show'+elem.id+', ';
+            });
+            showCls += '.showAny';
+            $(showCls).show();
+            $('input[type="checkbox"].hide:not('+showCls+'), '+'.hide:not('+showCls+') input[type="checkbox"]').prop('checked', true);
+            $('.hide:not('+showCls+')').hide();
+
+            $checkboxes.each(function(i, elem){
+                if(false == elem.checked){
+                    filters.push(elem.getAttribute('data-filter'));
+                }
+            });
+            filterValue = filters.length ? filters.join('') : '*';
+            text += filterValue;
+            $('#output').text( text );
+            $iso.isotope();
+        });
+
+        $categoryCheckboxes.change(function(){//categoryだけ非排他的なので分けた
+            var filters = [];
+            var $this = $(this);
+
+            if(false == $this.prop('checked')){
+                reverse($this);
+            }
+
+            $categoryCheckboxes.each(function(i, elem){
+                if(elem.checked){
+                    filters.push(elem.getAttribute('data-filter'));
+                }
+            });
+            categoryFilterValue = filters.length ? filters.join(', ') : '*';
+            $iso.isotope();
+        });
+
+        function reverse($this){
+            if(0 == $this.siblings('input[type="checkbox"]').length - $this.siblings('input[type="checkbox"]:checked').length){
+                $this.siblings('input[type="checkbox"]').prop('checked', false);
+                $this.prop('checked', true);
+            }
+            else if(0 == $this.siblings('input[type="checkbox"]:checked').length){
+                $this.siblings('input[type="checkbox"]').prop('checked', true);
+                $this.prop('checked', true);
+            }
+            return;
+        };
+
+    });
+</script>

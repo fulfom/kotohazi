@@ -165,4 +165,32 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	url = "https://example.org/mail"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
-
+[params.prob]
+[[params.prob.1venue]]
+	name = "出題元"
+	datakey = "venue"
+	value = ["IOL","APLO","JOL","オリジナル","非LO"]
+[[params.prob.2year]]
+	name = "年"
+	datakey = "year"
+[[params.prob.3team]]
+	name = "個人戦・団体戦"
+	value = ["個人","団体"]
+	datakey = "team"
+[[params.prob.4difficulty]]
+	name = "難易度"
+	datakey = "difficulty"
+	value = ["★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★"]
+[params.probCategory]
+	name = "ジャンル"
+	value = ["統語","形態","音韻","韻律","文字","命数","複合語","その他"]
+[params.sort]
+[[params.sort.1year]]
+	dataSortBy = "year-venue-team-num"
+	name = "年"
+[[params.sort.2title]]
+	dataSortBy = "title"
+	name = "題名"
+[[params.sort.3difficulty]]
+	dataSortBy = "difficulty"
+	name = "難易度"

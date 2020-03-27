@@ -87,3 +87,71 @@ p{
 .embed-responsive{
     max-width: 500px;
 }
+
+.form-control:focus{
+    @extend .td-search-input.form-control:focus;
+}
+
+.filtr-container .card{
+    padding: 1.25rem;
+    .card-body{
+        padding: unset;
+    }
+}
+
+.basicbtn{
+    border: 1px solid $primary;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    transition: 0.25s all ease;
+}
+.checkedbtn{
+    color: white;
+    background-color: $primary;
+}
+.notcheckedbtn{
+    color: black;
+    background-color: white;
+}
+
+input[type="checkbox"]{
+    +label{
+        @extend .basicbtn, .checkedbtn;
+    }
+    &:not(:checked)+label{
+        @extend .notcheckedbtn;
+    }
+}
+
+.sort-by-button-group .btn{
+    @extend .basicbtn, .notcheckedbtn;
+    &.active{
+        @extend .checkedbtn;
+        box-shadow: unset !important;
+    }
+}
+
+.sort i.fa-sort-down{
+    display: none;
+}
+
+.isSortAscending{
+    & i.fa-sort-up{
+        display: none;
+    }
+    & i.fa-sort-down{
+        display: inline-block;
+    }
+}
+
+.tag{
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 90%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
+}
+
+.filter-item{
+    margin: 5px -5px;
+}
