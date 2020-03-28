@@ -98,11 +98,8 @@ p{
     @extend .td-search-input.form-control:focus;
 }
 
-.filtr-container .card{
-    padding: 1.25rem;
-    .card-body{
-        padding: unset;
-    }
+.filter-container{
+    @extend .mt-4;
 }
 
 .basicbtn{
@@ -160,4 +157,9 @@ input[type="checkbox"]{
 
 .filter-item{
     margin: 5px -5px;
+}
+
+.bigstar{
+    @extend .font-italic;
+    font-size: larger;
 }

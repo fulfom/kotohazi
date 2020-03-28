@@ -73,16 +73,16 @@
     <button class="btn btn-primary" id="shuffle"><i class="fas fa-random"></i></button>
 </div>
 
-<p id="output">--</p>
+<!--p id="output">--</p-->
 
 <div class="filter-container row">
 {{range $.Site.Data.problems}}
-<div class="filter-item col-md-4 {{index . "venue"}} {{index . "year"}} {{with (index . "team")}}団体{{else}}個人{{end}} {{range .category}} {{.}}{{end}}">
+<div class="filter-item col-md-4 {{index . "venue"}} {{index . "year"}} {{with (index . "team")}}団体{{else}}個人{{end}} ★{{(index . "difficulty").typicalStar}}{{range .category}} {{.}}{{end}}">
     <div class="card">
     <div class="card-body">
         <h6 class="card-subtitle mb-2 text-muted"><span class="sort-venue">{{index . "venue"}}</span><span class="sort-year">{{index . "year"}}</span>-<span class="sort-team">{{index . "team"}}</span><span class="sort-num">{{index . "number"}}</span></h6>
         <h5 class="card-title">{{index . "title"}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted {{(index . "difficulty").averageStar}}">{{(index . "difficulty").averageStar}} <span class="sort-difficulty">{{(index . "difficulty").average}}</span> {{range .category}}<span class="tag m-1 unmot">{{.}}</span> {{end}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{(index . "difficulty").typical}}</span> {{range .category}}<span class="tag m-1 unmot">{{.}}</span> {{end}}</h6>
         <a href="{{index . "link"}}" class="card-link">問題</a>
         <a href="#" class="card-link">詳細</a>
     </div>
@@ -163,7 +163,7 @@
         $checkboxes.change(function(){
             var filters = [];
             var $this = $(this);
-            var text ='';
+            //var text ='';
 
             //反転
             if(false == $this.prop('checked')){
@@ -187,8 +187,8 @@
                 }
             });
             filterValue = filters.length ? filters.join('') : '*';
-            text += filterValue;
-            $('#output').text( text );
+            //text += filterValue;
+            //$('#output').text( text );
             $iso.isotope();
         });
 

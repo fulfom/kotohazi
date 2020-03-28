@@ -2,6 +2,7 @@
 title: "Lv1"
 linkTitle: "Lv1"
 weight: 1
+type: docs
 description: >
   Here's where your user finds out if your project is for them.
 ---
