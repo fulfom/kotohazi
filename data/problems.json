@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Transcendental Algebra",
+        "titlejp": "超越代数",
         "link": "https://ioling.org/problems/2003/i1/",
         "venue": "IOL",
         "year": "2003",
@@ -15,9 +16,15 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ],
+        "probcorrection": "ここがこう",
+        "solcorrection": "あれがそう",
+        "explanation": ["https://ioling.org/problems/2003/i1/"]
     },
     {
         "id": 2,
@@ -35,9 +42,16 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            },
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 3,
@@ -55,9 +69,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 4,
@@ -75,9 +92,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 5,
@@ -95,9 +115,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 6,
@@ -157,9 +180,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 10,
@@ -190,9 +216,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 12,
@@ -210,9 +239,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 13,
@@ -230,9 +262,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 14,
@@ -264,9 +299,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 16,
@@ -284,9 +322,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 17,
@@ -304,9 +345,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 18,
@@ -324,9 +368,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 19,
@@ -344,9 +391,12 @@
             "typical": 7,
             "typicalStar": 7
         },
-        "diffeach": {
-            "irotirihs": 7
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 7
+            }
+        ]
     },
     {
         "id": 20,
@@ -378,9 +428,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 22,
@@ -398,9 +451,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 23,
@@ -431,9 +487,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 25,
@@ -451,9 +510,12 @@
             "typical": 7,
             "typicalStar": 7
         },
-        "diffeach": {
-            "irotirihs": 7
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 7
+            }
+        ]
     },
     {
         "id": 26,
@@ -485,9 +547,12 @@
             "typical": 1,
             "typicalStar": 1
         },
-        "diffeach": {
-            "irotirihs": 1
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 28,
@@ -505,9 +570,12 @@
             "typical": 1,
             "typicalStar": 1
         },
-        "diffeach": {
-            "irotirihs": 1
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 29,
@@ -525,9 +593,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 30,
@@ -545,9 +616,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 31,
@@ -565,9 +639,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 32,
@@ -599,9 +676,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 34,
@@ -619,9 +699,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 35,
@@ -639,9 +722,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 36,
@@ -659,9 +745,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 37,
@@ -679,9 +768,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 38,
@@ -713,9 +805,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 40,
@@ -733,9 +828,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 41,
@@ -753,9 +851,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 42,
@@ -773,9 +874,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 43,
@@ -793,9 +897,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 44,
@@ -827,9 +934,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 46,
@@ -847,9 +957,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 47,
@@ -867,9 +980,12 @@
             "typical": 1,
             "typicalStar": 1
         },
-        "diffeach": {
-            "irotirihs": 1
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 48,
@@ -887,9 +1003,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 49,
@@ -907,9 +1026,12 @@
             "typical": 2,
             "typicalStar": 2
         },
-        "diffeach": {
-            "irotirihs": 2
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 50,
@@ -941,9 +1063,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 52,
@@ -961,9 +1086,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 53,
@@ -981,9 +1109,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 54,
@@ -1001,9 +1132,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 55,
@@ -1021,9 +1155,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 56,
@@ -1055,9 +1192,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 58,
@@ -1075,9 +1215,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 59,
@@ -1095,9 +1238,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 60,
@@ -1115,9 +1261,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 61,
@@ -1135,9 +1284,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 62,
@@ -1182,9 +1334,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 65,
@@ -1202,9 +1357,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 66,
@@ -1222,9 +1380,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 67,
@@ -1242,9 +1403,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 68,
@@ -1276,9 +1440,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 70,
@@ -1296,9 +1463,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 71,
@@ -1316,9 +1486,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 72,
@@ -1336,9 +1509,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 73,
@@ -1356,9 +1532,12 @@
             "typical": 7,
             "typicalStar": 7
         },
-        "diffeach": {
-            "irotirihs": 7
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 7
+            }
+        ]
     },
     {
         "id": 74,
@@ -1390,9 +1569,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 76,
@@ -1449,9 +1631,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 80,
@@ -1483,9 +1668,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 82,
@@ -1503,9 +1691,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 83,
@@ -1523,9 +1714,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 84,
@@ -1543,9 +1737,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 85,
@@ -1563,9 +1760,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 86,
@@ -1597,9 +1797,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 88,
@@ -1617,9 +1820,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 89,
@@ -1651,9 +1857,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 91,
@@ -1671,9 +1880,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 92,
@@ -1705,9 +1917,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 94,
@@ -1725,9 +1940,12 @@
             "typical": 4,
             "typicalStar": 4
         },
-        "diffeach": {
-            "irotirihs": 4
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 95,
@@ -1745,9 +1963,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 96,
@@ -1765,9 +1986,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 97,
@@ -1785,9 +2009,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 98,
@@ -1819,9 +2046,12 @@
             "typical": 6,
             "typicalStar": 6
         },
-        "diffeach": {
-            "irotirihs": 6
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 100,
@@ -1839,9 +2069,12 @@
             "typical": 3,
             "typicalStar": 3
         },
-        "diffeach": {
-            "irotirihs": 3
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 101,
@@ -1859,9 +2092,12 @@
             "typical": 7,
             "typicalStar": 7
         },
-        "diffeach": {
-            "irotirihs": 7
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 7
+            }
+        ]
     },
     {
         "id": 102,
@@ -1879,9 +2115,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 103,
@@ -1899,9 +2138,12 @@
             "typical": 5,
             "typicalStar": 5
         },
-        "diffeach": {
-            "irotirihs": 5
-        }
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 104,

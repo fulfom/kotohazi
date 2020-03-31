@@ -4,6 +4,8 @@ Add styles or override variables from the theme here.
 
 */
 
+@import "ogpcard";
+
 $primary: #00bcd4;
 $info: #00000099;
 
@@ -43,7 +45,6 @@ $headings-margin-bottom: 1rem;
     margin: 1rem 0rem 1.5rem -1.5rem;
     border-left: 0.5rem solid $primary;
     background: #d3f3ee;
-    filter: drop-shadow(3px 3px 2px grey);
 }
 
 .section > h3{
@@ -162,4 +163,11 @@ input[type="checkbox"]{
 .bigstar{
     @extend .font-italic;
     font-size: larger;
+}
+
+i.fa-angle-right{
+    transition: .2s;
+    a[aria-expanded="true"] &{
+        transform: rotate(90deg);
+    }
 }

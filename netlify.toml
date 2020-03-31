@@ -1,0 +1,3 @@
+[build]
+command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
+functions="./functions"
