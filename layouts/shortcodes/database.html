@@ -80,7 +80,12 @@
 <div class="filter-item col-md-6 col-lg-4 {{index . "venue"}} {{index . "year"}} {{with (index . "team")}}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}} {{.}}{{end}}">
     <div class="card">
     <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted"><span class="sort-venue">{{index . "venueDetail" | default (index . "venue")}}</span><span class="sort-year">{{index . "year"}}</span>-<span class="sort-team">{{index . "team"}}</span><span class="sort-num">{{index . "number"}}</span></h6>
+        <div class="d-flex">
+            <h6 class="card-subtitle mb-2 text-muted mr-auto"><span class="sort-venue">{{index . "venueDetail" | default (index . "venue")}}</span><span class="sort-year">{{index . "year"}}</span>-<span class="sort-team">{{index . "team"}}</span><span class="sort-num">{{index . "number"}}</span></h6>
+            {{with .probcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-content="{{.}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
+            {{with .solcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="解答訂正" data-content="解答の訂正あり"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
+            {{with .explanation}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="詳しい解説" data-html="true" data-content="{{range .}}<a href=&#34;{{.}}&#34;>解説</a>{{end}}"><i class="fas fa-chalkboard-teacher fa-fw"></i></a></h6>{{end}}
+        </div>
         {{with .titlejp}}<h6 class="card-subtitle mb-2 text-muted sort-title">{{$title}}</h6>{{end}}
         {{with .titlejp}}<h5 class="card-title">{{.}}{{else}}<h5 class="card-title sort-title">{{$title}}{{end}}</h5>
         <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}<span class="tag m-1 unmot">{{.}}</span> {{end}}</h6>
