@@ -191,7 +191,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	value = ["統語","形態","音韻","韻律","文字","命数","複合語","その他"]
 [params.sort]
 [[params.sort.1year]]
-	dataSortBy = "year-venue-team-num"
+	dataSortBy = "year-venue-team-num-numstr"
 	name = "年"
 [[params.sort.2title]]
 	dataSortBy = "title"

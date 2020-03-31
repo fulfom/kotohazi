@@ -15,8 +15,8 @@
 
 
 {{range ($prob.Get "year")}}
-{{$temp := .}}
-{{range where $.Site.Data.problems "year" $temp}}
+{{$temp := string .}}
+{{range where $.Site.Data.problems "year" (int $temp)}}
     {{ $year.Add $temp (slice (index . "venue")) }}
 {{end}}
 {{$year.Set $temp (uniq ($year.Get $temp)) }}
@@ -41,7 +41,7 @@
         {{end}}
     {{else}}
         {{range ($prob.Get $datakey)}}
-        {{$temp := .}}
+        {{$temp := string .}}
             <input class="{{with ($year.Get $temp)}}hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
             <label class="{{.}}{{with ($year.Get $temp)}} hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" for="{{.}}">{{.}}</label>
         {{end}}
@@ -81,7 +81,7 @@
     <div class="card">
     <div class="card-body">
         <div class="d-flex">
-            <h6 class="card-subtitle mb-2 text-muted mr-auto"><span class="sort-venue">{{index . "venueDetail" | default (index . "venue")}}</span><span class="sort-year">{{index . "year"}}</span>-<span class="sort-team">{{index . "team"}}</span><span class="sort-num">{{index . "number"}}</span></h6>
+            <h6 class="card-subtitle mb-2 text-muted mr-auto"><span class="sort-venue">{{index . "venueDetail" | default (index . "venue")}}</span><span class="sort-year">{{index . "year"}}</span>-<span class="sort-team">{{index . "team"}}</span>{{$type := printf "%T" (index . "number")}}{{if (or (eq "int" $type) (eq "int64" $type) (eq "float64" $type))}}<span class="sort-num">{{index . "number"}}</span><span hidden class="sort-numstr">0</span>{{else}}<span hidden class="sort-num">0</span><span class="sort-numstr">{{index . "number"}}</span>{{end}}</h6>
             {{with .probcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-content="{{.}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
             {{with .solcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="解答訂正" data-content="解答の訂正あり"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
             {{with .explanation}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="詳しい解説" data-html="true" data-content="{{range .}}<a href=&#34;{{.}}&#34;>解説</a>{{end}}"><i class="fas fa-chalkboard-teacher fa-fw"></i></a></h6>{{end}}
@@ -118,6 +118,7 @@
                 year: '.sort-year parseInt',
                 team: '.sort-team',
                 num: '.sort-num parseInt',
+                numstr: '.sort-numstr',
                 title: '.sort-title',
                 difficulty: '.sort-difficulty parseInt',
             },
