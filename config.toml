@@ -172,7 +172,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [[params.prob.1venue]]
 	name = "出題元"
 	datakey = "venue"
-	value = ["IOL","APLO","JOL","オリジナル","非LO"]
+	value = ["IOL","APLO","JOL","海外予選","kotohazi","非LO"]
 [[params.prob.2year]]
 	name = "年"
 	datakey = "year"
@@ -183,9 +183,9 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [[params.prob.4difficulty]]
 	name = "難易度"
 	datakey = "difficulty"
-	value = ["★1","★2","★3","★4","★5","★6","★7","★未定"]
+	value = ["★1","★2","★3","★4","★5","★6","★7","★8","★未定"]
 [params.diffstar]
-	value = ["","★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★","<span class='bigstar'>★</span> ","<span class='bigstar'>★★</span> "]
+	value = ["","★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★","<span class='bigstar'>★</span> ","<span class='bigstar'>★★</span> ","<span class='bigstar'>★★★</span> "]
 [params.probCategory]
 	name = "ジャンル"
 	value = ["統語","形態","音韻","韻律","文字","命数","複合語","その他"]
