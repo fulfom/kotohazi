@@ -19,7 +19,13 @@
   },
   "homepage": "https://github.com/bep/tech-doc-hugo#readme",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "got": "^10.7.0",
+    "metascraper": "^5.11.6",
+    "metascraper-author": "^5.11.6",
+    "metascraper-description": "^5.11.6",
+    "metascraper-image": "^5.11.6",
+    "metascraper-title": "^5.11.6"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
