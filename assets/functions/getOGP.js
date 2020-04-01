@@ -18,6 +18,11 @@ exports.handler = (event, context, callback) => {
   ;(async () => {
     const { body: html, url } = await got(targetUrl)
     const metadata = await metascraper({ html, url })
-    console.log(metadata)
+    console.log(metadata);
+    callback(null, {
+      statusCode: 200,
+      "headers": { "Content-Type": "application/json; charset=utf-8"},
+      body: JSON.stringify(metadata)
+    });
   })()
 };
