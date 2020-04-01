@@ -72,7 +72,8 @@ p{
 
 .note{
     border-width: 2px !important;
-    filter: drop-shadow(2px 2px 1px grey);
+    max-width: unset !important;
+    @extend .pageinfo;
 }
 
 .title-animation{

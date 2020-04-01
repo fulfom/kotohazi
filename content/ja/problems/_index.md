@@ -8,6 +8,17 @@ menu:
     weight: 30
 ---
 
+{{% note "追加 2020-04-02" %}}
+
+- spreadsheet のデータを反映
+- 解説へのリンクを掲載．各問題の右上の<i class="fas fa-chalkboard-teacher fa-fw"></i>をタップすると見れます
+- 訂正箇所も載せました．こっちは<i class="fas fa-exclamation-circle fa-fw"></i>です
+- リンクをツイッターカード風に表示できるようにしました．こんな感じ↓
+
+{{% explanationLinks id=42 %}}
+
+{{% /note %}}
+
 {{% pageinfo %}}
 
 - 貴重な日本語で解ける問題や国際大会の問題，おすすめの海外予選問題，入門講座用のオリジナル問題などを一覧にする
