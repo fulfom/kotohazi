@@ -49,3 +49,5 @@ type: docs
 {{% /collapse %}}
 
 ### 詳しい解説
+
+{{% explanationLinks id={{$id}} %}}

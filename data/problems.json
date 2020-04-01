@@ -2232,5 +2232,310 @@
         "category": [
             "未分類"
         ]
+    },
+    {
+        "id": 110,
+        "title": "ロシア語",
+        "link": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
+        "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
+        "venue": "JOL",
+        "year": 2017,
+        "number": 1,
+        "topic": "Russian",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
+    },
+    {
+        "id": 111,
+        "title": "フリウリ語",
+        "link": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
+        "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
+        "venue": "JOL",
+        "year": 2017,
+        "number": 2,
+        "topic": "Furiulian",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
+    },
+    {
+        "id": 112,
+        "title": "モンゴル語",
+        "link": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
+        "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
+        "venue": "JOL",
+        "year": 2017,
+        "number": 3,
+        "topic": "Mongolian",
+        "category": [
+            "未分類"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
+        ]
+    },
+    {
+        "id": 113,
+        "title": "英語，チェコ語，ポーランド語，スウェーデン語",
+        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
+        "venue": "JOL",
+        "year": 2018,
+        "number": 1,
+        "topic": "English, Czech, Polish and Swedish",
+        "category": [
+            "未分類"
+        ],
+        "probcorrection": "スウェーデン語の「主の祈り」最後の行 誤 vighet -> 正 evighet",
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ]
+    },
+    {
+        "id": 114,
+        "title": "ベジャ語",
+        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
+        "venue": "JOL",
+        "year": 2018,
+        "number": 2,
+        "topic": "Bidhaawyeet",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
+    },
+    {
+        "id": 115,
+        "title": "ナーナイ語",
+        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "solutionlink": "https://docs.google.com/document/d/1b2P6Fx5ULQyhmMuZ3NxnBhsYMtcXbpAyz9Y41MvzEos/edit",
+        "venue": "JOL",
+        "year": 2018,
+        "number": 3,
+        "topic": "Nanai",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
+    },
+    {
+        "id": 116,
+        "title": "オルホン文字/古テュルク語",
+        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "solutionlink": "https://drive.google.com/file/d/1fVN74xSN__LzxS0T8e2qXg0YEHSlO5J0/view",
+        "venue": "JOL",
+        "year": 2018,
+        "number": 4,
+        "topic": "Old Turkic",
+        "category": [
+            "文字",
+            "音韻"
+        ]
+    },
+    {
+        "id": 117,
+        "title": "モンゴル語とチベット語",
+        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
+        "venue": "JOL",
+        "year": 2018,
+        "number": 5,
+        "topic": "Mongolian, Tibetan",
+        "category": [
+            "未分類"
+        ],
+        "explanation": [
+            "https://karngati.hatenablog.com/entry/JOL2018_5"
+        ]
+    },
+    {
+        "id": 118,
+        "title": "ハングル",
+        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "venue": "JOL",
+        "year": 2019,
+        "number": 1,
+        "topic": "Korean",
+        "category": [
+            "未分類"
+        ]
+    },
+    {
+        "id": 119,
+        "title": "国際音声記号",
+        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "venue": "JOL",
+        "year": 2019,
+        "number": 2,
+        "topic": "Japanese",
+        "category": [
+            "音韻"
+        ]
+    },
+    {
+        "id": 120,
+        "title": "フィンランド語",
+        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "venue": "JOL",
+        "year": 2019,
+        "number": 3,
+        "topic": "Finnish(Uralic)",
+        "category": [
+            "音韻"
+        ]
+    },
+    {
+        "id": 121,
+        "title": "イヌクティトゥット語",
+        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "venue": "JOL",
+        "year": 2019,
+        "number": 4,
+        "topic": "Inuktitut(Eskimo-Aleut)",
+        "category": [
+            "統語"
+        ]
+    },
+    {
+        "id": 122,
+        "title": "コリマ・ユカギール語",
+        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "venue": "JOL",
+        "year": 2019,
+        "number": 5,
+        "topic": "Kolyma Yukaghir(Yukaghir)",
+        "category": [
+            "統語"
+        ],
+        "explanation": [
+            "https://fulfom.hatenablog.com/entry/2019/12/21/145615"
+        ]
+    },
+    {
+        "id": 123,
+        "title": "アラビア文字/アラビア語",
+        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "venue": "JOL",
+        "year": 2020,
+        "number": 1,
+        "topic": "Arabic",
+        "category": [
+            "文字"
+        ]
+    },
+    {
+        "id": 124,
+        "title": "エウェンキ語，オロチ語，ナーナイ語",
+        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "venue": "JOL",
+        "year": 2020,
+        "number": 2,
+        "topic": "Ewenki, Oroch, Nanai(Tungusic)",
+        "category": [
+            "音韻"
+        ],
+        "explanation": [
+            "https://karngati.hatenablog.com/entry/2020/02/27/223754"
+        ]
+    },
+    {
+        "id": 125,
+        "title": "バスク語",
+        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "venue": "JOL",
+        "year": 2020,
+        "number": 3,
+        "topic": "Basque",
+        "category": [
+            "音韻"
+        ]
+    },
+    {
+        "id": 126,
+        "title": "リヴォニア語",
+        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "venue": "JOL",
+        "year": 2020,
+        "number": 4,
+        "topic": "Livonian(Uralic)",
+        "category": [
+            "複合語"
+        ]
+    },
+    {
+        "id": 127,
+        "title": "ウルドゥー語",
+        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "venue": "JOL",
+        "year": 2020,
+        "number": 5,
+        "topic": "Urdu(Indo-European)",
+        "category": [
+            "統語"
+        ]
     }
 ]

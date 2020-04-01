@@ -1,75 +1,60 @@
-div.page-embed.hatena-web-card {
-    height: 155px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-
-div.page-embed.hatena-web-card div.embed-wrapper-inner {
-    padding: 12px;
-}
-
-div.page-embed.hatena-web-card div.embed-content.with-thumb {
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-}
-
-div.page-embed.hatena-web-card div.embed-content.with-thumb .thumb-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-}
-div.page-embed.hatena-web-card div.embed-content.with-thumb .thumb-wrapper .thumb {
-    width: auto;
-    max-width: 200%;
-    height: 100px;
-    border: none;
+.web-card{
     display: block;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-div.page-embed.hatena-web-card div.embed-content.with-thumb .entry-body {
-    margin-right: 110px;
-}
-
-div.page-embed.hatena-web-card div.embed-content.with-thumb .entry-body .entry-title {
-    font-size: 17px;
-    margin: 0 0 2px;
-    line-height: 1.4;
-    max-height: 47px;
-    overflow: hidden;
-    border: none;
-    background: #FFF;
-    padding: 0;
-}
-
-div.page-embed.hatena-web-card div.embed-content.with-thumb .entry-body .entry-content {
-    line-height: 1.5;
-    font-size: 12px;
-    max-height: 72px;
-    overflow: hidden;
-    border: none;
-    padding-bottom:0;
-}
-
-div.page-embed.hatena-web-card div.embed-footer {
-    margin-top: 8px;
-    height: 15px;
-    position: relative;
-    font-size: 11px;
-}
-
-div.page-embed.hatena-web-card div.embed-footer img.favicon {
-    display: inline;
-    vertical-align: middle;
-    border: none;
-}
-
-div.page-embed.hatena-web-card div.embed-footer img {
-    box-shadow: none;
+    width: 100%;
+    height: 100px;
+    max-width: 500px;
+    transition: .3s;
+    &:hover{
+        filter: drop-shadow(2px 3px 2px #dfdfdf);
+    }
+    & > a{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    & > div{
+        flex-basis: 100px;
+    }
+    .thumb{
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        background: #dfdfdf;
+        border: 1px solid #dfdfdf;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        img{
+            height: 100px;
+            max-width: 200%;
+            transform: translateX(calc(-50% + 50px));
+        }
+    }
+    &.card{
+        border: none;
+    }
+    .card-body{
+        border: 1px solid #dfdfdf;
+        border-left: none;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        width: calc(100% - 100px);
+    }
+    .card-text{
+        line-height: 1.2;
+        max-height: 2.4em;
+        overflow: hidden;
+        font-size: small;
+        width: 100%;
+    }
+    .card-title{
+        line-height: 1.2;
+        max-height: 2.4em;
+        width: 100%;
+        overflow: hidden;
+        font-size: medium;
+    }
 }

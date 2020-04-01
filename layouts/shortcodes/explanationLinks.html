@@ -1,5 +1,11 @@
-{{ $url := .Get 0 }}
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{$id := sub (.Get "id") 1}}
+{{$prob := index $.Site.Data.problems $id}}
 
+{{with $prob.explanation}}
+{{range . }}
+
+{{$url := .}}
 {{ $jsonData := getJSON $.Page.Site.Params.OgpApiEndpoint $url }}
 {{ $title := $jsonData.title }}
 {{ $description := $jsonData.description }}
@@ -24,3 +30,6 @@
             <p class="card-text text-muted">{{$description}}</p>
         </div>
     </div>
+
+{{end}}
+{{end}}

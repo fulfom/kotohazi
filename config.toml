@@ -188,7 +188,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	value = ["","★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★","<span class='bigstar'>★</span> ","<span class='bigstar'>★★</span> ","<span class='bigstar'>★★★</span> "]
 [params.probCategory]
 	name = "ジャンル"
-	value = ["統語","形態","音韻","韻律","文字","命数","複合語","その他"]
+	value = ["統語","形態","音韻","韻律","文字","数式","複合語","その他"]
 [params.sort]
 [[params.sort.1year]]
 	dataSortBy = "year-venue-team-num-numstr"
