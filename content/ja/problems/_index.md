@@ -6,12 +6,13 @@ type: docs
 menu:
   main:
     weight: 30
+description: "問題の一覧．難易度やジャンルで絞り込める機能つき"
 ---
 
 {{% note "追加 2020-04-02" %}}
 
 - spreadsheet のデータを反映
-- 解説へのリンクを掲載．各問題の右上の<i class="fas fa-chalkboard-teacher fa-fw"></i>をタップすると見れます
+- 解説へのリンクを掲載．各問題の右上の<i class="fas fa-chalkboard-teacher fa-fw"></i>をタップすると見れます．
 - 訂正箇所も載せました．こっちは<i class="fas fa-exclamation-circle fa-fw"></i>です
 - リンクをツイッターカード風に表示できるようにしました．こんな感じ↓
 

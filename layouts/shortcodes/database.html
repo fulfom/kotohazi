@@ -89,7 +89,7 @@
         {{with .titlejp}}<h6 class="card-subtitle mb-2 text-muted sort-title">{{$title}}</h6>{{end}}
         {{with .titlejp}}<h5 class="card-title">{{.}}{{else}}<h5 class="card-title sort-title">{{$title}}{{end}}</h5>
         <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}<span class="tag m-1 unmot">{{.}}</span> {{end}}</h6>
-        <a href="{{index . "link"}}" class="card-link">問題</a>
+        <a href="{{index . "link"}}" class="card-link" target="_blank">問題</a>
         <a href="/{{path.Join "problems" ((index . "venue") | urlize) ((index . "year") | urlize) ((delimit (slice (index . "team") (index . "number")) "") | urlize)}}" class="card-link">詳細</a>
     </div>
     </div>
