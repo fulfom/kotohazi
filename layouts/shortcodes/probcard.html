@@ -29,7 +29,7 @@
         </div>
         {{with $titlejp}}<h6 class="card-subtitle mb-2 text-muted">{{$title}}</h6>{{end}}
         <h5 class="card-title">{{with $titlejp}}{{.}}{{else}}{{$title}}{{end}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}<span class="tag m-1 unmot">{{.}}</span>{{end}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span>{{end}}{{end}}</h6>
         {{if $detailed}}<hr>
         <p class="card-text text-muted">主題：{{$topic}}<br>作問：{{$author}}</p>{{end}}
         <a href="{{$link}}" class="card-link" target="_blank">問題</a>

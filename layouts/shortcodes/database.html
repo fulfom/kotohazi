@@ -56,7 +56,7 @@
             {{.Site.Params.probCategory.name}}
         </span>
         {{range .Site.Params.probCategory.value}}
-            <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}{{if eq . "その他"}}{{range ($prob.Get "category")}}{{if in $.Site.Params.probCategory.value .}}{{else}}, .{{.}}{{end}}{{end}}{{end}}" autocomplete="off">
+            <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}{{if eq . "その他"}}{{range ($prob.Get "category")}}{{if hasPrefix . "!"}}{{else}}{{if in $.Site.Params.probCategory.value .}}{{else}}, .{{.}}{{end}}{{end}}{{end}}{{end}}" autocomplete="off">
             <label class="{{.}}" for="{{.}}">{{.}}</label>
         {{end}}
     </div>
@@ -77,7 +77,7 @@
 
 <div class="filter-container row">
 {{range $.Site.Data.problems}}{{$title := index . "title"}}
-<div class="filter-item col-md-6 col-lg-4 {{index . "venue"}} {{index . "year"}} {{with (index . "team")}}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}} {{.}}{{end}}">
+<div class="filter-item col-md-6 col-lg-4 {{index . "venue"}} {{index . "year"}} {{with (index . "team")}}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{end}}">
     <div class="card">
     <div class="card-body">
         <div class="d-flex">
@@ -88,7 +88,7 @@
         </div>
         {{with .titlejp}}<h6 class="card-subtitle mb-2 text-muted sort-title">{{$title}}</h6>{{end}}
         {{with .titlejp}}<h5 class="card-title">{{.}}{{else}}<h5 class="card-title sort-title">{{$title}}{{end}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}<span class="tag m-1 unmot">{{.}}</span> {{end}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span> {{end}}{{end}}</h6>
         <a href="{{index . "link"}}" class="card-link" target="_blank">問題</a>
         <a href="/{{path.Join "problems" ((index . "venue") | urlize) ((index . "year") | urlize) ((delimit (slice (index . "team") (index . "number")) "") | urlize)}}" class="card-link">詳細</a>
     </div>

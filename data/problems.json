@@ -10,7 +10,8 @@
         "topic": "Transcendental Algebra",
         "author": "Ksenia Gilyarova",
         "category": [
-            "文字"
+            "文字",
+            "統語"
         ],
         "difficulty": {
             "typical": 3,
@@ -26,6 +27,7 @@
     {
         "id": 2,
         "title": "Arabic Arithmetic",
+        "titlejp": "アラビア式算数",
         "link": "https://ioling.org/problems/2003/i2/",
         "venue": "IOL",
         "year": 2003,
@@ -33,6 +35,7 @@
         "topic": "Arabic (Afroasiatic)",
         "author": "Ivan Derzhanski",
         "category": [
+            "命数",
             "数式"
         ],
         "difficulty": {
@@ -49,6 +52,7 @@
     {
         "id": 3,
         "title": "Basque Dates",
+        "titlejp": "バスク語の日付",
         "link": "https://ioling.org/problems/2003/i3/",
         "venue": "IOL",
         "year": 2003,
@@ -56,7 +60,8 @@
         "topic": "Basque (Isolate)",
         "author": "Alexandre Arkhipov",
         "category": [
-            "複合語"
+            "命数",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 3,
@@ -72,6 +77,7 @@
     {
         "id": 4,
         "title": "Adyghe",
+        "titlejp": "アディゲ語",
         "link": "https://ioling.org/problems/2003/i4/",
         "venue": "IOL",
         "year": 2003,
@@ -95,6 +101,7 @@
     {
         "id": 5,
         "title": "French",
+        "titlejp": "フランス語",
         "link": "https://ioling.org/problems/2003/i5/",
         "venue": "IOL",
         "year": 2003,
@@ -102,7 +109,8 @@
         "topic": "French (Indo-European)",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "形態",
+            "動詞形態"
         ],
         "difficulty": {
             "typical": 2,
@@ -118,6 +126,7 @@
     {
         "id": 6,
         "title": "Tocharian",
+        "titlejp": "トカラ語",
         "link": "https://ioling.org/problems/2003/t1/",
         "venue": "IOL",
         "year": 2003,
@@ -126,12 +135,14 @@
         "topic": "Tocharian A (Indo-European), Tocharian B (Indo-Eurorean)",
         "author": "Svetlana Burlak",
         "category": [
-            "未分類"
+            "音韻",
+            "比較"
         ]
     },
     {
         "id": 7,
         "title": "Subscripts",
+        "titlejp": "添え字",
         "link": "https://ioling.org/problems/2003/t2/",
         "venue": "IOL",
         "year": 2003,
@@ -140,12 +151,13 @@
         "topic": "Subscripts",
         "author": "Maria Rubinstein",
         "category": [
-            "未分類"
+            "統語"
         ]
     },
     {
         "id": 8,
         "title": "Verbs",
+        "titlejp": "動詞",
         "link": "https://ioling.org/problems/2003/t3/",
         "venue": "IOL",
         "year": 2003,
@@ -154,12 +166,13 @@
         "topic": "Verbs",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "語用論"
         ]
     },
     {
         "id": 9,
         "title": "Kayapo",
+        "titlejp": "カヤポ語",
         "link": "https://ioling.org/problems/2004/i1/",
         "venue": "IOL",
         "year": 2004,
@@ -183,6 +196,7 @@
     {
         "id": 10,
         "title": "Swift News Agency",
+        "titlejp": "韋駄天通信社",
         "link": "https://ioling.org/problems/2004/i2/",
         "venue": "IOL",
         "year": 2004,
@@ -190,12 +204,13 @@
         "topic": "Swift News Agency",
         "author": "Leonid Iomdin",
         "category": [
-            "未分類"
+            "語用論"
         ]
     },
     {
         "id": 11,
         "title": "Latin",
+        "titlejp": "ラテン語",
         "link": "https://ioling.org/problems/2004/i3/",
         "venue": "IOL",
         "year": 2004,
@@ -203,7 +218,8 @@
         "topic": "Latin (Indo-European), English (Indo-European)",
         "author": "Svetlana Burlak, Ilya Itkin",
         "category": [
-            "音韻"
+            "音韻",
+            "比較"
         ],
         "difficulty": {
             "typical": 5,
@@ -219,6 +235,7 @@
     {
         "id": 12,
         "title": "Lakhota",
+        "titlejp": "ラコタ語",
         "link": "https://ioling.org/problems/2004/i4/",
         "venue": "IOL",
         "year": 2004,
@@ -226,7 +243,7 @@
         "topic": "Lakhota (Siouxan)",
         "author": "Ivan Derzhanski",
         "category": [
-            "複合語"
+            "意味"
         ],
         "difficulty": {
             "typical": 3,
@@ -242,6 +259,7 @@
     {
         "id": 13,
         "title": "Chuvash",
+        "titlejp": "チュヴァシュ語",
         "link": "https://ioling.org/problems/2004/i5/",
         "venue": "IOL",
         "year": 2004,
@@ -265,6 +283,7 @@
     {
         "id": 14,
         "title": "Armenian",
+        "titlejp": "アルメニア語",
         "link": "https://ioling.org/problems/2004/t1/",
         "venue": "IOL",
         "year": 2004,
@@ -273,12 +292,15 @@
         "topic": "Armenian (Indo-European)",
         "author": "Alexander Berdichevsky, Boris Iomdin",
         "category": [
-            "未分類"
+            "統語",
+            "文字",
+            "音声"
         ]
     },
     {
         "id": 15,
         "title": "Tzotzil",
+        "titlejp": "ツォツィル語",
         "link": "https://ioling.org/problems/2005/i1/",
         "venue": "IOL",
         "year": 2005,
@@ -302,6 +324,7 @@
     {
         "id": 16,
         "title": "Lango",
+        "titlejp": "ランゴ語",
         "link": "https://ioling.org/problems/2005/i2/",
         "venue": "IOL",
         "year": 2005,
@@ -309,7 +332,8 @@
         "topic": "Lango (Nilo-Saharan)",
         "author": "Ksenia Guiliarova",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 2,
@@ -325,6 +349,7 @@
     {
         "id": 17,
         "title": "Mansi",
+        "titlejp": "マンシ語",
         "link": "https://ioling.org/problems/2005/i3/",
         "venue": "IOL",
         "year": 2005,
@@ -332,7 +357,7 @@
         "topic": "Mansi (Uralic)",
         "author": "Ivan Derzhanski",
         "category": [
-            "数式"
+            "命数"
         ],
         "difficulty": {
             "typical": 3,
@@ -348,6 +373,7 @@
     {
         "id": 18,
         "title": "Yoruba",
+        "titlejp": "ヨルバ語",
         "link": "https://ioling.org/problems/2005/i4/",
         "venue": "IOL",
         "year": 2005,
@@ -371,6 +397,7 @@
     {
         "id": 19,
         "title": "Lithuanian",
+        "titlejp": "リトアニア語",
         "link": "https://ioling.org/problems/2005/i5/",
         "venue": "IOL",
         "year": 2005,
@@ -378,22 +405,28 @@
         "topic": "Lithuanian (Indo-European)",
         "author": "Alexander Lubotsky",
         "category": [
-            "韻律"
+            "韻律",
+            "比較"
         ],
         "difficulty": {
-            "typical": 7,
-            "typicalStar": 7
+            "typical": 5,
+            "typicalStar": 5
         },
         "diffeach": [
             {
                 "name": "irotirihs",
                 "diff": 7
+            },
+            {
+                "name": "fulfom",
+                "diff": 3
             }
         ]
     },
     {
         "id": 20,
         "title": "Figuig",
+        "titlejp": "フィギグ語",
         "link": "https://ioling.org/problems/2005/t1/",
         "venue": "IOL",
         "year": 2005,
@@ -402,12 +435,24 @@
         "topic": "Figuig (Afroasiatic)",
         "author": "Maarten Kossmann, Alexander Lubotsky",
         "category": [
-            "未分類"
+            "統語",
+            "音声"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 7
+            }
         ]
     },
     {
         "id": 21,
         "title": "Lakhota",
+        "titlejp": "ラコタ語",
         "link": "https://ioling.org/problems/2006/i1/",
         "venue": "IOL",
         "year": 2006,
@@ -431,6 +476,7 @@
     {
         "id": 22,
         "title": "Catalan",
+        "titlejp": "カタラン語",
         "link": "https://ioling.org/problems/2006/i2/",
         "venue": "IOL",
         "year": 2006,
@@ -438,7 +484,7 @@
         "topic": "Catalan (Indo-European)",
         "author": "Boris Iomdin",
         "category": [
-            "韻律"
+            "音韻"
         ],
         "difficulty": {
             "typical": 3,
@@ -454,6 +500,7 @@
     {
         "id": 23,
         "title": "Khmer",
+        "titlejp": "クメール語",
         "link": "https://ioling.org/problems/2006/i3/",
         "venue": "IOL",
         "year": 2006,
@@ -468,6 +515,7 @@
     {
         "id": 24,
         "title": "Udihe",
+        "titlejp": "ウディヘ語",
         "link": "https://ioling.org/problems/2006/i4/",
         "venue": "IOL",
         "year": 2006,
@@ -475,7 +523,8 @@
         "topic": "Udihe (Tungusic)",
         "author": "Boris Iomdin",
         "category": [
-            "形態"
+            "形態",
+            "!所有"
         ],
         "difficulty": {
             "typical": 3,
@@ -491,6 +540,7 @@
     {
         "id": 25,
         "title": "Ngoni",
+        "titlejp": "ンゴニ語",
         "link": "https://ioling.org/problems/2006/i5/",
         "venue": "IOL",
         "year": 2006,
@@ -514,6 +564,7 @@
     {
         "id": 26,
         "title": "American Sign Language",
+        "titlejp": "アメリカ手話",
         "link": "https://ioling.org/problems/2006/t1/",
         "venue": "IOL",
         "year": 2006,
@@ -522,12 +573,15 @@
         "topic": "American Sign Language (LSF Family)",
         "author": "Alexander Berdichevsky",
         "category": [
-            "未分類"
+            "統語",
+            "手話",
+            "動画"
         ]
     },
     {
         "id": 27,
         "title": "Braille",
+        "titlejp": "点字",
         "link": "https://ioling.org/problems/2007/i1/",
         "venue": "IOL",
         "year": 2007,
@@ -551,6 +605,7 @@
     {
         "id": 28,
         "title": "Movima",
+        "titlejp": "モビマ語",
         "link": "https://ioling.org/problems/2007/i2/",
         "venue": "IOL",
         "year": 2007,
@@ -558,7 +613,7 @@
         "topic": "Movima (Isolate)",
         "author": "Dmitry Gerasimov",
         "category": [
-            "音韻"
+            "韻律"
         ],
         "difficulty": {
             "typical": 1,
@@ -574,6 +629,7 @@
     {
         "id": 29,
         "title": "Georgian",
+        "titlejp": "グルジア語",
         "link": "https://ioling.org/problems/2007/i3/",
         "venue": "IOL",
         "year": 2007,
@@ -581,7 +637,9 @@
         "topic": "Georgian (South Caucasian)",
         "author": "Yakov Testelets",
         "category": [
-            "形態"
+            "形態",
+            "組み合わせ",
+            "動詞形態"
         ],
         "difficulty": {
             "typical": 6,
@@ -597,6 +655,7 @@
     {
         "id": 30,
         "title": "Ndom",
+        "titlejp": "ンドム語",
         "link": "https://ioling.org/problems/2007/i4/",
         "venue": "IOL",
         "year": 2007,
@@ -604,7 +663,7 @@
         "topic": "Ndom (Trans-New Guinea)",
         "author": "Ivan Derzhanski",
         "category": [
-            "数式"
+            "命数"
         ],
         "difficulty": {
             "typical": 3,
@@ -620,6 +679,7 @@
     {
         "id": 31,
         "title": "Turkish and Tatar",
+        "titlejp": "トルコ語とタタール語",
         "link": "https://ioling.org/problems/2007/i5/",
         "venue": "IOL",
         "year": 2007,
@@ -627,7 +687,8 @@
         "topic": "Turkish (Turkic), Tatar (Turkic)",
         "author": "Ivan Derzhanski",
         "category": [
-            "音韻"
+            "音韻",
+            "比較"
         ],
         "difficulty": {
             "typical": 3,
@@ -643,6 +704,7 @@
     {
         "id": 32,
         "title": "Hawaiian",
+        "titlejp": "ハワイ語",
         "link": "https://ioling.org/problems/2007/t1/",
         "venue": "IOL",
         "year": 2007,
@@ -651,12 +713,25 @@
         "topic": "Hawaiian (Austronesian)",
         "author": "Olga Fyodorova",
         "category": [
-            "未分類"
+            "意味",
+            "図説明",
+            "親族名称"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 7
+            }
         ]
     },
     {
         "id": 33,
         "title": "Micmac",
+        "titlejp": "ミクマク語",
         "link": "https://ioling.org/problems/2008/i1/",
         "venue": "IOL",
         "year": 2008,
@@ -680,6 +755,7 @@
     {
         "id": 34,
         "title": "Old Norse",
+        "titlejp": "古ノルド語",
         "link": "https://ioling.org/problems/2008/i2/",
         "venue": "IOL",
         "year": 2008,
@@ -703,6 +779,7 @@
     {
         "id": 35,
         "title": "Drehu and Cemuhî",
+        "titlejp": "デフ語とチェムヒン語",
         "link": "https://ioling.org/problems/2008/i3/",
         "venue": "IOL",
         "year": 2008,
@@ -710,7 +787,7 @@
         "topic": "Drehu (Austronesian), Cemuhî (Austronesian)",
         "author": "Ksenia Gilyarova",
         "category": [
-            "複合語"
+            "意味"
         ],
         "difficulty": {
             "typical": 4,
@@ -726,6 +803,7 @@
     {
         "id": 36,
         "title": "Copainalá Zoque",
+        "titlejp": "コパイナラ・ソケ語",
         "link": "https://ioling.org/problems/2008/i4/",
         "venue": "IOL",
         "year": 2008,
@@ -749,6 +827,7 @@
     {
         "id": 37,
         "title": "Inuktitut",
+        "titlejp": "イヌクティトゥット語",
         "link": "https://ioling.org/problems/2008/i5/",
         "venue": "IOL",
         "year": 2008,
@@ -772,6 +851,7 @@
     {
         "id": 38,
         "title": "Fanqie",
+        "titlejp": "反切",
         "link": "https://ioling.org/problems/2008/t1/",
         "venue": "IOL",
         "year": 2008,
@@ -780,12 +860,24 @@
         "topic": "Mandarin (Sino-Tibetan), Cantonese (Sino-Tibetan)",
         "author": "Todor Tchervenkov",
         "category": [
-            "未分類"
+            "音韻",
+            "比較"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 39,
         "title": "Sulka",
+        "titlejp": "スルカ語",
         "link": "https://ioling.org/problems/2009/i1/",
         "venue": "IOL",
         "year": 2009,
@@ -793,7 +885,8 @@
         "topic": "Sulka (East Papuan)",
         "author": "Evgenia Korovina, Ivan Derzhanski",
         "category": [
-            "命数"
+            "命数",
+            "!名詞類別"
         ],
         "difficulty": {
             "typical": 3,
@@ -809,6 +902,7 @@
     {
         "id": 40,
         "title": "Maninka and Bamana",
+        "titlejp": "マニンカ語とバマナ語",
         "link": "https://ioling.org/problems/2009/i2/",
         "venue": "IOL",
         "year": 2009,
@@ -832,6 +926,7 @@
     {
         "id": 41,
         "title": "Burmese Names",
+        "titlejp": "ミャンマー人の名",
         "link": "https://ioling.org/problems/2009/i3/",
         "venue": "IOL",
         "year": 2009,
@@ -855,6 +950,7 @@
     {
         "id": 42,
         "title": "Old Indic",
+        "titlejp": "古インド語",
         "link": "https://ioling.org/problems/2009/i4/",
         "venue": "IOL",
         "year": 2009,
@@ -881,6 +977,7 @@
     {
         "id": 43,
         "title": "Nahuatl",
+        "titlejp": "ナワトル語",
         "link": "https://ioling.org/problems/2009/i5/",
         "venue": "IOL",
         "year": 2009,
@@ -904,6 +1001,7 @@
     {
         "id": 44,
         "title": "Vietnamese",
+        "titlejp": "ベトナム語",
         "link": "https://ioling.org/problems/2009/t1/",
         "venue": "IOL",
         "year": 2009,
@@ -912,12 +1010,24 @@
         "topic": "Vietnamese (Austro-Asiatic)",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "モノリンガル",
+            "文章"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 45,
         "title": "Budukh",
+        "titlejp": "ブドゥフ語",
         "link": "https://ioling.org/problems/2010/i1/",
         "venue": "IOL",
         "year": 2010,
@@ -941,6 +1051,7 @@
     {
         "id": 46,
         "title": "Drehu Numerals",
+        "titlejp": "デフ語の数詞",
         "link": "https://ioling.org/problems/2010/i2/",
         "venue": "IOL",
         "year": 2010,
@@ -948,7 +1059,8 @@
         "topic": "Drehu (Austronesian)",
         "author": "Ksenia Gilyarova",
         "category": [
-            "数式"
+            "命数",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 3,
@@ -964,6 +1076,7 @@
     {
         "id": 47,
         "title": "Blissymbolics",
+        "titlejp": "ブリスシンボル",
         "link": "https://ioling.org/problems/2010/i3/",
         "venue": "IOL",
         "year": 2010,
@@ -971,7 +1084,9 @@
         "topic": "Blissymbolics",
         "author": "Alexander Piperski",
         "category": [
-            "文字"
+            "文字",
+            "形態",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 1,
@@ -987,6 +1102,7 @@
     {
         "id": 48,
         "title": "mRNA Sequencing",
+        "titlejp": "mRNAシークエンシング",
         "link": "https://ioling.org/problems/2010/i4/",
         "venue": "IOL",
         "year": 2010,
@@ -994,7 +1110,7 @@
         "topic": "mRNA Sequencing",
         "author": "Alexander Berdichevski",
         "category": [
-            "未分類"
+            "非言語"
         ],
         "difficulty": {
             "typical": 2,
@@ -1010,6 +1126,7 @@
     {
         "id": 49,
         "title": "Romansch",
+        "titlejp": "ロマンシュ語",
         "link": "https://ioling.org/problems/2010/i5/",
         "venue": "IOL",
         "year": 2010,
@@ -1033,6 +1150,7 @@
     {
         "id": 50,
         "title": "Mongolian",
+        "titlejp": "モンゴル語",
         "link": "https://ioling.org/problems/2010/t1/",
         "venue": "IOL",
         "year": 2010,
@@ -1041,12 +1159,13 @@
         "topic": "Mongolian (Mongolic)",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "モノリンガル"
         ]
     },
     {
         "id": 51,
         "title": "Menominee",
+        "titlejp": "メノミニー語",
         "link": "https://ioling.org/problems/2011/i1/",
         "venue": "IOL",
         "year": 2011,
@@ -1054,7 +1173,8 @@
         "topic": "Menominee (Algonquin)",
         "author": "Ivan Derzhanski",
         "category": [
-            "形態"
+            "形態",
+            "動詞形態"
         ],
         "difficulty": {
             "typical": 5,
@@ -1070,6 +1190,7 @@
     {
         "id": 52,
         "title": "Faroese",
+        "titlejp": "フェロー語",
         "link": "https://ioling.org/problems/2011/i2/",
         "venue": "IOL",
         "year": 2011,
@@ -1093,6 +1214,7 @@
     {
         "id": 53,
         "title": "Vai",
+        "titlejp": "ヴァイ語",
         "link": "https://ioling.org/problems/2011/i3/",
         "venue": "IOL",
         "year": 2011,
@@ -1100,7 +1222,7 @@
         "topic": "Vai (Mande)",
         "author": "Olga Kuznetsova",
         "category": [
-            "形態"
+            "所有"
         ],
         "difficulty": {
             "typical": 3,
@@ -1116,6 +1238,7 @@
     {
         "id": 54,
         "title": "Nahuatl",
+        "titlejp": "ナワトル語",
         "link": "https://ioling.org/problems/2011/i4/",
         "venue": "IOL",
         "year": 2011,
@@ -1123,7 +1246,8 @@
         "topic": "Nahuatl (Uto-Aztecan)",
         "author": "Liudmila Fedorova",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 6,
@@ -1146,7 +1270,7 @@
         "topic": "EAN-13",
         "author": "Hugh Dobbs",
         "category": [
-            "未分類"
+            "非言語"
         ],
         "difficulty": {
             "typical": 4,
@@ -1162,6 +1286,7 @@
     {
         "id": 56,
         "title": "Sanskrit Poetry",
+        "titlejp": "サンスクリット詩",
         "link": "https://ioling.org/problems/2011/t1/",
         "venue": "IOL",
         "year": 2011,
@@ -1170,12 +1295,13 @@
         "topic": "Sanskrit (Indo-Aryan)",
         "author": "Adam Hesterberg",
         "category": [
-            "未分類"
+            "韻律"
         ]
     },
     {
         "id": 57,
         "title": "Dyirbal",
+        "titlejp": "ジルバル語",
         "link": "https://ioling.org/problems/2012/i1/",
         "venue": "IOL",
         "year": 2012,
@@ -1199,6 +1325,7 @@
     {
         "id": 58,
         "title": "Umbu-Ungu",
+        "titlejp": "ウンブ・ウング語",
         "link": "https://ioling.org/problems/2012/i2/",
         "venue": "IOL",
         "year": 2012,
@@ -1206,7 +1333,7 @@
         "topic": "Umbu-Ungu (Trans-New Guinea)",
         "author": "Ksenia Gilyarova",
         "category": [
-            "数式"
+            "命数"
         ],
         "difficulty": {
             "typical": 5,
@@ -1222,6 +1349,7 @@
     {
         "id": 59,
         "title": "Basque",
+        "titlejp": "バスク語",
         "link": "https://ioling.org/problems/2012/i3/",
         "venue": "IOL",
         "year": 2012,
@@ -1229,7 +1357,9 @@
         "topic": "Basque (Isolate)",
         "author": "Natalya Zaika",
         "category": [
-            "統語"
+            "形態",
+            "動詞形態",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 6,
@@ -1245,6 +1375,7 @@
     {
         "id": 60,
         "title": "Teop",
+        "titlejp": "テオプ語",
         "link": "https://ioling.org/problems/2012/i4/",
         "venue": "IOL",
         "year": 2012,
@@ -1268,6 +1399,7 @@
     {
         "id": 61,
         "title": "Rotuman",
+        "titlejp": "ロツマ語",
         "link": "https://ioling.org/problems/2012/i5/",
         "venue": "IOL",
         "year": 2012,
@@ -1275,7 +1407,7 @@
         "topic": "Rotuman (Austronesian)",
         "author": "Boris Iomdin, Alexander Pipersky",
         "category": [
-            "複合語"
+            "意味"
         ],
         "difficulty": {
             "typical": 3,
@@ -1291,6 +1423,7 @@
     {
         "id": 62,
         "title": "Lao",
+        "titlejp": "ラオ語",
         "link": "https://ioling.org/problems/2012/t1/",
         "venue": "IOL",
         "year": 2012,
@@ -1299,12 +1432,13 @@
         "topic": "Lao (Tai-Kadai)",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "文字"
         ]
     },
     {
         "id": 63,
         "title": "Yidiny",
+        "titlejp": "イディン語",
         "link": "https://ioling.org/problems/2013/i1/",
         "venue": "IOL",
         "year": 2013,
@@ -1312,12 +1446,14 @@
         "topic": "Yidiny (Pama-Nyungan)",
         "author": "Bozhidar Bozhanov, Ivan Derzhanski",
         "category": [
-            "形態"
+            "形態",
+            "韻律"
         ]
     },
     {
         "id": 64,
         "title": "Tundra Yukaghir",
+        "titlejp": "ツンドラ・ユカギール語",
         "link": "https://ioling.org/problems/2013/i2/",
         "venue": "IOL",
         "year": 2013,
@@ -1325,7 +1461,8 @@
         "topic": "Tundra Yukaghir (Yukaghir)",
         "author": "Ivan Derzhanski",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 5,
@@ -1341,6 +1478,7 @@
     {
         "id": 65,
         "title": "Pirahã",
+        "titlejp": "ピダハン語",
         "link": "https://ioling.org/problems/2013/i3/",
         "venue": "IOL",
         "year": 2013,
@@ -1348,7 +1486,7 @@
         "topic": "Pirahã (Mura)",
         "author": "Artūrs Semeņuks",
         "category": [
-            "韻律"
+            "音韻"
         ],
         "difficulty": {
             "typical": 6,
@@ -1364,6 +1502,7 @@
     {
         "id": 66,
         "title": "Muna",
+        "titlejp": "ムナ語",
         "link": "https://ioling.org/problems/2013/i4/",
         "venue": "IOL",
         "year": 2013,
@@ -1387,6 +1526,7 @@
     {
         "id": 67,
         "title": "Telepathy",
+        "titlejp": "テレパシー",
         "link": "https://ioling.org/problems/2013/i5/",
         "venue": "IOL",
         "year": 2013,
@@ -1394,7 +1534,8 @@
         "topic": "English (Indo-European)",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "!名詞類別",
+            "非言語"
         ],
         "difficulty": {
             "typical": 3,
@@ -1410,6 +1551,7 @@
     {
         "id": 68,
         "title": "Georgian",
+        "titlejp": "グルジア語",
         "link": "https://ioling.org/problems/2013/t1/",
         "venue": "IOL",
         "year": 2013,
@@ -1418,12 +1560,14 @@
         "topic": "Georgian",
         "author": "Ivan Derzhanski",
         "category": [
-            "未分類"
+            "文字",
+            "モノリンガル"
         ]
     },
     {
         "id": 69,
         "title": "Benabena",
+        "titlejp": "ベナベナ語",
         "link": "https://ioling.org/problems/2014/i1/",
         "venue": "IOL",
         "year": 2014,
@@ -1431,7 +1575,8 @@
         "topic": "Benabena (Trans-New Guinea)",
         "author": "Ivan Derzhanski",
         "category": [
-            "形態"
+            "形態",
+            "動詞形態"
         ],
         "difficulty": {
             "typical": 6,
@@ -1447,6 +1592,7 @@
     {
         "id": 70,
         "title": "Kiowa",
+        "titlejp": "カイオワ",
         "link": "https://ioling.org/problems/2014/i2/",
         "venue": "IOL",
         "year": 2014,
@@ -1454,7 +1600,8 @@
         "topic": "Kiowa (Tanoan)",
         "author": "Aleksejs Peguševs",
         "category": [
-            "形態"
+            "意味",
+            "!名詞類別"
         ],
         "difficulty": {
             "typical": 5,
@@ -1470,6 +1617,7 @@
     {
         "id": 71,
         "title": "Tangut",
+        "titlejp": "西夏語",
         "link": "https://ioling.org/problems/2014/i3/",
         "venue": "IOL",
         "year": 2014,
@@ -1477,6 +1625,8 @@
         "topic": "Tangut (Tibeto-Burman)",
         "author": "Ivan Derzhanski",
         "category": [
+            "意味",
+            "図説明",
             "親族名称"
         ],
         "explanation": [
@@ -1496,6 +1646,7 @@
     {
         "id": 72,
         "title": "Engenni",
+        "titlejp": "エンゲンニ語",
         "link": "https://ioling.org/problems/2014/i4/",
         "venue": "IOL",
         "year": 2014,
@@ -1519,6 +1670,7 @@
     {
         "id": 73,
         "title": "Gbaya",
+        "titlejp": "北西バヤ語",
         "link": "https://ioling.org/problems/2014/i5/",
         "venue": "IOL",
         "year": 2014,
@@ -1526,7 +1678,8 @@
         "topic": "Gbaya (Niger-Congo)",
         "author": "Boris Iomdin",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ"
         ],
         "probcorrection": "誤訳「死ぬ」→正「死にかける」",
         "explanation": [
@@ -1546,6 +1699,7 @@
     {
         "id": 74,
         "title": "Armenian",
+        "titlejp": "アルメニア語",
         "link": "https://ioling.org/problems/2014/t1/",
         "venue": "IOL",
         "year": 2014,
@@ -1554,12 +1708,24 @@
         "topic": "Armenian (Indo-European)",
         "author": "Boris Iomdin, Ivan Derzhanski",
         "category": [
-            "未分類"
+            "文章",
+            "組み合わせ"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 75,
         "title": "Nahuatl and Arammba",
+        "titlejp": "ナワトル語とアランバ語",
         "link": "https://ioling.org/problems/2015/i1/",
         "venue": "IOL",
         "year": 2015,
@@ -1567,6 +1733,7 @@
         "topic": "Nahuatl (Uto-Aztecan), Arammba (South Central Papuan)",
         "author": "Milena Veneva",
         "category": [
+            "命数",
             "数式"
         ],
         "difficulty": {
@@ -1583,6 +1750,7 @@
     {
         "id": 76,
         "title": "Kabardian",
+        "titlejp": "カバルド語",
         "link": "https://ioling.org/problems/2015/i2/",
         "venue": "IOL",
         "year": 2015,
@@ -1590,12 +1758,14 @@
         "topic": "Kabardian (North Caucasian)",
         "author": "Peter Arkadiev",
         "category": [
-            "形態"
+            "形態",
+            "動詞形態"
         ]
     },
     {
         "id": 77,
         "title": "Soundex",
+        "titlejp": "サウンデックス",
         "link": "https://ioling.org/problems/2015/i3/",
         "venue": "IOL",
         "year": 2015,
@@ -1603,12 +1773,14 @@
         "topic": "Soundex",
         "author": "Alexander Piperski",
         "category": [
-            "音韻"
+            "音韻",
+            "非言語"
         ]
     },
     {
         "id": 78,
         "title": "Wambaya",
+        "titlejp": "ワンバヤ語",
         "link": "https://ioling.org/problems/2015/i4/",
         "venue": "IOL",
         "year": 2015,
@@ -1622,6 +1794,7 @@
     {
         "id": 79,
         "title": "Somali Masafo",
+        "titlejp": "ソマリ語詩マサフォ",
         "link": "https://ioling.org/problems/2015/i5/",
         "venue": "IOL",
         "year": 2015,
@@ -1645,6 +1818,7 @@
     {
         "id": 80,
         "title": "Northern Sotho",
+        "titlejp": "北ソト語",
         "link": "https://ioling.org/problems/2015/t1/",
         "venue": "IOL",
         "year": 2015,
@@ -1653,12 +1827,23 @@
         "topic": "Northern Sotho (Niger-Congo)",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "モノリンガル"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 81,
         "title": "Aralle-Tabulahan",
+        "titlejp": "アラッレ・タブラハン語",
         "link": "https://ioling.org/problems/2016/i1/",
         "venue": "IOL",
         "year": 2016,
@@ -1666,7 +1851,8 @@
         "topic": "Aralle-Tabulahan (Austronesian)",
         "author": "Ksenia Gilyarova",
         "category": [
-            "未分類"
+            "図説明",
+            "移動動詞"
         ],
         "difficulty": {
             "typical": 6,
@@ -1682,6 +1868,7 @@
     {
         "id": 82,
         "title": "Luwian",
+        "titlejp": "ルウィ語",
         "link": "https://ioling.org/problems/2016/i2/",
         "venue": "IOL",
         "year": 2016,
@@ -1705,6 +1892,7 @@
     {
         "id": 83,
         "title": "Kunuz Nubian",
+        "titlejp": "クヌーズ・ヌビア語",
         "link": "https://ioling.org/problems/2016/i3/",
         "venue": "IOL",
         "year": 2016,
@@ -1729,6 +1917,7 @@
     {
         "id": 84,
         "title": "Iatmül",
+        "titlejp": "イアトムル語",
         "link": "https://ioling.org/problems/2016/i4/",
         "venue": "IOL",
         "year": 2016,
@@ -1736,7 +1925,8 @@
         "topic": "Iatmül (Sepik)",
         "author": "Artūrs Semeņuks",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 6,
@@ -1752,6 +1942,7 @@
     {
         "id": 85,
         "title": "Jaqaru",
+        "titlejp": "ハカル語",
         "link": "https://ioling.org/problems/2016/i5/",
         "venue": "IOL",
         "year": 2016,
@@ -1775,6 +1966,7 @@
     {
         "id": 86,
         "title": "Taa",
+        "titlejp": "タア語",
         "link": "https://ioling.org/problems/2016/t1/",
         "venue": "IOL",
         "year": 2016,
@@ -1783,12 +1975,24 @@
         "topic": "Taa (Tuu)",
         "author": "Danylo Mysak",
         "category": [
-            "未分類"
+            "音声",
+            "組み合わせ"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 87,
         "title": "Birom",
+        "titlejp": "ビロム語",
         "link": "https://ioling.org/problems/2017/i1/",
         "venue": "IOL",
         "year": 2017,
@@ -1796,6 +2000,7 @@
         "topic": "Birom (Atlantic Congo)",
         "author": "Milena Veneva",
         "category": [
+            "命数",
             "数式"
         ],
         "explanation": [
@@ -1815,6 +2020,7 @@
     {
         "id": 88,
         "title": "Abui",
+        "titlejp": "アブイ語",
         "link": "https://ioling.org/problems/2017/i2/",
         "venue": "IOL",
         "year": 2017,
@@ -1822,7 +2028,9 @@
         "topic": "Abui (Timor-Alor-Pantar)",
         "author": "Aleksejs Peguševs",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ",
+            "!所有"
         ],
         "difficulty": {
             "typical": 6,
@@ -1838,6 +2046,7 @@
     {
         "id": 89,
         "title": "Kimbundu",
+        "titlejp": "キンブンド語",
         "link": "https://ioling.org/problems/2017/i3/",
         "venue": "IOL",
         "year": 2017,
@@ -1851,6 +2060,7 @@
     {
         "id": 90,
         "title": "Khom script/Laven",
+        "titlejp": "コム文字/ラベン語",
         "link": "https://ioling.org/problems/2017/i4/",
         "venue": "IOL",
         "year": 2017,
@@ -1858,8 +2068,8 @@
         "topic": "Laven (Jru') (Austroasiatic)",
         "author": "Tae Hun Lee",
         "category": [
-            "命数",
-            "文字"
+            "文字",
+            "名詞類別"
         ],
         "difficulty": {
             "typical": 3,
@@ -1875,6 +2085,7 @@
     {
         "id": 91,
         "title": "Madak",
+        "titlejp": "マダク語",
         "link": "https://ioling.org/problems/2017/i5/",
         "venue": "IOL",
         "year": 2017,
@@ -1898,6 +2109,7 @@
     {
         "id": 92,
         "title": "Emoji/Indonesian",
+        "titlejp": "絵文字/インドネシア語",
         "link": "https://ioling.org/problems/2017/t1/",
         "venue": "IOL",
         "year": 2017,
@@ -1906,12 +2118,24 @@
         "topic": "Indonesian, Emoji",
         "author": "Boris Iomdin",
         "category": [
-            "未分類"
+            "文字",
+            "組み合わせ"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 93,
         "title": "Creek",
+        "titlejp": "クリーク語",
         "link": "https://ioling.org/problems/2018/i1/",
         "venue": "IOL",
         "year": 2018,
@@ -1935,6 +2159,7 @@
     {
         "id": 94,
         "title": "Hakhun",
+        "titlejp": "ハクン語",
         "link": "https://ioling.org/problems/2018/i2/",
         "venue": "IOL",
         "year": 2018,
@@ -1961,6 +2186,7 @@
     {
         "id": 95,
         "title": "Terêna",
+        "titlejp": "テレナ語",
         "link": "https://ioling.org/problems/2018/i3/",
         "venue": "IOL",
         "year": 2018,
@@ -1984,6 +2210,7 @@
     {
         "id": 96,
         "title": "Mountain Arapesh (Bukiyip)",
+        "titlejp": "山岳アラペシュ（ブキイプ語）",
         "link": "https://ioling.org/problems/2018/i4/",
         "venue": "IOL",
         "year": 2018,
@@ -1991,7 +2218,8 @@
         "topic": "Mountain Arapesh (Torricelli)",
         "author": "Aleksejs Peguševs",
         "category": [
-            "命数"
+            "命数",
+            "!名詞類別"
         ],
         "difficulty": {
             "typical": 5,
@@ -2007,6 +2235,7 @@
     {
         "id": 97,
         "title": "Akan",
+        "titlejp": "アカン語",
         "link": "https://ioling.org/problems/2018/i5/",
         "venue": "IOL",
         "year": 2018,
@@ -2014,6 +2243,7 @@
         "topic": "Akan (Atlantic-Congo)",
         "author": "Ksenia Gilyarova",
         "category": [
+            "図説明",
             "親族名称"
         ],
         "explanation": [
@@ -2033,6 +2263,7 @@
     {
         "id": 98,
         "title": "Mẽbêngôkre, Xavante and Krĩkatí",
+        "titlejp": "メンベンゴクレ語，シャバンチ語，クリンカチー語",
         "link": "https://ioling.org/problems/2018/t1/",
         "venue": "IOL",
         "year": 2018,
@@ -2041,12 +2272,26 @@
         "topic": "Mẽbêngôkre, Xavante and Krĩkatí (Jê)",
         "author": "André Nikulin",
         "category": [
-            "未分類"
+            "音韻",
+            "統語",
+            "比較",
+            "組み合わせ"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 99,
         "title": "Yonggom",
+        "titlejp": "ヨンゴム語",
         "link": "https://ioling.org/problems/2019/i1/",
         "venue": "IOL",
         "year": 2019,
@@ -2070,6 +2315,7 @@
     {
         "id": 100,
         "title": "Yurok",
+        "titlejp": "ユロック語",
         "link": "https://ioling.org/problems/2019/i2/",
         "venue": "IOL",
         "year": 2019,
@@ -2077,7 +2323,9 @@
         "topic": "Yurok (Algic)",
         "author": "Boris Iomdin, Samuel Ahmed",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ",
+            "!名詞類別"
         ],
         "difficulty": {
             "typical": 3,
@@ -2093,6 +2341,7 @@
     {
         "id": 101,
         "title": "Book Pahlavi script",
+        "titlejp": "書物のパフラヴィー文字",
         "link": "https://ioling.org/problems/2019/i3/",
         "venue": "IOL",
         "year": 2019,
@@ -2116,6 +2365,7 @@
     {
         "id": 102,
         "title": "West Tarangan",
+        "titlejp": "西タランガン語",
         "link": "https://ioling.org/problems/2019/i4/",
         "venue": "IOL",
         "year": 2019,
@@ -2123,6 +2373,7 @@
         "topic": "West Tarangan (Austronesian)",
         "author": "Elysia Warner",
         "category": [
+            "韻律",
             "音韻"
         ],
         "difficulty": {
@@ -2139,6 +2390,7 @@
     {
         "id": 103,
         "title": "Nooni",
+        "titlejp": "ノニ語",
         "link": "https://ioling.org/problems/2019/i5/",
         "venue": "IOL",
         "year": 2019,
@@ -2162,6 +2414,7 @@
     {
         "id": 104,
         "title": "Rhythmic Gymnastics",
+        "titlejp": "新体操",
         "link": "https://ioling.org/problems/2019/t1/",
         "venue": "IOL",
         "year": 2019,
@@ -2170,67 +2423,100 @@
         "topic": "Rhythmic Gymnastics",
         "author": "Anna Danilova",
         "category": [
-            "未分類"
+            "非言語",
+            "文字",
+            "動画"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ]
     },
     {
         "id": 105,
         "title": "Ik",
+        "titlejp": "イク語",
         "link": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
+        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
         "year": 2019,
         "number": 1,
         "topic": "Ik",
+        "author": "Minkyu Kim",
         "category": [
-            "未分類"
+            "命数",
+            "組み合わせ"
         ]
     },
     {
         "id": 106,
         "title": "Urarina",
+        "titlejp": "ウラリナ語",
         "link": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
+        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
         "year": 2019,
         "number": 2,
         "topic": "Urarina",
+        "author": "Yung-Jui Yao",
         "category": [
-            "未分類"
+            "統語",
+            "図説明",
+            "親族名称"
         ]
     },
     {
         "id": 107,
         "title": "Mee",
+        "titlejp": "メエ語",
         "link": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
+        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
         "year": 2019,
         "number": 3,
         "topic": "Mee",
+        "author": "Tsuyoshi Kobayashi",
         "category": [
-            "未分類"
+            "形態",
+            "動詞形態"
         ]
     },
     {
         "id": 108,
         "title": "Hebrew",
+        "titlejp": "ヘブライ語",
         "link": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
+        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
         "year": 2019,
         "number": 4,
         "topic": "Hebrew",
+        "author": "Aalok Sathe",
         "category": [
-            "未分類"
+            "形態",
+            "動詞形態",
+            "組み合わせ"
         ]
     },
     {
         "id": 109,
         "title": "Old Turkic Script",
+        "titlejp": "古チュルク文字",
         "link": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
+        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
         "year": 2019,
         "number": 5,
         "topic": "Old Turkic Script",
+        "author": "Jaeyeong Yang",
         "category": [
-            "未分類"
+            "文字"
         ]
     },
     {
@@ -2252,6 +2538,10 @@
         "diffeach": [
             {
                 "name": "karngati",
+                "diff": 1
+            },
+            {
+                "name": "fulfom",
                 "diff": 1
             }
         ]
@@ -2276,6 +2566,10 @@
             {
                 "name": "karngati",
                 "diff": 2
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
             }
         ]
     },
@@ -2289,7 +2583,7 @@
         "number": 3,
         "topic": "Mongolian",
         "category": [
-            "未分類"
+            "文章"
         ],
         "difficulty": {
             "typical": 4,
@@ -2312,17 +2606,21 @@
         "number": 1,
         "topic": "English, Czech, Polish and Swedish",
         "category": [
-            "未分類"
+            "文字"
         ],
         "probcorrection": "スウェーデン語の「主の祈り」最後の行 誤 vighet -> 正 evighet",
         "difficulty": {
-            "typical": 3,
+            "typical": 2.5,
             "typicalStar": 3
         },
         "diffeach": [
             {
                 "name": "karngati",
                 "diff": 3
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
             }
         ]
     },
@@ -2336,7 +2634,8 @@
         "number": 2,
         "topic": "Bidhaawyeet",
         "category": [
-            "統語"
+            "統語",
+            "組み合わせ"
         ],
         "difficulty": {
             "typical": 2,
@@ -2345,6 +2644,10 @@
         "diffeach": [
             {
                 "name": "karngati",
+                "diff": 2
+            },
+            {
+                "name": "fulfom",
                 "diff": 2
             }
         ]
@@ -2359,7 +2662,8 @@
         "number": 3,
         "topic": "Nanai",
         "category": [
-            "形態"
+            "形態",
+            "動詞形態"
         ],
         "difficulty": {
             "typical": 2,
@@ -2368,6 +2672,10 @@
         "diffeach": [
             {
                 "name": "karngati",
+                "diff": 2
+            },
+            {
+                "name": "fulfom",
                 "diff": 2
             }
         ]
@@ -2380,10 +2688,24 @@
         "venue": "JOL",
         "year": 2018,
         "number": 4,
-        "topic": "Old Turkic",
+        "topic": "Old Turkic Script",
         "category": [
             "文字",
             "音韻"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 5
+            },
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
         ]
     },
     {
@@ -2396,10 +2718,21 @@
         "number": 5,
         "topic": "Mongolian, Tibetan",
         "category": [
-            "未分類"
+            "文字",
+            "組み合わせ"
         ],
         "explanation": [
             "https://karngati.hatenablog.com/entry/JOL2018_5"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ]
     },
     {
@@ -2412,7 +2745,21 @@
         "number": 1,
         "topic": "Korean",
         "category": [
-            "未分類"
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ]
     },
     {
@@ -2426,6 +2773,16 @@
         "topic": "Japanese",
         "category": [
             "音韻"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ]
     },
     {
@@ -2439,6 +2796,16 @@
         "topic": "Finnish(Uralic)",
         "category": [
             "音韻"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ]
     },
     {
@@ -2452,6 +2819,16 @@
         "topic": "Inuktitut(Eskimo-Aleut)",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
         ]
     },
     {
@@ -2468,6 +2845,16 @@
         ],
         "explanation": [
             "https://fulfom.hatenablog.com/entry/2019/12/21/145615"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
         ]
     },
     {
@@ -2481,6 +2868,16 @@
         "topic": "Arabic",
         "category": [
             "文字"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ]
     },
     {
@@ -2493,10 +2890,21 @@
         "number": 2,
         "topic": "Ewenki, Oroch, Nanai(Tungusic)",
         "category": [
-            "音韻"
+            "音韻",
+            "比較"
         ],
         "explanation": [
             "https://karngati.hatenablog.com/entry/2020/02/27/223754"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ]
     },
     {
@@ -2510,6 +2918,16 @@
         "topic": "Basque",
         "category": [
             "音韻"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
         ]
     },
     {
@@ -2522,7 +2940,18 @@
         "number": 4,
         "topic": "Livonian(Uralic)",
         "category": [
-            "複合語"
+            "意味",
+            "組み合わせ"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
         ]
     },
     {
@@ -2536,6 +2965,16 @@
         "topic": "Urdu(Indo-European)",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
         ]
     }
 ]

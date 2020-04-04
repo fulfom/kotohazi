@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 linkTitle: "Getting Started"
-weight: 2
+weight: 6
 type: docs
 description: >
   What does your user need to know to try your project?
