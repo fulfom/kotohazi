@@ -32,6 +32,52 @@
             max-width: 200%;
             transform: translateX(calc(-50% + 50px));
         }
+        &.center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            .icon{
+                border-radius: 50%;
+                width: 2.5em;
+                height: 2.5em;
+                line-height: 2.5em;
+                text-align: center;
+                font-size: xx-large;
+                &.docs{
+                    color: var(--success);
+                    border: solid 1px var(--success);
+                }
+                &.solve{
+                    color: var(--primary);
+                    border: solid 1px var(--primary);
+                }
+                &.hard{
+                    color: var(--danger);
+                    border: solid 1px var(--danger);
+                }
+                &.know{
+                    color: var(--teal);
+                    border: solid 1px var(--teal);
+                }
+                &.refs{
+                    color: var(--orange);
+                    border: solid 1px var(--orange);
+                }
+                &.prob{
+                    color: var(--yellow);
+                    border: solid 1px var(--yellow);
+                }
+                &.person{
+                    color: var(--blue);
+                    border: solid 1px var(--blue);
+                }
+                &.default{
+                    color: var(--info);
+                    border: solid 1px var(--info);
+                }
+            }
+        }
     }
     &.card{
         border: none;

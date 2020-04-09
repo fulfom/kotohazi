@@ -198,3 +198,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [[params.sort.3difficulty]]
 	dataSortBy = "difficulty"
 	name = "難易度"
+[params.pagetype]
+	docs = "flag"
+	solve = "pen"
+	know = "book-open"
+	hard = "dragon"
+	refs = "book"
+	prob = "lightbulb"
+	person = "address-card"
+	default = "file"

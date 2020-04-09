@@ -2,7 +2,7 @@
 {{$id := sub (.Get "id") 1}}
 {{$prob := index $.Site.Data.problems $id}}
 
-{{with $prob.explanation}}
+{{with $prob.explanationlinks}}
 {{range . }}
 
 {{$url := .}}

@@ -1,7 +1,3 @@
-{{ $_hugo_config := `{ "version": 1 }` }}
-{{$id := sub (.Get "id") 1}}
-{{$key := .Get "key"}}
-{{$default := .Get "default"}}
-{{$prob := index $.Site.Data.problems $id}}
+{{$id := sub (.Get "id") 1}}{{$key := .Get "key"}}{{$default := .Get "default"}}{{$prob := index $.Site.Data.problems $id}}
 
-{{index $prob $key | default (index $prob $default)}}
+{{- index $prob $key | default (index $prob $default) -}}

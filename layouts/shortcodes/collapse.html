@@ -1,8 +1,7 @@
-{{ $_hugo_config := `{ "version": 1 }` }}
-{{ $title := .Get "title" }}
-{{ $id := .Get "id" | default $title }}
+{{ $title := .Get "title" }}{{ $id := .Get "id" | default $title }}
 
-<a data-toggle="collapse" href data-target="#collapse{{$id}}" role="button" aria-expanded="false" aria-controls="collapse{{$id}}"><i class="fas fa-angle-right fa-fw"></i>{{$title}}</a>
+<div></div>
+<p class="m-0"><a data-toggle="collapse" href data-target="#collapse{{$id}}" role="button" aria-expanded="false" aria-controls="collapse{{$id}}"><i class="fas fa-angle-right fa-fw"></i>{{$title}}</a></p>
 <div class="collapse" id="collapse{{$id}}">
     <div class="p-2">{{ .Inner | markdownify }}</div>
 </div>

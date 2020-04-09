@@ -1,0 +1,13 @@
+{{$id := sub (.Get "id") 1}}
+{{$prob := index $.Site.Data.problems $id}}
+{{$hint := $prob.hint}}
+
+{{range $index,$value := $hint.value}}
+<p class="m-0"><a data-toggle="collapse" href="#hint{{$index}}" role="button" aria-expanded="false" aria-controls="hint{{$index}}"><i class="fas fa-angle-right fa-fw"></i>ヒント{{add 1 $index}}</a></p>
+<div class="collapse" id="hint{{$index}}">
+    <div class="p-2">{{ $value | markdownify }}</div>
+{{end}}
+{{range $hint.value}}
+</div>
+{{end}}
+<p class="text-right author">—— {{$hint.name}}</p>

@@ -61,7 +61,7 @@
         "author": "Alexandre Arkhipov",
         "category": [
             "命数",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 3,
@@ -333,7 +333,7 @@
         "author": "Ksenia Guiliarova",
         "category": [
             "意味",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 2,
@@ -510,7 +510,25 @@
         "category": [
             "文字"
         ],
-        "probcorrection": "クメール文字が文字化けしている"
+        "probcorrection": "クメール文字が文字化けしている",
+        "hint": {
+            "name":"fulfom",
+            "value":["- こう","**ああ**"]
+        },
+        "sketch": {
+            "name":"fulfom",
+            "value":"こうかな"
+        },
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 24,
@@ -638,7 +656,7 @@
         "author": "Yakov Testelets",
         "category": [
             "形態",
-            "組み合わせ",
+            "対応",
             "動詞形態"
         ],
         "difficulty": {
@@ -960,7 +978,7 @@
         "category": [
             "音韻"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://tungumalanna.hatenablog.com/entry/iol2009-4"
         ],
         "difficulty": {
@@ -1060,7 +1078,7 @@
         "author": "Ksenia Gilyarova",
         "category": [
             "命数",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 3,
@@ -1086,7 +1104,7 @@
         "category": [
             "文字",
             "形態",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 1,
@@ -1222,6 +1240,7 @@
         "topic": "Vai (Mande)",
         "author": "Olga Kuznetsova",
         "category": [
+            "形態",
             "所有"
         ],
         "difficulty": {
@@ -1247,7 +1266,7 @@
         "author": "Liudmila Fedorova",
         "category": [
             "意味",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 6,
@@ -1359,7 +1378,7 @@
         "category": [
             "形態",
             "動詞形態",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 6,
@@ -1462,7 +1481,7 @@
         "author": "Ivan Derzhanski",
         "category": [
             "意味",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 5,
@@ -1592,7 +1611,7 @@
     {
         "id": 70,
         "title": "Kiowa",
-        "titlejp": "カイオワ",
+        "titlejp": "カイオワ語",
         "link": "https://ioling.org/problems/2014/i2/",
         "venue": "IOL",
         "year": 2014,
@@ -1629,7 +1648,7 @@
             "図説明",
             "親族名称"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://ryoanjing.hatenablog.com/entry/2018/12/18/013649"
         ],
         "difficulty": {
@@ -1679,10 +1698,10 @@
         "author": "Boris Iomdin",
         "category": [
             "意味",
-            "組み合わせ"
+            "対応"
         ],
         "probcorrection": "誤訳「死ぬ」→正「死にかける」",
-        "explanation": [
+        "explanationlinks": [
             "https://fulfom.hatenablog.com/entry/2019/07/07/044206"
         ],
         "difficulty": {
@@ -1709,7 +1728,7 @@
         "author": "Boris Iomdin, Ivan Derzhanski",
         "category": [
             "文章",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 8,
@@ -1851,6 +1870,7 @@
         "topic": "Aralle-Tabulahan (Austronesian)",
         "author": "Ksenia Gilyarova",
         "category": [
+            "意味",
             "図説明",
             "移動動詞"
         ],
@@ -1926,7 +1946,7 @@
         "author": "Artūrs Semeņuks",
         "category": [
             "意味",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 6,
@@ -1976,7 +1996,7 @@
         "author": "Danylo Mysak",
         "category": [
             "音声",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 8,
@@ -2003,7 +2023,7 @@
             "命数",
             "数式"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://fulfom.hatenablog.com/entry/2019/07/08/031954"
         ],
         "difficulty": {
@@ -2029,7 +2049,7 @@
         "author": "Aleksejs Peguševs",
         "category": [
             "意味",
-            "組み合わせ",
+            "対応",
             "!所有"
         ],
         "difficulty": {
@@ -2119,7 +2139,7 @@
         "author": "Boris Iomdin",
         "category": [
             "文字",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 8,
@@ -2169,7 +2189,7 @@
         "category": [
             "統語"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://fulfom.hatenablog.com/entry/2019/05/12/160155"
         ],
         "difficulty": {
@@ -2246,7 +2266,7 @@
             "図説明",
             "親族名称"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://tungumalanna.hatenablog.com/entry/2019/05/04/024445"
         ],
         "difficulty": {
@@ -2275,7 +2295,7 @@
             "音韻",
             "統語",
             "比較",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 8,
@@ -2324,7 +2344,7 @@
         "author": "Boris Iomdin, Samuel Ahmed",
         "category": [
             "意味",
-            "組み合わせ",
+            "対応",
             "!名詞類別"
         ],
         "difficulty": {
@@ -2451,7 +2471,7 @@
         "author": "Minkyu Kim",
         "category": [
             "命数",
-            "組み合わせ"
+            "対応"
         ]
     },
     {
@@ -2501,7 +2521,7 @@
         "category": [
             "形態",
             "動詞形態",
-            "組み合わせ"
+            "対応"
         ]
     },
     {
@@ -2635,7 +2655,7 @@
         "topic": "Bidhaawyeet",
         "category": [
             "統語",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 2,
@@ -2719,9 +2739,9 @@
         "topic": "Mongolian, Tibetan",
         "category": [
             "文字",
-            "組み合わせ"
+            "対応"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://karngati.hatenablog.com/entry/JOL2018_5"
         ],
         "difficulty": {
@@ -2843,7 +2863,7 @@
         "category": [
             "統語"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://fulfom.hatenablog.com/entry/2019/12/21/145615"
         ],
         "difficulty": {
@@ -2893,7 +2913,7 @@
             "音韻",
             "比較"
         ],
-        "explanation": [
+        "explanationlinks": [
             "https://karngati.hatenablog.com/entry/2020/02/27/223754"
         ],
         "difficulty": {
@@ -2941,7 +2961,7 @@
         "topic": "Livonian(Uralic)",
         "category": [
             "意味",
-            "組み合わせ"
+            "対応"
         ],
         "difficulty": {
             "typical": 3,

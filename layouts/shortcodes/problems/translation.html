@@ -1,0 +1,6 @@
+{{$id := sub (.Get "id") 1}}
+{{$prob := index $.Site.Data.problems $id}}
+{{$translation := $prob.translation }}
+
+<div class="p-2">{{ $translation.value | markdownify }}</div>
+<p class="text-right author">—— {{$translation.name}}</p>

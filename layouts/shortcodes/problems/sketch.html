@@ -1,0 +1,9 @@
+{{$id := sub (.Get "id") 1}}
+{{$prob := index $.Site.Data.problems $id}}
+{{$sketch := $prob.sketch }}
+
+<p class="m-0"><a data-toggle="collapse" href="#sketch" role="button" aria-expanded="false" aria-controls="sketch"><i class="fas fa-angle-right fa-fw"></i>コメント</a></p>
+<div class="collapse" id="sketch">
+    <div class="p-2">{{ $sketch.value | markdownify }}</div>
+</div>
+<p class="text-right author">—— {{$sketch.name}}</p>
