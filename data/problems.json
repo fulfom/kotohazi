@@ -22,7 +22,24 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "hint": {
+            "name": "fulfom",
+            "value": [
+                "サンプルです",
+                "こんな風に表示されます",
+                "ヒントはいくつあっても大丈夫です",
+                "- マークダウンで書けます[^1]\n- 他の**エディタ**で書いて*コピペ*すると良いと思います\n[^1]: 見出しはバランス的に h4 以下が良いと思います"
+            ]
+        },
+        "translation": {
+            "name": "fulfom",
+            "value": "サンプルです．**マークダウン**で書けます"
+        },
+        "sketch": {
+            "name": "fulfom",
+            "value": "ヒントをまとめて表示したり，何らか講評的なものを書くなど"
+        }
     },
     {
         "id": 2,
@@ -510,25 +527,7 @@
         "category": [
             "文字"
         ],
-        "probcorrection": "クメール文字が文字化けしている",
-        "hint": {
-            "name":"fulfom",
-            "value":["- こう","**ああ**"]
-        },
-        "sketch": {
-            "name":"fulfom",
-            "value":"こうかな"
-        },
-        "difficulty": {
-            "typical": 3,
-            "typicalStar": 3
-        },
-        "diffeach": [
-            {
-                "name": "irotirihs",
-                "diff": 3
-            }
-        ]
+        "probcorrection": "クメール文字が文字化けしている"
     },
     {
         "id": 24,
@@ -1467,6 +1466,16 @@
         "category": [
             "形態",
             "韻律"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
         ]
     },
     {
@@ -1490,6 +1499,10 @@
         "diffeach": [
             {
                 "name": "irotirihs",
+                "diff": 5
+            },
+            {
+                "name": "karngati",
                 "diff": 5
             }
         ]
@@ -2263,6 +2276,7 @@
         "topic": "Akan (Atlantic-Congo)",
         "author": "Ksenia Gilyarova",
         "category": [
+            "意味",
             "図説明",
             "親族名称"
         ],
@@ -2487,6 +2501,7 @@
         "author": "Yung-Jui Yao",
         "category": [
             "統語",
+            "意味",
             "図説明",
             "親族名称"
         ]
@@ -2750,6 +2765,10 @@
         },
         "diffeach": [
             {
+                "name": "karngati",
+                "diff": 2
+            },
+            {
                 "name": "fulfom",
                 "diff": 2
             }
@@ -2795,10 +2814,14 @@
             "音韻"
         ],
         "difficulty": {
-            "typical": 2,
+            "typical": 1.5,
             "typicalStar": 2
         },
         "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            },
             {
                 "name": "fulfom",
                 "diff": 2
@@ -2818,10 +2841,14 @@
             "音韻"
         ],
         "difficulty": {
-            "typical": 2,
+            "typical": 1.5,
             "typicalStar": 2
         },
         "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            },
             {
                 "name": "fulfom",
                 "diff": 2
@@ -2845,6 +2872,10 @@
             "typicalStar": 4
         },
         "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            },
             {
                 "name": "fulfom",
                 "diff": 4
@@ -2872,6 +2903,10 @@
         },
         "diffeach": [
             {
+                "name": "karngati",
+                "diff": 4
+            },
+            {
                 "name": "fulfom",
                 "diff": 4
             }
@@ -2890,10 +2925,14 @@
             "文字"
         ],
         "difficulty": {
-            "typical": 2,
-            "typicalStar": 2
+            "typical": 2.5,
+            "typicalStar": 3
         },
         "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            },
             {
                 "name": "fulfom",
                 "diff": 2
@@ -2922,6 +2961,10 @@
         },
         "diffeach": [
             {
+                "name": "karngati",
+                "diff": 2
+            },
+            {
                 "name": "fulfom",
                 "diff": 2
             }
@@ -2944,6 +2987,10 @@
             "typicalStar": 3
         },
         "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            },
             {
                 "name": "fulfom",
                 "diff": 3
@@ -2969,6 +3016,10 @@
         },
         "diffeach": [
             {
+                "name": "karngati",
+                "diff": 3
+            },
+            {
                 "name": "fulfom",
                 "diff": 3
             }
@@ -2991,6 +3042,10 @@
             "typicalStar": 3
         },
         "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            },
             {
                 "name": "fulfom",
                 "diff": 3
