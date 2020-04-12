@@ -1,0 +1,14 @@
+{{ $pagetype := .Params.pagetype | default "default" }}
+{{ $icon := index $.Site.Params.pagetype (index (split $pagetype " ") 0) }}
+<div class="card web-card d-flex flex-row mb-3">
+    <a href="{{ .RelPermalink }}"></a>
+    <div class="thumb center">
+        <div class="icon {{$pagetype}}">
+        <i class="fas fa-{{$icon}}"></i>
+        </div>
+    </div>
+    <div class="card-body p-2">
+        <h5 class="card-title mb-1">{{- .Title -}}</h5>
+        <p class="card-text text-muted">{{ .Description | markdownify }}</p>
+    </div>
+</div>

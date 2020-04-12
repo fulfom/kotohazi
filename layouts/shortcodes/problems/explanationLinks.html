@@ -15,21 +15,21 @@
 {{ $prefix := "https://www.google.com/s2/favicons?domain=" }}
 {{ $favicon := printf "%s%s" $prefix $urlInfo.Host }}
 
-    <div class="card web-card d-flex flex-row mb-3">
-        <a href="{{ $url }}" target="_blank"></a>
-        <div class="thumb">
-            <img src="{{ $image }}" alt="Card image cap">
-        </div>
-        <div class="card-body p-2">
-            <div class="d-flex">
-                <a href="{{ $host }}" target="_blank">
-                    <img src="{{ $favicon }}" alt="" class="favicon">
-                </a>
-                <h5 class="card-title ml-1 mb-1">{{$title}}</h5>
-            </div>
-            <p class="card-text text-muted">{{$description}}</p>
-        </div>
+<div class="card web-card d-flex flex-row mb-3">
+    <a href="{{ $url }}" target="_blank"></a>
+    <div class="thumb">
+        <img src="{{ $image }}" alt="Card image cap">
     </div>
+    <div class="card-body p-2">
+        <div class="d-flex">
+            <a href="{{ $host }}" target="_blank">
+                <img src="{{ $favicon }}" alt="" class="favicon">
+            </a>
+            <h5 class="card-title ml-1 mb-1">{{$title}}</h5>
+        </div>
+        <p class="card-text text-muted">{{$description}}</p>
+    </div>
+</div>
 
 {{end}}
 {{end}}

@@ -198,10 +198,15 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [[params.sort.3difficulty]]
 	dataSortBy = "difficulty"
 	name = "難易度"
+[params.venuedetail]
+	'海外予選' = "oversea"
+	'非LO' = "nonlo"
 [params.pagetype]
-	docs = "flag"
+	level = "star"
+	stage = "flag"
 	solve = "pen"
 	know = "book-open"
+	magic = "hat-wizard"
 	hard = "dragon"
 	refs = "book"
 	prob = "lightbulb"

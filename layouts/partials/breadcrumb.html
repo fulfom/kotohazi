@@ -1,0 +1,53 @@
+{{ $next := false }}
+{{ $prev := false }}
+{{if .Parent}}
+	{{if ne . .FirstSection}}
+		{{if eq . .CurrentSection}}
+			{{with .Parent.Sections.Prev .}}{{ $next = . }}{{end}}
+			{{with .Parent.Sections.Next .}}{{ $prev = . }}{{end}}
+		{{else}}
+			{{if .PrevInSection}}{{ $next = .PrevInSection }}{{end}}
+			{{if .NextInSection}}{{ $prev = .NextInSection }}{{end}}
+		{{end}}
+		{{$parent := .Parent}}
+		{{range seq 3}}
+			{{if $next}}
+			{{else if $parent.Parent}}
+				{{if ne $parent $parent.FirstSection}}
+					{{with $parent.Parent.Sections.Prev $parent}}{{ $next = . }}{{end}}
+				{{end}}
+			{{end}}
+			{{$parent = $parent.Parent | default $parent}}
+		{{end}}
+		{{if $prev}}
+		{{else}}
+			{{with .Parent}}{{ $prev = . }}{{end}}
+		{{end}}
+	{{end}}
+{{end}}
+<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 mt--4 mt-md-0">
+	<li>
+		<a {{if $prev}}href="{{$prev.RelPermalink}}"{{end}} class="{{if not $prev}}d-none disabled{{end}}"><i class="fas fa-angle-double-left"></i></a>
+	</li>
+	<li>
+		<a {{if $next}}href="{{$next.RelPermalink}}"{{end}} class="{{if not $next}}d-none disabled{{end}}"><i class="fas fa-angle-double-right"></i></a>
+	</li>
+</ul>
+<nav aria-label="breadcrumb" class="">
+	<ol class="breadcrumb spb-1">
+		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	</ol>
+</nav	>
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ if not .p1.Parent.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ end }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+{{ $isActive :=  eq .p1 .p2  }}
+<li class="breadcrumb-item{{ if $isActive }} active{{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
+	<a href="{{ .p1.Permalink }}">{{ .p1.LinkTitle }}</a>
+</li>
+{{ end }}

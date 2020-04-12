@@ -14,6 +14,7 @@ $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge(
   (
+    -4: ($spacer * -1.5),
     0: 0,
     1: ($spacer * .25),
     2: ($spacer * .5),
@@ -119,6 +120,19 @@ p{
     background-color: white;
 }
 
+.pagerbtn{
+    @extend .basicbtn, .notcheckedbtn;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    &:hover{
+        @extend .checkedbtn;
+    }
+    &.disabled{
+        display: none;
+    }
+}
+
 input[type="checkbox"]{
     +label{
         @extend .basicbtn, .checkedbtn;
@@ -155,6 +169,10 @@ input[type="checkbox"]{
     font-size: 90%;
     background-color: rgba(27,31,35,.05);
     border-radius: 3px;
+}
+
+.filter-group.hide{
+    display: none;
 }
 
 .filter-item{

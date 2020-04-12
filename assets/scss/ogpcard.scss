@@ -5,6 +5,7 @@
     height: 100px;
     max-width: 500px;
     transition: .3s;
+    background-color: transparent !important;
     &:hover{
         filter: drop-shadow(2px 3px 2px #dfdfdf);
     }
@@ -15,9 +16,18 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 1;
     }
     & > div{
         flex-basis: 100px;
+    }
+    .next{
+        flex-basis: 50px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 2.5em;
+        background-color: transparent;
+        color: var(--info);
     }
     .thumb{
         overflow: hidden;
@@ -44,21 +54,29 @@
                 line-height: 2.5em;
                 text-align: center;
                 font-size: xx-large;
-                &.docs{
+                &.level{
                     color: var(--success);
                     border: solid 1px var(--success);
+                }
+                &.stage{
+                    color: var(--secondary);
+                    border: solid 1px var(--secondary);
                 }
                 &.solve{
                     color: var(--primary);
                     border: solid 1px var(--primary);
                 }
-                &.hard{
-                    color: var(--danger);
-                    border: solid 1px var(--danger);
-                }
                 &.know{
                     color: var(--teal);
                     border: solid 1px var(--teal);
+                }
+                &.magic{
+                    color: #3f51b5;
+                    border: solid 1px #3f51b5;
+                }
+                &.hard{
+                    color: var(--danger);
+                    border: 1px solid var(--danger);
                 }
                 &.refs{
                     color: var(--orange);
@@ -76,6 +94,25 @@
                     color: var(--info);
                     border: solid 1px var(--info);
                 }
+                &.very.nextpage{
+                    border: none;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        width: 2.5em;
+                        height: 2.5em;
+                        border: 1px solid;
+                        border-color: inherit;
+                        border-radius: 50%;
+                        animation: anime 1.5s ease-out infinite;
+                        position: absolute;
+                        left: 0px;
+                        @keyframes anime{
+                            0%{transform:scale(.95); opacity:1}
+                            100%{opacity:.1}to{transform:scale(1.2,1.2); opacity:0}
+                        }
+                    }
+                }
             }
         }
     }
@@ -88,17 +125,18 @@
         border-top-right-radius: 0.25rem;
         border-bottom-right-radius: 0.25rem;
         width: calc(100% - 100px);
+        background-color: white;
     }
     .card-text{
-        line-height: 1.2;
-        max-height: 2.4em;
+        line-height: 1.25;
+        max-height: 2.5em;
         overflow: hidden;
         font-size: small;
         width: 100%;
     }
     .card-title{
-        line-height: 1.2;
-        max-height: 2.4em;
+        line-height: 1.25;
+        max-height: 2.5em;
         width: 100%;
         overflow: hidden;
         font-size: medium;

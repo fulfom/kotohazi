@@ -1,13 +1,13 @@
 {{$page := (.Get 0) | absURL}}
 
-{{range first 1 (where $.Site.RegularPages ".Permalink" ($page | string))}}
+{{with .Site.GetPage $page}}
 {{ $url := .Permalink}}
 {{ $title := .Title }}
 {{ $description := .Description }}
 {{ $pagetype := .Params.pagetype | default "default" }}
-{{ $icon := index $.Site.Params.pagetype $pagetype }}
+{{ $icon := index $.Site.Params.pagetype (index (split $pagetype " ") 0) }}
     <div class="card web-card d-flex flex-row mb-3">
-        <a href="{{ $url | safeURL }}" target="_blank"></a>
+        <a href="{{ $url | safeURL }}"></a>
         <div class="thumb center">
             <div class="icon {{$pagetype}}">
             <i class="fas fa-{{$icon}} fa-fw"></i>
