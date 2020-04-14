@@ -190,7 +190,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	value = ["統語","形態","音韻","韻律","文字","命数","意味","その他"]
 [params.sort]
 [[params.sort.1year]]
-	dataSortBy = "year-venue-team-num-numstr"
+	dataSortBy = "year-venue-team-num"
 	name = "年"
 [[params.sort.2title]]
 	dataSortBy = "title"
@@ -201,6 +201,8 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [params.venuedetail]
 	'海外予選' = "oversea"
 	'非LO' = "nonlo"
+[params.namedyear]
+	-1 = "sample"
 [params.pagetype]
 	level = "star"
 	stage = "flag"
