@@ -94,6 +94,10 @@
                     color: var(--info);
                     border: solid 1px var(--info);
                 }
+                &.material{
+                    color: #3176d9;
+                    border: solid 1px #3176d9;
+                }
                 &.very.nextpage{
                     border: none;
                     position: relative;
