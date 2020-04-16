@@ -101,10 +101,6 @@ p{
     @extend .td-search-input.form-control:focus;
 }
 
-.filter-container{
-    @extend .mt-4;
-}
-
 .basicbtn{
     border: 1px solid $primary;
     border-radius: 0.25rem;
@@ -133,7 +129,7 @@ p{
     }
 }
 
-input[type="checkbox"]{
+.filter-group input[type="checkbox"]{
     +label{
         @extend .basicbtn, .checkedbtn;
     }
@@ -188,5 +184,52 @@ i.fa-angle-right{
     transition: .2s;
     a[aria-expanded="true"] &{
         transform: rotate(90deg);
+    }
+}
+
+.check-icon{
+    +label{
+        cursor: pointer;
+        position: relative;
+        color: #ccc;
+    }
+    &:checked+label{
+        animation: largerbound .5s;
+        @keyframes largerbound {
+            0%{transform: scale(.8);}
+            40%{transform: scale(1.2);}
+            80%{transform: scale(1);}
+        }
+        &:before{
+            content: "";
+            width: 2em;
+            height: 2em;
+            border: 1px solid;
+            border-color: inherit;
+            border-radius: 50%;
+            animation: circleout .5s ease-out;
+            position: absolute;
+            left: calc(50% - 1em);
+            top: -6px;
+            opacity: 0;
+            @keyframes circleout{
+                0%{transform:scale(.95); opacity:1}
+                100%{opacity:.1}to{transform:scale(1.2,1.2); opacity:0}
+            }
+        }
+    }
+}
+
+.check-heart{
+    @extend .check-icon;
+    &:checked+label{
+        color: red;
+    }
+}
+
+.check-check{
+    @extend .check-icon;
+    &:checked+label{
+        color: var(--teal);
     }
 }

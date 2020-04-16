@@ -188,6 +188,15 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [params.probCategory]
 	name = "ジャンル"
 	value = ["統語","形態","音韻","韻律","文字","命数","意味","その他"]
+[[params.utility]]
+	class = "expl"
+	value = "解説付き"
+[[params.utility]]
+	class = "like"
+	value = "お気に入り"
+[[params.utility]]
+	class = "done"
+	value = "挑戦済み"
 [params.sort]
 [[params.sort.1year]]
 	dataSortBy = "year-venue-team-num"

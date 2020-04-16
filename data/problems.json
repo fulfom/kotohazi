@@ -4668,7 +4668,7 @@
     },
     {
         "id": 256,
-        "title": "Ladin",
+        "title": "Ladin – not Latin",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4679,7 +4679,7 @@
     },
     {
         "id": 257,
-        "title": "Japanese",
+        "title": "Japanese characters",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4690,7 +4690,7 @@
     },
     {
         "id": 258,
-        "title": "Jahai",
+        "title": "Smells like Jahai",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4701,7 +4701,7 @@
     },
     {
         "id": 259,
-        "title": "Welsh",
+        "title": "Welsh mutants",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4712,7 +4712,7 @@
     },
     {
         "id": 260,
-        "title": "Pitjantjatjara",
+        "title": "Chatting in Pitjantjatjara",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4745,8 +4745,7 @@
     },
     {
         "id": 263,
-        "title": "Gumatj",
-        "titlejp": "グマティ語",
+        "title": "Gumatj sums",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4757,8 +4756,7 @@
     },
     {
         "id": 264,
-        "title": "Ndebele",
-        "titlejp": "ンデベレ語",
+        "title": "You speak Ndebele, don’t you?",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4769,8 +4767,7 @@
     },
     {
         "id": 265,
-        "title": "Braille",
-        "titlejp": "点字",
+        "title": "Going dotty about Braille",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4781,8 +4778,7 @@
     },
     {
         "id": 266,
-        "title": "Afrihili",
-        "titlejp": "アフリヒリ",
+        "title": "The Afrihili word machine",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4793,8 +4789,7 @@
     },
     {
         "id": 267,
-        "title": "Lepcha",
-        "titlejp": "レプチャ文字",
+        "title": "Two Róngs Don’t Make a Right",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",
@@ -4805,8 +4800,7 @@
     },
     {
         "id": 268,
-        "title": "Polish",
-        "titlejp": "ポーランド語",
+        "title": "Polish your Polish",
         "link": "https://www.uklo.org/problems-2019",
         "venue": "海外予選",
         "venuedetail": "UKLO",

@@ -24,7 +24,7 @@
 {{end}}
 {{$year.Set "group" (uniq ($year.Get "group")) }}
 
-<p><input type="text" class="quicksearch form-control" placeholder="検索" /></p>
+<p><input type="text" class="quicksearch form-control" id="quicksearch" placeholder="検索" /></p>
 
 <div id="filter">
 {{range .Site.Params.prob}}
@@ -58,22 +58,33 @@
 {{end}}
 </div>
 
-<div id="categoryFilter">
-    <div class="filter-group" id="filter-category" data-filter-group="category">
-        <span>
-            {{.Site.Params.probCategory.name}}
-        </span>
-        <div class="unmot">
-        {{range .Site.Params.probCategory.value}}
-            <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}{{if eq . "その他"}}{{range ($prob.Get "category")}}{{if hasPrefix . "!"}}{{else}}{{if in $.Site.Params.probCategory.value .}}{{else}}, .{{.}}{{end}}{{end}}{{end}}{{end}}" autocomplete="off">
-            <label class="{{.}}" for="{{.}}">{{.}}</label>
-        {{end}}
-        </div>
+<div class="filter-group" id="filter-category" data-filter-group="category">
+    <span>
+        {{.Site.Params.probCategory.name}}
+    </span>
+    <div class="unmot">
+    {{range .Site.Params.probCategory.value}}
+        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}{{if eq . "その他"}}{{range ($prob.Get "category")}}{{if hasPrefix . "!"}}{{else}}{{if in $.Site.Params.probCategory.value .}}{{else}}, .{{.}}{{end}}{{end}}{{end}}{{end}}" autocomplete="off">
+        <label class="{{.}}" for="{{.}}">{{.}}</label>
+    {{end}}
     </div>
 </div>
+
+<div class="filter-group" id="filter-utility" data-filter-group="utility">
+    <span>
+        便利
+    </span>
+    <div class="unmot">
+    {{range .Site.Params.utility}}
+        <input type="checkbox" hidden id="{{.class}}" data-filter=".{{.class}}" autocomplete="off">
+        <label class="{{.class}}" for="{{.class}}">{{.value}}</label>
+    {{end}}
+    </div>
+</div>
+
 <div>
     <span>ソート</span>
-    <div class="btn-group btn-group-toggle sort-by-button-group" data-toggle="buttons">
+    <div class="btn-group btn-group-toggle sort-by-button-group" id="sort-by-button-group" data-toggle="buttons">
         {{range .Site.Params.sort}}
         <label for="{{(index . 0).dataSortBy}}" class="btn sort isSortAscending" data-sort-by="{{(index . 0).dataSortBy}}">
             <input hidden type="radio" name="sort" id="{{(index . 0).dataSortBy}}" autocomplete="off">{{(index . 0).name}}<i class="fas fa-sort-up"></i><i class="fas fa-sort-down"></i>
@@ -85,7 +96,7 @@
 
 <p class="text-muted pt-2" id="output">——</p>
 
-<div class="filter-container row">
+<div id="filter-container" class="mt-4 row">
 {{range $.Site.Data.problems}}{{$title := index . "title"}}{{$venue := index . "venue"}}{{$year := index . "year"}}{{$team := index . "team"}}{{$number := index . "number"}}
 {{$namedyear := cond (lt $year 0) (index $.Site.Params.namedyear $year) $year}}
 {{$detailpath := slice "problems" ((index $.Site.Params.venuedetail $venue | default $venue ) | urlize)}}
@@ -98,7 +109,7 @@
 {{$detailpath = $detailpath | append ((delimit $teamnum "-") | urlize)}}
 {{$problink := .problink | default .link}}
 
-<div class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} その他{{end}}">
+<div id="prob{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} その他{{end}}{{with .explanationlinks}} expl{{end}}">
     <div class="card">
     <div class="card-body">
         <div class="d-flex">
@@ -111,8 +122,14 @@
         {{with .titlejp}}<h6 class="card-subtitle mb-2 text-muted sort-title">{{$title}}</h6>{{end}}
         {{with .titlejp}}<h5 class="card-title">{{.}}{{else}}<h5 class="card-title sort-title">{{$title}}{{end}}</h5>
         <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span> {{end}}{{end}}</h6>
-        <a href="{{$problink}}" class="card-link" target="_blank">問題</a>
-        <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>
+        <div class="d-flex">
+            <a href="{{$problink}}" class="card-link" target="_blank">問題</a>
+            <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>
+            <input class="check-check" type="checkbox" hidden id="done{{.id}}" data-id="{{.id}}">
+            <label class="ml-auto mb-0" role="button" for="done{{.id}}"><i class="fas fa-check-square"></i></a></label>
+            <input class="check-heart" type="checkbox" hidden id="like{{.id}}" data-id="{{.id}}">
+            <label class="ml-3 mb-0" role="button" for="like{{.id}}"><i class="fas fa-heart"></i></a></label>
+        </div>
     </div>
     </div>
 </div>
@@ -121,7 +138,7 @@
 
 <script language="JavaScript" type="text/javascript">
     $(function() {
-        var $iso = $('.filter-container').isotope({
+        var $iso = $('#filter-container').isotope({
             // options
             itemSelector: '.filter-item',
             layoutMode: 'fitRows',
@@ -133,7 +150,8 @@
                 var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
                 var filterResult = filterValue ? $this.is( filterValue ) : true;
                 var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
-                return searchResult && filterResult && categoryFilterResult;
+                var utilityFilterResult = utilityFilterValue ? $this.is( utilityFilterValue ) : true;
+                return searchResult && filterResult && categoryFilterResult && utilityFilterResult;
             },
             getSortData: {
                 venue: '.sort-venue',
@@ -146,7 +164,7 @@
         });
 
         //sort
-        $('.sort-by-button-group').on( 'click', 'label', function() {
+        $('#sort-by-button-group').on( 'click', 'label', function() {
             var $this = $(this);
             var sortByValue = $this.attr('data-sort-by');
             if (sortByValue.match(/-/g)) sortByValue = sortByValue.split('-');
@@ -158,21 +176,23 @@
             $iso.isotope({ sortBy: sortByValue, sortAscending: isSortAscending });
         });
         $('#shuffle').on( 'click', function() {
-            $('.sort-by-button-group label').removeClass('active');
-            $('.sort-by-button-group input').removeProp('checked');
+            $('#sort-by-button-group label').removeClass('active');
+            $('#sort-by-button-group input').removeProp('checked');
             $iso.isotope('shuffle');
         });
 
         var iso = $iso.data('isotope');
         var filterValue = '*';
         var categoryFilterValue = '*';
+        var utilityFilterValue = '*';
         var qsRegex;
         var $checkboxes = $('#filter input[type="checkbox"]');
-        var $categoryCheckboxes = $('#categoryFilter input[type="checkbox"]');
+        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]');
+        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]');
         var $venue = $('#filter-venue input[type="checkbox"]');
         var $hide = $('.hide');
 
-        var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+        var $quicksearch = $('#quicksearch').keyup( debounce( function() {
             qsRegex = new RegExp( $quicksearch.val(), 'gi' );
             $iso.isotope();
             countHit();
@@ -244,6 +264,20 @@
             countHit();
         });
 
+        $utilityCheckboxes.change(function(){//utilityも分ける
+            var filters = [];
+            var $this = $(this);
+
+            $utilityCheckboxes.each(function(i, elem){
+                if(elem.checked){
+                    filters.push(elem.getAttribute('data-filter'));
+                }
+            });
+            utilityFilterValue = filters.length ? filters.join(', ') : '*';
+            $iso.isotope();
+            countHit();
+        });
+
         function reverse($this){
             var $checked = $this.siblings('input[type="checkbox"]:checked:not([style="display: none;"])');
             var $siblings = $this.siblings('input[type="checkbox"]:not([style="display: none;"])');
@@ -262,6 +296,55 @@
             var text = iso.filteredItems.length;
             $('#output').text( '—— ' + text + '問');
         }
+
+        // indexedDB
+        var $likes = $('.check-heart');
+        var $dones = $('.check-check');
+        //
+        // Define your database
+        //
+        var db = new Dexie("done-like");
+        db.version(1).stores({
+            dones: 'id',
+            likes: 'id'
+        });
+
+        $likes.change(function(){
+            $this = $(this);
+            var checked = $this.prop('checked');
+            var id = $this.data('id');
+            if(checked){
+                db.likes.put({id: id});
+                $('#prob'+id).addClass('like');
+            }
+            else{
+                db.likes.delete(id);
+                $('#prob'+id).removeClass('like');
+            }
+        });
+
+        $dones.change(function(){
+            $this = $(this);
+            var checked = $this.prop('checked');
+            var id = $this.data('id');
+            if(checked){
+                db.dones.put({id: id});
+                $('#prob'+id).addClass('done');
+            }
+            else{
+                db.dones.delete(id);
+                $('#prob'+id).removeClass('done');
+            }
+        });
+
+        db.likes.toCollection().eachPrimaryKey(function(v){
+            $('#like'+v).prop('checked',true);
+            $('#prob'+v).addClass('like');
+        });
+        db.dones.toCollection().eachPrimaryKey(function(v){
+            $('#done'+v).prop('checked',true);
+            $('#prob'+v).addClass('done');
+        });
 
     });
 </script>
