@@ -2685,6 +2685,7 @@
         "id": 105,
         "title": "Ik",
         "titlejp": "イク語",
+        "link": "https://aplo.asia/problems-by-year/",
         "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
         "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
@@ -2701,6 +2702,7 @@
         "id": 106,
         "title": "Urarina",
         "titlejp": "ウラリナ語",
+        "link": "https://aplo.asia/problems-by-year/",
         "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
         "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
@@ -2719,6 +2721,7 @@
         "id": 107,
         "title": "Mee",
         "titlejp": "メエ語",
+        "link": "https://aplo.asia/problems-by-year/",
         "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
         "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
@@ -2735,6 +2738,7 @@
         "id": 108,
         "title": "Hebrew",
         "titlejp": "ヘブライ語",
+        "link": "https://aplo.asia/problems-by-year/",
         "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
         "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
@@ -2752,6 +2756,7 @@
         "id": 109,
         "title": "Old Turkic Script",
         "titlejp": "古チュルク文字",
+        "link": "https://aplo.asia/problems-by-year/",
         "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
         "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
         "venue": "APLO",
@@ -2766,7 +2771,8 @@
     {
         "id": 110,
         "title": "ロシア語",
-        "link": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
         "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
         "venue": "JOL",
         "year": 2017,
@@ -2793,7 +2799,8 @@
     {
         "id": 111,
         "title": "フリウリ語",
-        "link": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
         "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
         "venue": "JOL",
         "year": 2017,
@@ -2820,7 +2827,8 @@
     {
         "id": 112,
         "title": "モンゴル語",
-        "link": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
         "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
         "venue": "JOL",
         "year": 2017,
@@ -2843,7 +2851,8 @@
     {
         "id": 113,
         "title": "英語，チェコ語，ポーランド語，スウェーデン語",
-        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
         "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
         "venue": "JOL",
         "year": 2018,
@@ -2871,7 +2880,8 @@
     {
         "id": 114,
         "title": "ベジャ語",
-        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
         "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
         "venue": "JOL",
         "year": 2018,
@@ -2899,7 +2909,8 @@
     {
         "id": 115,
         "title": "ナーナイ語",
-        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
         "solutionlink": "https://docs.google.com/document/d/1b2P6Fx5ULQyhmMuZ3NxnBhsYMtcXbpAyz9Y41MvzEos/edit",
         "venue": "JOL",
         "year": 2018,
@@ -2927,7 +2938,8 @@
     {
         "id": 116,
         "title": "オルホン文字/古テュルク語",
-        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
         "solutionlink": "https://drive.google.com/file/d/1fVN74xSN__LzxS0T8e2qXg0YEHSlO5J0/view",
         "venue": "JOL",
         "year": 2018,
@@ -2955,7 +2967,8 @@
     {
         "id": 117,
         "title": "モンゴル語とチベット語",
-        "link": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
         "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
         "venue": "JOL",
         "year": 2018,
@@ -2986,7 +2999,8 @@
     {
         "id": 118,
         "title": "ハングル",
-        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
         "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
         "venue": "JOL",
         "year": 2019,
@@ -3013,7 +3027,8 @@
     {
         "id": 119,
         "title": "国際音声記号",
-        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
         "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
         "venue": "JOL",
         "year": 2019,
@@ -3040,7 +3055,8 @@
     {
         "id": 120,
         "title": "フィンランド語",
-        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
         "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
         "venue": "JOL",
         "year": 2019,
@@ -3067,7 +3083,8 @@
     {
         "id": 121,
         "title": "イヌクティトゥット語",
-        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
         "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
         "venue": "JOL",
         "year": 2019,
@@ -3094,7 +3111,8 @@
     {
         "id": 122,
         "title": "コリマ・ユカギール語",
-        "link": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
         "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
         "venue": "JOL",
         "year": 2019,
@@ -3124,7 +3142,8 @@
     {
         "id": 123,
         "title": "アラビア文字/アラビア語",
-        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
         "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
         "venue": "JOL",
         "year": 2020,
@@ -3151,7 +3170,8 @@
     {
         "id": 124,
         "title": "エウェンキ語，オロチ語，ナーナイ語",
-        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
         "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
         "venue": "JOL",
         "year": 2020,
@@ -3182,7 +3202,8 @@
     {
         "id": 125,
         "title": "バスク語",
-        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
         "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
         "venue": "JOL",
         "year": 2020,
@@ -3209,7 +3230,8 @@
     {
         "id": 126,
         "title": "リヴォニア語",
-        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
         "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
         "venue": "JOL",
         "year": 2020,
@@ -3237,7 +3259,8 @@
     {
         "id": 127,
         "title": "ウルドゥー語",
-        "link": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
         "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
         "venue": "JOL",
         "year": 2020,
@@ -4506,7 +4529,7 @@
     {
         "id": 241,
         "title": "(In)definitely Romanian",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/1-Romanian-Feb-8.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4517,7 +4540,7 @@
     {
         "id": 242,
         "title": "Lithuanian road trip",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/2-Lithuanian-Feb-13.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4528,7 +4551,7 @@
     {
         "id": 243,
         "title": "Finding your way in Sofia",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/3-Bulgarian-Feb-13.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4539,7 +4562,7 @@
     {
         "id": 244,
         "title": "What's yours is mine (for eating)",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/4-Fijian-Feb-13.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4550,7 +4573,7 @@
     {
         "id": 245,
         "title": "At Ease in Gilbertese",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/5-Gilbertese-Feb-14.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4561,7 +4584,7 @@
     {
         "id": 246,
         "title": "Are you OK with N’ko?",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/6-Nko-Feb-7.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4572,7 +4595,7 @@
     {
         "id": 247,
         "title": "Icelandic Relations",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/7-Icelandic-Feb-13.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4583,7 +4606,7 @@
     {
         "id": 248,
         "title": "Vietnamese Matching",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/8-Vietnamese.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4594,7 +4617,7 @@
     {
         "id": 249,
         "title": "Central Pamerican sums",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/9-Pame-Feb-18.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4605,7 +4628,7 @@
     {
         "id": 250,
         "title": "Tirana tourist",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/03/10-Albanian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4616,7 +4639,7 @@
     {
         "id": 251,
         "title": "Hark the Heraldry angels sing",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/18.R2.1-heraldry.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4626,7 +4649,7 @@
     {
         "id": 252,
         "title": "Nivkh",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/04/R2.2-Nivkh.docx",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4637,7 +4660,7 @@
     {
         "id": 253,
         "title": "Menya",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/04/R2.3-Menya.docx",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4648,7 +4671,7 @@
     {
         "id": 254,
         "title": "It’s true: The truth about Chalcatongo Mixtec",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2018/04/R2.4-Mixtec.docx",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4659,7 +4682,7 @@
     {
         "id": 255,
         "title": "Mayangna",
-        "link": "https://www.uklo.org/problems-2018",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/18.R2.5-Mayangna.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4669,7 +4692,7 @@
     {
         "id": 256,
         "title": "Ladin – not Latin",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/1-Ladin-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4680,7 +4703,7 @@
     {
         "id": 257,
         "title": "Japanese characters",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/2-Japanese-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4691,7 +4714,7 @@
     {
         "id": 258,
         "title": "Smells like Jahai",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/3-Jahai-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4702,7 +4725,7 @@
     {
         "id": 259,
         "title": "Welsh mutants",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/4-Welsh-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4713,7 +4736,7 @@
     {
         "id": 260,
         "title": "Chatting in Pitjantjatjara",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/5-Pitjantjatjara-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4724,7 +4747,7 @@
     {
         "id": 261,
         "title": "CippusAbellanus",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/6-Cippus-Abellanus-I-PSC-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4735,7 +4758,7 @@
     {
         "id": 262,
         "title": "Harmongolian",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/7-Mongolian-I-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4746,7 +4769,7 @@
     {
         "id": 263,
         "title": "Gumatj sums",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/8-Gumatj-PSC-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4757,7 +4780,7 @@
     {
         "id": 264,
         "title": "You speak Ndebele, don’t you?",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/9-Ndebele-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4768,7 +4791,7 @@
     {
         "id": 265,
         "title": "Going dotty about Braille",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/10-Braille-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4779,7 +4802,7 @@
     {
         "id": 266,
         "title": "The Afrihili word machine",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/1.-Afrihili-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4790,7 +4813,7 @@
     {
         "id": 267,
         "title": "Two Róngs Don’t Make a Right",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/2.-Lepcha.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4801,7 +4824,7 @@
     {
         "id": 268,
         "title": "Polish your Polish",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/3.-Polish-nouns.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4813,7 +4836,7 @@
         "id": 269,
         "title": "Cupeno",
         "titlejp": "クペーニョ語",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/4.-Cupeno.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4825,7 +4848,7 @@
         "id": 270,
         "title": "Witsuwit'en",
         "titlejp": "ウィツウィテン語",
-        "link": "https://www.uklo.org/problems-2019",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/5.-Witsuwiten.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
