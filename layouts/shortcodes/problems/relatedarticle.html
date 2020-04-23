@@ -15,13 +15,13 @@
 {{with $pageid}}
 {{range where $.Site.RegularPages ".File.UniqueID" $pageid}}
 {{$categories = .Params.categories | default (slice "未分類")}}
-{{$diff = .Params.level }}
+{{$diff = .Params.difficulty }}
 {{end}}{{end}}
 
 {{if $pagepath}}
 {{with .GetPage $pagepath}}
 {{$categories = .Params.categories | default (slice "未分類")}}
-{{$diff = .Params.level }}
+{{$diff = .Params.difficulty }}
 {{end}}
 {{end}}
 
@@ -35,7 +35,7 @@
 {{end}}
 
 {{with $diff}}
-{{$diffArr := where $Arr ".Params.level" "in" (slice (sub $diff 1) $diff (add $diff 1))}}
+{{$diffArr := where $Arr ".Params.difficulty" "in" (slice (sub $diff 1) $diff (add $diff 1))}}
 {{if gt (len $diffArr) 3 }}{{$Arr = $diffArr}}{{end}}
 {{end}}
 

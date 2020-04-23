@@ -242,8 +242,10 @@
                 }
             });
             filterValue = filters.length ? filters.join('') : '*';
-            $iso.isotope();
-            countHit();
+            setTimeout(function(){
+                $iso.isotope();
+                countHit();
+            },250);
         });
 
         $categoryCheckboxes.change(function(){//categoryだけ非排他的なので分けた
@@ -260,8 +262,10 @@
                 }
             });
             categoryFilterValue = filters.length ? filters.join(', ') : '*';
-            $iso.isotope();
-            countHit();
+            setTimeout(function(){
+                $iso.isotope();
+                countHit();
+            },250);
         });
 
         $utilityCheckboxes.change(function(){//utilityも分ける
@@ -274,8 +278,10 @@
                 }
             });
             utilityFilterValue = filters.length ? filters.join(', ') : '*';
-            $iso.isotope();
-            countHit();
+            setTimeout(function(){
+                $iso.isotope();
+                countHit();
+            },250);
         });
 
         function reverse($this){

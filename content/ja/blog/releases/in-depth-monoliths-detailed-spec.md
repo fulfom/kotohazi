@@ -1,4 +1,3 @@
-
 ---
 title: "Another Great Release"
 linkTitle: "Release New Features"

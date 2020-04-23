@@ -20,6 +20,7 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
+    45:($spacer * 2),
     5: ($spacer * 3),
     6: ($spacer * 10)
   ),
@@ -61,8 +62,60 @@ $headings-margin-bottom: 1rem;
     border-bottom: 3px solid #eee;
 }
 
+.section{
+    li{
+        font-size: large;
+    }
+}
+
 p{
     font-size: large;
+}
+
+.card.exercise{
+    table{
+        width: 100%;
+        table-layout: fixed;
+        counter-reset: sentence 0;
+        th,td{
+            @extend .d-block, .d-md-table-cell;
+        }
+        th:first-child{
+            @extend .pl-md-45;
+        }
+        @media (max-width: 767px){
+            td:last-child{
+                padding-left: 2em;
+                text-indent: 0em;
+            }
+        }
+        td:first-child{
+            counter-increment: sentence 1;
+            padding-left: 2em;
+            text-indent: -2.5em;
+            &:before{
+                content: counter(sentence) ".";
+                display: inline-block;
+                text-align: right;
+                width: 2em;
+                margin-right: .5em;
+            }
+        }
+    }
+    .container.chaos{
+        ul,ol{
+            @extend .col-sm-6;
+            padding-left: 2em !important;
+            &:last-child{
+                list-style: upper-alpha;
+                @extend .pl-sm-0;
+            }
+        }
+    }
+}
+
+.exercise-text p{
+    font-size: medium;
 }
 
 .pageinfo{
@@ -106,6 +159,7 @@ p{
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
     transition: 0.25s all ease;
+    cursor: pointer;
 }
 .checkedbtn{
     color: white;
@@ -114,6 +168,13 @@ p{
 .notcheckedbtn{
     color: black;
     background-color: white;
+}
+
+.markbtn{
+    @extend .basicbtn, .notcheckedbtn;
+    &:hover{
+        @extend .checkedbtn;
+    }
 }
 
 .pagerbtn{

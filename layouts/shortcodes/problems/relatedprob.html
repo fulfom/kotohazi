@@ -15,7 +15,7 @@
 {{with $pageid}}
 {{range where $.Site.RegularPages ".File.UniqueID" $pageid}}
 {{$categories = .Params.categories | default (slice "未分類")}}
-{{$diff = .Params.level }}
+{{$diff = .Params.difficulty }}
 {{range .Params.problems}}
 {{$same = $same | append (. | float)}}
 {{end}}
@@ -24,7 +24,7 @@
 {{if $pagepath}}
 {{with .GetPage $pagepath}}
 {{$categories = .Params.categories | default (slice "未分類")}}
-{{$diff = .Params.level }}
+{{$diff = .Params.difficulty }}
 {{range .Params.problems}}
 {{$same = $same | append (. | float)}}
 {{end}}

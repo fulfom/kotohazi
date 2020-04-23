@@ -192,11 +192,11 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	class = "expl"
 	value = "解説付き"
 [[params.utility]]
-	class = "like"
-	value = "お気に入り"
-[[params.utility]]
 	class = "done"
 	value = "挑戦済み"
+[[params.utility]]
+	class = "like"
+	value = "お気に入り"
 [params.sort]
 [[params.sort.1year]]
 	dataSortBy = "year-venue-team-num"

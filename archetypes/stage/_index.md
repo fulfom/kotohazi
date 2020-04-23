@@ -1,7 +1,6 @@
 ---
-title: {{$path := split .File.Path "\\"}}{{$level := index $path 1}}{{$stage := index $path 2}}{{$stage}}
+title: {{$path := split .File.Dir "\\"}}{{$len := len $path}}{{$level := (index $path (sub $len 3)) | strings.TrimPrefix "lv"}}{{$stage := (index $path (sub $len 2)) | strings.TrimPrefix "stage"}}Stage{{$stage}}
 weight: {{$stage}}
-author: name
 level: {{$level}}
 stage: {{$stage}}
 pagetype: stage
@@ -9,12 +8,6 @@ description: ""
 draft: true
 ---
 
+## 例題
 
-
-## 関連記事
-
-{{< problems/relatedarticle pagepath={{.File.Path}} >}}
-
-## 類題
-
-{{< problems/relatedprob pagepath={{.File.Path}} >}}
+例題のテンプレート
