@@ -104,6 +104,7 @@ p{
     }
     .container.chaos{
         ul,ol{
+            width: fit-content;
             @extend .col-sm-6;
             padding-left: 2em !important;
             &:last-child{
@@ -116,6 +117,36 @@ p{
 
 .exercise-text p{
     font-size: medium;
+}
+
+$form-feedback-valid-color: #28a745;
+
+.holder{
+    display: inline-block;
+    text-align: center;
+    margin-left: 1rem;
+    vertical-align: top;
+}
+
+.dropzone{
+    height: 2rem;
+    display: inline-block;
+    min-width: 2rem;
+    border: 1px solid $primary;
+    width: 50px;
+    border-radius: .25rem;
+    vertical-align: top;
+    &.draggable-dropzone--occupied{
+        border: none;
+    }
+    .item{
+        @extend .basicbtn, .checkedbtn;
+        transition: none !important;
+        height: 2rem;
+        text-align: center;
+        display: block;
+        width: 50px;
+    }
 }
 
 .pageinfo{

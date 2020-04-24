@@ -31,6 +31,27 @@ description: >
 
 (a) どれがどれに対応するか明らかにしてください
 
+<div class="container mb-4">
+  <div class="holder">
+    <p class="mb-1">1. kan</p>
+    <div class="dropzone"></div>
+  </div>
+  <div class="holder">
+    <p class="mb-1">2. kanekunpi</p>
+    <div class="dropzone"></div>
+  </div>
+  <div class="holder">
+    <p class="mb-1">3. kap</p>
+    <div class="dropzone"></div>
+  </div>
+</div>
+
+<div class="container option-group my-4">
+  <div class="dropzone draggable-dropzone--occupied"><div class="item">AA</div></div>
+  <div class="dropzone draggable-dropzone--occupied"><div class="item">B</div></div>
+  <div class="dropzone draggable-dropzone--occupied"><div class="item">C</div></div>
+</div>
+
 (b) 'kan kap' の意味は何でしょう？
 
 <label for="input271a0">kan kap</label>
@@ -48,6 +69,16 @@ description: >
 注：**カンカプ語は人工言語です
 
 {{% /ex/main %}}
+
+<script type="module">
+const droppable = new Draggable.Droppable(document.querySelectorAll('.container'), {
+  draggable: '.item',
+  dropzone: '.dropzone'
+});
+
+droppable.on('droppable:dropped', () => console.log('droppable:dropped'));
+droppable.on('droppable:returned', () => console.log('droppable:returned'));
+</script>
 
 <script>
   
