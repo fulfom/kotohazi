@@ -31,7 +31,7 @@ description: >
 
 (a) どれがどれに対応するか明らかにしてください
 
-<div class="container mb-4">
+<div class="select-group mb-4">
   <div class="holder">
     <p class="mb-1">1. kan</p>
     <div class="dropzone"></div>
@@ -46,7 +46,7 @@ description: >
   </div>
 </div>
 
-<div class="container option-group my-4">
+<div class="mx-3 my-4">
   <div class="dropzone draggable-dropzone--occupied"><div class="item">AA</div></div>
   <div class="dropzone draggable-dropzone--occupied"><div class="item">B</div></div>
   <div class="dropzone draggable-dropzone--occupied"><div class="item">C</div></div>
@@ -71,7 +71,7 @@ description: >
 {{% /ex/main %}}
 
 <script type="module">
-const droppable = new Draggable.Droppable(document.querySelectorAll('.container'), {
+const droppable = new Draggable.Droppable(document.querySelectorAll('.answer-form'), {
   draggable: '.item',
   dropzone: '.dropzone'
 });

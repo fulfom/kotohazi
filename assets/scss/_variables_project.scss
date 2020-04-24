@@ -102,7 +102,10 @@ p{
             }
         }
     }
-    .container.chaos{
+    .chaos{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
         ul,ol{
             width: fit-content;
             @extend .col-sm-6;
@@ -113,6 +116,10 @@ p{
             }
         }
     }
+}
+
+.answer-form{
+    outline: none;
 }
 
 .exercise-text p{
