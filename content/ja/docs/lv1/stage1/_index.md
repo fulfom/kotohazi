@@ -28,21 +28,21 @@ ex: true
 
 {{% /ex/chaos %}}
 
-(a) どれがどれに対応するか明らかにしてください
+{{% ex/help "chaos" %}}(a) どれがどれに対応するか明らかにしてください{{% /ex/help %}}
 
 (b) 'kan kap' の意味は何でしょう？
 
-{{< ex/text id=271 num=0 label="kan kap" ans="おいしい米" >}}
+{{< ex/text id=271 num=0 label="kan kap" anss="おいしい米|おいしいこめ" >}}
 
 (c) 「魚」「珍しい魚」「とてもおいしい」をカンカプ語に訳してください
 
 {{< ex/text id=271 num=1 label="魚" ans="ekunpi" >}}
 {{< ex/text id=271 num=2 label="珍しい魚" ans="ekunpi turto" >}}
-{{< ex/text id=271 num=3 label="とてもおいしい" ans="kap kap" >}}
+{{< ex/text id=271 num=3 label="とてもおいしい" ans="kap kap" list="kan kan|kapkap|kap kap" >}}
 
 {{< ex/mark id=271 >}}
 
-注：**カンカプ語は人工言語です
+注：**カンカプ語は{{% ex/word "問題用に作った言語です" %}}人工言語{{% /ex/word %}}です
 
 {{% /ex/main %}}
 
@@ -52,8 +52,10 @@ ex: true
 
 | X                     | 日   |
 | --------------------- | --- |
-| kinafi dekarba zan mi |    |
+| kinafi dekarba |    |
 | dirtonas tede sone    | 表の表示テスト   |
 |                     | サンプル   |
+
+(a) 空欄を埋めてください
 
 {{% /ex/main %}}

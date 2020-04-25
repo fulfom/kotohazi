@@ -1,0 +1,4 @@
+{{$type := .Get 0}}
+{{$content := .Get 1 | default ""}}
+{{if eq $type "chaos"}}{{$content = "A, B, C... の選択肢は動かせます．それを真ん中の 1, 2, 3... に移動させて答えてください"}}{{end}}
+<p>{{.Inner | markdownify}}<a class="text-muted ml-2" tabindex="0" role="button" data-toggle="popover" data-trigger="hover" title="ヘルプ" data-content="{{$content}}"><i class="fas fa-question-circle"></i></a></p>

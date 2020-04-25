@@ -77,6 +77,7 @@ p{
         width: 100%;
         table-layout: fixed;
         counter-reset: sentence 0;
+        @extend .mb-4;
         th,td{
             @extend .d-block, .d-md-table-cell;
         }
@@ -150,8 +151,13 @@ p{
     }
 }
 
-.answer-form{
-    outline: none;
+.keyword-popover{
+    &, &:hover{
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        padding-right: .2em;
+    }
 }
 
 .exercise-text p{

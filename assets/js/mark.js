@@ -8,12 +8,12 @@ const mark = function(id){
       const inputval = $input.val();
       let flag = false;
       if($input.attr('data-answer')){
-        if(inputval == $input.data('answer')){
+        if(inputval == unescapeHTML($input.attr('data-answer'))){
           flag = true;
         }
       }
       else if($input.attr('data-answers')){
-        if($input.data('answers').includes(inputval)){
+        if(JSON.parse(unescapeHTML($input.attr('data-answers'))).includes(inputval)){
           flag = true;
         }
       }
@@ -50,4 +50,9 @@ const mark = function(id){
     }
   document.getElementById('p'+id+'correct').innerHTML = correctNum+'問正解！（'+allNum+'問中）';
   return 0;
+}
+
+function unescapeHTML(escapedHtml) {
+  const doc = new DOMParser().parseFromString(escapedHtml, 'text/html');
+  return doc.documentElement.textContent;
 }

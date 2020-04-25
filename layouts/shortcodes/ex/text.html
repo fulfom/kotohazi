@@ -3,11 +3,18 @@
 {{$label := .Get "label"}}
 {{$ans := .Get "ans"}}
 {{$anss := .Get "anss"}}
+{{$list := .Get "list"}}
 {{$data := ""}}
 {{with $ans}}
-{{$data = delimit (slice "data-answer=" .) ""}}
+{{$data = delimit (slice "data-answer=" (replace (. | htmlEscape) " " "&#x20;")) ""}}
+{{end}}
+{{with $anss}}
+{{$data = delimit (slice "data-answers=" (replace ((split . "|") | jsonify | htmlEscape) " " "&#x20;")) ""}}
 {{end}}
 <div class="container mb-3">
 <label class="mb-1" for="p{{$id}}t{{$num}}">{{$label}}</label>
-<input type="text" class="form-control" id="p{{$id}}t{{$num}}" {{$data | safeHTMLAttr}} name="p{{$id}}t">
+<input type="text" class="form-control" id="p{{$id}}t{{$num}}" {{$data | safeHTMLAttr}} name="p{{$id}}t"{{with $list}}list="p{{$id}}t{{$num}}list"{{end}}>{{with $list}}
+<datalist id="p{{$id}}t{{$num}}list">{{range (split ($list | htmlUnescape) "|")}}
+<option value="{{.}}">{{end}}
+</datalist>{{end}}
 </div>
