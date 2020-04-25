@@ -4,12 +4,13 @@ weight: 1
 pagetype: stage
 description: >
   言語学オリンピックの基礎
+ex: true
 ---
 
 ## 例題1
 
 {{% ex/main id=271 min=10 lead="以下にカンカプ語の語句とその日本語訳が別々の順番で並んでいます．" %}}
-{{% ex/chaos %}}
+{{% ex/chaos id=271 ans="2|3|1|4|5" %}}
 
 1. kan
 1. kanekunpi
@@ -19,98 +20,31 @@ description: >
 
 ---
 
-1. おいしい，味
-1. 米
-1. 寿司
-1. 珍味
-1. とても珍しい
+1. A. おいしい，味
+1. B. 米
+1. C. 寿司
+1. D. 珍味
+1. E. とても珍しい
 
 {{% /ex/chaos %}}
 
-<div class="answer-form" id="pf271">
-
 (a) どれがどれに対応するか明らかにしてください
-
-<div class="select-group mb-4">
-  <div class="holder">
-    <p class="mb-1">1. kan</p>
-    <div class="dropzone"></div>
-  </div>
-  <div class="holder">
-    <p class="mb-1">2. kanekunpi</p>
-    <div class="dropzone"></div>
-  </div>
-  <div class="holder">
-    <p class="mb-1">3. kap</p>
-    <div class="dropzone"></div>
-  </div>
-</div>
-
-<div class="mx-3 my-4">
-  <div class="dropzone draggable-dropzone--occupied"><div class="item">AA</div></div>
-  <div class="dropzone draggable-dropzone--occupied"><div class="item">B</div></div>
-  <div class="dropzone draggable-dropzone--occupied"><div class="item">C</div></div>
-</div>
 
 (b) 'kan kap' の意味は何でしょう？
 
-<label for="input271a0">kan kap</label>
-<input type="text" class="form-control" id="input271a0" data-answer="おいしい米" name="input271">
-
-<label for="input271a1">kan kap</label>
-<input type="text" class="form-control" id="input271a1" data-answers='["おいしい米"]' name="input271">
+{{< ex/text id=271 num=0 label="kan kap" ans="おいしい米" >}}
 
 (c) 「魚」「珍しい魚」「とてもおいしい」をカンカプ語に訳してください
 
-<input id="mark-button" class="input-markbtn" type="button" hidden onclick="return mark(271)">
-<label for="mark-button" class="markbtn">丸つけ</label>
-</div>
+{{< ex/text id=271 num=1 label="魚" ans="ekunpi" >}}
+{{< ex/text id=271 num=2 label="珍しい魚" ans="ekunpi turto" >}}
+{{< ex/text id=271 num=3 label="とてもおいしい" ans="kap kap" >}}
+
+{{< ex/mark id=271 >}}
 
 注：**カンカプ語は人工言語です
 
 {{% /ex/main %}}
-
-<script type="module">
-const droppable = new Draggable.Droppable(document.querySelectorAll('.answer-form'), {
-  draggable: '.item',
-  dropzone: '.dropzone'
-});
-
-droppable.on('droppable:dropped', () => console.log('droppable:dropped'));
-droppable.on('droppable:returned', () => console.log('droppable:returned'));
-</script>
-
-<script>
-  
-const mark = function(id){
-  const $inputs = document.getElementsByName('input'+id);
-    for(let i=0;i < $inputs.length;i++){
-      const $input = $('#input'+id+'a'+i);
-      const inputval = $input.val();
-      let flag = false;
-      if($input.attr('data-answer')){
-        if(inputval == $input.data('answer')){
-          flag = true;
-        }
-      }
-      else if($input.attr('data-answers')){
-        if($input.data('answers').includes(inputval)){
-          flag = true;
-        }
-      }
-      if(flag){
-        $input.removeClass('is-invalid');
-        $input.addClass('is-valid');
-      }
-      else{
-        $input.removeClass('is-valid');
-        $input.addClass('is-invalid');
-      }
-    }
-  return 0;
-}
-
-</script>
 
 ## 例題2
 

@@ -1,0 +1,13 @@
+{{$id := .Get "id"}}
+{{$num := .Get "num"}}
+{{$label := .Get "label"}}
+{{$ans := .Get "ans"}}
+{{$anss := .Get "anss"}}
+{{$data := ""}}
+{{with $ans}}
+{{$data = delimit (slice "data-answer=" .) ""}}
+{{end}}
+<div class="container mb-3">
+<label class="mb-1" for="p{{$id}}t{{$num}}">{{$label}}</label>
+<input type="text" class="form-control" id="p{{$id}}t{{$num}}" {{$data | safeHTMLAttr}} name="p{{$id}}t">
+</div>

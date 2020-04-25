@@ -1,2 +1,2 @@
-<div class="chaos">
+{{$id := .Get "id"}}{{$num := .Get "num" | default 0}}{{$ans := .Get "ans"}}<div class="chaos" name="p{{$id}}ch" id="p{{$id}}ch{{$num}}" data-answer="{{$ans}}">
     <div class="row">{{.Inner | markdownify}}</div></div>
