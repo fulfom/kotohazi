@@ -40,6 +40,10 @@ ex: true
 {{< ex/text id=271 num=2 label="珍しい魚" ans="ekunpi turto" >}}
 {{< ex/text id=271 num=3 label="とてもおいしい" ans="kap kap" list="kan kan|kapkap|kap kap" >}}
 
+(d) カンカプ語の説明として明らかに**正しくない**ものはどれ？
+
+{{< ex/radio id=271 num=0 options="重複で程度の強さを表す|魚好きの文化を持つ話者によって話されている|日本語と同じく，修飾語 被修飾語の語順を持つ" ans=2 >}}
+
 {{< ex/mark id=271 >}}
 
 注：**カンカプ語は{{% ex/word "問題用に作った言語です" %}}人工言語{{% /ex/word %}}です
@@ -52,9 +56,9 @@ ex: true
 
 | X                     | 日   |
 | --------------------- | --- |
-| kinafi dekarba |    |
+| kinafi dekarba |   こ |
 | dirtonas tede sone    | 表の表示テスト   |
-|                     | サンプル   |
+|                  こ   | サンプル   |
 
 (a) 空欄を埋めてください
 

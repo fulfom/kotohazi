@@ -1,0 +1,16 @@
+{{$id := .Get "id"}}
+{{$num := .Get "num"}}
+{{$label := .Get "label"}}
+{{$options := .Get "options"}}
+{{$ans := .Get "ans"}}
+
+<div class="container mb-3">
+    <p class="mb-1">{{$label}}</p>
+    <div class="radio-wrapper px-3 pt-2" name="p{{$id}}r" id="p{{$id}}r{{$num}}">
+{{range $key, $value := split $options "|"}}
+{{$istrue := cond (eq $ans $key) $num (delimit (slice "false" $key) "")}}
+<label class="mr-3" for="p{{$id}}r{{$num}}-{{$key}}">
+    <input class="mr-2" type="radio" name="p{{$id}}r{{$num}}i" id="p{{$id}}r{{$num}}-{{$key}}" data-answer="{{sha256 $istrue}}" autocomplete="off">{{$value}}
+</label>{{end}}
+</div>
+</div>

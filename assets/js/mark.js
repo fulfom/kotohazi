@@ -5,7 +5,7 @@ const mark = function(id){
     for(let i=0;i < $inputs.length;i++){
       allNum++;
       const $input = $('#p'+id+'t'+i);
-      const inputval = $input.val();
+      const inputval = sha256($input.val().trim());
       let flag = false;
       if($input.attr('data-answer')){
         if(inputval == unescapeHTML($input.attr('data-answer'))){
@@ -37,7 +37,7 @@ const mark = function(id){
       for(let j=0;j<$li.length;j++){
         allNum++;
         const $thisli = $li.eq(j);
-        if($thisli.attr('data-num') == ans[j]){
+        if(sha256(String($thisli.attr('data-num'))) == ans[j]){
           correctNum++;
           $thisli.removeClass('is-invalid');
           $thisli.addClass('is-valid');
@@ -48,6 +48,31 @@ const mark = function(id){
         }
       }
     }
+
+    //以下radio
+
+    const $radios = document.getElementsByName('p'+id+'r');
+    for(let i=0;i<$radios.length;i++){
+      allNum++;
+      const $this = $('#p'+id+'r'+i);
+      const $radio = $('[name="p'+id+'r'+i+'i"]:checked');
+      let flag = false;
+      if($radio){
+        if(sha256(String(i)) == $radio.attr('data-answer')){
+          correctNum++;
+          flag = true;
+        }
+      }
+      if(flag){
+        $this.removeClass('is-invalid');
+        $this.addClass('is-valid');
+      }
+      else{
+        $this.removeClass('is-valid');
+        $this.addClass('is-invalid');
+      }
+    }
+
   document.getElementById('p'+id+'correct').innerHTML = correctNum+'問正解！（'+allNum+'問中）';
   return 0;
 }
