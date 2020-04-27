@@ -6,14 +6,14 @@
 {{$list := .Get "list"}}
 {{$data := ""}}
 {{with $ans}}
-{{$data = delimit (slice "data-answer=" (sha256 (replace (. | htmlEscape) " " "&#x20;"))) ""}}
+{{$data = delimit (slice "data-answer=" (sha256 (. | htmlEscape))) ""}}
 {{end}}
 {{with $anss}}
 {{$array := slice}}
 {{range (split . "|")}}
 {{$array = $array | append (sha256 .)}}
 {{end}}
-{{$data = delimit (slice "data-answers=" (replace ( $array | jsonify | htmlEscape) " " "&#x20;")) ""}}
+{{$data = delimit (slice "data-answers=" ( $array | jsonify | htmlEscape)) ""}}
 {{end}}
 <div class="container mb-3">
 <label class="mb-1" for="p{{$id}}t{{$num}}">{{$label}}</label>

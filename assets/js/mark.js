@@ -7,6 +7,7 @@ const mark = function(id){
       const $input = $('#p'+id+'t'+i);
       const inputval = sha256($input.val().trim());
       let flag = false;
+      console.log(inputval,$input.attr('data-answer'));
       if($input.attr('data-answer')){
         if(inputval == unescapeHTML($input.attr('data-answer'))){
           flag = true;
