@@ -5,7 +5,9 @@ const mark = function(id){
     for(let i=0;i < $inputs.length;i++){
       allNum++;
       const $input = $('#p'+id+'t'+i);
-      const inputval = sha256($input.val().trim());
+      const inputval = sha256($input.val().replace(/　/g,' ').replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
+        return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+      }).trim());
       const ans = $input.attr('data-answer').split('|');
       if(ans.includes(inputval)){
         correctNum++;

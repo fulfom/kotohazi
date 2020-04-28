@@ -46,7 +46,7 @@ ex: true
 
 {{< ex/mark id=271 >}}
 
-注：**カンカプ語は{{% ex/word "問題用に作った言語です" %}}人工言語{{% /ex/word %}}です
+⚠ **カンカプ語は{{% ex/word "問題用に作った言語です" %}}人工言語{{% /ex/word %}}です
 
 {{% /ex/main %}}
 
@@ -54,13 +54,13 @@ ex: true
 
 {{% ex/main id=272 min=30 lead="以下はラブラ語の例文とその日本語訳です．" %}}
 
-|                             |                |
+|                              |                 |
 | ---------------------------- | --------------- |
 | babae bekbae                 | 雨が降る            |
 | tanbak sone                  | 彼が皿を降ろす         |
-| diratonas tede sone           | 私がえさを皿に投げ入れる    |
+| diratonas tede sone          | 私がえさを皿に投げ入れる    |
 | rabrak tantonki tede tontone | 漁師がえさを箱に入れる     |
-| sankat dirabak tontone        | あなたの子どもが箱を投げ落とす |
+| sankat dirabak tontone       | あなたの子どもが箱を投げ落とす |
 | sankas dekarki               | 私の子どもが跳ぶ        |
 | kinaf dekarbaf               | 猫が跳び降りる         |
 | kinafat tanfi rimimfi        | あなたの猫が魚を取る      |
@@ -76,5 +76,30 @@ ex: true
 {{< ex/text id=272 num=3 label="あなたが子ども（のところ）に行く" ans="bekat sanki" >}}
 
 {{< ex/mark id=272 >}}
+
+⚠ **ラブラ語は人工言語です
+
+{{% /ex/main %}}
+
+## 未掲載のお試し問題
+
+{{% ex/main id=273 min="20" lead="以下はトンガ語で書かれた数式です" %}}
+
+|                                          |
+| ---------------------------------------- |
+| valu ono             =    86             |
+| tolu × tolu tolu     =    hiva hiva      |
+| taha tolu × fitu noa  =    hiva taha noa |
+| ua nima × fā          =    taha noa noa  |
+
+(a) 324 をトンガ語で表してください
+
+{{< ex/text id=273 num=0 label="324" ans="tolu ua fā|tolu ua fa" >}}
+
+(b) fitu ua valu を算用数字で書いてください
+
+{{< ex/text id=273 num=1 label="fitu ua valu" ans="728" >}}
+
+{{< ex/mark id=273 >}}
 
 {{% /ex/main %}}
