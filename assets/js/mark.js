@@ -6,19 +6,8 @@ const mark = function(id){
       allNum++;
       const $input = $('#p'+id+'t'+i);
       const inputval = sha256($input.val().trim());
-      let flag = false;
-      console.log(inputval,$input.attr('data-answer'));
-      if($input.attr('data-answer')){
-        if(inputval == unescapeHTML($input.attr('data-answer'))){
-          flag = true;
-        }
-      }
-      else if($input.attr('data-answers')){
-        if(JSON.parse(unescapeHTML($input.attr('data-answers'))).includes(inputval)){
-          flag = true;
-        }
-      }
-      if(flag){
+      const ans = $input.attr('data-answer').split('|');
+      if(ans.includes(inputval)){
         correctNum++;
         $input.removeClass('is-invalid');
         $input.addClass('is-valid');
@@ -76,9 +65,4 @@ const mark = function(id){
 
   document.getElementById('p'+id+'correct').innerHTML = correctNum+'問正解！（'+allNum+'問中）';
   return 0;
-}
-
-function unescapeHTML(escapedHtml) {
-  const doc = new DOMParser().parseFromString(escapedHtml, 'text/html');
-  return doc.documentElement.textContent;
 }

@@ -32,7 +32,7 @@ ex: true
 
 (b) 'kan kap' の意味は何でしょう？
 
-{{< ex/text id=271 num=0 label="kan kap" anss="おいしい米|おいしいこめ" >}}
+{{< ex/text id=271 num=0 label="kan kap" ans="おいしい米|おいしいこめ" >}}
 
 (c) 「魚」「珍しい魚」「とてもおいしい」をカンカプ語に訳してください
 
@@ -52,14 +52,29 @@ ex: true
 
 ## 例題2
 
-{{% ex/main id=1 min=30 lead="以下は架空の言語Xでかかれた例文とその日本語訳です．" %}}
+{{% ex/main id=272 min=30 lead="以下はラブラ語の例文とその日本語訳です．" %}}
 
-| X                     | 日   |
-| --------------------- | --- |
-| kinafi dekarba |   こ |
-| dirtonas tede sone    | 表の表示テスト   |
-|                  こ   | サンプル   |
+|                             |                |
+| ---------------------------- | --------------- |
+| babae bekbae                 | 雨が降る            |
+| tanbak sone                  | 彼が皿を降ろす         |
+| diratonas tede sone           | 私がえさを皿に投げ入れる    |
+| rabrak tantonki tede tontone | 漁師がえさを箱に入れる     |
+| sankat dirabak tontone        | あなたの子どもが箱を投げ落とす |
+| sankas dekarki               | 私の子どもが跳ぶ        |
+| kinaf dekarbaf               | 猫が跳び降りる         |
+| kinafat tanfi rimimfi        | あなたの猫が魚を取る      |
 
-(a) 空欄を埋めてください
+(a) 訳してください
+
+{{< ex/text id=272 num=0 label="tedeas bektone sone" ans="私のえさが皿に入る" >}}
+
+{{< ex/text id=272 num=1 label="漁師が魚を投げる" ans="rabrak dirak rimimfi" >}}
+
+{{< ex/text id=272 num=2 label="猫が箱に跳び込む" ans="kinaf dekartonfi tontone" >}}
+
+{{< ex/text id=272 num=3 label="あなたが子ども（のところ）に行く" ans="bekat sanki" >}}
+
+{{< ex/mark id=272 >}}
 
 {{% /ex/main %}}

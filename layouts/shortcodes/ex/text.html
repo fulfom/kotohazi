@@ -2,22 +2,14 @@
 {{$num := .Get "num"}}
 {{$label := .Get "label"}}
 {{$ans := .Get "ans"}}
-{{$anss := .Get "anss"}}
 {{$list := .Get "list"}}
-{{$data := ""}}
-{{with $ans}}
-{{$data = delimit (slice "data-answer=" (sha256 (. | htmlEscape))) ""}}
-{{end}}
-{{with $anss}}
 {{$array := slice}}
-{{range (split . "|")}}
+{{range (split $ans "|")}}
 {{$array = $array | append (sha256 .)}}
-{{end}}
-{{$data = delimit (slice "data-answers=" ( $array | jsonify | htmlEscape)) ""}}
 {{end}}
 <div class="container mb-3">
 <label class="mb-1" for="p{{$id}}t{{$num}}">{{$label}}</label>
-<input type="text" class="form-control" id="p{{$id}}t{{$num}}" {{$data | safeHTMLAttr}} name="p{{$id}}t"{{with $list}}list="p{{$id}}t{{$num}}list"{{end}} autocomplete="off">{{with $list}}
+<input type="text" class="form-control" id="p{{$id}}t{{$num}}" data-answer="{{delimit $array "|" }}" name="p{{$id}}t"{{with $list}}list="p{{$id}}t{{$num}}list"{{end}} autocomplete="off">{{with $list}}
 <datalist id="p{{$id}}t{{$num}}list">{{range (split ($list | htmlUnescape) "|")}}
 <option value="{{.}}">{{end}}
 </datalist>{{end}}

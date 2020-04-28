@@ -105,14 +105,19 @@ p{
     }
     .radio-wrapper{
         border-radius: .25rem;
+        border: 1px solid white;
         &.is-valid{
             border: 1px solid #28a745;
         }
         &.is-invalid{
             border: 1px solid #ED6A5A;
         }
+        label{
+            cursor: pointer;
+        }
         input{
             position: relative;
+            cursor: pointer;
             &:before{
                 position: absolute;
                 z-index: 1;
