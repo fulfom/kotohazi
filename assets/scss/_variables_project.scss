@@ -402,3 +402,16 @@ i.fa-angle-right{
         color: var(--teal);
     }
 }
+
+$sort-colors:(
+    "hint": var(--yellow),
+    "expl": black,
+    "done": var(--teal),
+    "like": red
+);
+
+@each $class, $sort-color in $sort-colors {
+    .sort-utility-#{$class} {
+      color: $sort-color;
+    }
+}
