@@ -1,0 +1,7 @@
+{{ with .TableOfContents }}
+{{ if ge (len .) 200 }}
+<div class="mini-toc d-xl-none">
+{{ . }}
+</div>
+{{ end }}
+{{ end }}

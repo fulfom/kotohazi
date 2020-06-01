@@ -40,7 +40,7 @@
         },
         "sketch": {
             "name": "fulfom",
-            "value": "ヒントをまとめて表示したり，何らか講評的なものを書くなど"
+            "value": "何らか概要とか講評的なものを書くなど？基本なくてよい"
         }
     },
     {
@@ -3022,7 +3022,29 @@
                 "name": "fulfom",
                 "diff": 2
             }
-        ]
+        ],
+        "hint": {
+            "name": "fulfom",
+            "value": [
+                "漢字は中国語から日本語や韓国語に入った．漢字の音読みは中国語での発音に由来する．韓国語でも「音読み」をしているとすると日本語の漢字の音読みから韓国語の発音が推測できるはずだ．",
+                "文字数を数えると？",
+                "一文字が一つの漢字に対応することが分かる．",
+                "「運動家」「動機」「感動」を見比べると？",
+                "「運動家」と「動機」の共通点から，「動」と「동」が対応することが分かる．「感動」は「동」を含むものだと考え探す．「감동」が「感動」だと分かる．同時に書記方向は左から右だと分かる．",
+                "「○ん」と読むこれらを見比べると？：運(운), 安(안), 根(근), 身(신), 伝(전), 便(편)",
+                "「ㄴ」が「ん」だと分かる．「발견」「위인」がそれぞれ「偉人」「発見」のどちらかだと絞れる．どっちがどっちだろうか？",
+                "「為(위)」から「위인」が「偉人」だと分かる．消去法で「발견」は「発見」．",
+                "「○う」と読むこれらを見比べると？：動(동), 重(중), 向(향), 燈(등)",
+                "下につくㅇは「う」だと分かる．「성공」が「成功」だと分かる．",
+                "か行始まりのこれらを見比べると？：家(가), 根(근), 向(향), 記(기), 機(기), 見(견), 功(공)",
+                "向を例外として，「ㄱ」がkだと分かる．",
+                "「家(가)」と「記(기)」を見比べると？母音に注目．",
+                "「ㅏ」が「あ」，「ㅣ」が「い」だと分かる．「좌절」が「挫折」だと分かる．「偉人(위인)」「発見(발견)」も信憑性が増す．",
+                "他に「ㄱ」が入っている漢字を探すと「学(학)」「特(특)」がある．これらは「がく」「とく」のように後ろが「く」の漢字である．よってハングルはある漢字の最初の子音を左上に，その下か右に母音，それらのさらに下に残りを書く文字だと分かる．「독립」が「独立」だと分かる．「狙撃」「努力」はそれぞれ「저격」「노력」のいずれか．",
+                "残る選択肢から「未来」「失敗」はそれぞれ「미래」「실패」のいずれか．音と文字の構成の関係を考えると，「未」は子音+母音，「失」は子音+母音+「つ」という構成なので「미래」が「未来」，「실패」が「失敗」だと分かる．",
+                "「立(립)」「来(래)」から最初の「ㄹ」はrだと分かる．「노력」が「努力」，「저격」が「狙撃」だと分かる．"
+            ]
+        }
     },
     {
         "id": 119,
@@ -3287,7 +3309,7 @@
     {
         "id": 128,
         "title": "Sorry we have no red cucumbers",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/french.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3298,7 +3320,7 @@
     {
         "id": 129,
         "title": "Gelda’s House of Gelbergarg",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/eng-restaurant.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3309,7 +3331,7 @@
     {
         "id": 130,
         "title": "Say it in Abma",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/abma.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3320,7 +3342,7 @@
     {
         "id": 131,
         "title": "Lost in Yerevan",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/armenian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3331,7 +3353,7 @@
     {
         "id": 132,
         "title": "Turkish delight",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/turkish.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3342,7 +3364,7 @@
     {
         "id": 133,
         "title": "Tangkhul tangle",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/tangkhul.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3353,7 +3375,7 @@
     {
         "id": 134,
         "title": "Texting, texting, one two three",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/eng-texting.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3364,7 +3386,7 @@
     {
         "id": 135,
         "title": "Ardhay Uzzlepay",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/minangkabau.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3375,7 +3397,7 @@
     {
         "id": 136,
         "title": "Be Cree-ative",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/cree.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3386,7 +3408,7 @@
     {
         "id": 137,
         "title": "F u cn rd ths",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/eng-abbreviations.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3397,7 +3419,7 @@
     {
         "id": 138,
         "title": "Tale of Kieu",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/example-questions/oldsite/test material/2010/vietnamese.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3408,7 +3430,7 @@
     {
         "id": 139,
         "title": "Possessed in Vanuatu",
-        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "link": "http://www.uklo.org/example-questions/oldsite/test material/2010/vanuatu.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
@@ -3419,7 +3441,7 @@
     {
         "id": 140,
         "title": "Running on MT",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-English1.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3430,7 +3452,7 @@
     {
         "id": 141,
         "title": "Japaneasy",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2-Japanese1.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3441,7 +3463,7 @@
     {
         "id": 142,
         "title": "Doubling in Caterpillar Country",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-Arrernte.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3452,7 +3474,7 @@
     {
         "id": 143,
         "title": "Ulwa possessives",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Ulwa.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3463,7 +3485,7 @@
     {
         "id": 144,
         "title": "Mix up on the farm",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5-Papago.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3474,7 +3496,7 @@
     {
         "id": 145,
         "title": "Tiger tale",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/6-Indonesian.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3485,7 +3507,7 @@
     {
         "id": 146,
         "title": "The war of the dots",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/7-English-braille.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3496,7 +3518,7 @@
     {
         "id": 147,
         "title": "Stopping and flapping in Warlpiri",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-Warlpiri.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3507,7 +3529,7 @@
     {
         "id": 148,
         "title": "Counting in Irish",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/irish",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3518,7 +3540,7 @@
     {
         "id": 149,
         "title": "A script for the Ndyuka",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Afaka.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3529,7 +3551,7 @@
     {
         "id": 150,
         "title": "Axolotl in the water",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-Nahuatl.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3540,7 +3562,7 @@
     {
         "id": 151,
         "title": "Swallow the salt",
-        "link": "https://www.uklo.org/problems/uklo-tests-2011",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5-Tadaksahak.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
@@ -3551,7 +3573,7 @@
     {
         "id": 152,
         "title": "Being with it in Yolmo",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-Yolmo+.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3562,7 +3584,7 @@
     {
         "id": 153,
         "title": "Danish numbers",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2-Danish+.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3573,7 +3595,7 @@
     {
         "id": 154,
         "title": "Dutch past participles",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3d-Dutch+.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3584,7 +3606,7 @@
     {
         "id": 155,
         "title": "Welsh libraries",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3w-Welsh+1.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3595,7 +3617,7 @@
     {
         "id": 156,
         "title": "Haitian",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Haitian-rev-2016.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3606,7 +3628,7 @@
     {
         "id": 157,
         "title": "Esperanto",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5-Esperanto.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3617,7 +3639,7 @@
     {
         "id": 158,
         "title": "Crocodile Bardi",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/6-Bardi.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3628,7 +3650,7 @@
     {
         "id": 159,
         "title": "Waorani numbers",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/7-Waorani.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3639,7 +3661,7 @@
     {
         "id": 160,
         "title": "Arcturan intergalactic peace message",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/8-Arcturan.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3650,7 +3672,7 @@
     {
         "id": 161,
         "title": "Waanyi",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/9-Waanyi.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3661,7 +3683,7 @@
     {
         "id": 162,
         "title": "A fox among the h",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-English-stemming.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3672,7 +3694,7 @@
     {
         "id": 163,
         "title": "Who is good?",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2-Luiseno.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3683,7 +3705,7 @@
     {
         "id": 164,
         "title": "The little engine that could… read",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-English-quantifiers2.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3694,7 +3716,7 @@
     {
         "id": 165,
         "title": "100 surnames",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Phags-pa.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3705,7 +3727,7 @@
     {
         "id": 166,
         "title": "Catalan plurals",
-        "link": "https://www.uklo.org/test-papers-2012",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5-Catalan.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2012,
@@ -3716,7 +3738,7 @@
     {
         "id": 167,
         "title": "Yodaspeak",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-Yoda-syntax.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3727,7 +3749,8 @@
     {
         "id": 168,
         "title": "My foot, his feet in Zapotex",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "https://www.uklo.org/wp-content/uploads/2013/01/F-questions2.pdf",
+        "problink": "https://www.uklo.org/wp-content/uploads/2013/01/FI-solutions4.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3737,7 +3760,7 @@
     {
         "id": 169,
         "title": "Pali",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2-Pali-morphosyntax.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3748,7 +3771,7 @@
     {
         "id": 170,
         "title": "Arabic script",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2+-Arabic-script.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3759,7 +3782,7 @@
     {
         "id": 171,
         "title": "The Shavian Alphabet",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4+-Shavian-script.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3770,7 +3793,7 @@
     {
         "id": 172,
         "title": "Bulgarian",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2-Bulgarian-syntax.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3781,7 +3804,7 @@
     {
         "id": 173,
         "title": "The long and short of English verbs",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3+-English-verb-reduction.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3792,7 +3815,7 @@
     {
         "id": 174,
         "title": "Phoenician",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5-Phoenician-script.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3803,7 +3826,7 @@
     {
         "id": 175,
         "title": "A little Dutch problem",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Dutch-diminutives.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3814,7 +3837,7 @@
     {
         "id": 176,
         "title": "Bengali",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4+-Bengali-morphosyntax.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3825,7 +3848,7 @@
     {
         "id": 177,
         "title": "Deer Father",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-r2.1-Quechua-morphosyntax.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3836,7 +3859,7 @@
     {
         "id": 178,
         "title": "Putting the books in order",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5-r2.2-Georgian-and-Armenian-script.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3847,7 +3870,7 @@
     {
         "id": 179,
         "title": "Beja",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-r2.3-Beja-morphosyntax.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3858,7 +3881,7 @@
     {
         "id": 180,
         "title": "Stockholms Tunnelbana",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-r2.4-Swedish-morphology.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3869,7 +3892,7 @@
     {
         "id": 181,
         "title": "Playing the cognate game",
-        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-r2.5-Indonesian-and-Swahili-etymology.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -3880,7 +3903,7 @@
     {
         "id": 182,
         "title": "What time is it in Tallinn?",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.1-Estonian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3891,7 +3914,7 @@
     {
         "id": 183,
         "title": "Maori loanwords",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.2-Maori.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3902,7 +3925,7 @@
     {
         "id": 184,
         "title": "Mokilese",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/Mokilese.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3913,7 +3936,7 @@
     {
         "id": 185,
         "title": "Running speech",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.4-ipa.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3924,7 +3947,7 @@
     {
         "id": 186,
         "title": "Turkish",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.5-Turkish.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3935,7 +3958,7 @@
     {
         "id": 187,
         "title": "Kairak verbs",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.6-Kairak.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3946,7 +3969,7 @@
     {
         "id": 188,
         "title": "Ilokano",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.7-Ilocano.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3957,7 +3980,7 @@
     {
         "id": 189,
         "title": "Musical code",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.8-music.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3968,7 +3991,7 @@
     {
         "id": 190,
         "title": "Lontara",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014.9-Lontara.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3979,7 +4002,7 @@
     {
         "id": 191,
         "title": "Kiswahili verbs",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014r2.1-Kiswahili.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -3990,7 +4013,7 @@
     {
         "id": 192,
         "title": "Untangling Tanghulic",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014r2.2-Tanghulic.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -4001,7 +4024,7 @@
     {
         "id": 193,
         "title": "Learning Yidiny",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014r2.3-Yidiny.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -4012,7 +4035,7 @@
     {
         "id": 194,
         "title": "Navajo gophers",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014r2.4-Navajo.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -4023,7 +4046,7 @@
     {
         "id": 195,
         "title": "Hungarians in a field",
-        "link": "https://www.uklo.org/papers-2014",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2014r2.5-Hungarian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2014,
@@ -4034,7 +4057,7 @@
     {
         "id": 196,
         "title": "Counting in Karelian",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-Karelian-P-S.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4045,7 +4068,7 @@
     {
         "id": 197,
         "title": "Georgian places",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2.-Georgian-P-S.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4056,7 +4079,7 @@
     {
         "id": 198,
         "title": "Polish your Polish",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3.-Polish-P-S.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4067,7 +4090,7 @@
     {
         "id": 199,
         "title": "Old English",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4.-Old-English-P-S.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4078,7 +4101,7 @@
     {
         "id": 200,
         "title": "Elder Futhark",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/5.-Runes-P-S.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4089,7 +4112,7 @@
     {
         "id": 201,
         "title": "Japanese places",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/6-Japanese-P-S.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4100,7 +4123,7 @@
     {
         "id": 202,
         "title": "Murrinhpatha",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/7-Murrinhpatha-P-S.docx",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4111,7 +4134,7 @@
     {
         "id": 203,
         "title": "Can you finish Finnish?",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/8-Finnish.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4122,7 +4145,7 @@
     {
         "id": 204,
         "title": "Zoink!",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/9-English.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4133,7 +4156,7 @@
     {
         "id": 205,
         "title": "Georgian Era",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/10-Georgian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4144,7 +4167,7 @@
     {
         "id": 206,
         "title": "Maxakali",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/1-Maxakali-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4155,7 +4178,7 @@
     {
         "id": 207,
         "title": "Malagasy crossnumber",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/2-Malagasy-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4166,7 +4189,7 @@
     {
         "id": 208,
         "title": "Do-this-do-that",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-Hmong-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4177,7 +4200,7 @@
     {
         "id": 209,
         "title": "Aymara",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2015/04/4-Aymara-1-1.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4188,7 +4211,7 @@
     {
         "id": 210,
         "title": "Romance",
-        "link": "https://www.uklo.org/papers-2015-2",
+        "link": "http://www.uklo.org/wp-content/uploads/2015/04/5-Romance-1.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2015,
@@ -4199,7 +4222,7 @@
     {
         "id": 211,
         "title": "Alphabet",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/1.-Alphabet-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4210,7 +4233,7 @@
     {
         "id": 212,
         "title": "Foreign",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/2-Foreign-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4221,7 +4244,7 @@
     {
         "id": 213,
         "title": "Watsonium",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/3.-Watsonium-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4232,7 +4255,7 @@
     {
         "id": 214,
         "title": "Beijing subway",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/4.-Beijing-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4243,7 +4266,7 @@
     {
         "id": 215,
         "title": "Amele",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/5-Amele-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4254,7 +4277,7 @@
     {
         "id": 216,
         "title": "Kaqchikel",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/6.-Kaqchikel-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4265,7 +4288,7 @@
     {
         "id": 217,
         "title": "The strange case of the Estonian language",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/7.-Estonian-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4276,7 +4299,7 @@
     {
         "id": 218,
         "title": "Somali",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/8.-Somali-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4287,7 +4310,7 @@
     {
         "id": 219,
         "title": "Nhanda",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/9.-Nhanda-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4298,7 +4321,7 @@
     {
         "id": 220,
         "title": "Don't sell the house!",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/10.-Nung-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4309,7 +4332,7 @@
     {
         "id": 221,
         "title": "Malay",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/R2.1-Malay-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4320,7 +4343,7 @@
     {
         "id": 222,
         "title": "Tocharian",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/R2.2-Tocharian-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4331,7 +4354,7 @@
     {
         "id": 223,
         "title": "Huli",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/R2.3-Huli-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4342,7 +4365,7 @@
     {
         "id": 224,
         "title": "Devanagari",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/R2.4-Devanagari-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4353,7 +4376,7 @@
     {
         "id": 225,
         "title": "Get edumacated!",
-        "link": "https://www.uklo.org/problems-2016",
+        "link": "http://www.uklo.org/wp-content/uploads/2016/04/R2.5-Edumacated-PS.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2016,
@@ -4364,7 +4387,7 @@
     {
         "id": 226,
         "title": "Our Italian family",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/1.-Italian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4375,7 +4398,7 @@
     {
         "id": 227,
         "title": "Inuktitut script",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/2.-Inuktitut.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4386,7 +4409,7 @@
     {
         "id": 228,
         "title": "We are all European",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/3.-European.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4397,7 +4420,7 @@
     {
         "id": 229,
         "title": "A little Tshiluba",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/4.-Tshiluba.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4408,7 +4431,7 @@
     {
         "id": 230,
         "title": "Basquing in the sun",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/5.-Basque.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4419,7 +4442,7 @@
     {
         "id": 231,
         "title": "Maori for the beach",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/6.-Maori.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4430,7 +4453,7 @@
     {
         "id": 232,
         "title": "On the right Tamil track",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/7.-Tamil.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4441,7 +4464,7 @@
     {
         "id": 233,
         "title": "Choctaw",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/8.-Choctaw.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4452,7 +4475,7 @@
     {
         "id": 234,
         "title": "The goat, the mother and the Abkhaz wardrobe",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/9.-Abkhaz.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4463,7 +4486,7 @@
     {
         "id": 235,
         "title": "Kaytetye kinship",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/10.-Kaytetye.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4474,7 +4497,7 @@
     {
         "id": 236,
         "title": "Nepali",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/2.1-Nepali.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4485,7 +4508,7 @@
     {
         "id": 237,
         "title": "Do you see what I see?",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/2.2-Proto-Algonquian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4496,7 +4519,7 @@
     {
         "id": 238,
         "title": "Viet",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/2.3-Viet.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4507,7 +4530,7 @@
     {
         "id": 239,
         "title": "Muddled hieroglyphs",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/2.4-Hieroglyphs.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4518,7 +4541,7 @@
     {
         "id": 240,
         "title": "Magic Yup’ik",
-        "link": "https://www.uklo.org/problems-2017",
+        "link": "https://www.uklo.org/wp-content/uploads/2017/04/2.5-Yupik.docx.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2017,
@@ -4529,7 +4552,7 @@
     {
         "id": 241,
         "title": "(In)definitely Romanian",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/1-Romanian-Feb-8.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.1-Romanian-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4540,7 +4563,7 @@
     {
         "id": 242,
         "title": "Lithuanian road trip",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/2-Lithuanian-Feb-13.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.2-Lithuanian-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4551,7 +4574,7 @@
     {
         "id": 243,
         "title": "Finding your way in Sofia",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/3-Bulgarian-Feb-13.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.3-Bulgarian-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4562,7 +4585,7 @@
     {
         "id": 244,
         "title": "What's yours is mine (for eating)",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/4-Fijian-Feb-13.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.4-Fijian-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4573,7 +4596,7 @@
     {
         "id": 245,
         "title": "At Ease in Gilbertese",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/5-Gilbertese-Feb-14.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.5-Gilbertese-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4584,7 +4607,7 @@
     {
         "id": 246,
         "title": "Are you OK with N’ko?",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/6-Nko-Feb-7.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.6-Nko-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4595,7 +4618,7 @@
     {
         "id": 247,
         "title": "Icelandic Relations",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/7-Icelandic-Feb-13.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.7-Icelandic-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4606,7 +4629,7 @@
     {
         "id": 248,
         "title": "Vietnamese Matching",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/8-Vietnamese.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.8-Vietnamese.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4617,7 +4640,7 @@
     {
         "id": 249,
         "title": "Central Pamerican sums",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/9-Pame-Feb-18.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.9-Pame-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4628,7 +4651,7 @@
     {
         "id": 250,
         "title": "Tirana tourist",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/03/10-Albanian.pdf",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.10-Albanian.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4649,7 +4672,7 @@
     {
         "id": 252,
         "title": "Nivkh",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/04/R2.2-Nivkh.docx",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.R2.2-Nivkh.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4660,7 +4683,7 @@
     {
         "id": 253,
         "title": "Menya",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/04/R2.3-Menya.docx",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.R2.3-Menya.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4671,7 +4694,7 @@
     {
         "id": 254,
         "title": "It’s true: The truth about Chalcatongo Mixtec",
-        "link": "https://www.uklo.org/wp-content/uploads/2018/04/R2.4-Mixtec.docx",
+        "link": "http://www.uklo.org/wp-content/uploads/2018/10/18.R2.4-Mixtec.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2018,
@@ -4703,7 +4726,7 @@
     {
         "id": 257,
         "title": "Japanese characters",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/2-Japanese-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/10-Braille-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4714,7 +4737,7 @@
     {
         "id": 258,
         "title": "Smells like Jahai",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/3-Jahai-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/2-Japanese-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4725,7 +4748,7 @@
     {
         "id": 259,
         "title": "Welsh mutants",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/4-Welsh-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/3-Jahai-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4736,7 +4759,7 @@
     {
         "id": 260,
         "title": "Chatting in Pitjantjatjara",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/5-Pitjantjatjara-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/4-Welsh-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4747,7 +4770,7 @@
     {
         "id": 261,
         "title": "CippusAbellanus",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/6-Cippus-Abellanus-I-PSC-.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/5-Pitjantjatjara-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4758,7 +4781,7 @@
     {
         "id": 262,
         "title": "Harmongolian",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/7-Mongolian-I-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/6-Cippus-Abellanus-I-PSC-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4769,7 +4792,7 @@
     {
         "id": 263,
         "title": "Gumatj sums",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/8-Gumatj-PSC-.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/7-Mongolian-I-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4780,7 +4803,7 @@
     {
         "id": 264,
         "title": "You speak Ndebele, don’t you?",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/9-Ndebele-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/8-Gumatj-PSC-.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4791,7 +4814,7 @@
     {
         "id": 265,
         "title": "Going dotty about Braille",
-        "link": "https://www.uklo.org/wp-content/uploads/2019/03/10-Braille-PSC.pdf",
+        "link": "https://www.uklo.org/wp-content/uploads/2019/03/9-Ndebele-PSC.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
@@ -4861,7 +4884,7 @@
         "title": "**カンカプ語",
         "venue": "kotohazi",
         "number": 1,
-        "topic": "kan kap",
+        "topic": "Kankap (Conlang)",
         "author": "fulfom"
     },
     {
@@ -4869,7 +4892,7 @@
         "title": "**ラブラ語",
         "venue": "kotohazi",
         "number": 2,
-        "topic": "rabra",
+        "topic": "Rabra (Conlang)",
         "author": "fulfom"
     },
     {

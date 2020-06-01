@@ -49,27 +49,43 @@ $headings-margin-bottom: 1rem;
     background: #d3f3ee;
 }
 
-.section > h3{
+.section > h3, h2{
     margin-left: -1.25rem;
     padding: 0.5rem 0rem 0.5rem 1rem;
     border-left: 0.25rem solid $primary;
     border-bottom: 3px solid #eee;
 }
 
-.section > h4{
+.section > h4, h3{
     margin-left: -1rem;
     padding: 0.5rem 0rem 0.5rem 1rem;
     border-bottom: 3px solid #eee;
 }
 
-.section{
-    li{
-        font-size: large;
+@media (max-width: 767px){
+    h2, h3{
+        margin-left: 0rem;
     }
 }
 
-p{
-    font-size: large;
+section{
+    li{
+        font-size: large;
+    }
+    p{
+        font-size: large;
+    }
+    &.footnotes p{
+        font-size: medium;
+    }
+}
+
+.mini-toc{
+    background-color: #fafafa;
+    @extend .py-3;
+    ul{
+        margin-bottom: 0rem;
+    }
 }
 
 .card.exercise{

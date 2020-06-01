@@ -19,7 +19,7 @@
 {{end}}{{end}}
 
 {{if $pagepath}}
-{{with .GetPage $pagepath}}
+{{range where $.Site.RegularPages ".Path" $pagepath}}
 {{$categories = .Params.categories | default (slice "未分類")}}
 {{$diff = .Params.difficulty }}
 {{end}}

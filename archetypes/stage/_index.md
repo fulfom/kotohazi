@@ -5,6 +5,7 @@ level: {{$level}}
 stage: {{$stage}}
 pagetype: stage
 description: ""
+ex: true
 draft: true
 ---
 
