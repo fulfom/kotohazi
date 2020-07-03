@@ -2372,6 +2372,10 @@
             {
                 "name": "irotirihs",
                 "diff": 5
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 5
             }
         ]
     },
@@ -2394,13 +2398,17 @@
             "https://fulfom.hatenablog.com/entry/2019/05/12/160155"
         ],
         "difficulty": {
-            "typical": 4,
+            "typical": 3.5,
             "typicalStar": 4
         },
         "diffeach": [
             {
                 "name": "irotirihs",
                 "diff": 4
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 3
             }
         ]
     },
@@ -2420,13 +2428,17 @@
             "音韻"
         ],
         "difficulty": {
-            "typical": 3,
-            "typicalStar": 3
+            "typical": 3.5,
+            "typicalStar": 4
         },
         "diffeach": [
             {
                 "name": "irotirihs",
                 "diff": 3
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 4
             }
         ]
     },
@@ -2447,13 +2459,17 @@
             "!名詞類別"
         ],
         "difficulty": {
-            "typical": 5,
-            "typicalStar": 5
+            "typical": 5.5,
+            "typicalStar": 6
         },
         "diffeach": [
             {
                 "name": "irotirihs",
                 "diff": 5
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 6
             }
         ]
     },
@@ -2474,6 +2490,7 @@
             "図説明",
             "親族名称"
         ],
+        "solcorrection": "(a) YawとAmaの位置が逆になっている。",
         "explanationlinks": [
             "https://tungumalanna.hatenablog.com/entry/2019/05/04/024445"
         ],
@@ -2484,6 +2501,10 @@
         "diffeach": [
             {
                 "name": "irotirihs",
+                "diff": 5
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 5
             }
         ]
@@ -2787,14 +2808,42 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 1
+            },
+            {
                 "name": "karngati",
                 "diff": 1
             },
             {
                 "name": "fulfom",
                 "diff": 1
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 1
             }
-        ]
+        ],
+        "hint": {
+            "name": "karngati",
+            "value": [
+                "日本語訳はすべて形容詞と名詞一つずつの組み合わせだ．ロシア語のほうもスペースで区切られた二つの語でできているから，片方が名詞でもう片方が形容詞に当たると考えられる．",
+                "まず複数の例に共通して使われている語に注目し，対応するロシア語の語を特定しよう．すると問題1が解ける．",
+                "問題2を解くにはロシア語での名詞と形容詞の位置関係を明らかにしないといけない．ロシア語の形容詞は左側と右側どちらに来ている？",
+                "左側が「古い」「新しい」「黄色い」に対応しているから，形容詞は左に来ると分かる．",
+                "ロシア語の形容詞は右端の部分が変わっている．どんな種類がある？",
+                "\"-ая\"，\"-ое\"，\"-ый\"の三種類がある．",
+                "\"-ая\"，\"-ое\"，\"-ый\"はそれぞれどんな時に使われている？",
+                "問題1の課題も参考にできる．",
+                "\"-ая\"は「紙」，「帽子」，「道」，\"-ое\"は「映画館」，「オーバーコート」，「ペン」，\"-ый\"は「家」，「空港」，「ネクタイ」を修飾するときに使われていると分かる．これで問題2が解ける．",
+                "問題3を解くには「指輪」，「鼻」，「シャツ」を修飾するときに\"-ая\"，\"-ое\"，\"-ый\"のどれを使うかの分からないといけない．使う形容詞の形は語ごとにランダムに決められているわけではなく，何らかの規則に基づいて導けるずだ．",
+                "\"бумага\"，\"шапка\"，\"дорога\"にあって，ほかの名詞に無い特徴はなんだろう？",
+                "全て右端に\"a\"がある．",
+                "では\"кино\"，\"пальто\"，\"перо\"は？",
+                "全て右端が\"o\"で終わっている．",
+                "\"-ый\"を使うのはそれ以外の時のようだ．これで問題3が解ける．"
+            ]
+        }
     },
     {
         "id": 111,
@@ -2815,11 +2864,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
                 "name": "karngati",
                 "diff": 2
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -2837,13 +2894,24 @@
         "category": [
             "文章"
         ],
+        "explanationlinks": [
+            "https://www.all-for-nothing.com/entry/2020/01/03/154208"
+        ],
         "difficulty": {
             "typical": 4,
             "typicalStar": 4
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 5
+            },
+            {
                 "name": "karngati",
+                "diff": 4
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 4
             }
         ]
@@ -2863,16 +2931,24 @@
         ],
         "probcorrection": "スウェーデン語の「主の祈り」最後の行 誤 vighet -> 正 evighet",
         "difficulty": {
-            "typical": 2.5,
-            "typicalStar": 3
+            "typical": 2,
+            "typicalStar": 2
         },
         "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            },
             {
                 "name": "karngati",
                 "diff": 3
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -2897,11 +2973,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 2
+            },
+            {
                 "name": "karngati",
                 "diff": 2
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -2926,11 +3010,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
                 "name": "karngati",
                 "diff": 2
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -2955,11 +3047,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 5
+            },
+            {
                 "name": "karngati",
                 "diff": 5
             },
             {
                 "name": "fulfom",
+                "diff": 5
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 5
             }
         ]
@@ -2987,11 +3087,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
                 "name": "karngati",
                 "diff": 2
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -3015,11 +3123,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 2
+            },
+            {
                 "name": "karngati",
                 "diff": 2
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ],
@@ -3035,7 +3151,7 @@
                 "「ㄴ」が「ん」だと分かる．「발견」「위인」がそれぞれ「偉人」「発見」のどちらかだと絞れる．どっちがどっちだろうか？",
                 "「為(위)」から「위인」が「偉人」だと分かる．消去法で「발견」は「発見」．",
                 "「○う」と読むこれらを見比べると？：動(동), 重(중), 向(향), 燈(등)",
-                "下につくㅇは「う」だと分かる．「성공」が「成功」だと分かる．",
+                "下につく「ㅇ」は「う」だと分かる．「성공」が「成功」だと分かる．",
                 "か行始まりのこれらを見比べると？：家(가), 根(근), 向(향), 記(기), 機(기), 見(견), 功(공)",
                 "向を例外として，「ㄱ」がkだと分かる．",
                 "「家(가)」と「記(기)」を見比べると？母音に注目．",
@@ -3060,16 +3176,24 @@
             "音韻"
         ],
         "difficulty": {
-            "typical": 1.5,
+            "typical": 2,
             "typicalStar": 2
         },
         "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            },
             {
                 "name": "karngati",
                 "diff": 1
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -3093,12 +3217,20 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 2
+            },
+            {
                 "name": "karngati",
                 "diff": 1
             },
             {
                 "name": "fulfom",
                 "diff": 2
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 1
             }
         ]
     },
@@ -3121,11 +3253,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 4
+            },
+            {
                 "name": "karngati",
                 "diff": 4
             },
             {
                 "name": "fulfom",
+                "diff": 4
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 4
             }
         ]
@@ -3147,10 +3287,14 @@
             "https://fulfom.hatenablog.com/entry/2019/12/21/145615"
         ],
         "difficulty": {
-            "typical": 4,
+            "typical": 3.5,
             "typicalStar": 4
         },
         "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            },
             {
                 "name": "karngati",
                 "diff": 4
@@ -3158,6 +3302,10 @@
             {
                 "name": "fulfom",
                 "diff": 4
+            },
+            {
+                "name": "ryoanjing",
+                "diff": 3
             }
         ]
     },
@@ -3175,16 +3323,24 @@
             "文字"
         ],
         "difficulty": {
-            "typical": 2.5,
-            "typicalStar": 3
+            "typical": 2,
+            "typicalStar": 2
         },
         "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            },
             {
                 "name": "karngati",
                 "diff": 3
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -3212,11 +3368,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 2
+            },
+            {
                 "name": "karngati",
                 "diff": 2
             },
             {
                 "name": "fulfom",
+                "diff": 2
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 2
             }
         ]
@@ -3240,11 +3404,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
                 "name": "karngati",
                 "diff": 3
             },
             {
                 "name": "fulfom",
+                "diff": 3
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 3
             }
         ]
@@ -3269,11 +3441,19 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
                 "name": "karngati",
                 "diff": 3
             },
             {
                 "name": "fulfom",
+                "diff": 3
+            },
+            {
+                "name": "ryoanjing",
                 "diff": 3
             }
         ]
@@ -3297,6 +3477,10 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
                 "name": "karngati",
                 "diff": 3
             },
@@ -3315,7 +3499,20 @@
         "year": 2010,
         "number": "R1-1",
         "topic": "French",
-        "author": "Dragomir Radev"
+        "author": "Dragomir Radev",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 129,
@@ -3326,7 +3523,20 @@
         "year": 2010,
         "number": "R1-2",
         "topic": "English",
-        "author": "Cindy Schneider"
+        "author": "Cindy Schneider",
+        "category": [
+            "未分類"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 130,
@@ -3337,7 +3547,20 @@
         "year": 2010,
         "number": "R1-3",
         "topic": "Abma",
-        "author": "Luda Kedova & Rachel Nordlinger"
+        "author": "Luda Kedova & Rachel Nordlinger",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 131,
@@ -3347,8 +3570,21 @@
         "venuedetail": "UKLO",
         "year": 2010,
         "number": "R1-4",
-        "topic": "Armenian",
-        "author": "Dragomir Radev"
+        "topic": "Armenian Script",
+        "author": "Dragomir Radev",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 132,
@@ -3359,7 +3595,20 @@
         "year": 2010,
         "number": "R1-5",
         "topic": "Turkish",
-        "author": "Bozhidar Bozhanov"
+        "author": "Bozhidar Bozhanov",
+        "category": [
+            "音韻"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 133,
@@ -3370,7 +3619,22 @@
         "year": 2010,
         "number": "R1-6",
         "topic": "Tangkhul",
-        "author": "David Mortensen"
+        "author": "David Mortensen",
+        "category": [
+            "形態",
+            "統語",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 5
+            }
+        ]
     },
     {
         "id": 134,
@@ -3381,7 +3645,24 @@
         "year": 2010,
         "number": "R1-7",
         "topic": "English",
-        "author": "Patrick Littell"
+        "author": "Patrick Littell",
+        "category": [
+            "非言語"
+        ],
+        "difficulty": {
+            "typical": 4.5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
+                "name": "karngati",
+                "diff": 6
+            }
+        ]
     },
     {
         "id": 135,
@@ -3392,7 +3673,20 @@
         "year": 2010,
         "number": "R2-1",
         "topic": "Minangkabau",
-        "author": "Diego Molla-Aliod"
+        "author": "Diego Molla-Aliod",
+        "category": [
+            "韻律"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 136,
@@ -3403,7 +3697,21 @@
         "year": 2010,
         "number": "R2-2",
         "topic": "Cree",
-        "author": "Patrick Littell & Julia Workman"
+        "author": "Patrick Littell & Julia Workman",
+        "category": [
+            "文字",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 137,
@@ -3414,29 +3722,74 @@
         "year": 2010,
         "number": "R2-3",
         "topic": "English",
-        "author": "Richard Sproat"
+        "author": "Richard Sproat",
+        "category": [
+            "非言語"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 138,
         "title": "Tale of Kieu",
-        "link": "http://www.uklo.org/example-questions/oldsite/test material/2010/vietnamese.doc",
+        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "problink": "https://www.uklo.org/wp-content/uploads/2011/06/r2-questions.doc",
+        "solutionlink": "https://www.uklo.org/wp-content/uploads/2011/06/r2-answers-full.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
         "number": "R2-4",
-        "topic": "Vietnamese",
-        "author": "David Mortensen"
+        "topic": "Chu nom",
+        "author": "David Mortensen",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 139,
         "title": "Possessed in Vanuatu",
-        "link": "http://www.uklo.org/example-questions/oldsite/test material/2010/vanuatu.doc",
+        "link": "https://www.uklo.org/2010-2/uklo-2010",
+        "problink": "https://www.uklo.org/wp-content/uploads/2011/06/r2-questions.doc",
+        "solutionlink": "https://www.uklo.org/wp-content/uploads/2011/06/r2-answers-full.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2010,
         "number": "R2-5",
         "topic": "Vanuatu",
-        "author": "Jane Simpson & Jeremy Hammond"
+        "author": "Jane Simpson & Jeremy Hammond",
+        "category": [
+            "形態",
+            "所有",
+            "!名詞類別"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 140,
@@ -3447,7 +3800,10 @@
         "year": 2011,
         "number": "R1-1",
         "topic": "English",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "category": [
+            "未分類"
+        ]
     },
     {
         "id": 141,
@@ -3457,8 +3813,21 @@
         "venuedetail": "UKLO",
         "year": 2011,
         "number": "R1-2",
-        "topic": "Japanese",
-        "author": "Harold Somers"
+        "topic": "Hiragana",
+        "author": "Harold Somers",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ]
     },
     {
         "id": 142,
@@ -3469,7 +3838,21 @@
         "year": 2011,
         "number": "R1-3",
         "topic": "Arrernte",
-        "author": "Mark Dras & Mary Laughren"
+        "author": "Mark Dras & Mary Laughren",
+        "category": [
+            "韻律"
+        ],
+        "probcorrection": "'starts to make'の訳 誤 athelpatheme -> 正 mpwelpempwareme",
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 143,
@@ -3480,7 +3863,21 @@
         "year": 2011,
         "number": "R1-4",
         "topic": "Ulwa",
-        "author": "Richard Sproat"
+        "author": "Richard Sproat",
+        "category": [
+            "形態",
+            "!韻律"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 144,
@@ -3491,7 +3888,20 @@
         "year": 2011,
         "number": "R1-5",
         "topic": "Papago",
-        "author": "Lori Levin (data from Ken Hale)"
+        "author": "Lori Levin (data from Ken Hale)",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 145,
@@ -3502,7 +3912,10 @@
         "year": 2011,
         "number": "R1-6",
         "topic": "Indonesian",
-        "author": "Dragomir Radev"
+        "author": "Dragomir Radev",
+        "category": [
+            "文章"
+        ]
     },
     {
         "id": 146,
@@ -3512,8 +3925,21 @@
         "venuedetail": "UKLO",
         "year": 2011,
         "number": "R1-7",
-        "topic": "English (braille)",
-        "author": "Patrick Littell"
+        "topic": "New York point",
+        "author": "Patrick Littell",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 147,
@@ -3524,7 +3950,21 @@
         "year": 2011,
         "number": "R2-1",
         "topic": "Warlpiri",
-        "author": "Mary Laughren"
+        "author": "Mary Laughren",
+        "category": [
+            "音韻",
+            "比較"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ]
     },
     {
         "id": 148,
@@ -3535,29 +3975,69 @@
         "year": 2011,
         "number": "R2-2",
         "topic": "Irish",
-        "author": "Tom Payne"
+        "author": "Tom Payne",
+        "category": [
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ]
     },
     {
         "id": 149,
-        "title": "A script for the Ndyuka",
-        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Afaka.doc",
-        "venue": "海外予選",
-        "venuedetail": "UKLO",
-        "year": 2011,
-        "number": "R2-3",
-        "topic": "Ndyuka",
-        "author": "Patrick Littell"
-    },
-    {
-        "id": 150,
         "title": "Axolotl in the water",
         "link": "http://www.uklo.org/wp-content/uploads/2011/06/3-Nahuatl.doc",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2011,
-        "number": "R2-4",
+        "number": "R2-3",
         "topic": "Nahuatl",
-        "author": "John Berman"
+        "author": "John Berman",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ]
+    },
+    {
+        "id": 150,
+        "title": "A script for the Ndyuka",
+        "link": "http://www.uklo.org/wp-content/uploads/2011/06/4-Afaka.doc",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2011,
+        "number": "R2-4",
+        "topic": "Afaka syllabary",
+        "author": "Patrick Littell",
+        "category": [
+            "文字",
+            "文章"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 7
+            }
+        ]
     },
     {
         "id": 151,
@@ -3568,7 +4048,21 @@
         "year": 2011,
         "number": "R2-5",
         "topic": "Tadaksahak",
-        "author": "Bozhidar Bozhanov"
+        "author": "Bozhidar Bozhanov",
+        "category": [
+            "統語"
+        ],
+        "solcorrection": "基本語順 誤 VSO -> 正 SVO",
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 152,
@@ -4459,7 +4953,17 @@
         "year": 2017,
         "number": "R1-7",
         "topic": "Tamil",
-        "author": "Kai Low "
+        "author": "Kai Low ",
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "ryoanjing",
+                "diff": 4
+            }
+        ]
     },
     {
         "id": 233,
