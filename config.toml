@@ -188,7 +188,11 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	value = ["","★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★","<span class='bigstar'>★</span> ","<span class='bigstar'>★★</span> ","<span class='bigstar'>★★★</span> "]
 [params.probCategory]
 	name = "ジャンル"
-	value = ["統語","形態","音韻","韻律","文字","命数","意味","その他"]
+	subname = ""
+	value = ["統語","形態","音韻","韻律","文字","命数","意味"]
+[[params.categoryForCompatiability]]
+	name = "†語対応"
+	query = ".意味.対応"
 [[params.utility]]
 	class = "hint"
 	value = "ヒント"

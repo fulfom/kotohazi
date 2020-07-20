@@ -301,9 +301,16 @@ $form-feedback-valid-color: #28a745;
 .filter-group input[type="checkbox"]{
     +label{
         @extend .basicbtn, .checkedbtn;
+        &.andor{
+            border-color: #ffa630;
+            background-color: #ffa630;
+        }
     }
     &:not(:checked)+label{
         @extend .notcheckedbtn;
+        &.andor{
+            background-color: white;
+        }
     }
 }
 

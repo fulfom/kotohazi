@@ -61,11 +61,31 @@
 <div class="filter-group" id="filter-category" data-filter-group="category">
     <span>
         {{.Site.Params.probCategory.name}}
-    </span>
+    </span>{{$andor := "&"}}
+    <input class="filterfn" type="checkbox" hidden id="andor" autocomplete="off">
+    <label class="andor" for="andor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.probCategory.value}}
-        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}{{if eq . "その他"}}{{range ($prob.Get "category")}}{{if hasPrefix . "!"}}{{else}}{{if in $.Site.Params.probCategory.value .}}{{else}}, .{{.}}{{end}}{{end}}{{end}}{{end}}" autocomplete="off">
+        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
         <label class="{{.}}" for="{{.}}">{{.}}</label>
+    {{end}}{{$otherCatName := "その他"}}
+        <input class="filterfn" type="checkbox" checked hidden id="{{$otherCatName}}" autocomplete="off">
+        <label class="{{$otherCatName}}" for="{{$otherCatName}}">{{$otherCatName}}</label>
+    </div>
+</div>
+
+<div class="filter-group showOtherGenre" style="display: none;" id="filter-subcategory" data-filter-group="subcategory">
+    <span>{{$.Site.Params.probCategory.subname}} </span>
+    <div class="unmot">
+    {{range ($prob.Get "category")}}
+    {{if hasPrefix . "!"}}{{else}}
+    {{if in $.Site.Params.probCategory.value .}}{{else}}
+        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
+        <label class="{{.}}" for="{{.}}">{{.}}</label>
+    {{end}}{{end}}{{end}}
+    {{range $.Site.Params.categoryForCompatiability}}
+        <input type="checkbox" checked hidden id="{{.name}}" data-filter="{{.query}}" autocomplete="off">
+        <label class="{{.name}}" for="{{.name}}">{{.name}}</label>
     {{end}}
     </div>
 </div>
@@ -109,7 +129,7 @@
 {{$detailpath = $detailpath | append ((delimit $teamnum "-") | urlize)}}
 {{$problink := .problink | default .link}}
 
-<div id="prob{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} その他{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}">
+<div id="prob{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} 未分類{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}">
     <div class="card">
     <div class="card-body">
         <div class="d-flex">
@@ -122,7 +142,7 @@
         </div>
         {{with .titlejp}}<h6 class="card-subtitle mb-2 text-muted sort-title">{{$title}}</h6>{{end}}
         {{with .titlejp}}<h5 class="card-title">{{.}}{{else}}<h5 class="card-title sort-title">{{$title}}{{end}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span> {{end}}{{end}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span> {{end}}{{else}}<span class="tag m-1 unmot">未分類</span>{{end}}</h6>
         <div class="d-flex">
             <a href="{{$problink}}" class="card-link" target="_blank">問題</a>
             <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>
@@ -188,10 +208,15 @@
         var utilityFilterValue = '*';
         var qsRegex;
         var $checkboxes = $('#filter input[type="checkbox"]');
-        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]');
+        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#andor)');
+        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
+        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
         var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]');
-        var $venue = $('#filter-venue input[type="checkbox"]');
+        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
         var $hide = $('.hide');
+        var $andor = $('#andor');
+        const DELIMIT_AND = '';
+        const DELIMIT_OR = ', '
 
         var $quicksearch = $('#quicksearch').keyup( debounce( function() {
             qsRegex = new RegExp( $quicksearch.val(), 'gi' );
@@ -225,7 +250,7 @@
             //要らないフィルターを消す class で hide を指定すると消えうるものになり, showVENUE でその venue のときだけ表示されるように
             var showCls = '';
             var $checkedVenue = $('#filter-venue input[type="checkbox"]:checked');
-            if($checkedVenue.length != $venue.length){
+            if($checkedVenue.length != $venueCheckboxes.length){
                 $checkedVenue.each(function(i,elem){
                     showCls += '.show'+elem.id+', ';
                 });
@@ -249,24 +274,62 @@
             },250);
         });
 
-        $categoryCheckboxes.change(function(){//categoryだけ非排他的なので分けた
+
+        function updateCatCheck(){
             var filters = [];
+            $allcategoryCheckboxes.each(function(i, elem){
+                if(elem.checked){
+                    filters.push(elem.getAttribute('data-filter'));
+                }
+            });
+            var andor = DELIMIT_OR;
+            if($andor.prop('checked')){
+                andor = DELIMIT_AND;
+            }
+            categoryFilterValue = filters.length ? filters.join(andor) : '*';
+            setTimeout(function(){
+                $iso.isotope();
+                countHit();
+            },250);
+        }
+
+        $categoryCheckboxes.change(function(){//categoryは非排他的なので分けた
             var $this = $(this);
 
             if(false == $this.prop('checked')){
                 reverse($this);
             }
 
-            $categoryCheckboxes.each(function(i, elem){
-                if(elem.checked){
-                    filters.push(elem.getAttribute('data-filter'));
+            //要らないフィルターを消す
+            var $checkedCategory = $('#filter-category input[type="checkbox"]:checked');
+            if($checkedCategory.length != $categoryCheckboxes.length){
+                if($('#その他').prop('checked')){
+                    if("その他" == $this.attr('id')){
+                        $('.showOtherGenre').show().find('input').prop('checked', true);
+                    }
                 }
-            });
-            categoryFilterValue = filters.length ? filters.join(', ') : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
+                else{
+                    $('.showOtherGenre').hide().find('input').prop('checked', false);
+                }
+            }
+            else{
+                $('.showOtherGenre').hide().find('input').prop('checked', true);
+            }
+
+            updateCatCheck();
+        });
+
+        $andor.change(function(){
+            updateCatCheck();
+        });
+
+        $subcategoryCheckboxes.change(function(){//categoryと同じfilter内に含まれる
+            var $this = $(this);
+
+            if(false == $this.prop('checked')){
+                reverse($this);
+            }
+            updateCatCheck();
         });
 
         $utilityCheckboxes.change(function(){//utilityも分ける
