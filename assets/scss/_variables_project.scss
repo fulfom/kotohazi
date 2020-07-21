@@ -32,6 +32,33 @@ $headings-font-family: Open sans,helvetica,Segoe UI,游ゴシック体,YuGothic,
 
 $headings-margin-bottom: 1rem;
 
+dl{
+    padding-left: 15px;
+}
+
+dt{
+    float: left;
+    padding-right: 1rem;
+    min-width: 5rem;
+}
+
+//とりあえず
+.mw-lg-80{
+    @media (min-width: 992px){
+        max-width: 80%;
+    }
+}
+
+.td-content{
+    p{
+        max-width: unset !important;
+    }
+}
+
+figcaption h4{
+    font-size: medium;
+}
+
 .unmot{
     display: inline-block;
 }
