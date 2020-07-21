@@ -49,9 +49,15 @@
         <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span>{{end}}{{else}}<span class="tag m-1 unmot">未分類</span>{{end}}</h6>
         {{if $detailed}}<hr>
         <p class="card-text text-muted">主題：{{$topic}}<br>作問：{{$author}}</p>{{end}}
-        <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>
-        {{if $detailed}}{{with $probmaterial}}<a href="{{.}}" class="card-link" target="_blank">資料</a>{{end}}
-        {{with $problink}}<a href="{{$link}}" class="card-link" target="_blank">掲載元</a>{{end}}
-        {{else}}<a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>{{end}}
+        <div class="d-flex">
+            <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>
+            {{if $detailed}}{{with $probmaterial}}<a href="{{.}}" class="card-link" target="_blank">資料</a>{{end}}
+            {{with $problink}}<a href="{{$link}}" class="card-link" target="_blank">掲載元</a>{{end}}
+            {{else}}<a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>{{end}}
+            <input class="check-check" type="checkbox" hidden id="done{{$id}}" data-id="{{$id}}">
+            <label class="ml-auto mb-0" role="button" for="done{{$id}}"><i class="fas fa-check-square"></i></a></label>
+            <input class="check-heart" type="checkbox" hidden id="like{{$id}}" data-id="{{$id}}">
+            <label class="ml-3 mb-0" role="button" for="like{{$id}}"><i class="fas fa-heart"></i></a></label>
+        </div>
     </div>
 </div>

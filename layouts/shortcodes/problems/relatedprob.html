@@ -1,16 +1,16 @@
-{{$id := .Get "id"}}
+{{$thisid := .Get "id"}}
 {{$pageid := .Get "pageid"}}
 {{$pagepath := .Get "pagepath"}}
 {{$categories := slice ""}}
 {{$diff := 0}}
 {{$same := slice 0}}
 
-{{with $id}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
+{{with $thisid}}
+{{$arrayProbData := where $.Site.Data.problems "id" $thisid}}
 {{$this := index $arrayProbData 0}}
 {{$categories = $this.category}}
 {{$diff = $this.difficulty.typicalStar}}
-{{$same = slice (float $id)}}
+{{$same = slice (float $thisid)}}
 {{end}}
 
 {{with $pageid}}
@@ -40,6 +40,7 @@
 <div class="row">
 {{range first 3 (shuffle (where $Arr "id" "not in" $same))}}
 {{$prob := .}}
+{{$id := .id}}
 {{$venue := index $prob "venue"}}
 {{$venuedetail := index $prob "venuedetail"}}
 {{$year := index $prob "year"}}
@@ -81,9 +82,15 @@
         </div>
         {{with $titlejp}}<h6 class="card-subtitle mb-2 text-muted">{{$title}}</h6>{{end}}
         <h5 class="card-title">{{with $titlejp}}{{.}}{{else}}{{$title}}{{end}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span>{{end}}{{end}}</h6>
-        <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>
-        <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>
+        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span>{{end}}{{else}}<span class="tag m-1 unmot">未分類</span>{{end}}</h6>
+        <div class="d-flex">
+            <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>
+            <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>
+            <input class="check-check" type="checkbox" hidden id="done{{$id}}" data-id="{{$id}}">
+            <label class="ml-auto mb-0" role="button" for="done{{$id}}"><i class="fas fa-check-square"></i></a></label>
+            <input class="check-heart" type="checkbox" hidden id="like{{$id}}" data-id="{{$id}}">
+            <label class="ml-3 mb-0" role="button" for="like{{$id}}"><i class="fas fa-heart"></i></a></label>
+        </div>
     </div>
 </div>
 </div>

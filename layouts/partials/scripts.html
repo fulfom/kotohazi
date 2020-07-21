@@ -13,6 +13,8 @@
 {{ $jsMark := resources.Get "js/mark.js" }}
 <script src="{{ $jsMark.RelPermalink }}"></script>
 {{end}}
+{{ $jsIndexedDB := resources.Get "js/markIndexedDB.js" }}
+<script src="{{ $jsIndexedDB.RelPermalink }}"></script>
 {{ $jsBase := resources.Get "js/base.js" }}
 {{ $jsAnchor := resources.Get "js/anchor.js" }}
 {{ $jsSearch := resources.Get "js/search.js" | resources.ExecuteAsTemplate "js/search.js" .Site.Home }}

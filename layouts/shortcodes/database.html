@@ -98,8 +98,11 @@
     </span>
     <div class="unmot">
     {{range .Site.Params.utility}}
-        <input type="checkbox" hidden id="{{.class}}" data-filter=".{{.class}}" autocomplete="off">
-        <label class="{{.class}}" for="{{.class}}"><i class="fas fa-{{.icon}} fa-fw sort-utility-{{.class}}"></i></label>
+        <input type="checkbox" hidden id="{{.class}}" data-filter="{{.query}}" autocomplete="off">
+        <label class="{{.class}}" for="{{.class}}">{{if .stack}}
+            <span class="fa-stack stack-small sort-utility-{{.class}} fa-1x">{{range .icon}}
+                <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}
+            </span>{{else}}<i class="fas fa-{{.icon}} fa-fw sort-utility-{{.class}}"></i>{{end}}</label>
     {{end}}
     </div>
 </div>
@@ -368,55 +371,5 @@
             var text = iso.filteredItems.length;
             $('#output').text( '—— ' + text + '問');
         }
-
-        // indexedDB
-        var $likes = $('.check-heart');
-        var $dones = $('.check-check');
-        //
-        // Define your database
-        //
-        var db = new Dexie("done-like");
-        db.version(1).stores({
-            dones: 'id',
-            likes: 'id'
-        });
-
-        $likes.change(function(){
-            $this = $(this);
-            var checked = $this.prop('checked');
-            var id = $this.data('id');
-            if(checked){
-                db.likes.put({id: id});
-                $('#prob'+id).addClass('like');
-            }
-            else{
-                db.likes.delete(id);
-                $('#prob'+id).removeClass('like');
-            }
-        });
-
-        $dones.change(function(){
-            $this = $(this);
-            var checked = $this.prop('checked');
-            var id = $this.data('id');
-            if(checked){
-                db.dones.put({id: id});
-                $('#prob'+id).addClass('done');
-            }
-            else{
-                db.dones.delete(id);
-                $('#prob'+id).removeClass('done');
-            }
-        });
-
-        db.likes.toCollection().eachPrimaryKey(function(v){
-            $('#like'+v).prop('checked',true);
-            $('#prob'+v).addClass('like');
-        });
-        db.dones.toCollection().eachPrimaryKey(function(v){
-            $('#done'+v).prop('checked',true);
-            $('#prob'+v).addClass('done');
-        });
-
     });
 </script>
