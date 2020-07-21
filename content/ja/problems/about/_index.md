@@ -4,7 +4,7 @@ weight: 1
 type: docs
 description: "問題集の使い方"
 images:
-- problems/about/filter.png
+- problems/about/filter-thumbnail.png
 ---
 
 {{% note "更新 2020-07-22" %}}
@@ -58,9 +58,10 @@ images:
 
 ### 右上のアイコン
 
-問題によってはカードの右上にアイコンが表示されていることがあります．こんな情報を示しています↓
+問題によってはカードの右上にアイコンが表示されていることがあります．押すとポップアップが出ます．それぞれこんな情報を示しています↓
 
-{{< icon "icons text-muted" >}}
+<!--{{< icon "icons text-muted" >}}-->
+<a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb center&#34;><div class=&#34;icon material&#34;><i class=&#34;fas fa-icons&#34;></i></div></div><div class=&#34;card-body p-2&#34;><h5 class=&#34;card-title mb-1&#34;>追加資料を入手</h5></div></div>"><i class="fas fa-icons fa-fw"></i></a>
 : 音声や動画などの追加資料へのリンク
 
 {{< icon "exclamation-circle text-muted" >}}
