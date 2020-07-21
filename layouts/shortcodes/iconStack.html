@@ -1,0 +1,4 @@
+<span class="unmot">
+    <span class="fa-stack stack-small fa-1x{{with .Get 1}} fa-fw{{end}}">{{range split (.Get 0) "|" }}
+        <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}
+    </span>{{with .Get 1}}{{.}}{{end}}</span>

@@ -64,8 +64,8 @@
     <span>
         {{.Site.Params.probCategory.name}}
     </span>{{$andor := "&"}}
-    <input class="filterfn" type="checkbox" hidden id="andor" autocomplete="off">
-    <label class="andor" for="andor">{{$andor}}</label>
+    <input class="filterfn" type="checkbox" hidden id="catandor" autocomplete="off">
+    <label class="andor" for="catandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.probCategory.value}}
         <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
@@ -96,11 +96,13 @@
     <span>
         便利
     </span>
+    <input class="filterfn" type="checkbox" hidden id="utiandor" autocomplete="off">
+    <label class="andor" for="utiandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.utility}}
         <input type="checkbox" hidden id="{{.class}}" data-filter="{{.query}}" autocomplete="off">
         <label class="{{.class}}" for="{{.class}}">{{if .stack}}
-            <span class="fa-stack stack-small sort-utility-{{.class}} fa-1x">{{range .icon}}
+            <span class="fa-stack stack-small fa-1x">{{range .icon}}
                 <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}
             </span>{{else}}<i class="fas fa-{{.icon}} fa-fw sort-utility-{{.class}}"></i>{{end}}</label>
     {{end}}
@@ -213,13 +215,14 @@
         var utilityFilterValue = '*';
         var qsRegex;
         var $checkboxes = $('#filter input[type="checkbox"]');
-        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#andor)');
+        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
         var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
         var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
-        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]');
+        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
         var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
         var $hide = $('.hide');
-        var $andor = $('#andor');
+        var $catandor = $('#catandor');
+        var $utiandor = $('#utiandor');
         const DELIMIT_AND = '';
         const DELIMIT_OR = ', '
 
@@ -287,11 +290,11 @@
                     filters.push(elem.getAttribute('data-filter'));
                 }
             });
-            var andor = DELIMIT_OR;
-            if($andor.prop('checked')){
-                andor = DELIMIT_AND;
+            var catandor = DELIMIT_OR;
+            if($catandor.prop('checked')){
+                catandor = DELIMIT_AND;
             }
-            categoryFilterValue = filters.length ? filters.join(andor) : '*';
+            categoryFilterValue = filters.length ? filters.join(catandor) : '*';
             setTimeout(function(){
                 $iso.isotope();
                 countHit();
@@ -324,7 +327,7 @@
             updateCatCheck();
         });
 
-        $andor.change(function(){
+        $catandor.change(function(){
             updateCatCheck();
         });
 
@@ -337,20 +340,31 @@
             updateCatCheck();
         });
 
-        $utilityCheckboxes.change(function(){//utilityも分ける
+        function updateUtiCheck(){
             var filters = [];
-            var $this = $(this);
-
             $utilityCheckboxes.each(function(i, elem){
                 if(elem.checked){
                     filters.push(elem.getAttribute('data-filter'));
                 }
             });
-            utilityFilterValue = filters.length ? filters.join(', ') : '*';
+
+            var utiandor = DELIMIT_OR;
+            if($utiandor.prop('checked')){
+                utiandor = DELIMIT_AND;
+            }
+            utilityFilterValue = filters.length ? filters.join(utiandor) : '*';
             setTimeout(function(){
                 $iso.isotope();
                 countHit();
             },250);
+        }
+
+        $utilityCheckboxes.change(function(){//utilityも分ける
+            updateUtiCheck();
+        });
+
+        $utiandor.change(function(){
+            updateUtiCheck();
         });
 
         function reverse($this){
