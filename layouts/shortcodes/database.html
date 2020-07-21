@@ -1,10 +1,12 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ $color := .Get "color" | default "primary" }}
 
+{{$arrrayProbdata := where $.Site.Data.problems "draft" false}}
+
 {{$prob := newScratch}}
 {{$year := newScratch}}
 {{$hasnoyear := slice}}
-{{range $.Site.Data.problems}}
+{{range $arrrayProbdata}}
     {{with (index . "venue")}}{{ $prob.Add "venue" (slice . )}}{{end}}
     {{with (index . "year")}}{{$prob.Add "year" (slice . )}}{{else}}{{$hasnoyear = $hasnoyear | append .venue}}{{end}}
     {{with (index . "category")}}{{ $prob.Add "category" . }}{{end}}
@@ -16,7 +18,7 @@
 
 {{range ($prob.Get "year")}}
 {{$temp := string .}}
-{{range where $.Site.Data.problems "year" (int $temp)}}
+{{range where $arrrayProbdata "year" (int $temp)}}
     {{ $year.Add $temp (slice (index . "venue")) }}
 {{end}}
 {{$year.Set $temp (uniq ($year.Get $temp)) }}
@@ -117,7 +119,7 @@
 <p class="text-muted pt-2" id="output">——</p>
 
 <div id="filter-container" class="mt-4 row">
-{{range $.Site.Data.problems}}{{$title := index . "title"}}{{$venue := index . "venue"}}{{$year := index . "year"}}{{$team := index . "team"}}{{$number := index . "number"}}
+{{range $arrrayProbdata}}{{$title := index . "title"}}{{$venue := index . "venue"}}{{$year := index . "year"}}{{$team := index . "team"}}{{$number := index . "number"}}
 {{$namedyear := cond (lt $year 0) (index $.Site.Params.namedyear $year) $year}}
 {{$detailpath := slice "problems" ((index $.Site.Params.venuedetail $venue | default $venue ) | urlize)}}
 {{with (index . "venuedetail")}}{{$detailpath = $detailpath | append (. | urlize)}}{{end}}
