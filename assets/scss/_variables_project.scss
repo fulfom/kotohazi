@@ -42,6 +42,10 @@ dt{
     min-width: 5rem;
 }
 
+dd{ 
+    margin-left: 5rem !important;
+}
+
 //とりあえず
 .mw-lg-80{
     @media (min-width: 992px){
@@ -55,8 +59,11 @@ dt{
     }
 }
 
-figcaption h4{
-    font-size: medium;
+figcaption{
+    @extend .mt-2;
+    h4{
+        font-size: medium;
+    }
 }
 
 .unmot{
@@ -441,6 +448,12 @@ i.fa-angle-right{
     &:checked+label{
         color: var(--teal);
     }
+}
+
+.fa-stack.stack-small{
+    height: 1em;
+    line-height: 0.9em;
+    width: 1.25em;
 }
 
 $sort-colors:(

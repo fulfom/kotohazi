@@ -37,6 +37,7 @@ plainIDAnchors = true
 hrefTargetBlank = true
 angledQuotes = false
 latexDashes = true
+extensions = ["definitionLists"]
 
 # Image processing configuration.
 [imaging]
@@ -195,19 +196,28 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	query = ".意味.対応"
 [[params.utility]]
 	class = "hint"
+	query = ".hint"
 	value = "ヒント"
 	icon = "lightbulb"
 	color = "var(--yellow)"
 [[params.utility]]
 	class = "expl"
+	query = ".expl"
 	value = "解説付き"
 	icon = "chalkboard-teacher"
 [[params.utility]]
 	class = "done"
+	query = ".done"
 	value = "挑戦済み"
 	icon = "check-square"
 [[params.utility]]
+	class = "notdone"
+	query = ":not(.done)"
+	stack = true
+	icon = ["check-square sort-utility-done","slash"]
+[[params.utility]]
 	class = "like"
+	query = ".like"
 	value = "お気に入り"
 	icon = "heart"
 [params.sort]
