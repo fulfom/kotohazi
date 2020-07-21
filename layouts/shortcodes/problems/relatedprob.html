@@ -6,7 +6,8 @@
 {{$same := slice 0}}
 
 {{with $id}}
-{{$this := index $.Site.Data.problems (sub $id 1)}}
+{{$arrayProbData := where $.Site.Data.problems "id" $id}}
+{{$this := index $arrayProbData 0}}
 {{$categories = $this.category}}
 {{$diff = $this.difficulty.typicalStar}}
 {{$same = slice (float $id)}}

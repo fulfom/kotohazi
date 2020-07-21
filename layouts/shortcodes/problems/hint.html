@@ -1,5 +1,6 @@
-{{$id := sub (.Get "id") 1}}
-{{$prob := index $.Site.Data.problems $id}}
+{{$id := .Get "id"}}
+{{$arrayProbData := where $.Site.Data.problems "id" $id}}
+{{$prob := index $arrayProbData 0}}
 {{$hint := $prob.hint}}
 
 {{range $index,$value := $hint.value}}

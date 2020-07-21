@@ -1,7 +1,8 @@
-{{$id := sub (.Get "id") 1}}
+{{$id := .Get "id"}}
+{{$arrayProbData := where $.Site.Data.problems "id" $id}}
+{{$prob := index $arrayProbData 0}}
 {{$key := .Get "key"}}
 {{$default := .Get "default"}}
-{{$prob := index $.Site.Data.problems $id}}
 {{$data := index $prob $key | default (index $prob $default)}}
 
 {{with $data}}{{$.Inner}}{{end}}
