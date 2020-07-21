@@ -6,13 +6,7 @@ type: docs
 menu:
   main:
     weight: 30
-description: "問題の一覧．難易度やジャンルで絞り込める機能つき"
+description: "問題の一覧．難易度やジャンルで絞り込める機能つき．[取説](about/)"
 ---
-
-{{% note "追加 2020-07-04" %}}
-
-- spreadsheet のデータを反映
-
-{{% /note %}}
 
 {{% database %}}

@@ -460,7 +460,8 @@ $sort-colors:(
     "hint": var(--yellow),
     "expl": black,
     "done": var(--teal),
-    "like": red
+    "like": red,
+    "primary": $primary
 );
 
 @each $class, $sort-color in $sort-colors {

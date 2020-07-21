@@ -1,5 +1,52 @@
 [
     {
+        "id": -1,
+        "title": "Original Title",
+        "titlejp": "問題名",
+        "probmaterial": "./",
+        "venue": "どこのいつ",
+        "number": "何番",
+        "topic": "何についてか",
+        "author": "作問者",
+        "category": [
+            "ジャンル"
+        ],
+        "probcorrection": "問題訂正",
+        "solcorrection": "解答訂正",
+        "explanationlinks": [
+            "https://kotohazi.netlify.app/problems/about/"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
+        "hint": {
+            "name": "fulfom",
+            "value": [
+                "サンプルです",
+                "こんな風に表示されます",
+                "ヒントはいくつあっても大丈夫です",
+                "- マークダウンで書けます[^1]\n- 他の**エディタ**で書いて*コピペ*すると良いと思います\n[^1]: 見出しはバランス的に h4 以下が良いと思います"
+            ]
+        },
+        "translation": {
+            "name": "fulfom",
+            "value": "サンプルです．**マークダウン**で書けます"
+        },
+        "sketch": {
+            "name": "fulfom",
+            "value": "何らか概要とか講評的なものを書くなど？基本なくてよい"
+        },
+        "draft": true,
+        "memo": "説明に使う表示サンプル"
+    },
+    {
         "id": 1,
         "title": "Transcendental Algebra",
         "titlejp": "超越代数",
@@ -25,23 +72,7 @@
                 "diff": 3
             }
         ],
-        "hint": {
-            "name": "fulfom",
-            "value": [
-                "サンプルです",
-                "こんな風に表示されます",
-                "ヒントはいくつあっても大丈夫です",
-                "- マークダウンで書けます[^1]\n- 他の**エディタ**で書いて*コピペ*すると良いと思います\n[^1]: 見出しはバランス的に h4 以下が良いと思います"
-            ]
-        },
-        "translation": {
-            "name": "fulfom",
-            "value": "サンプルです．**マークダウン**で書けます"
-        },
-        "sketch": {
-            "name": "fulfom",
-            "value": "何らか概要とか講評的なものを書くなど？基本なくてよい"
-        }
+        "draft": false
     },
     {
         "id": 2,
@@ -68,7 +99,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 3,
@@ -95,7 +127,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 4,
@@ -121,7 +154,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 5,
@@ -148,7 +182,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 6,
@@ -166,7 +201,8 @@
         "category": [
             "音韻",
             "比較"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 7,
@@ -183,7 +219,8 @@
         "author": "Maria Rubinstein",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 8,
@@ -200,7 +237,8 @@
         "author": "Boris Iomdin",
         "category": [
             "語用論"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 9,
@@ -226,7 +264,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 10,
@@ -242,7 +281,8 @@
         "author": "Leonid Iomdin",
         "category": [
             "語用論"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 11,
@@ -269,7 +309,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 12,
@@ -295,7 +336,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 13,
@@ -321,7 +363,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 14,
@@ -340,7 +383,8 @@
             "統語",
             "文字",
             "音声"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 15,
@@ -366,7 +410,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 16,
@@ -393,7 +438,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 17,
@@ -419,7 +465,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 18,
@@ -445,7 +492,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 19,
@@ -476,7 +524,8 @@
                 "name": "fulfom",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 20,
@@ -504,7 +553,8 @@
                 "name": "fulfom",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 21,
@@ -530,7 +580,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 22,
@@ -556,7 +607,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 23,
@@ -573,7 +625,8 @@
         "category": [
             "文字"
         ],
-        "probcorrection": "クメール文字が文字化けしている"
+        "probcorrection": "クメール文字が文字化けしている",
+        "draft": false
     },
     {
         "id": 24,
@@ -600,7 +653,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 25,
@@ -626,7 +680,8 @@
                 "name": "irotirihs",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 26,
@@ -644,7 +699,8 @@
             "統語",
             "手話",
             "動画"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 27,
@@ -670,7 +726,8 @@
                 "name": "irotirihs",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 28,
@@ -696,7 +753,8 @@
                 "name": "irotirihs",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 29,
@@ -724,7 +782,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 30,
@@ -750,7 +809,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 31,
@@ -777,7 +837,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 32,
@@ -806,7 +867,8 @@
                 "name": "fulfom",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 33,
@@ -832,7 +894,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 34,
@@ -858,7 +921,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 35,
@@ -884,7 +948,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 36,
@@ -910,7 +975,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 37,
@@ -936,7 +1002,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 38,
@@ -964,7 +1031,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 39,
@@ -991,7 +1059,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 40,
@@ -1017,7 +1086,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 41,
@@ -1043,7 +1113,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 42,
@@ -1072,7 +1143,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 43,
@@ -1098,7 +1170,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 44,
@@ -1126,7 +1199,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 45,
@@ -1152,7 +1226,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 46,
@@ -1179,7 +1254,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 47,
@@ -1207,7 +1283,8 @@
                 "name": "irotirihs",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 48,
@@ -1233,7 +1310,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 49,
@@ -1259,7 +1337,8 @@
                 "name": "irotirihs",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 50,
@@ -1276,7 +1355,8 @@
         "author": "Boris Iomdin",
         "category": [
             "モノリンガル"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 51,
@@ -1303,7 +1383,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 52,
@@ -1329,7 +1410,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 53,
@@ -1356,7 +1438,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 54,
@@ -1383,7 +1466,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 55,
@@ -1408,7 +1492,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 56,
@@ -1425,7 +1510,8 @@
         "author": "Adam Hesterberg",
         "category": [
             "韻律"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 57,
@@ -1451,7 +1537,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 58,
@@ -1477,7 +1564,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 59,
@@ -1505,7 +1593,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 60,
@@ -1531,7 +1620,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 61,
@@ -1557,7 +1647,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 62,
@@ -1574,7 +1665,8 @@
         "author": "Boris Iomdin",
         "category": [
             "文字"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 63,
@@ -1601,7 +1693,8 @@
                 "name": "karngati",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 64,
@@ -1632,7 +1725,8 @@
                 "name": "karngati",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 65,
@@ -1658,7 +1752,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 66,
@@ -1684,7 +1779,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 67,
@@ -1711,7 +1807,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 68,
@@ -1728,7 +1825,8 @@
         "category": [
             "文字",
             "モノリンガル"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 69,
@@ -1755,7 +1853,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 70,
@@ -1782,7 +1881,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 71,
@@ -1813,7 +1913,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 72,
@@ -1839,7 +1940,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 73,
@@ -1870,7 +1972,8 @@
                 "name": "irotirihs",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 74,
@@ -1899,7 +2002,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 75,
@@ -1926,7 +2030,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 76,
@@ -1943,7 +2048,8 @@
         "category": [
             "形態",
             "動詞形態"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 77,
@@ -1960,7 +2066,8 @@
         "category": [
             "音韻",
             "非言語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 78,
@@ -1976,7 +2083,8 @@
         "author": "Ksenia Gilyarova",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 79,
@@ -2002,7 +2110,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 80,
@@ -2029,7 +2138,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 81,
@@ -2057,7 +2167,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 82,
@@ -2083,7 +2194,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 83,
@@ -2110,7 +2222,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 84,
@@ -2137,7 +2250,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 85,
@@ -2163,7 +2277,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 86,
@@ -2192,7 +2307,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 87,
@@ -2222,7 +2338,8 @@
                 "name": "irotirihs",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 88,
@@ -2250,7 +2367,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 89,
@@ -2266,7 +2384,8 @@
         "author": "Bruno L'Astorina",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 90,
@@ -2293,7 +2412,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 91,
@@ -2319,7 +2439,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 92,
@@ -2347,7 +2468,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 93,
@@ -2377,7 +2499,8 @@
                 "name": "ryoanjing",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 94,
@@ -2410,7 +2533,8 @@
                 "name": "ryoanjing",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 95,
@@ -2440,7 +2564,8 @@
                 "name": "ryoanjing",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 96,
@@ -2471,7 +2596,8 @@
                 "name": "ryoanjing",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 97,
@@ -2507,7 +2633,8 @@
                 "name": "ryoanjing",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 98,
@@ -2537,7 +2664,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 99,
@@ -2563,7 +2691,8 @@
                 "name": "irotirihs",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 100,
@@ -2591,7 +2720,8 @@
                 "name": "irotirihs",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 101,
@@ -2617,7 +2747,8 @@
                 "name": "irotirihs",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 102,
@@ -2644,7 +2775,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 103,
@@ -2670,7 +2802,8 @@
                 "name": "irotirihs",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 104,
@@ -2700,7 +2833,8 @@
                 "name": "fulfom",
                 "diff": 8
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 105,
@@ -2717,7 +2851,8 @@
         "category": [
             "命数",
             "対応"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 106,
@@ -2736,7 +2871,8 @@
             "意味",
             "図説明",
             "親族名称"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 107,
@@ -2753,7 +2889,8 @@
         "category": [
             "形態",
             "動詞形態"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 108,
@@ -2771,7 +2908,8 @@
             "形態",
             "動詞形態",
             "対応"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 109,
@@ -2787,7 +2925,8 @@
         "author": "Jaeyeong Yang",
         "category": [
             "文字"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 110,
@@ -2843,7 +2982,8 @@
                 "全て右端が\"o\"で終わっている．",
                 "\"-ый\"を使うのはそれ以外の時のようだ．これで問題3が解ける．"
             ]
-        }
+        },
+        "draft": false
     },
     {
         "id": 111,
@@ -2879,7 +3019,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 112,
@@ -2914,7 +3055,8 @@
                 "name": "ryoanjing",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 113,
@@ -2951,7 +3093,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 114,
@@ -2988,7 +3131,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 115,
@@ -3025,7 +3169,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 116,
@@ -3062,7 +3207,8 @@
                 "name": "ryoanjing",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 117,
@@ -3102,7 +3248,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 118,
@@ -3160,7 +3307,8 @@
                 "残る選択肢から「未来」「失敗」はそれぞれ「미래」「실패」のいずれか．音と文字の構成の関係を考えると，「未」は子音+母音，「失」は子音+母音+「つ」という構成なので「미래」が「未来」，「실패」が「失敗」だと分かる．",
                 "「立(립)」「来(래)」から最初の「ㄹ」はrだと分かる．「노력」が「努力」，「저격」が「狙撃」だと分かる．"
             ]
-        }
+        },
+        "draft": false
     },
     {
         "id": 119,
@@ -3196,7 +3344,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 120,
@@ -3232,7 +3381,8 @@
                 "name": "ryoanjing",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 121,
@@ -3268,7 +3418,8 @@
                 "name": "ryoanjing",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 122,
@@ -3307,7 +3458,8 @@
                 "name": "ryoanjing",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 123,
@@ -3343,7 +3495,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 124,
@@ -3383,7 +3536,8 @@
                 "name": "ryoanjing",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 125,
@@ -3419,7 +3573,8 @@
                 "name": "ryoanjing",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 126,
@@ -3456,7 +3611,8 @@
                 "name": "ryoanjing",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 127,
@@ -3488,7 +3644,8 @@
                 "name": "fulfom",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 128,
@@ -3512,7 +3669,8 @@
                 "name": "karngati",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 129,
@@ -3536,7 +3694,8 @@
                 "name": "karngati",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 130,
@@ -3560,7 +3719,8 @@
                 "name": "karngati",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 131,
@@ -3584,7 +3744,8 @@
                 "name": "karngati",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 132,
@@ -3608,7 +3769,8 @@
                 "name": "karngati",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 133,
@@ -3634,7 +3796,8 @@
                 "name": "karngati",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 134,
@@ -3662,7 +3825,8 @@
                 "name": "karngati",
                 "diff": 6
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 135,
@@ -3686,7 +3850,8 @@
                 "name": "karngati",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 136,
@@ -3711,7 +3876,8 @@
                 "name": "karngati",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 137,
@@ -3735,7 +3901,8 @@
                 "name": "karngati",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 138,
@@ -3761,7 +3928,8 @@
                 "name": "karngati",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 139,
@@ -3789,7 +3957,8 @@
                 "name": "karngati",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 140,
@@ -3803,7 +3972,8 @@
         "author": "Harold Somers",
         "category": [
             "未分類"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 141,
@@ -3827,7 +3997,8 @@
                 "name": "karngati",
                 "diff": 1
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 142,
@@ -3852,7 +4023,8 @@
                 "name": "karngati",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 143,
@@ -3877,7 +4049,8 @@
                 "name": "karngati",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 144,
@@ -3901,7 +4074,8 @@
                 "name": "karngati",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 145,
@@ -3915,7 +4089,8 @@
         "author": "Dragomir Radev",
         "category": [
             "文章"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 146,
@@ -3939,7 +4114,8 @@
                 "name": "karngati",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 147,
@@ -3964,7 +4140,8 @@
                 "name": "karngati",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 148,
@@ -3988,7 +4165,8 @@
                 "name": "karngati",
                 "diff": 2
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 149,
@@ -4012,7 +4190,8 @@
                 "name": "karngati",
                 "diff": 3
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 150,
@@ -4037,7 +4216,8 @@
                 "name": "karngati",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 151,
@@ -4062,7 +4242,8 @@
                 "name": "karngati",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 152,
@@ -4073,7 +4254,8 @@
         "year": 2012,
         "number": "R1-1",
         "topic": "Yolmo",
-        "author": "Lauren Gawne"
+        "author": "Lauren Gawne",
+        "draft": false
     },
     {
         "id": 153,
@@ -4084,7 +4266,8 @@
         "year": 2012,
         "number": "R1-2",
         "topic": "Danish",
-        "author": "Mike Swan"
+        "author": "Mike Swan",
+        "draft": false
     },
     {
         "id": 154,
@@ -4095,7 +4278,8 @@
         "year": 2012,
         "number": "R1-3d",
         "topic": "Dutch",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 155,
@@ -4106,7 +4290,8 @@
         "year": 2012,
         "number": "R1-3w",
         "topic": "Welsh",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 156,
@@ -4117,7 +4302,8 @@
         "year": 2012,
         "number": "R1-4",
         "topic": "Haitian",
-        "author": "Ivaylo Youmerski"
+        "author": "Ivaylo Youmerski",
+        "draft": false
     },
     {
         "id": 157,
@@ -4128,7 +4314,8 @@
         "year": 2012,
         "number": "R1-5",
         "topic": "Esperanto",
-        "author": "Alexey Pegushev"
+        "author": "Alexey Pegushev",
+        "draft": false
     },
     {
         "id": 158,
@@ -4139,7 +4326,8 @@
         "year": 2012,
         "number": "R1-6",
         "topic": "Bardi",
-        "author": "Catherine Sheard"
+        "author": "Catherine Sheard",
+        "draft": false
     },
     {
         "id": 159,
@@ -4150,7 +4338,8 @@
         "year": 2012,
         "number": "R1-7",
         "topic": "Waorani",
-        "author": "Drago Radev"
+        "author": "Drago Radev",
+        "draft": false
     },
     {
         "id": 160,
@@ -4161,7 +4350,8 @@
         "year": 2012,
         "number": "R1-8",
         "topic": "fictitious language",
-        "author": "Simon Zwarts"
+        "author": "Simon Zwarts",
+        "draft": false
     },
     {
         "id": 161,
@@ -4172,7 +4362,8 @@
         "year": 2012,
         "number": "R1-9",
         "topic": "Waanyi",
-        "author": "Mary Laughren"
+        "author": "Mary Laughren",
+        "draft": false
     },
     {
         "id": 162,
@@ -4183,7 +4374,8 @@
         "year": 2012,
         "number": "R2-1",
         "topic": "English",
-        "author": "Patrick Littell"
+        "author": "Patrick Littell",
+        "draft": false
     },
     {
         "id": 163,
@@ -4194,7 +4386,8 @@
         "year": 2012,
         "number": "R2-2",
         "topic": "Luiseño",
-        "author": "Ronald Langacker (via Dick Hudson)"
+        "author": "Ronald Langacker (via Dick Hudson)",
+        "draft": false
     },
     {
         "id": 164,
@@ -4205,7 +4398,8 @@
         "year": 2012,
         "number": "R2-3",
         "topic": "English",
-        "author": "James Pustejovsky, Patrick Littell"
+        "author": "James Pustejovsky, Patrick Littell",
+        "draft": false
     },
     {
         "id": 165,
@@ -4216,7 +4410,8 @@
         "year": 2012,
         "number": "R2-4",
         "topic": "Phags-pa",
-        "author": "Patrick Littell"
+        "author": "Patrick Littell",
+        "draft": false
     },
     {
         "id": 166,
@@ -4227,7 +4422,8 @@
         "year": 2012,
         "number": "R2-5",
         "topic": "Catalan",
-        "author": "Boris Iomdin"
+        "author": "Boris Iomdin",
+        "draft": false
     },
     {
         "id": 167,
@@ -4238,7 +4434,8 @@
         "year": 2013,
         "number": "R1-1",
         "topic": "English",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "draft": false
     },
     {
         "id": 168,
@@ -4249,7 +4446,8 @@
         "venuedetail": "UKLO",
         "year": 2013,
         "number": "R1-2",
-        "topic": "Isthmus Zapotex"
+        "topic": "Isthmus Zapotex",
+        "draft": false
     },
     {
         "id": 169,
@@ -4260,7 +4458,8 @@
         "year": 2013,
         "number": "R1-3",
         "topic": "Pali",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 170,
@@ -4271,7 +4470,8 @@
         "year": 2013,
         "number": "R1-4a",
         "topic": "Arabic",
-        "author": "David Palfreyman"
+        "author": "David Palfreyman",
+        "draft": false
     },
     {
         "id": 171,
@@ -4282,7 +4482,8 @@
         "year": 2013,
         "number": "R1-4s",
         "topic": "English – Shavian",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 172,
@@ -4293,7 +4494,8 @@
         "year": 2013,
         "number": "R1-5",
         "topic": "Bulgarian",
-        "author": "Bozhidar Bozhanov"
+        "author": "Bozhidar Bozhanov",
+        "draft": false
     },
     {
         "id": 173,
@@ -4304,7 +4506,8 @@
         "year": 2013,
         "number": "R1-6",
         "topic": "English",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 174,
@@ -4315,7 +4518,8 @@
         "year": 2013,
         "number": "R1-7",
         "topic": "Phoenician",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "draft": false
     },
     {
         "id": 175,
@@ -4326,7 +4530,8 @@
         "year": 2013,
         "number": "R1-8",
         "topic": "Dutch",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "draft": false
     },
     {
         "id": 176,
@@ -4337,7 +4542,8 @@
         "year": 2013,
         "number": "R1-9",
         "topic": "Bengali",
-        "author": "Bozhidar Bozhanov"
+        "author": "Bozhidar Bozhanov",
+        "draft": false
     },
     {
         "id": 177,
@@ -4348,7 +4554,8 @@
         "year": 2013,
         "number": "R2-1",
         "topic": "Quechua",
-        "author": "Patrick Littell"
+        "author": "Patrick Littell",
+        "draft": false
     },
     {
         "id": 178,
@@ -4359,7 +4566,8 @@
         "year": 2013,
         "number": "R2-2",
         "topic": "Georgian, Armenian",
-        "author": "Drago Radev"
+        "author": "Drago Radev",
+        "draft": false
     },
     {
         "id": 179,
@@ -4370,7 +4578,8 @@
         "year": 2013,
         "number": "R2-3",
         "topic": "Beja",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 180,
@@ -4381,7 +4590,8 @@
         "year": 2013,
         "number": "R2-4",
         "topic": "Swedish",
-        "author": "Patrick Littell"
+        "author": "Patrick Littell",
+        "draft": false
     },
     {
         "id": 181,
@@ -4392,7 +4602,8 @@
         "year": 2013,
         "number": "R2-5",
         "topic": "Indonesian, Swahili",
-        "author": "Catherine Sheard"
+        "author": "Catherine Sheard",
+        "draft": false
     },
     {
         "id": 182,
@@ -4403,7 +4614,8 @@
         "year": 2014,
         "number": "R1-1",
         "topic": "Estonian",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 183,
@@ -4414,7 +4626,8 @@
         "year": 2014,
         "number": "R1-2",
         "topic": "Maori",
-        "author": "Pat Littell"
+        "author": "Pat Littell",
+        "draft": false
     },
     {
         "id": 184,
@@ -4425,7 +4638,8 @@
         "year": 2014,
         "number": "R1-3",
         "topic": "Mokilese",
-        "author": "Jeff Siegel"
+        "author": "Jeff Siegel",
+        "draft": false
     },
     {
         "id": 185,
@@ -4436,7 +4650,8 @@
         "year": 2014,
         "number": "R1-4",
         "topic": "English",
-        "author": "Sue Barry & Dick Hudson"
+        "author": "Sue Barry & Dick Hudson",
+        "draft": false
     },
     {
         "id": 186,
@@ -4447,7 +4662,8 @@
         "year": 2014,
         "number": "R1-5",
         "topic": "Turkish",
-        "author": "David Palfreyman"
+        "author": "David Palfreyman",
+        "draft": false
     },
     {
         "id": 187,
@@ -4458,7 +4674,8 @@
         "year": 2014,
         "number": "R1-6",
         "topic": "Kairak",
-        "author": "Cindy Schneider"
+        "author": "Cindy Schneider",
+        "draft": false
     },
     {
         "id": 188,
@@ -4469,7 +4686,8 @@
         "year": 2014,
         "number": "R1-7",
         "topic": "Ilokano",
-        "author": "Bozhidar Bozhanov"
+        "author": "Bozhidar Bozhanov",
+        "draft": false
     },
     {
         "id": 189,
@@ -4480,7 +4698,8 @@
         "year": 2014,
         "number": "R1-8",
         "topic": "English",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "draft": false
     },
     {
         "id": 190,
@@ -4491,7 +4710,8 @@
         "year": 2014,
         "number": "R1-9",
         "topic": "Buginese",
-        "author": "Chelsea Voss"
+        "author": "Chelsea Voss",
+        "draft": false
     },
     {
         "id": 191,
@@ -4502,7 +4722,8 @@
         "year": 2014,
         "number": "R2-1",
         "topic": "Kiswahili",
-        "author": "Catherine"
+        "author": "Catherine",
+        "draft": false
     },
     {
         "id": 192,
@@ -4513,7 +4734,8 @@
         "year": 2014,
         "number": "R2-2",
         "topic": "Kachai, Tusom, Ukhrul",
-        "author": "David Mortensen"
+        "author": "David Mortensen",
+        "draft": false
     },
     {
         "id": 193,
@@ -4524,7 +4746,8 @@
         "year": 2014,
         "number": "R2-3",
         "topic": "Yidiny",
-        "author": "Mary Laughren"
+        "author": "Mary Laughren",
+        "draft": false
     },
     {
         "id": 194,
@@ -4535,7 +4758,8 @@
         "year": 2014,
         "number": "R2-4",
         "topic": "Navajo",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 195,
@@ -4546,7 +4770,8 @@
         "year": 2014,
         "number": "R2-5",
         "topic": "Hungarian",
-        "author": "Adam Hesterberg"
+        "author": "Adam Hesterberg",
+        "draft": false
     },
     {
         "id": 196,
@@ -4557,7 +4782,8 @@
         "year": 2015,
         "number": "R1-1",
         "topic": "Karelian",
-        "author": "Graeme Trousdale"
+        "author": "Graeme Trousdale",
+        "draft": false
     },
     {
         "id": 197,
@@ -4568,7 +4794,8 @@
         "year": 2015,
         "number": "R1-2",
         "topic": "Georgian",
-        "author": "Daniel Rucki"
+        "author": "Daniel Rucki",
+        "draft": false
     },
     {
         "id": 198,
@@ -4579,7 +4806,8 @@
         "year": 2015,
         "number": "R1-3",
         "topic": "Polish",
-        "author": "Daniel Rucki"
+        "author": "Daniel Rucki",
+        "draft": false
     },
     {
         "id": 199,
@@ -4590,7 +4818,8 @@
         "year": 2015,
         "number": "R1-4",
         "topic": "English",
-        "author": "Graeme Trousdale"
+        "author": "Graeme Trousdale",
+        "draft": false
     },
     {
         "id": 200,
@@ -4601,7 +4830,8 @@
         "year": 2015,
         "number": "R1-5",
         "topic": "Norse",
-        "author": "David Palfreyman"
+        "author": "David Palfreyman",
+        "draft": false
     },
     {
         "id": 201,
@@ -4612,7 +4842,13 @@
         "year": 2015,
         "number": "R1-6",
         "topic": "Japanese",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "category": [
+            "形態",
+            "!音韻",
+            "対応"
+        ],
+        "draft": false
     },
     {
         "id": 202,
@@ -4623,7 +4859,8 @@
         "year": 2015,
         "number": "R1-7",
         "topic": "Murrinhpatha",
-        "author": "Rachel Nordlinger"
+        "author": "Rachel Nordlinger",
+        "draft": false
     },
     {
         "id": 203,
@@ -4634,7 +4871,8 @@
         "year": 2015,
         "number": "R1-8",
         "topic": "Finnish",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 204,
@@ -4645,7 +4883,8 @@
         "year": 2015,
         "number": "R1-9",
         "topic": "English",
-        "author": "Dragomir Radev with Christiane Fellbaum and Jonathan May"
+        "author": "Dragomir Radev with Christiane Fellbaum and Jonathan May",
+        "draft": false
     },
     {
         "id": 205,
@@ -4656,7 +4895,8 @@
         "year": 2015,
         "number": "R1-10",
         "topic": "Georgian",
-        "author": "Dorottya Demszky"
+        "author": "Dorottya Demszky",
+        "draft": false
     },
     {
         "id": 206,
@@ -4667,7 +4907,8 @@
         "year": 2015,
         "number": "R2-1",
         "topic": "Maxakali",
-        "author": "Alex Wade"
+        "author": "Alex Wade",
+        "draft": false
     },
     {
         "id": 207,
@@ -4678,7 +4919,8 @@
         "year": 2015,
         "number": "R2-2",
         "topic": "Malagasy",
-        "author": "Tom McCoy"
+        "author": "Tom McCoy",
+        "draft": false
     },
     {
         "id": 208,
@@ -4689,7 +4931,8 @@
         "year": 2015,
         "number": "R2-3",
         "topic": "Hmong",
-        "author": "David Mortensen"
+        "author": "David Mortensen",
+        "draft": false
     },
     {
         "id": 209,
@@ -4700,7 +4943,8 @@
         "year": 2015,
         "number": "R2-4",
         "topic": "Aymara",
-        "author": "Josh Falk"
+        "author": "Josh Falk",
+        "draft": false
     },
     {
         "id": 210,
@@ -4711,7 +4955,8 @@
         "year": 2015,
         "number": "R2-5",
         "topic": "Latin, French, Catalan, Romanian",
-        "author": "Catherine Sheard"
+        "author": "Catherine Sheard",
+        "draft": false
     },
     {
         "id": 211,
@@ -4722,7 +4967,8 @@
         "year": 2016,
         "number": "R1-1",
         "topic": "Greek",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 212,
@@ -4733,7 +4979,8 @@
         "year": 2016,
         "number": "R1-2",
         "topic": "French, German, Spanish",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 213,
@@ -4744,7 +4991,8 @@
         "year": 2016,
         "number": "R1-3",
         "topic": "Irish",
-        "author": "Jane D’Altuin and Harold Somers"
+        "author": "Jane D’Altuin and Harold Somers",
+        "draft": false
     },
     {
         "id": 214,
@@ -4755,7 +5003,8 @@
         "year": 2016,
         "number": "R1-4",
         "topic": "Chinese",
-        "author": "Catherine Sheard"
+        "author": "Catherine Sheard",
+        "draft": false
     },
     {
         "id": 215,
@@ -4766,7 +5015,8 @@
         "year": 2016,
         "number": "R1-5",
         "topic": "Amele",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 216,
@@ -4777,7 +5027,8 @@
         "year": 2016,
         "number": "R1-6",
         "topic": "Kaqchikel",
-        "author": "Michael Yoshitaka Erlewine"
+        "author": "Michael Yoshitaka Erlewine",
+        "draft": false
     },
     {
         "id": 217,
@@ -4788,7 +5039,8 @@
         "year": 2016,
         "number": "R1-7",
         "topic": "Estonian",
-        "author": "Praveen Venkataramana"
+        "author": "Praveen Venkataramana",
+        "draft": false
     },
     {
         "id": 218,
@@ -4799,7 +5051,8 @@
         "year": 2016,
         "number": "R1-8",
         "topic": "Somali",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "draft": false
     },
     {
         "id": 219,
@@ -4810,7 +5063,8 @@
         "year": 2016,
         "number": "R1-9",
         "topic": "Nhanda",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 220,
@@ -4821,7 +5075,8 @@
         "year": 2016,
         "number": "R1-10",
         "topic": "Nung",
-        "author": "Alex Wade"
+        "author": "Alex Wade",
+        "draft": false
     },
     {
         "id": 221,
@@ -4832,7 +5087,8 @@
         "year": 2016,
         "number": "R2-1",
         "topic": "Malay",
-        "author": "Bozhidar Bozhanov"
+        "author": "Bozhidar Bozhanov",
+        "draft": false
     },
     {
         "id": 222,
@@ -4843,7 +5099,8 @@
         "year": 2016,
         "number": "R2-2",
         "topic": "Tocharian",
-        "author": "Ollie Sayeed"
+        "author": "Ollie Sayeed",
+        "draft": false
     },
     {
         "id": 223,
@@ -4854,7 +5111,8 @@
         "year": 2016,
         "number": "R2-3",
         "topic": "Huli",
-        "author": "Bill Huang"
+        "author": "Bill Huang",
+        "draft": false
     },
     {
         "id": 224,
@@ -4865,7 +5123,8 @@
         "year": 2016,
         "number": "R2-4",
         "topic": "Devanagari",
-        "author": "Lauren Gawne"
+        "author": "Lauren Gawne",
+        "draft": false
     },
     {
         "id": 225,
@@ -4876,7 +5135,8 @@
         "year": 2016,
         "number": "R2-5",
         "topic": "English",
-        "author": "Patrick Littell"
+        "author": "Patrick Littell",
+        "draft": false
     },
     {
         "id": 226,
@@ -4887,7 +5147,8 @@
         "year": 2017,
         "number": "R1-1",
         "topic": "Italian",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 227,
@@ -4898,7 +5159,8 @@
         "year": 2017,
         "number": "R1-2",
         "topic": "Inuktitut",
-        "author": "Ollie Sayeed"
+        "author": "Ollie Sayeed",
+        "draft": false
     },
     {
         "id": 228,
@@ -4909,7 +5171,8 @@
         "year": 2017,
         "number": "R1-3",
         "topic": "9 languages",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 229,
@@ -4920,7 +5183,8 @@
         "year": 2017,
         "number": "R1-4",
         "topic": "Tshiluba",
-        "author": "Tom McCoy"
+        "author": "Tom McCoy",
+        "draft": false
     },
     {
         "id": 230,
@@ -4931,7 +5195,8 @@
         "year": 2017,
         "number": "R1-5",
         "topic": "Basque",
-        "author": "Aleka Blackwell "
+        "author": "Aleka Blackwell ",
+        "draft": false
     },
     {
         "id": 231,
@@ -4942,7 +5207,8 @@
         "year": 2017,
         "number": "R1-6",
         "topic": "Maori",
-        "author": "Aleka Blackwell "
+        "author": "Aleka Blackwell ",
+        "draft": false
     },
     {
         "id": 232,
@@ -4963,7 +5229,8 @@
                 "name": "ryoanjing",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 233,
@@ -4974,7 +5241,8 @@
         "year": 2017,
         "number": "R1-8",
         "topic": "Choctaw",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 234,
@@ -4985,7 +5253,8 @@
         "year": 2017,
         "number": "R1-9",
         "topic": "Abkhaz",
-        "author": "Samuel Andersson, Oliver Sayeed, and Elysia Warner"
+        "author": "Samuel Andersson, Oliver Sayeed, and Elysia Warner",
+        "draft": false
     },
     {
         "id": 235,
@@ -4996,7 +5265,8 @@
         "year": 2017,
         "number": "R1-10",
         "topic": "Kaytetye",
-        "author": "Myfany Turpin"
+        "author": "Myfany Turpin",
+        "draft": false
     },
     {
         "id": 236,
@@ -5007,7 +5277,8 @@
         "year": 2017,
         "number": "R2-1",
         "topic": "Nepali",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 237,
@@ -5018,7 +5289,8 @@
         "year": 2017,
         "number": "R2-2",
         "topic": "Proto-Algonquian ",
-        "author": "Daniel Lovsted"
+        "author": "Daniel Lovsted",
+        "draft": false
     },
     {
         "id": 238,
@@ -5029,7 +5301,8 @@
         "year": 2017,
         "number": "R2-3",
         "topic": "Vietnamese",
-        "author": "James Hyett"
+        "author": "James Hyett",
+        "draft": false
     },
     {
         "id": 239,
@@ -5040,7 +5313,8 @@
         "year": 2017,
         "number": "R2-4",
         "topic": "Egyptian",
-        "author": "Dick Hudson"
+        "author": "Dick Hudson",
+        "draft": false
     },
     {
         "id": 240,
@@ -5051,7 +5325,8 @@
         "year": 2017,
         "number": "R2-5",
         "topic": "Yup'ik",
-        "author": "Kai Low "
+        "author": "Kai Low ",
+        "draft": false
     },
     {
         "id": 241,
@@ -5062,7 +5337,8 @@
         "year": 2018,
         "number": "R1-1",
         "topic": "Romanian",
-        "author": "Julia Barron"
+        "author": "Julia Barron",
+        "draft": false
     },
     {
         "id": 242,
@@ -5073,7 +5349,8 @@
         "year": 2018,
         "number": "R1-2",
         "topic": "Lithuanian",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 243,
@@ -5084,7 +5361,8 @@
         "year": 2018,
         "number": "R1-3",
         "topic": "Bulgarian",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 244,
@@ -5095,7 +5373,8 @@
         "year": 2018,
         "number": "R1-4",
         "topic": "Fijian",
-        "author": "??"
+        "author": "??",
+        "draft": false
     },
     {
         "id": 245,
@@ -5106,7 +5385,8 @@
         "year": 2018,
         "number": "R1-5",
         "topic": "Gilbertese",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 246,
@@ -5117,7 +5397,8 @@
         "year": 2018,
         "number": "R1-6",
         "topic": "Nko",
-        "author": "Babette Newsome, Harold Somers"
+        "author": "Babette Newsome, Harold Somers",
+        "draft": false
     },
     {
         "id": 247,
@@ -5128,7 +5409,8 @@
         "year": 2018,
         "number": "R1-7",
         "topic": "Icelandic",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 248,
@@ -5139,7 +5421,12 @@
         "year": 2018,
         "number": "R1-8",
         "topic": "Vietnamese",
-        "author": "Tom McCoy, Pat Littell, and Lori Levin"
+        "author": "Tom McCoy, Pat Littell, and Lori Levin",
+        "category": [
+            "意味",
+            "対応"
+        ],
+        "draft": false
     },
     {
         "id": 249,
@@ -5150,7 +5437,8 @@
         "year": 2018,
         "number": "R1-9",
         "topic": "Pame",
-        "author": "Milena Veneva"
+        "author": "Milena Veneva",
+        "draft": false
     },
     {
         "id": 250,
@@ -5161,7 +5449,8 @@
         "year": 2018,
         "number": "R1-10",
         "topic": "Albanian",
-        "author": "Ali Sharman"
+        "author": "Ali Sharman",
+        "draft": false
     },
     {
         "id": 251,
@@ -5171,7 +5460,8 @@
         "venuedetail": "UKLO",
         "year": 2018,
         "number": "R2-1",
-        "topic": "Heraldry"
+        "topic": "Heraldry",
+        "draft": false
     },
     {
         "id": 252,
@@ -5182,7 +5472,8 @@
         "year": 2018,
         "number": "R2-2",
         "topic": "Nivkh",
-        "author": "Heather Newell"
+        "author": "Heather Newell",
+        "draft": false
     },
     {
         "id": 253,
@@ -5193,7 +5484,8 @@
         "year": 2018,
         "number": "R2-3",
         "topic": "Menya",
-        "author": "Aleka Blackwell"
+        "author": "Aleka Blackwell",
+        "draft": false
     },
     {
         "id": 254,
@@ -5204,7 +5496,8 @@
         "year": 2018,
         "number": "R2-4",
         "topic": "Mixtec",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 255,
@@ -5214,7 +5507,8 @@
         "venuedetail": "UKLO",
         "year": 2018,
         "number": "R2-5",
-        "topic": "Mayangna"
+        "topic": "Mayangna",
+        "draft": false
     },
     {
         "id": 256,
@@ -5225,7 +5519,8 @@
         "year": 2019,
         "number": "R1-1",
         "topic": "Ladin",
-        "author": "Julia Barron"
+        "author": "Julia Barron",
+        "draft": false
     },
     {
         "id": 257,
@@ -5236,7 +5531,8 @@
         "year": 2019,
         "number": "R1-2",
         "topic": "Japanese",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 258,
@@ -5247,7 +5543,8 @@
         "year": 2019,
         "number": "R1-3",
         "topic": "Jahai",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 259,
@@ -5258,7 +5555,8 @@
         "year": 2019,
         "number": "R1-4",
         "topic": "Welsh",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 260,
@@ -5269,7 +5567,8 @@
         "year": 2019,
         "number": "R1-5",
         "topic": "Pitjantjatjara",
-        "author": "Rebecca Dafina and Wilmoth"
+        "author": "Rebecca Dafina and Wilmoth",
+        "draft": false
     },
     {
         "id": 261,
@@ -5280,7 +5579,8 @@
         "year": 2019,
         "number": "R1-6",
         "topic": "Oscan",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 262,
@@ -5291,7 +5591,8 @@
         "year": 2019,
         "number": "R1-7",
         "topic": "Mongolian",
-        "author": "Ethan Chi"
+        "author": "Ethan Chi",
+        "draft": false
     },
     {
         "id": 263,
@@ -5302,7 +5603,8 @@
         "year": 2019,
         "number": "R1-8",
         "topic": "Gumatj",
-        "author": "Ethan Chi"
+        "author": "Ethan Chi",
+        "draft": false
     },
     {
         "id": 264,
@@ -5313,7 +5615,8 @@
         "year": 2019,
         "number": "R1-9",
         "topic": "Ndebele",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 265,
@@ -5324,7 +5627,8 @@
         "year": 2019,
         "number": "R1-10",
         "topic": "English",
-        "author": "Babette Newsome"
+        "author": "Babette Newsome",
+        "draft": false
     },
     {
         "id": 266,
@@ -5335,7 +5639,8 @@
         "year": 2019,
         "number": "R2-1",
         "topic": "Afrihili",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 267,
@@ -5346,7 +5651,8 @@
         "year": 2019,
         "number": "R2-2",
         "topic": "Lepcha",
-        "author": "Ethan Chi"
+        "author": "Ethan Chi",
+        "draft": false
     },
     {
         "id": 268,
@@ -5357,31 +5663,32 @@
         "year": 2019,
         "number": "R2-3",
         "topic": "Polish",
-        "author": "Ms Veneva "
+        "author": "Ms Veneva ",
+        "draft": false
     },
     {
         "id": 269,
         "title": "Cupeno",
-        "titlejp": "クペーニョ語",
         "link": "https://www.uklo.org/wp-content/uploads/2019/03/4.-Cupeno.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
         "number": "R2-4",
         "topic": "Cupeno",
-        "author": "Daniel Lovsted"
+        "author": "Daniel Lovsted",
+        "draft": false
     },
     {
         "id": 270,
         "title": "Witsuwit'en",
-        "titlejp": "ウィツウィテン語",
         "link": "https://www.uklo.org/wp-content/uploads/2019/03/5.-Witsuwiten.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2019,
         "number": "R2-5",
         "topic": "Witsuwit'en",
-        "author": "Daniel Lovsted, Sam Ahmed, Ellie Warner"
+        "author": "Daniel Lovsted, Sam Ahmed, Ellie Warner",
+        "draft": false
     },
     {
         "id": 271,
@@ -5389,7 +5696,8 @@
         "venue": "kotohazi",
         "number": 1,
         "topic": "Kankap (Conlang)",
-        "author": "fulfom"
+        "author": "fulfom",
+        "draft": true
     },
     {
         "id": 272,
@@ -5397,7 +5705,8 @@
         "venue": "kotohazi",
         "number": 2,
         "topic": "Rabra (Conlang)",
-        "author": "fulfom"
+        "author": "fulfom",
+        "draft": true
     },
     {
         "id": 273,
@@ -5405,6 +5714,7 @@
         "venue": "kotohazi",
         "number": 3,
         "topic": "Tonga (Austronesian)",
-        "author": "fulfom"
+        "author": "fulfom",
+        "draft": true
     }
 ]

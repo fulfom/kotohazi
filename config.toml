@@ -169,6 +169,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 #	url = "https://example.org/mail"
 #	icon = "fa fa-envelope"
  #       desc = "Discuss development issues around the project"
+
+# 執筆陣のプロフィール
+[[params.devs]]
+	name = "fulfom"
+	twitter = "https://twitter.com/fulfom"
+
 [params.prob]
 [[params.prob.1venue]]
 	name = "出題元"
@@ -220,6 +226,11 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	query = ".like"
 	value = "お気に入り"
 	icon = "heart"
+#[[params.utility]]
+#	class = "notlike"
+#	query = ":not(.like)"
+#	stack = true
+# 	icon = ["heart sort-utility-like","slash"]
 [params.sort]
 [[params.sort.1year]]
 	dataSortBy = "year-venue-team-num"
