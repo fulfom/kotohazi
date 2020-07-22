@@ -1,6 +1,6 @@
 ---
 title: "海外予選"
-linkTitle: "oversea"
+linkTitle: "海外予選"
 weight: 8
 type: docs
 description: >
