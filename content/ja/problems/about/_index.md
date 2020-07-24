@@ -62,19 +62,19 @@ images:
 
 <!--{{< icon "icons text-muted" >}}-->
 <a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb center&#34;><div class=&#34;icon material&#34;><i class=&#34;fas fa-icons&#34;></i></div></div><div class=&#34;card-body p-2&#34;><h5 class=&#34;card-title mb-1&#34;>追加資料を入手</h5></div></div>"><i class="fas fa-icons fa-fw"></i></a>
-: 音声や動画などの追加資料へのリンク
+: 音声や動画などの**追加資料**へのリンク
 
 {{< icon "exclamation-circle text-muted" >}}
-: 問題訂正 or 解答訂正(詳細ページに詳しく記載)
+: **問題訂正** or **解答訂正** (詳細ページに詳しく記載)
 
 {{< iconStack "comment fa-lg text-muted|~訳" >}}
-: 翻訳や注釈がついていること(詳細ページに詳しく記載)
+: **翻訳**や注釈がついていること (詳細ページに詳しく記載)
 
 {{< icon "lightbulb text-muted" >}}
-: 問題にヒントがついていること(詳細ページに詳しく記載)
+: 問題に**ヒント**がついていること (詳細ページに詳しく記載)
 
 {{< icon "chalkboard-teacher text-muted" >}}
-: 解説ブログへのリンク
+: **解説ブログ**へのリンク
 
 ### 詳細ページ
 
@@ -215,6 +215,9 @@ kotohazi
 便利に使ってもらえるとうれしいです．
 
 > {{< figure src=filter-utility.png title="図: 便利フィルター" >}}
+
+{{< iconStack "comment fa-lg sort-utility-translation|~訳" >}}
+: 翻訳つきのみ
 
 {{< icon "lightbulb sort-utility-hint" >}}
 : ヒントつきのみ
