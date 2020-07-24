@@ -201,6 +201,12 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 	name = "†語対応"
 	query = ".意味.対応"
 [[params.utility]]
+	class = "japanese"
+	query = ".translation"
+	value = "日本語版"
+	stack = true
+	icon = ["comment sort-utility-translation fa-lg","~訳"]
+[[params.utility]]
 	class = "hint"
 	query = ".hint"
 	value = "ヒント"

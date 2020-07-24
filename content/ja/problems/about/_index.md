@@ -46,8 +46,8 @@ images:
 各問題の情報は一枚のカードで表されています．例として第一回IOL個人戦第一問とサンプルを示します．
 
 {{< blocks/row class="mx-0 mb-3">}}
-{{< problems/probcard id=1 class="col-md-5 col-lg-4 p-0 mr-md-3 mb-3 mb-md-0">}}
-{{< problems/probcard id=-1 class="col-md-5 col-lg-4 p-0" >}}
+{{< problems/probcard id=1 class="col-md-10 col-lg-5 p-0 mr-lg-3 mb-3 mb-lg-0">}}
+{{< problems/probcard id=-1 class="col-md-10 col-lg-5 p-0" >}}
 {{< /blocks/row >}}
 
 出題元・タイトル・難易度とジャンル・問題へのリンクが縦に並んでいます．
@@ -66,6 +66,9 @@ images:
 
 {{< icon "exclamation-circle text-muted" >}}
 : 問題訂正 or 解答訂正(詳細ページに詳しく記載)
+
+{{< iconStack "comment fa-lg text-muted|~訳" >}}
+: 翻訳や注釈がついていること(詳細ページに詳しく記載)
 
 {{< icon "lightbulb text-muted" >}}
 : 問題にヒントがついていること(詳細ページに詳しく記載)
@@ -91,7 +94,12 @@ images:
 
 など役立つ情報が掲載されています．
 
-今のところまだ情報が充実していません．今後のアップデートをお待ちください．必要な情報があるときは{{< devs "fulfom" >}}宛てにツイート/DMするか，GitHubアカウントをお持ちの方は各ページ右上の {{< icon " fab fa-github" "ドキュメントのissueを作成" >}} からissueを投げてくださればなるべく優先的に情報を追加したいと思います．
+今のところまだ情報が充実していません．今後のアップデートをお待ちください．必要な情報があるときは以下の方法でお知らせくださればなるべく優先的に情報を追加したいと思います
+
+- {{< devs "fulfom" >}}宛てにツイート/DM
+- または GitHubアカウントをお持ちの方: ↓どちらかのリンクからissueを投げる
+    - 共通: 各ページ一番下の「このページは役に立ちましたか？」に yes/no で答えると出てくる「改善点を教えてください」
+    - PC: 各ページ右上の {{< icon " fab fa-github" "ドキュメントのissueを作成" >}}
 
 ### 便利なボタン
 
