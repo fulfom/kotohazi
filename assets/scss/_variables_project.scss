@@ -59,6 +59,18 @@ dd{
     }
 }
 
+.detail-translation{
+    @extend .td-content;
+}
+
+$listStyleList: lower-latin, upper-latin, lower-roman, upper-roman, hiragana, katakana, none;
+
+@each $listStyle in $listStyleList{
+    .list-#{$listStyle}+ol{
+        list-style: #{$listStyle};
+    }
+}
+
 figcaption{
     @extend .mt-2;
     h4{

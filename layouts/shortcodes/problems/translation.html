@@ -2,6 +2,7 @@
 {{$arrayProbData := where $.Site.Data.problems "id" $id}}
 {{$prob := index $arrayProbData 0}}
 {{$translation := $prob.translation }}
+{{$source := $prob.problink | default $prob.link }}
 
-<div class="p-2">{{ $translation.value | markdownify }}</div>
+<div class="p-2 detail-translation">{{ ( $translation.value | replaceRE ":source:" (delimit (slice "出典: " ($source | safeURL) " (筆者訳)" ) "" ) ) | markdownify }}</div>
 <p class="text-right author">—— {{$translation.name}}</p>
