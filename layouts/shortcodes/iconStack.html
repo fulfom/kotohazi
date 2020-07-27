@@ -1,5 +1,5 @@
 <span class="unmot">
-    <span class="fa-stack stack-small fa-1x{{with .Get 1}} fa-fw{{end}}">{{range split (.Get 0) "|" }}{{if hasPrefix . "~"}}
+    <span class="fa-stack stack-small fa-1x{{with .Get 1}} mr-2{{end}}">{{range split (.Get 0) "|" }}{{if hasPrefix . "~"}}
         <i class="fas fa-stack-1x fa-stack-text">{{ strings.TrimLeft "~" .}}</i>{{else}}
         <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}{{end}}
     </span>{{with .Get 1}}{{.}}{{end}}</span>

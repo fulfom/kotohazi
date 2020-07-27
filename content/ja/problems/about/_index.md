@@ -7,15 +7,13 @@ images:
 - problems/about/filter-thumbnail.png
 ---
 
-{{% note "更新 2020-07-22" %}}
+{{% note "更新 2020-07-27" %}}
 
-- 取説を書いた(これから更新情報はこちらに掲載します)
-- spreadsheet のデータを反映
-- ジャンル>その他からすべてのジャンルが指定可能に
-- ジャンルと便利がor検索だけでなくand検索できるように(一番最初の橙の&をonにするとand検索になる)
-- ジャンルとして立ててはいないが割と普及している「語対応」で検索可能に(=意味&対応)
-- {{< iconStack "check-square sort-utility-done|slash" >}} (まだ解いてない問題のみ絞り込むフィルター)を追加
-- 一覧以外の色んなところから{{< icon "check-square sort-utility-done fa-fw" >}}と{{< icon "heart sort-utility-like fa-fw" >}}がチェック可能に
+### 問題集
+
+- 翻訳・注釈つきの問題はカード右肩に{{< iconStack "comment fa-lg text-muted|~訳" "訳つきアイコン" >}}が表示されるようになった
+- 翻訳・注釈つきの問題を絞り込める{{< iconStack "comment fa-lg sort-utility-translation|~訳" "便利フィルター" >}}を追加
+- データ更新(主にIOL, JOLのサンプル問題)
 
 {{% /note %}}
 
