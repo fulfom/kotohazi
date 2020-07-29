@@ -5,9 +5,12 @@ var $dones = $('.check-check');
 // Define your database
 //
 var db = new Dexie("done-like");
-db.version(1).stores({
+db.version(2).stores({
     dones: 'id',
-    likes: 'id'
+    likes: 'id',
+    checked: 'id',
+    notchecked: 'id', 
+    text: 'id, text'
 });
 
 $likes.change(function(){

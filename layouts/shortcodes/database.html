@@ -26,6 +26,8 @@
 {{end}}
 {{$year.Set "group" (uniq ($year.Get "group")) }}
 
+<div class="position-relative">
+<div id="search-console" class="loading">
 <p><input type="text" class="quicksearch form-control" id="quicksearch" placeholder="検索" /></p>
 
 <div id="filter">
@@ -39,19 +41,19 @@
     {{with $value}}
     <div class="unmot">
         {{range .}}
-            <input {{if eq $datakey "team" }}class="hide showIOL" {{end}}type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
+            <input class="filter-input{{if eq $datakey "team" }} hide showIOL{{end}}" type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
             <label class="{{.}}" for="{{.}}">{{.}}</label>
         {{end}}
     </div>
     {{else}}
     <div class="unmot">
         {{with $hasnoyear}}
-        <input class="hide{{range .}} show{{.}}{{end}}" type="checkbox" checked hidden id="y" data-filter=":not(.y)" autocomplete="off">
+        <input class="filter-input hide{{range .}} show{{.}}{{end}}" type="checkbox" checked hidden id="y" data-filter=":not(.y)" autocomplete="off">
         <label class="y hide{{range .}} show{{.}}{{end}}" for="y">指定なし</label>
         {{end}}
         {{range ($prob.Get $datakey)}}
         {{$temp := string .}}
-            <input class="{{with ($year.Get $temp)}}hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" type="checkbox" checked hidden id="y{{.}}" data-filter=":not(.y{{.}})" autocomplete="off">
+            <input class="filter-input{{with ($year.Get $temp)}} hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" type="checkbox" checked hidden id="y{{.}}" data-filter=":not(.y{{.}})" autocomplete="off">
             <label class="y{{.}}{{with ($year.Get $temp)}} hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" for="y{{.}}">{{(index $.Site.Params.namedyear .) | default .}}</label>
         {{end}}
     </div>
@@ -64,14 +66,14 @@
     <span>
         {{.Site.Params.probCategory.name}}
     </span>{{$andor := "&"}}
-    <input class="filterfn" type="checkbox" hidden id="catandor" autocomplete="off">
+    <input class="filterfn filter-input default-notchecked" type="checkbox" hidden id="catandor" autocomplete="off">
     <label class="andor" for="catandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.probCategory.value}}
-        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
+        <input class="filter-input" type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
         <label class="{{.}}" for="{{.}}">{{.}}</label>
     {{end}}{{$otherCatName := "その他"}}
-        <input class="filterfn" type="checkbox" checked hidden id="{{$otherCatName}}" autocomplete="off">
+        <input class="filter-input filterfn" type="checkbox" checked hidden id="{{$otherCatName}}" autocomplete="off">
         <label class="{{$otherCatName}}" for="{{$otherCatName}}">{{$otherCatName}}</label>
     </div>
 </div>
@@ -82,11 +84,11 @@
     {{range ($prob.Get "category")}}
     {{if hasPrefix . "!"}}{{else}}
     {{if in $.Site.Params.probCategory.value .}}{{else}}
-        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
+        <input class="filter-input" type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
         <label class="{{.}}" for="{{.}}">{{.}}</label>
     {{end}}{{end}}{{end}}
     {{range $.Site.Params.categoryForCompatiability}}
-        <input type="checkbox" checked hidden id="{{.name}}" data-filter="{{.query}}" autocomplete="off">
+        <input class="filter-input" type="checkbox" checked hidden id="{{.name}}" data-filter="{{.query}}" autocomplete="off">
         <label class="{{.name}}" for="{{.name}}">{{.name}}</label>
     {{end}}
     </div>
@@ -96,11 +98,11 @@
     <span>
         便利
     </span>
-    <input class="filterfn" type="checkbox" hidden id="utiandor" autocomplete="off">
+    <input class="filter-input filterfn default-notchecked" type="checkbox" hidden id="utiandor" autocomplete="off">
     <label class="andor" for="utiandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.utility}}
-        <input type="checkbox" hidden id="{{.class}}" data-filter="{{.query}}" autocomplete="off">
+        <input class="filter-input default-notchecked" type="checkbox" hidden id="{{.class}}" data-filter="{{.query}}" autocomplete="off">
         <label class="{{.class}}" for="{{.class}}">{{if .stack}}
             <span class="fa-stack stack-small fa-1x">{{range .icon}}{{if hasPrefix . "~"}}
                 <i class="fas fa-stack-1x fa-stack-text">{{strings.TrimLeft "~" .}}</i>{{else}}
@@ -119,10 +121,20 @@
         </label>
         {{end}}
     </div>
-    <button class="btn btn-primary" id="shuffle"><i class="fas fa-random"></i></button>
+    <button class="btn btnfn btn-primary rounded-circle" id="shuffle"><i class="fas fa-random"></i></button>
 </div>
 
-<p class="text-muted pt-2" id="output">——</p>
+<div class="d-flex mt-2">
+    <p class="text-muted mb-0 align-self-center mr-auto" id="output">——</p>
+    <div>
+        <button class="btn btnfn" id="share"><i class="fas fa-share fa-fw"></i>SHARE</button>
+        <button class="btn btnfn btnfn-danger" id="clear"><i class="fas fa-trash fa-fw"></i>CLEAR</button>
+    </div>
+</div>
+
+</div>
+<div id="loading-spinner"></div>
+</div>
 
 <div id="filter-container" class="mt-4 row">
 {{range $arrrayProbdata}}{{$title := index . "title"}}{{$venue := index . "venue"}}{{$year := index . "year"}}{{$team := index . "team"}}{{$number := index . "number"}}
@@ -193,6 +205,15 @@
             },
         });
 
+        var db = new Dexie("done-like");
+        db.version(2).stores({
+            dones: 'id',
+            likes: 'id',
+            checked: 'id',
+            notchecked: 'id', 
+            text: 'id, text'
+        });
+
         //sort
         $('#sort-by-button-group').on( 'click', 'label', function() {
             var $this = $(this);
@@ -216,6 +237,8 @@
         var categoryFilterValue = '*';
         var utilityFilterValue = '*';
         var qsRegex;
+        var $qs = $('#quicksearch');
+        var $filterInputs = $('.filter-input');
         var $checkboxes = $('#filter input[type="checkbox"]');
         var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
         var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
@@ -226,10 +249,12 @@
         var $catandor = $('#catandor');
         var $utiandor = $('#utiandor');
         const DELIMIT_AND = '';
-        const DELIMIT_OR = ', '
+        const DELIMIT_OR = ', ';
+        const DEGIT = 8;
 
-        var $quicksearch = $('#quicksearch').keyup( debounce( function() {
-            qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+        $qs.keyup( debounce( function() {
+            qsRegex = new RegExp( $qs.val(), 'gi' );
+            db.text.put({id: 'quicksearch', text: $qs.val()});
             $iso.isotope();
             countHit();
         }) );
@@ -248,14 +273,7 @@
             };
         }
 
-        $checkboxes.change(function(){
-            var filters = [];
-            var $this = $(this);
-
-            //反転
-            if(false == $this.prop('checked')){
-                reverse($this);
-            }
+        function updateCheck(){
 
             //要らないフィルターを消す class で hide を指定すると消えうるものになり, showVENUE でその venue のときだけ表示されるように
             var showCls = '';
@@ -272,16 +290,26 @@
                 $hide.hide().prop('checked', true);
             }
 
+            //フィルター処理
+            var filters = [];
             $checkboxes.each(function(i, elem){
                 if(false == elem.checked){
                     filters.push(elem.getAttribute('data-filter'));
                 }
             });
             filterValue = filters.length ? filters.join('') : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
+        }
+
+        $checkboxes.change(function(){
+            var $this = $(this);
+
+            //反転
+            if(false == $this.prop('checked')){
+                reverse($this);
+            }
+
+            updateCheck();
+            endUpdate();
         });
 
 
@@ -297,10 +325,6 @@
                 catandor = DELIMIT_AND;
             }
             categoryFilterValue = filters.length ? filters.join(catandor) : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
         }
 
         $categoryCheckboxes.change(function(){//categoryは非排他的なので分けた
@@ -327,10 +351,12 @@
             }
 
             updateCatCheck();
+            endUpdate();
         });
 
         $catandor.change(function(){
             updateCatCheck();
+            endUpdate();
         });
 
         $subcategoryCheckboxes.change(function(){//categoryと同じfilter内に含まれる
@@ -340,6 +366,7 @@
                 reverse($this);
             }
             updateCatCheck();
+            endUpdate();
         });
 
         function updateUtiCheck(){
@@ -355,18 +382,16 @@
                 utiandor = DELIMIT_AND;
             }
             utilityFilterValue = filters.length ? filters.join(utiandor) : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
         }
 
         $utilityCheckboxes.change(function(){//utilityも分ける
             updateUtiCheck();
+            endUpdate();
         });
 
         $utiandor.change(function(){
             updateUtiCheck();
+            endUpdate();
         });
 
         function reverse($this){
@@ -386,6 +411,235 @@
         function countHit(){
             var text = iso.filteredItems.length;
             $('#output').text( '—— ' + text + '問');
+        }
+
+        function updateIndexedDB(){
+            db.checked.clear();
+            db.notchecked.clear();
+            $filterInputs.each(function(i){
+                var $this = $(this);
+                var defaultNotchecked = $this.hasClass('default-notchecked');
+                var checked = $this.prop('checked');
+                var id = $this.attr('id');
+                //var num = $filterInputs.index($this);
+                var num = i;
+                if(defaultNotchecked){
+                    if(checked){
+                        db.checked.put({id: id, num: num});
+                    }
+                }
+                else{
+                    if(!checked){
+                        db.notchecked.put({id: id, num: num});
+                    }
+                }
+            });
+        }
+
+        function endUpdate(option = {}){
+            updateIndexedDB();
+            return new Promise(resolve => 
+                setTimeout(function(){
+                    $iso.isotope(option);
+                    countHit();
+                    resolve();
+                },250)
+            );
+        }
+
+        //クリアボタン押下時
+        //フィルター類をデフォルトに戻す
+        $('#clear').on('click', function(){
+            $filterInputs.each(function(){
+                if($(this).hasClass('default-notchecked')){
+                    $(this).prop('checked',false);
+                }
+                else{
+                    $(this).prop('checked',true);
+                }
+            });
+            $('#sort-by-button-group label').removeClass('active').addClass('isSortAscending');
+            $('#sort-by-button-group input').removeProp('checked');
+            updateFilters();
+            $qs.val('');
+            qsRegex = '';
+            db.text.put({id: 'quicksearch', text: ''});
+            endUpdate({ sortBy : 'original-order', sortAscending: true });
+        });
+
+        $('#share').on('click', async function(){
+            //DBtoQuery
+            var long = false;
+            var query = {};
+            if(long){
+                query.v = 'long';
+                await Promise.all([
+                    db.checked.toCollection().primaryKeys(function(keysArray){
+                        query.checked = encodeURIComponent(keysArray.join('|'));
+                    }),
+                    db.notchecked.toCollection().primaryKeys(function(keysArray){
+                        query.notchecked = encodeURIComponent(keysArray.join('|'));
+                    }),
+                    db.text.get('quicksearch',function(v){
+                        if(v){
+                            query.text = encodeURIComponent(v.text);
+                        }
+                    })
+                ]);
+            }
+            else{
+                query.v = 1;
+                var num = new Array(Math.ceil($filterInputs.length/DEGIT));
+                for(var i = 0; i < Math.ceil($filterInputs.length/DEGIT) ;i++){
+                    num[i] = 0;
+                }
+                await Promise.all([
+                    db.checked.toCollection().each(function(item){
+                        num[Math.floor(item.num/DEGIT)] += 2**(item.num % DEGIT);
+                    }),
+                    db.notchecked.toCollection().each(function(item){
+                        num[Math.floor(item.num/DEGIT)] += 2**(item.num % DEGIT);
+                        console.log(Math.floor(item.num/DEGIT), item)
+                    }),
+                    db.text.get('quicksearch',function(v){
+                        if(v){
+                            query.text = encodeURIComponent(v.text);
+                        }
+                    })
+                ]);
+                
+                var num32 = [];
+                num.forEach((elem,i) => {
+                    num32[i] = ('00' + elem.toString(32)).substr(-2);
+                })
+                query.change = num32.join('');
+            }
+            
+            var genurl = '{{$.Site.BaseURL}}problems/?' + $.param(query);
+            console.log(num, num32, genurl);
+        });
+
+        init();
+
+        async function querytoDB(){
+            var data = [[],[],[]];
+            var result = [];
+            var isshort = (null != getParam('short'));
+            var table = [db.checked, db.notchecked, db.text];
+            var flag = false;
+
+            if(isshort){
+                var text = getParam('text');
+                var change = getParam('change');
+                if(text){
+                    flag = true;
+                    data[2].push({id:'quicksearch',text: decodeURIComponent(text)});
+                }
+                if(change){
+                    flag = true;
+                    var str = change.match(/.{2}/g);
+                    var num = [];
+                    if(str.length != Math.ceil($filterInputs.length/DEGIT)){
+                        console.log('桁が違う');
+                        return true;
+                    }
+                    for(var i = 0; i < str.length ;i++){
+                        num[i] = parseInt(str[i], 32);
+                    }
+                    console.log(num);
+                    $filterInputs.each((i, elem) => {
+                        //対応するnum[i]とビット演算してヒットしたら DB に登録があったら 変化してたら
+                        if(num[Math.floor(i/DEGIT)]%(2**(i%DEGIT+1)) >= (2**(i%DEGIT))){
+                            var isnotchecked = $(elem).hasClass('default-notchecked')?0:1;
+                            var id = $(elem).attr('id');
+                            data[isnotchecked].push({id:id, num: i});
+                        }
+                    });
+                }
+
+            }
+            else{
+                var query = [getParam('checked'),getParam('notchecked'),getParam('text')];
+                query.forEach((param, index) => {
+                    if(param){
+                        flag = true;
+                        decodeURIComponent(param).split('|').forEach((elem) => {
+                            if(2==index){
+                                data[index].push({id:'quicksearch',text: elem});
+                            }
+                            else if(document.getElementById(elem) != null){
+                                data[index].push({id: elem});
+                            }
+                        });
+                    }
+                });
+            }
+            if(flag){
+                table.forEach((param, index) => {
+                    param.clear();
+                    result.push(param.bulkPut(data[index]));
+                });
+                await Promise.all(result);
+            }
+            return true;
+        }
+
+        async function init(){
+            await querytoDB();
+            await Promise.all([
+                //indexedDBからデータ取得してprop反映
+                db.checked.toCollection().primaryKeys(function(keysArray){
+                    DBtoFilters(keysArray, true);
+                }),
+                db.notchecked.toCollection().primaryKeys(function(keysArray){
+                    DBtoFilters(keysArray, false);
+                }),
+                db.text.get('quicksearch',function(v){
+                    if(v){
+                        $qs.val(v.text);
+                        qsRegex = v.text;
+                    }
+                })
+            ]);
+            updateFilters();
+            await endUpdate();
+            $('#search-console').removeClass('loading');
+        }
+
+        function getParam(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        function DBtoFilters(elems, bool){
+            if(elems.length){
+                var ids = '#' + elems.join(',#');
+                $(ids).prop('checked',bool);
+            }
+        }
+
+        //フィルターのアップデート
+        function updateFilters(){
+            updateCheck();
+            var $checkedCategory = $('#filter-category input[type="checkbox"]:checked');
+            if($checkedCategory.length != $categoryCheckboxes.length){
+                if($('#その他').prop('checked')){
+                    $('.showOtherGenre').show();
+                }
+                else{
+                    $('.showOtherGenre').hide();
+                }
+            }
+            else{
+                $('.showOtherGenre').hide();
+            }
+            updateCatCheck();
+            updateUtiCheck();
         }
     });
 </script>
