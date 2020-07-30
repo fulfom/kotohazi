@@ -26,6 +26,24 @@
 {{end}}
 {{$year.Set "group" (uniq ($year.Get "group")) }}
 
+<div class="position-relative">
+<div id="search-console" class="loading">
+<div id="private-title" class="align-items-center">
+    <p class="mr-auto d-inline-flex mb-0">
+        <i class="fas fa-share align-self-center mr-2"></i>
+        <span id="private-title-text"></span>
+    </p>
+        <div id="private-filter-btngroup">
+            <input type="checkbox" hidden id="private-filter-off-input">
+            <label class="btn btnfn mb-2" id="private-filter-off" for="private-filter-off-input">
+                <i class="fas fa-filter fa-fw"></i>これだけ
+            </label>
+            <button class="btn btnfn btnfn-danger" id="private-filter-clear">
+                <i class="fas fa-trash fa-fw"></i>CLEAR
+            </button>
+        </div>
+</div>
+<div id="allfilter">
 <p><input type="text" class="quicksearch form-control" id="quicksearch" placeholder="検索" /></p>
 
 <div id="filter">
@@ -39,19 +57,19 @@
     {{with $value}}
     <div class="unmot">
         {{range .}}
-            <input {{if eq $datakey "team" }}class="hide showIOL" {{end}}type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
+            <input class="filter-input{{if eq $datakey "team" }} hide showIOL{{end}}" type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
             <label class="{{.}}" for="{{.}}">{{.}}</label>
         {{end}}
     </div>
     {{else}}
     <div class="unmot">
         {{with $hasnoyear}}
-        <input class="hide{{range .}} show{{.}}{{end}}" type="checkbox" checked hidden id="y" data-filter=":not(.y)" autocomplete="off">
+        <input class="filter-input hide{{range .}} show{{.}}{{end}}" type="checkbox" checked hidden id="y" data-filter=":not(.y)" autocomplete="off">
         <label class="y hide{{range .}} show{{.}}{{end}}" for="y">指定なし</label>
         {{end}}
         {{range ($prob.Get $datakey)}}
         {{$temp := string .}}
-            <input class="{{with ($year.Get $temp)}}hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" type="checkbox" checked hidden id="y{{.}}" data-filter=":not(.y{{.}})" autocomplete="off">
+            <input class="filter-input{{with ($year.Get $temp)}} hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" type="checkbox" checked hidden id="y{{.}}" data-filter=":not(.y{{.}})" autocomplete="off">
             <label class="y{{.}}{{with ($year.Get $temp)}} hide{{range ($year.Get $temp)}} show{{.}}{{end}}{{end}}" for="y{{.}}">{{(index $.Site.Params.namedyear .) | default .}}</label>
         {{end}}
     </div>
@@ -64,14 +82,14 @@
     <span>
         {{.Site.Params.probCategory.name}}
     </span>{{$andor := "&"}}
-    <input class="filterfn" type="checkbox" hidden id="catandor" autocomplete="off">
+    <input class="filterfn filter-input default-notchecked" type="checkbox" hidden id="catandor" autocomplete="off">
     <label class="andor" for="catandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.probCategory.value}}
-        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
+        <input class="filter-input" type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
         <label class="{{.}}" for="{{.}}">{{.}}</label>
     {{end}}{{$otherCatName := "その他"}}
-        <input class="filterfn" type="checkbox" checked hidden id="{{$otherCatName}}" autocomplete="off">
+        <input class="filter-input filterfn" type="checkbox" checked hidden id="{{$otherCatName}}" autocomplete="off">
         <label class="{{$otherCatName}}" for="{{$otherCatName}}">{{$otherCatName}}</label>
     </div>
 </div>
@@ -82,11 +100,11 @@
     {{range ($prob.Get "category")}}
     {{if hasPrefix . "!"}}{{else}}
     {{if in $.Site.Params.probCategory.value .}}{{else}}
-        <input type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
+        <input class="filter-input" type="checkbox" checked hidden id="{{.}}" data-filter=".{{.}}" autocomplete="off">
         <label class="{{.}}" for="{{.}}">{{.}}</label>
     {{end}}{{end}}{{end}}
     {{range $.Site.Params.categoryForCompatiability}}
-        <input type="checkbox" checked hidden id="{{.name}}" data-filter="{{.query}}" autocomplete="off">
+        <input class="filter-input" type="checkbox" checked hidden id="{{.name}}" data-filter="{{.query}}" autocomplete="off">
         <label class="{{.name}}" for="{{.name}}">{{.name}}</label>
     {{end}}
     </div>
@@ -96,17 +114,20 @@
     <span>
         便利
     </span>
-    <input class="filterfn" type="checkbox" hidden id="utiandor" autocomplete="off">
+    <input class="filter-input filterfn default-notchecked" type="checkbox" hidden id="utiandor" autocomplete="off">
     <label class="andor" for="utiandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.utility}}
-        <input type="checkbox" hidden id="{{.class}}" data-filter="{{.query}}" autocomplete="off">
-        <label class="{{.class}}" for="{{.class}}">{{if .stack}}
-            <span class="fa-stack stack-small fa-1x">{{range .icon}}
-                <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}
-            </span>{{else}}<i class="fas fa-{{.icon}} fa-fw sort-utility-{{.class}}"></i>{{end}}</label>
+        <input class="filter-input default-notchecked {{.class}}" type="checkbox" hidden id="{{.id}}" data-filter="{{.query}}" autocomplete="off">
+        <label class="{{.id}}" for="{{.id}}">{{if .stack}}
+            <span class="fa-stack stack-small fa-1x">{{range .icon}}{{if hasPrefix . "~"}}
+                <i class="fas fa-stack-1x fa-stack-text">{{strings.TrimLeft "~" .}}</i>{{else}}
+                <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}{{end}}
+            </span>{{else}}<i class="fas fa-{{.icon}} fa-fw sort-utility-{{.id}}"></i>{{end}}</label>
     {{end}}
     </div>
+</div>
+
 </div>
 
 <div>
@@ -118,10 +139,20 @@
         </label>
         {{end}}
     </div>
-    <button class="btn btn-primary" id="shuffle"><i class="fas fa-random"></i></button>
+    <button class="btn btnfn btn-primary rounded-circle" id="shuffle"><i class="fas fa-random"></i></button>
 </div>
 
-<p class="text-muted pt-2" id="output">——</p>
+<div class="d-flex mt-2">
+    <p class="text-muted mb-0 align-self-center mr-auto" id="output">——</p>
+    <div>
+        <button class="btn btnfn" id="share"><i class="fas fa-share fa-fw"></i>SHARE</button>
+        <button class="btn btnfn btnfn-danger" id="clear"><i class="fas fa-trash fa-fw"></i>CLEAR</button>
+    </div>
+</div>
+
+</div>
+<div id="loading-spinner"></div>
+</div>
 
 <div id="filter-container" class="mt-4 row">
 {{range $arrrayProbdata}}{{$title := index . "title"}}{{$venue := index . "venue"}}{{$year := index . "year"}}{{$team := index . "team"}}{{$number := index . "number"}}
@@ -136,7 +167,7 @@
 {{$detailpath = $detailpath | append ((delimit $teamnum "-") | urlize)}}
 {{$problink := .problink | default .link}}
 
-<div id="prob{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} 未分類{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}">
+<div id="prob{{.id}}" data-id="{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} 未分類{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}{{with .translation}} translation{{end}}">
     <div class="card">
     <div class="card-body">
         <div class="d-flex">
@@ -144,6 +175,7 @@
             {{with .probmaterial}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="{{$url := .}}{{$title := "追加資料を入手"}}<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;{{$url}}&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb center&#34;><div class=&#34;icon material&#34;><i class=&#34;fas fa-icons&#34;></i></div></div><div class=&#34;card-body p-2&#34;><h5 class=&#34;card-title mb-1&#34;>{{$title}}</h5></div></div>"><i class="fas fa-icons fa-fw"></i></a></h6>{{end}}
             {{with .probcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-content="{{.}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
             {{with .solcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="解答訂正" data-content="解答の訂正あり"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
+            {{with .translation}}<h6 class="card-subtitle mb-2 mr-1 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="翻訳・注釈" data-content="詳細ページに翻訳・注釈あり"><span class="fa-stack stack-small fa-1x fa-fw"><i class="fas fa-comment fa-lg fa-stack-1x"></i><i class="fas fa-stack-1x fa-stack-text"><span hidden>日本語訳</span>訳</i></span></a></h6>{{end}}
             {{with .hint}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="ヒント" data-content="詳細ページにヒントあり"><i class="fas fa-lightbulb fa-fw"></i></a></h6>{{end}}
             {{with .explanationlinks}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="詳しい解説" data-html="true" data-content="{{range .}}{{$url := .}}{{ $jsonData := getJSON $.Page.Site.Params.OgpApiEndpoint $url }}{{ $title := $jsonData.title }}{{ $description := $jsonData.description }}{{ $image := $jsonData.image }}{{ $urlInfo := urls.Parse $url }}{{ $host := printf "%s://%s" $urlInfo.Scheme $urlInfo.Host }}{{ $prefix := "https://www.google.com/s2/favicons?domain=" }}{{ $favicon := printf "%s%s" $prefix $urlInfo.Host }}<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;{{ $url }}&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb&#34;><img src=&#34;{{ $image }}&#34; alt=&#34;Card image cap&#34;></div><div class=&#34;card-body p-2&#34;><div class=&#34;d-flex&#34;><a href=&#34;{{ $host }}&#34; target=&#34;_blank&#34;><img src=&#34;{{ $favicon }}&#34; alt=&#34;&#34; class=&#34;favicon&#34;></a><h5 class=&#34;card-title ml-1 mb-1&#34;>{{$title}}</h5></div><p class=&#34;card-text text-muted&#34;>{{$description}}</p></div></div>{{end}}"><i class="fas fa-chalkboard-teacher fa-fw"></i></a></h6>{{end}}
         </div>
@@ -166,6 +198,28 @@
 
 <script language="JavaScript" type="text/javascript">
     $(function() {
+        
+        var filterValue = '*';
+        var categoryFilterValue = '*';
+        var utilityFilterValue = '*';
+        var qsRegex;
+        var isprivate = false;
+        var privateFilter = [];
+        var $sc = $('#search-console');
+        var $filterOff = $('#private-filter-off-input');
+        var $allfilter = $('#allfilter');
+        var $qs = $('#quicksearch');
+        var $filterInputs = $('.filter-input');
+        var $checkboxes = $('#filter input[type="checkbox"]');
+        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
+        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
+        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
+        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
+        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
+        var $hide = $('.hide');
+        var $catandor = $('#catandor');
+        var $utiandor = $('#utiandor');
+        
         var $iso = $('#filter-container').isotope({
             // options
             itemSelector: '.filter-item',
@@ -179,7 +233,8 @@
                 var filterResult = filterValue ? $this.is( filterValue ) : true;
                 var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
                 var utilityFilterResult = utilityFilterValue ? $this.is( utilityFilterValue ) : true;
-                return searchResult && filterResult && categoryFilterResult && utilityFilterResult;
+                var privateFilterResult = isprivate ? privateFilter[this.getAttribute('data-id')-1] : true;
+                return $filterOff.prop('checked') ? privateFilterResult : privateFilterResult && searchResult && filterResult && categoryFilterResult && utilityFilterResult;
             },
             getSortData: {
                 venue: '.sort-venue',
@@ -188,8 +243,63 @@
                 num: '.sort-num parseInt',
                 title: '.sort-title',
                 difficulty: '.sort-difficulty parseInt',
+                probid: (itemElem) => {
+                    return parseInt(itemElem.getAttribute('data-id'));
+                }
             },
         });
+        var iso = $iso.data('isotope');
+
+        var db = new Dexie("done-like");
+        db.version(2).stores({
+            dones: 'id',
+            likes: 'id',
+            checked: 'id',
+            notchecked: 'id', 
+            text: 'id, text'
+        });
+
+        const DELIMIT_AND = '';
+        const DELIMIT_OR = ', ';
+        const CHAR64 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
+        function to64(arr){
+            var result = '';
+            for(var i = 0; i*6 < arr.length; i++){
+                result += CHAR64.charAt((() => {
+                    var num = 0;
+                    for(var j = 0; j < 6; j++){
+                        if(arr[i*6+j]){
+                            num += 2 ** j;
+                        }
+                    }
+                    return num;
+                })());
+            }
+            return result;
+        }
+        function from64(str){
+            var result = [];
+            for(var i = 0; i < str.length; i++){
+                var num = CHAR64.indexOf(str.charAt(i));
+                for(var j = 0; j < 6 ; j++){
+                    result[i*6+j] = num % 2 ** (j + 1)  >= 2 ** j;
+                }
+            }
+            return result;
+        }
+        function compress0(s){
+            //0の連続を 0n (nは連続数 < 64)に置き換える
+            //00はありえなくなる 0 > 01, 00 > 02, 000 > 03, 0が63個 > 0_
+            return s.replace(/([0_])\1{0,62}/g, function(a, c) {
+                return c + CHAR64.charAt(a.length);
+            });
+        }
+        function expand0(s){
+            //0n > 000... } n個
+            return s.replace(/([0_])(\S)/g, function(a, c, n) {
+                return new Array(CHAR64.indexOf(n)+1).join(c);
+            });
+        }
 
         //sort
         $('#sort-by-button-group').on( 'click', 'label', function() {
@@ -209,25 +319,10 @@
             $iso.isotope('shuffle');
         });
 
-        var iso = $iso.data('isotope');
-        var filterValue = '*';
-        var categoryFilterValue = '*';
-        var utilityFilterValue = '*';
-        var qsRegex;
-        var $checkboxes = $('#filter input[type="checkbox"]');
-        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
-        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
-        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
-        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
-        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
-        var $hide = $('.hide');
-        var $catandor = $('#catandor');
-        var $utiandor = $('#utiandor');
-        const DELIMIT_AND = '';
-        const DELIMIT_OR = ', '
-
-        var $quicksearch = $('#quicksearch').keyup( debounce( function() {
-            qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+        //テキスト検索
+        $qs.keyup( debounce( function() {
+            qsRegex = new RegExp( $qs.val(), 'gi' );
+            db.text.put({id: 'quicksearch', text: $qs.val()});
             $iso.isotope();
             countHit();
         }) );
@@ -246,14 +341,8 @@
             };
         }
 
-        $checkboxes.change(function(){
-            var filters = [];
-            var $this = $(this);
-
-            //反転
-            if(false == $this.prop('checked')){
-                reverse($this);
-            }
+        //フィルター(カテゴリーと便利以外)
+        function updateCheck(){
 
             //要らないフィルターを消す class で hide を指定すると消えうるものになり, showVENUE でその venue のときだけ表示されるように
             var showCls = '';
@@ -270,19 +359,29 @@
                 $hide.hide().prop('checked', true);
             }
 
+            //フィルター処理
+            var filters = [];
             $checkboxes.each(function(i, elem){
                 if(false == elem.checked){
                     filters.push(elem.getAttribute('data-filter'));
                 }
             });
             filterValue = filters.length ? filters.join('') : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
+        }
+
+        $checkboxes.change(function(){
+            var $this = $(this);
+
+            //反転
+            if(false == $this.prop('checked')){
+                reverse($this);
+            }
+
+            updateCheck();
+            endUpdate();
         });
 
-
+        //カテゴリーフィルター
         function updateCatCheck(){
             var filters = [];
             $allcategoryCheckboxes.each(function(i, elem){
@@ -295,10 +394,6 @@
                 catandor = DELIMIT_AND;
             }
             categoryFilterValue = filters.length ? filters.join(catandor) : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
         }
 
         $categoryCheckboxes.change(function(){//categoryは非排他的なので分けた
@@ -325,10 +420,12 @@
             }
 
             updateCatCheck();
+            endUpdate();
         });
 
         $catandor.change(function(){
             updateCatCheck();
+            endUpdate();
         });
 
         $subcategoryCheckboxes.change(function(){//categoryと同じfilter内に含まれる
@@ -338,8 +435,10 @@
                 reverse($this);
             }
             updateCatCheck();
+            endUpdate();
         });
 
+        //便利フィルター
         function updateUtiCheck(){
             var filters = [];
             $utilityCheckboxes.each(function(i, elem){
@@ -353,20 +452,21 @@
                 utiandor = DELIMIT_AND;
             }
             utilityFilterValue = filters.length ? filters.join(utiandor) : '*';
-            setTimeout(function(){
-                $iso.isotope();
-                countHit();
-            },250);
         }
 
         $utilityCheckboxes.change(function(){//utilityも分ける
             updateUtiCheck();
+            endUpdate();
         });
 
         $utiandor.change(function(){
             updateUtiCheck();
+            endUpdate();
         });
 
+        //これ以降共通機能
+
+        //反転
         function reverse($this){
             var $checked = $this.siblings('input[type="checkbox"]:checked:not([style="display: none;"])');
             var $siblings = $this.siblings('input[type="checkbox"]:not([style="display: none;"])');
@@ -381,9 +481,297 @@
             return;
         };
 
+        //ヒット数
         function countHit(){
             var text = iso.filteredItems.length;
             $('#output').text( '—— ' + text + '問');
+        }
+
+        //IndexedDBを現在のinputに合わせて更新
+        function updateIndexedDB(){
+            db.checked.clear();
+            db.notchecked.clear();
+            $filterInputs.each(function(i){
+                var $this = $(this);
+                var defaultNotchecked = $this.hasClass('default-notchecked');
+                var checked = $this.prop('checked');
+                var id = $this.attr('id');
+                //var num = $filterInputs.index($this);
+                var num = i;
+                if(defaultNotchecked){
+                    if(checked){
+                        db.checked.put({id: id, num: num});
+                    }
+                }
+                else{
+                    if(!checked){
+                        db.notchecked.put({id: id, num: num});
+                    }
+                }
+            });
+        }
+
+        //input to フィルター
+        function endUpdate(option = {}){
+            updateIndexedDB();
+            return new Promise(resolve => 
+                setTimeout(function(){
+                    $iso.isotope(option);
+                    countHit();
+                    resolve();
+                },250)
+            );
+        }
+
+        //クリアボタン押下時
+        //フィルター類をデフォルトに戻す
+        $('#clear').on('click', function(){
+            $filterInputs.each(function(){
+                if($(this).hasClass('default-notchecked')){
+                    $(this).prop('checked',false);
+                }
+                else{
+                    $(this).prop('checked',true);
+                }
+            });
+            $('#sort-by-button-group label').removeClass('active').addClass('isSortAscending');
+            $('#sort-by-button-group input').removeProp('checked');
+            updateFilters();
+            $qs.val('');
+            qsRegex = '';
+            db.text.put({id: 'quicksearch', text: ''});
+            endUpdate({ sortBy : 'original-order', sortAscending: true });
+        });
+
+        $('#private-filter-off').on('click',function(){
+            $allfilter.toggle(250);
+            endUpdate();
+        });
+
+        //private filter 解除
+        $('#private-filter-clear').on('click', function(){
+            location.search = '';
+        });
+
+        //URL生成
+        var privateTitle = '';
+
+        function veqp(){
+            var private = false;
+            $('.uti-private').each((i, elem) => {
+                private |= $(elem).prop('checked');
+            });
+            return private;
+        }
+
+        async function genURL(){
+            var query = {};
+            var private = veqp();
+            var boollist = [];
+            
+            if(private || isprivate ){
+                query.v = 'p';
+                iso.filteredItems.map((v) => {
+                    boollist[v.sortData.probid-1] = true;
+                });
+                if(privateTitle){
+                    query.s = Base64.encodeURI(privateTitle);
+                }
+            }
+            else{
+                query.v = 1;
+                var text = $qs.val();
+                if(text){
+                    query.t = Base64.encodeURI(text);
+                }
+                await Promise.all([
+                    db.checked.toCollection().each(function(item){
+                        boollist[item.num] = true;
+                    }),
+                    db.notchecked.toCollection().each(function(item){
+                        boollist[item.num] = true;
+                    })
+                ]);
+            }
+            if(boollist.length){
+                query.c = compress0(to64(boollist));
+            }
+            var genurl = location.origin + '/problems/?' + $.param(query);
+            return genurl;
+        }
+
+        function content(genurl){
+            return '<div id="popover-link"><a href="' + genurl + '">' + genurl + '</a>' + '</div>';
+        }
+        function title(genurl){
+            return '<div class="d-flex"><span class="mr-auto align-self-center"><i class="fas fa-search fa-fw"></i>検索結果をシェア！</span>' + '<button id="clipbtn" class="btn btn-primary btnfn rounded-circle" data-clipboard-text="' + genurl + '"><i class="fas fa-clipboard"></i></button></div>';
+        }
+
+        //shareボタン押下時
+        $('#share').on('click', async function(){
+            var $this = $(this);
+            var private = veqp();
+            var genurl = '';
+            await genURL().then(v =>{
+                genurl = v;
+            });
+            var addhtml = private || isprivate ? '<p class="mt-2"><input type="text" class="form-control" id="private-title-form" value="' + privateTitle + '" placeholder="タイトル？" /></p>' : '';
+            $this.popover('dispose');
+            $this.popover({
+                title: title(genurl),
+                content: content(genurl) + addhtml,
+                html: true,
+                placement: 'top',
+                trigger: 'click'
+            });
+            $this.popover('show');
+            $('#clipbtn').tooltip({
+                title: 'Copy',
+                trigger: 'hover'
+            });
+        });
+
+        $(document).on('keyup', '#private-title-form', debounce( async function() {
+            //キーが打たれる度に，urlを生成しなおして，popover の html のリンク部分を直接変える．
+            privateTitle = $('#private-title-form').val();
+            var genurl = '';
+            await genURL().then(v =>{
+                genurl = v;
+            });
+            $('#' + $('#share').attr('aria-describedby')).find('#popover-link').html(content(genurl));
+            $('#' + $('#share').attr('aria-describedby')).find('.popover-header').html(title(genurl));
+            $('#clipbtn').tooltip({
+                title: 'Copy',
+                trigger: 'hover'
+            });
+        }));
+
+        $('body').on('click', function (e) {
+            $('#share').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    $(this).popover('hide');
+                }
+            });
+        });
+    
+        var clipboard = new ClipboardJS('#clipbtn');
+        clipboard.on('success', function(e) {
+            $('#clipbtn').tooltip('dispose').tooltip({title: 'Copied!'}).tooltip('show');
+        });
+
+        //画面ロード時に実行する関数
+        init();
+
+        async function querytoDB(){
+            var data = [[],[],[]];
+            var result = [];
+            var v = getParam('v');
+            var table = [db.checked, db.notchecked, db.text];
+            var flag = false;
+
+            //p=vのときはtextないけど
+            var text = getParam('t');
+            if(text){
+                flag = true;
+                data[2].push({id:'quicksearch',text: Base64.decode(text)});
+            }
+
+            if('p' == v){
+                var title = getParam('s');
+                var change = getParam('c');
+                if(change){
+                    decodedTitle = title ? Base64.decode(title) : 'シェアされた検索結果';
+                    $('#private-title-text').text(decodedTitle);
+                    $('#private-title').addClass('private');
+                    isprivate = true;
+                    $filterOff.prop('checked', true);
+                    $allfilter.hide();
+                    privateFilter = from64(expand0(change));
+                }
+            }
+            else{
+                var change = getParam('c');
+                if(change){
+                    flag = true;
+                    var boollist = from64(expand0(change));
+                    $filterInputs.each((i, elem) => {
+                        if(boollist[i]){
+                            var isnotchecked = $(elem).hasClass('default-notchecked')?0:1;
+                            var id = $(elem).attr('id');
+                            data[isnotchecked].push({id:id, num: i});
+                        }
+                    });
+                }
+            }
+            if(flag){
+                table.forEach((param, index) => {
+                    param.clear();
+                    result.push(param.bulkPut(data[index]));
+                });
+                await Promise.all(result);
+                location.search = '';
+            }
+            return true;
+        }
+
+        async function init(){
+            await querytoDB();
+            await Promise.all([
+                //indexedDBからデータ取得してprop反映
+                db.checked.toCollection().primaryKeys(function(keysArray){
+                    DBtoFilters(keysArray, true);
+                }),
+                db.notchecked.toCollection().primaryKeys(function(keysArray){
+                    DBtoFilters(keysArray, false);
+                }),
+                db.text.get('quicksearch',function(v){
+                    if(v){
+                        $qs.val(v.text);
+                        qsRegex = v.text;
+                    }
+                })
+            ]);
+            updateFilters();
+            await endUpdate();
+            $sc.removeClass('loading');
+        }
+
+        function getParam(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        function DBtoFilters(elems, bool){
+            if(elems.length){
+                var ids = '#' + elems.join(',#');
+                $(ids).prop('checked',bool);
+            }
+        }
+
+        //全フィルターのアップデート
+        function updateFilters(){
+            updateCheck();
+            var $checkedCategory = $('#filter-category input[type="checkbox"]:checked');
+            if($checkedCategory.length != $categoryCheckboxes.length){
+                if($('#その他').prop('checked')){
+                    $('.showOtherGenre').show();
+                }
+                else{
+                    $('.showOtherGenre').hide();
+                }
+            }
+            else{
+                $('.showOtherGenre').hide();
+            }
+            updateCatCheck();
+            updateUtiCheck();
         }
     });
 </script>

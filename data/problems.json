@@ -51,7 +51,7 @@
         "title": "Transcendental Algebra",
         "titlejp": "超越代数",
         "link": "https://ioling.org/problems/2003/i1/",
-        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2003-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -72,14 +72,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 2,
         "title": "Arabic Arithmetic",
         "titlejp": "アラビア式算数",
         "link": "https://ioling.org/problems/2003/i2/",
-        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2003-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -100,14 +101,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 3,
         "title": "Basque Dates",
         "titlejp": "バスク語の日付",
         "link": "https://ioling.org/problems/2003/i3/",
-        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2003-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -128,14 +130,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 4,
         "title": "Adyghe",
         "titlejp": "アディゲ語",
         "link": "https://ioling.org/problems/2003/i4/",
-        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2003-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -155,14 +158,15 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 5,
         "title": "French",
         "titlejp": "フランス語",
         "link": "https://ioling.org/problems/2003/i5/",
-        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2003-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -183,14 +187,15 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 6,
         "title": "Tocharian",
         "titlejp": "トカラ語",
         "link": "https://ioling.org/problems/2003/t1/",
-        "problink": "https://ioling.org/booklets/iol-2003-team-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-team-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2003-team-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -202,14 +207,15 @@
             "音韻",
             "比較"
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 7,
         "title": "Subscripts",
         "titlejp": "添え字",
         "link": "https://ioling.org/problems/2003/t2/",
-        "problink": "https://ioling.org/booklets/iol-2003-team-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-team-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2003-team-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -220,14 +226,15 @@
         "category": [
             "統語"
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 8,
         "title": "Verbs",
         "titlejp": "動詞",
         "link": "https://ioling.org/problems/2003/t3/",
-        "problink": "https://ioling.org/booklets/iol-2003-team-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2003-team-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2003-team-sol.en.pdf",
         "venue": "IOL",
         "year": 2003,
@@ -238,14 +245,15 @@
         "category": [
             "語用論"
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 9,
         "title": "Kayapo",
         "titlejp": "カヤポ語",
         "link": "https://ioling.org/problems/2004/i1/",
-        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2004-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2004,
@@ -265,14 +273,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 10,
         "title": "Swift News Agency",
         "titlejp": "韋駄天通信社",
         "link": "https://ioling.org/problems/2004/i2/",
-        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2004-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2004,
@@ -282,14 +291,15 @@
         "category": [
             "語用論"
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 11,
         "title": "Latin",
         "titlejp": "ラテン語",
         "link": "https://ioling.org/problems/2004/i3/",
-        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2004-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2004,
@@ -310,14 +320,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 12,
         "title": "Lakhota",
         "titlejp": "ラコタ語",
         "link": "https://ioling.org/problems/2004/i4/",
-        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2004-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2004,
@@ -337,14 +348,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 13,
         "title": "Chuvash",
         "titlejp": "チュヴァシュ語",
         "link": "https://ioling.org/problems/2004/i5/",
-        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2004-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2004-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2004,
@@ -364,7 +376,8 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 14,
@@ -391,7 +404,7 @@
         "title": "Tzotzil",
         "titlejp": "ツォツィル語",
         "link": "https://ioling.org/problems/2005/i1/",
-        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2005-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2005,
@@ -411,14 +424,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 16,
         "title": "Lango",
         "titlejp": "ランゴ語",
         "link": "https://ioling.org/problems/2005/i2/",
-        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2005-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2005,
@@ -439,14 +453,15 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 17,
         "title": "Mansi",
         "titlejp": "マンシ語",
         "link": "https://ioling.org/problems/2005/i3/",
-        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2005-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2005,
@@ -466,14 +481,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 18,
         "title": "Yoruba",
         "titlejp": "ヨルバ語",
         "link": "https://ioling.org/problems/2005/i4/",
-        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2005-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2005,
@@ -493,14 +509,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 19,
         "title": "Lithuanian",
         "titlejp": "リトアニア語",
         "link": "https://ioling.org/problems/2005/i5/",
-        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2005-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2005-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2005,
@@ -525,7 +542,8 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 20,
@@ -561,7 +579,7 @@
         "title": "Lakhota",
         "titlejp": "ラコタ語",
         "link": "https://ioling.org/problems/2006/i1/",
-        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2006-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2006,
@@ -581,14 +599,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 22,
         "title": "Catalan",
         "titlejp": "カタラン語",
         "link": "https://ioling.org/problems/2006/i2/",
-        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2006-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2006,
@@ -608,14 +627,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 23,
         "title": "Khmer",
         "titlejp": "クメール語",
         "link": "https://ioling.org/problems/2006/i3/",
-        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2006-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2006,
@@ -626,14 +646,15 @@
             "文字"
         ],
         "probcorrection": "クメール文字が文字化けしている",
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 24,
         "title": "Udihe",
         "titlejp": "ウディヘ語",
         "link": "https://ioling.org/problems/2006/i4/",
-        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2006-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2006,
@@ -654,14 +675,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 25,
         "title": "Ngoni",
         "titlejp": "ンゴニ語",
         "link": "https://ioling.org/problems/2006/i5/",
-        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2006-indiv-prob.en.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2006-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2006,
@@ -681,7 +703,8 @@
                 "diff": 7
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 26,
@@ -707,7 +730,7 @@
         "title": "Braille",
         "titlejp": "点字",
         "link": "https://ioling.org/problems/2007/i1/",
-        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2007-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2007,
@@ -727,14 +750,15 @@
                 "diff": 1
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 28,
         "title": "Movima",
         "titlejp": "モビマ語",
         "link": "https://ioling.org/problems/2007/i2/",
-        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2007-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2007,
@@ -754,14 +778,15 @@
                 "diff": 1
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 29,
         "title": "Georgian",
         "titlejp": "グルジア語",
         "link": "https://ioling.org/problems/2007/i3/",
-        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2007-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2007,
@@ -783,14 +808,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 30,
         "title": "Ndom",
         "titlejp": "ンドム語",
         "link": "https://ioling.org/problems/2007/i4/",
-        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2007-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2007,
@@ -810,14 +836,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 31,
         "title": "Turkish and Tatar",
         "titlejp": "トルコ語とタタール語",
         "link": "https://ioling.org/problems/2007/i5/",
-        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2007-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2007-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2007,
@@ -838,7 +865,8 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 32,
@@ -875,7 +903,7 @@
         "title": "Micmac",
         "titlejp": "ミクマク語",
         "link": "https://ioling.org/problems/2008/i1/",
-        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2008-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2008,
@@ -895,14 +923,15 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 34,
         "title": "Old Norse",
         "titlejp": "古ノルド語",
         "link": "https://ioling.org/problems/2008/i2/",
-        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2008-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2008,
@@ -922,14 +951,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 35,
         "title": "Drehu and Cemuhî",
         "titlejp": "デフ語とチェムヒン語",
         "link": "https://ioling.org/problems/2008/i3/",
-        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2008-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2008,
@@ -949,14 +979,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 36,
         "title": "Copainalá Zoque",
         "titlejp": "コパイナラ・ソケ語",
         "link": "https://ioling.org/problems/2008/i4/",
-        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2008-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2008,
@@ -976,14 +1007,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 37,
         "title": "Inuktitut",
         "titlejp": "イヌクティトゥット語",
         "link": "https://ioling.org/problems/2008/i5/",
-        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2008-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2008-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2008,
@@ -1003,7 +1035,8 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 38,
@@ -1039,7 +1072,7 @@
         "title": "Sulka",
         "titlejp": "スルカ語",
         "link": "https://ioling.org/problems/2009/i1/",
-        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2009-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2009,
@@ -1060,14 +1093,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 40,
         "title": "Maninka and Bamana",
         "titlejp": "マニンカ語とバマナ語",
         "link": "https://ioling.org/problems/2009/i2/",
-        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2009-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2009,
@@ -1087,14 +1121,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 41,
         "title": "Burmese Names",
         "titlejp": "ミャンマー人の名",
         "link": "https://ioling.org/problems/2009/i3/",
-        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2009-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2009,
@@ -1114,14 +1149,15 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 42,
         "title": "Old Indic",
         "titlejp": "古インド語",
         "link": "https://ioling.org/problems/2009/i4/",
-        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2009-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2009,
@@ -1144,14 +1180,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 43,
         "title": "Nahuatl",
         "titlejp": "ナワトル語",
         "link": "https://ioling.org/problems/2009/i5/",
-        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2009-indiv-prob.en-us.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2009-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2009,
@@ -1171,7 +1208,8 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 44,
@@ -1207,7 +1245,7 @@
         "title": "Budukh",
         "titlejp": "ブドゥフ語",
         "link": "https://ioling.org/problems/2010/i1/",
-        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2010-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2010,
@@ -1227,14 +1265,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 46,
         "title": "Drehu Numerals",
         "titlejp": "デフ語の数詞",
         "link": "https://ioling.org/problems/2010/i2/",
-        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2010-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2010,
@@ -1255,14 +1294,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 47,
         "title": "Blissymbolics",
         "titlejp": "ブリスシンボル",
         "link": "https://ioling.org/problems/2010/i3/",
-        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2010-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2010,
@@ -1284,14 +1324,15 @@
                 "diff": 1
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 48,
         "title": "mRNA Sequencing",
         "titlejp": "mRNAシークエンシング",
         "link": "https://ioling.org/problems/2010/i4/",
-        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2010-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2010,
@@ -1311,14 +1352,15 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 49,
         "title": "Romansch",
         "titlejp": "ロマンシュ語",
         "link": "https://ioling.org/problems/2010/i5/",
-        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2010-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2010-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2010,
@@ -1338,7 +1380,8 @@
                 "diff": 2
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 50,
@@ -1363,7 +1406,7 @@
         "title": "Menominee",
         "titlejp": "メノミニー語",
         "link": "https://ioling.org/problems/2011/i1/",
-        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2011-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2011,
@@ -1384,14 +1427,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 52,
         "title": "Faroese",
         "titlejp": "フェロー語",
         "link": "https://ioling.org/problems/2011/i2/",
-        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2011-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2011,
@@ -1411,14 +1455,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 53,
         "title": "Vai",
         "titlejp": "ヴァイ語",
         "link": "https://ioling.org/problems/2011/i3/",
-        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2011-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2011,
@@ -1439,14 +1484,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 54,
         "title": "Nahuatl",
         "titlejp": "ナワトル語",
         "link": "https://ioling.org/problems/2011/i4/",
-        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2011-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2011,
@@ -1467,13 +1513,14 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 55,
         "title": "EAN-13",
         "link": "https://ioling.org/problems/2011/i5/",
-        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2011-indiv-prob.en-us.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2011-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2011,
@@ -1493,7 +1540,8 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 56,
@@ -1518,7 +1566,7 @@
         "title": "Dyirbal",
         "titlejp": "ジルバル語",
         "link": "https://ioling.org/problems/2012/i1/",
-        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2012-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2012,
@@ -1538,14 +1586,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 58,
         "title": "Umbu-Ungu",
         "titlejp": "ウンブ・ウング語",
         "link": "https://ioling.org/problems/2012/i2/",
-        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2012-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2012,
@@ -1565,14 +1614,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 59,
         "title": "Basque",
         "titlejp": "バスク語",
         "link": "https://ioling.org/problems/2012/i3/",
-        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2012-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2012,
@@ -1594,14 +1644,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 60,
         "title": "Teop",
         "titlejp": "テオプ語",
         "link": "https://ioling.org/problems/2012/i4/",
-        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2012-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2012,
@@ -1621,14 +1672,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 61,
         "title": "Rotuman",
         "titlejp": "ロツマ語",
         "link": "https://ioling.org/problems/2012/i5/",
-        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf",
+        "problink": "https://ioling.org/booklets/iol-2012-indiv-prob.en.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2012-indiv-sol.en.pdf",
         "venue": "IOL",
         "year": 2012,
@@ -1648,7 +1700,8 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 62,
@@ -1673,7 +1726,7 @@
         "title": "Yidiny",
         "titlejp": "イディン語",
         "link": "https://ioling.org/problems/2013/i1/",
-        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2013-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2013,
@@ -1694,14 +1747,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 64,
         "title": "Tundra Yukaghir",
         "titlejp": "ツンドラ・ユカギール語",
         "link": "https://ioling.org/problems/2013/i2/",
-        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2013-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2013,
@@ -1726,14 +1780,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 65,
         "title": "Pirahã",
         "titlejp": "ピダハン語",
         "link": "https://ioling.org/problems/2013/i3/",
-        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2013-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2013,
@@ -1753,14 +1808,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 66,
         "title": "Muna",
         "titlejp": "ムナ語",
         "link": "https://ioling.org/problems/2013/i4/",
-        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2013-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2013,
@@ -1780,14 +1836,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 67,
         "title": "Telepathy",
         "titlejp": "テレパシー",
         "link": "https://ioling.org/problems/2013/i5/",
-        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf",
+        "problink": "https://ioling.org/booklets/iol-2013-indiv-prob.en-us.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2013-indiv-sol.en-us.pdf",
         "venue": "IOL",
         "year": 2013,
@@ -1808,7 +1865,8 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 68,
@@ -1833,7 +1891,7 @@
         "title": "Benabena",
         "titlejp": "ベナベナ語",
         "link": "https://ioling.org/problems/2014/i1/",
-        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2014-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2014,
@@ -1854,14 +1912,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 70,
         "title": "Kiowa",
         "titlejp": "カイオワ語",
         "link": "https://ioling.org/problems/2014/i2/",
-        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2014-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2014,
@@ -1882,14 +1941,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 71,
         "title": "Tangut",
         "titlejp": "西夏語",
         "link": "https://ioling.org/problems/2014/i3/",
-        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2014-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2014,
@@ -1914,14 +1974,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 72,
         "title": "Engenni",
         "titlejp": "エンゲンニ語",
         "link": "https://ioling.org/problems/2014/i4/",
-        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2014-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2014,
@@ -1941,14 +2002,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 73,
         "title": "Gbaya",
         "titlejp": "北西バヤ語",
         "link": "https://ioling.org/problems/2014/i5/",
-        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2014-indiv-prob.ja.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2014-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2014,
@@ -1973,7 +2035,8 @@
                 "diff": 7
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 74,
@@ -2010,7 +2073,7 @@
         "title": "Nahuatl and Arammba",
         "titlejp": "ナワトル語とアランバ語",
         "link": "https://ioling.org/problems/2015/i1/",
-        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2015-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2015,
@@ -2031,14 +2094,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 76,
         "title": "Kabardian",
         "titlejp": "カバルド語",
         "link": "https://ioling.org/problems/2015/i2/",
-        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2015-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2015,
@@ -2049,14 +2113,15 @@
             "形態",
             "動詞形態"
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 77,
         "title": "Soundex",
         "titlejp": "サウンデックス",
         "link": "https://ioling.org/problems/2015/i3/",
-        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2015-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2015,
@@ -2067,14 +2132,15 @@
             "音韻",
             "非言語"
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 78,
         "title": "Wambaya",
         "titlejp": "ワンバヤ語",
         "link": "https://ioling.org/problems/2015/i4/",
-        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2015-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2015,
@@ -2084,14 +2150,15 @@
         "category": [
             "統語"
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 79,
         "title": "Somali Masafo",
         "titlejp": "ソマリ語詩マサフォ",
         "link": "https://ioling.org/problems/2015/i5/",
-        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2015-indiv-prob.ja.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2015-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2015,
@@ -2111,7 +2178,8 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 80,
@@ -2146,7 +2214,7 @@
         "title": "Aralle-Tabulahan",
         "titlejp": "アラッレ・タブラハン語",
         "link": "https://ioling.org/problems/2016/i1/",
-        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2016-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2016,
@@ -2168,14 +2236,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 82,
         "title": "Luwian",
         "titlejp": "ルウィ語",
         "link": "https://ioling.org/problems/2016/i2/",
-        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2016-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2016,
@@ -2195,14 +2264,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 83,
         "title": "Kunuz Nubian",
         "titlejp": "クヌーズ・ヌビア語",
         "link": "https://ioling.org/problems/2016/i3/",
-        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2016-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2016,
@@ -2223,14 +2293,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 84,
         "title": "Iatmül",
         "titlejp": "イアトムル語",
         "link": "https://ioling.org/problems/2016/i4/",
-        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2016-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2016,
@@ -2251,14 +2322,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 85,
         "title": "Jaqaru",
         "titlejp": "ハカル語",
         "link": "https://ioling.org/problems/2016/i5/",
-        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2016-indiv-prob.ja.pdf#page=6",
         "solutionlink": "https://ioling.org/booklets/iol-2016-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2016,
@@ -2278,7 +2350,8 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 6
     },
     {
         "id": 86,
@@ -2315,7 +2388,7 @@
         "title": "Birom",
         "titlejp": "ビロム語",
         "link": "https://ioling.org/problems/2017/i1/",
-        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2017-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2017,
@@ -2339,14 +2412,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 88,
         "title": "Abui",
         "titlejp": "アブイ語",
         "link": "https://ioling.org/problems/2017/i2/",
-        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2017-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2017,
@@ -2368,14 +2442,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 89,
         "title": "Kimbundu",
         "titlejp": "キンブンド語",
         "link": "https://ioling.org/problems/2017/i3/",
-        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2017-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2017,
@@ -2385,14 +2460,15 @@
         "category": [
             "統語"
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 90,
         "title": "Khom script/Laven",
         "titlejp": "コム文字/ラベン語",
         "link": "https://ioling.org/problems/2017/i4/",
-        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2017-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2017,
@@ -2413,14 +2489,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 91,
         "title": "Madak",
         "titlejp": "マダク語",
         "link": "https://ioling.org/problems/2017/i5/",
-        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2017-indiv-prob.ja.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2017-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2017,
@@ -2440,7 +2517,8 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 92,
@@ -2476,7 +2554,7 @@
         "title": "Creek",
         "titlejp": "クリーク語",
         "link": "https://ioling.org/problems/2018/i1/",
-        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2018-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2018,
@@ -2500,14 +2578,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 94,
         "title": "Hakhun",
         "titlejp": "ハクン語",
         "link": "https://ioling.org/problems/2018/i2/",
-        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2018-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2018,
@@ -2534,14 +2613,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 95,
         "title": "Terêna",
         "titlejp": "テレナ語",
         "link": "https://ioling.org/problems/2018/i3/",
-        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2018-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2018,
@@ -2565,14 +2645,15 @@
                 "diff": 4
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 96,
         "title": "Mountain Arapesh (Bukiyip)",
         "titlejp": "山岳アラペシュ（ブキイプ語）",
         "link": "https://ioling.org/problems/2018/i4/",
-        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2018-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2018,
@@ -2597,14 +2678,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 97,
         "title": "Akan",
         "titlejp": "アカン語",
         "link": "https://ioling.org/problems/2018/i5/",
-        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2018-indiv-prob.ja.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2018-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2018,
@@ -2634,7 +2716,8 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 98,
@@ -2672,7 +2755,7 @@
         "title": "Yonggom",
         "titlejp": "ヨンゴム語",
         "link": "https://ioling.org/problems/2019/i1/",
-        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf#page=1",
         "solutionlink": "https://ioling.org/booklets/iol-2019-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2019,
@@ -2692,14 +2775,15 @@
                 "diff": 6
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 1
     },
     {
         "id": 100,
         "title": "Yurok",
         "titlejp": "ユロック語",
         "link": "https://ioling.org/problems/2019/i2/",
-        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf#page=2",
         "solutionlink": "https://ioling.org/booklets/iol-2019-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2019,
@@ -2721,14 +2805,15 @@
                 "diff": 3
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 2
     },
     {
         "id": 101,
         "title": "Book Pahlavi script",
         "titlejp": "書物のパフラヴィー文字",
         "link": "https://ioling.org/problems/2019/i3/",
-        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf#page=3",
         "solutionlink": "https://ioling.org/booklets/iol-2019-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2019,
@@ -2748,14 +2833,15 @@
                 "diff": 7
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 3
     },
     {
         "id": 102,
         "title": "West Tarangan",
         "titlejp": "西タランガン語",
         "link": "https://ioling.org/problems/2019/i4/",
-        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf#page=4",
         "solutionlink": "https://ioling.org/booklets/iol-2019-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2019,
@@ -2776,14 +2862,15 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 4
     },
     {
         "id": 103,
         "title": "Nooni",
         "titlejp": "ノニ語",
         "link": "https://ioling.org/problems/2019/i5/",
-        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf",
+        "problink": "https://ioling.org/booklets/iol-2019-indiv-prob.ja.pdf#page=5",
         "solutionlink": "https://ioling.org/booklets/iol-2019-indiv-sol.ja.pdf",
         "venue": "IOL",
         "year": 2019,
@@ -2803,7 +2890,8 @@
                 "diff": 5
             }
         ],
-        "draft": false
+        "draft": false,
+        "page": 5
     },
     {
         "id": 104,
@@ -2966,8 +3054,8 @@
         "hint": {
             "name": "karngati",
             "value": [
-                "日本語訳はすべて形容詞と名詞一つずつの組み合わせだ．ロシア語のほうもスペースで区切られた二つの語でできているから，片方が名詞でもう片方が形容詞に当たると考えられる．",
-                "まず複数の例に共通して使われている語に注目し，対応するロシア語の語を特定しよう．すると問題1が解ける．",
+                "日本語訳はすべて名詞とそれを説明する部分ひとつずつでできている．ロシア語のほうも二つの語でできているから，片方が名詞でもう片方がそれを説明する形容詞だと考えられる．",
+                "まず複数の例に共通して使われているстарыйやдомなどを手がかりに，ロシア語の単語の意味を特定していこう．すると問題1が解ける．",
                 "問題2を解くにはロシア語での名詞と形容詞の位置関係を明らかにしないといけない．ロシア語の形容詞は左側と右側どちらに来ている？",
                 "左側が「古い」「新しい」「黄色い」に対応しているから，形容詞は左に来ると分かる．",
                 "ロシア語の形容詞は右端の部分が変わっている．どんな種類がある？",
@@ -3020,6 +3108,28 @@
                 "diff": 2
             }
         ],
+        "hint": {
+            "name": "karngati",
+            "value": [
+                "解答するためには語の種類，語の使い分けかた，語の並べかたが分かればよい．",
+                "\"to cusin\"「君のいとこ（単数）」，\"il nestri cusin irlandês\"「私たちのアイルランド人のいとこ」，\"i miei cusins\"「私のいとこ達」を比べると？",
+                "cusin, cusinsが「いとこ，いとこ達」などを意味することが分かる．",
+                "更にcjase/cjases，biciclete/bicicletes，sûr/sûrsを比べると？",
+                "語尾の-sが複数を意味することが分かる．",
+                "\"mê sûr\"「私の姉（単数）」, \"nestri fradi\"「私たちの兄（単数）」, \"to cusin\"「君のいとこ（単数）」の前半部分は何を意味している？",
+                "mê, nestri, toはそれぞれ「私の」「私たちの」「君の」を意味することが分かる．",
+                "フリウリ語のla, lisは何を表しているだろうか．\"lis cjases\",「その（特定の）家（複数）」， \"la biciclete\"「その（特定の）自転車（単数）」を手掛かりにすると？",
+                "la, lisは日本語訳の「その（特定の）」に当たり，英語のtheのような対象の定性を表す定冠詞だと想像できる．",
+                "更に分析を進めるために語の順番を考えよう．cjaseやcusinなどの中心となる語，mêなど「～～の」を表す語，定冠詞，irlandese/irlandêsはどのように並んでいる？",
+                "(定冠詞)-(所有者)-中心の名詞-(irlandese/irlandês) という順に並んでいる．",
+                "まだ機能の分からない語はi, il, tôs, nestris, gno, nestre, mieiである．これらの機能はは定冠詞，所有者のどれだろうか．語順に注目して考えよう．",
+                "il, iが定冠詞，tôs,が「君の」 ，nestris, nestreが「私たちの」， miei, gnoが「私の」を意味すると分かる．",
+                "ここで単語を整理しよう．</br>定冠詞……la, lis, i, il</br>「私の」……mê, gno, mês, miei</br>「私達の」……nestris, nestri, nestre</br>「君の」……tôs, to</br>まずｈlaだけに注目しよう．\"la mê cjase\"「私の家（単数）」，\"la biciclete\"「その（特定の）自転車（単数）」，\"la nestre ave irlandese\"「私たちのアイルランド人のおばあちゃん」に共通していることは？",
+                "いずれも中心となる名詞が単数である．同様に，ほかの定冠詞，所有者を表す部分も数に着目して分析しよう．",
+                "以下のようなことが分かる．<table> <tbody><tr> <th></th> <th>単数</th> <th>複数</th> </tr> <tr> <td>定冠詞　</td> <td>la, il</td> <td>lis, a</td> </tr> <tr> <td>私の</td> <td>mê, gno</td> <td>mês, miei</td> </tr> <tr> <td>私達の</td> <td>nestre, nestri　</td> <td>nestris</td> </tr> <tr> <td>君の</td> <td>to</td> <td>tôs</td> </tr> </tbody></table>",
+                "つぎにlaとi，meとgnoなどの使い分けかたを考えよう．"
+            ]
+        },
         "draft": false
     },
     {
@@ -4255,6 +4365,19 @@
         "number": "R1-1",
         "topic": "Yolmo",
         "author": "Lauren Gawne",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4267,6 +4390,19 @@
         "number": "R1-2",
         "topic": "Danish",
         "author": "Mike Swan",
+        "category": [
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4279,6 +4415,19 @@
         "number": "R1-3d",
         "topic": "Dutch",
         "author": "Babette Newsome",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4291,6 +4440,19 @@
         "number": "R1-3w",
         "topic": "Welsh",
         "author": "Dick Hudson",
+        "category": [
+            "未分類"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4303,6 +4465,20 @@
         "number": "R1-4",
         "topic": "Haitian",
         "author": "Ivaylo Youmerski",
+        "category": [
+            "形態",
+            "!音韻"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4315,6 +4491,19 @@
         "number": "R1-5",
         "topic": "Esperanto",
         "author": "Alexey Pegushev",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4327,6 +4516,20 @@
         "number": "R1-6",
         "topic": "Bardi",
         "author": "Catherine Sheard",
+        "category": [
+            "統語",
+            "図説明"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
@@ -4339,6 +4542,16 @@
         "number": "R1-7",
         "topic": "Waorani",
         "author": "Drago Radev",
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -5716,5 +5929,389 @@
         "topic": "Tonga (Austronesian)",
         "author": "fulfom",
         "draft": true
+    },
+    {
+        "id": 274,
+        "title": "インドネシア語",
+        "link": "https://iolingjapan.org/sample-problems/",
+        "venue": "JOL",
+        "year": -1,
+        "number": 1,
+        "topic": "Indonesian",
+        "category": [
+            "形態"
+        ],
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12589396618.html"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 275,
+        "title": "アイヌ語",
+        "link": "https://iolingjapan.org/sample-problems/",
+        "venue": "JOL",
+        "year": -1,
+        "number": 2,
+        "topic": "Aynu",
+        "category": [
+            "形態"
+        ],
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12589406900.html"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 276,
+        "title": "トルコ語",
+        "link": "https://iolingjapan.org/sample-problems/",
+        "venue": "JOL",
+        "year": -1,
+        "number": 3,
+        "topic": "Turkish",
+        "category": [
+            "統語"
+        ],
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12589415159.html"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 277,
+        "title": "古代エジプトの数字",
+        "link": "https://iolingjapan.org/sample-problems/",
+        "venue": "JOL",
+        "year": -1,
+        "number": 4,
+        "topic": "Hieroglyphics for Ancient Egyptian numerals",
+        "category": [
+            "文字",
+            "命数"
+        ],
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12589431637.html"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 278,
+        "title": "Georgian Countries",
+        "titlejp": "グルジア語の国名",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=1",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-1",
+        "topic": "Georgian",
+        "author": "Bruno L’Astorina",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590593010.html"
+        ],
+        "draft": false
+    },
+    {
+        "id": 279,
+        "title": "Ancient Greek",
+        "titlejp": "古代ギリシャ語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=2",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-2",
+        "topic": "Ancient Greek",
+        "author": "Todor Tchervenkov",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590625817.html"
+        ],
+        "draft": false
+    },
+    {
+        "id": 280,
+        "title": "Aragonese",
+        "titlejp": "アラゴン語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=3",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-3",
+        "topic": "Aragonese",
+        "author": "Bruno L’Astorina",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590641217.html"
+        ],
+        "draft": false
+    },
+    {
+        "id": 281,
+        "title": "Japanese Braille",
+        "titlejp": "日本語の点字",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=4",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-4",
+        "topic": "Japanese Braille",
+        "author": "Patrick Littell",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590655769.html"
+        ],
+        "draft": false
+    },
+    {
+        "id": 282,
+        "title": "Lalana Chinantec",
+        "titlejp": "ララナ・チナンテク語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=5",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-5",
+        "topic": "Lalana Chinantec",
+        "author": "Rachel Nordlinger; Data from Merrifield, W. et al (2003). *Laboratory Manual for Morphology and Syntax*, 7th edition. Dallas: SIL International. ",
+        "solcorrection": "3-b 誤: ",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590677842.html"
+        ],
+        "draft": false
+    },
+    {
+        "id": 283,
+        "title": "Molistic",
+        "titlejp": "モリス的",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=6",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-6",
+        "topic": "Molistic",
+        "author": "Dragomir Radev",
+        "probcorrection": "上から9番目の文の頭 誤: Easy though → Even though",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590817629.html"
+        ],
+        "translation": {
+            "name": "fulfom",
+            "value": ">こんな文を言った人がいたとしよう：\n>\n>1. 花子はモリス的でスラシい\n>1. 春子はケンセンでブラス的だ\n>1. 夏海と航助はスラシいがダンジい\n>1. その先生はダンジくてクルブい\n>1. 千尋はブリシいがクルブい\n>1. 揚介はスロシカなだけでなくウイジくもある\n>1. 洋一はフラマジいのにスロシカだ\n>1. 昭子はツラギくてツラヒいので見ていると笑顔になれる\n>1. 太郎はウイジいのにツラギい\n>1. 冬子はブリシいがツラヒい\n>1. その営業さんたちはケンセンだったがスラシくはなかった\n>\n>問1. 次のうちどれがあり得る文か？\n>\n><div class=\"list-lower-latin\"></div>\n>\n>1. 雅美はブリシくてブラス的だ\n>1. その歌手はモリス的なだけでなくケンセンでもあった\n>1. 咲月はダンジいがスロシカな犬を見つけた\n>\n>問2. 人に求めたくなるような性質はどれか？(複数選択可)\r\n>\r\n><div class=\"list-lower-latin\"></div>\n>\n>1. ブリシい\n>1. ウイジい\n>1. スロシカだ\n>1. フラマジい\n>\n>:source:"
+        },
+        "draft": false
+    },
+    {
+        "id": 284,
+        "title": "Persian",
+        "titlejp": "ペルシャ語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=7",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Easy-7",
+        "topic": "Persian",
+        "author": "Yulia Mazurova",
+        "explanationlinks": [
+            "https://ameblo.jp/vaca-ajo-001/entry-12590954519.html"
+        ],
+        "draft": false
+    },
+    {
+        "id": 285,
+        "title": "Kazakh",
+        "titlejp": "カザフ語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=8",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Intermediate-1",
+        "topic": "Kazakh",
+        "author": "Pyotr Zubkov",
+        "draft": false
+    },
+    {
+        "id": 286,
+        "title": "Taikyoku Shōgi",
+        "titlejp": "大局将棋",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=9",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Intermediate-2",
+        "topic": "Taikyoku Shōgi",
+        "author": "Ivan Derzhanski",
+        "draft": false
+    },
+    {
+        "id": 287,
+        "title": "Tupí and Guaraní",
+        "titlejp": "トゥピ語とグアラニー語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=10",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Intermediate-3",
+        "topic": "Tupí and Guaraní",
+        "author": "Victória Flório",
+        "draft": false
+    },
+    {
+        "id": 288,
+        "title": "Inuktitut Numbers",
+        "titlejp": "イヌクティトゥット語の数字",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=12",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Intermediate-4",
+        "topic": "Inuktitut",
+        "author": "Bruno L’Astorina and Felipe Gonçalves Assis",
+        "draft": false
+    },
+    {
+        "id": 289,
+        "title": "Basque Numbers",
+        "titlejp": "バスク語の数詞",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=13",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Intermediate-5",
+        "topic": "Basque",
+        "author": "Anna Pazelskaya",
+        "draft": false
+    },
+    {
+        "id": 290,
+        "title": "Basque Kinship",
+        "titlejp": "バスク語の親族名称",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=14",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Intermediate-6",
+        "topic": "Basque",
+        "author": "Anna Pazelskaya",
+        "draft": false
+    },
+    {
+        "id": 291,
+        "title": "Icelandic Kinship",
+        "titlejp": "アイスランド語の親族名称",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=15",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Hard-1",
+        "topic": "Icelandic",
+        "author": "Robson Carapeto",
+        "draft": false
+    },
+    {
+        "id": 292,
+        "title": "Manam",
+        "titlejp": "マナム語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=16",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Hard-2",
+        "topic": "Manam",
+        "author": "Patrick Littell",
+        "draft": false
+    },
+    {
+        "id": 293,
+        "title": "Guaraní Verbs",
+        "titlejp": "グアラニー語の動詞",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=17",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Hard-3",
+        "topic": "Guaraní",
+        "author": "Bozhidar Bozhanov",
+        "draft": false
+    },
+    {
+        "id": 294,
+        "title": "Aymara",
+        "titlejp": "アイマラ語",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=18",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Hard-4",
+        "topic": "Aymara",
+        "author": "Patrick Littell",
+        "draft": false
+    },
+    {
+        "id": 295,
+        "title": "Toki Pona",
+        "titlejp": "トキポナ",
+        "link": "https://ioling.org/problems/samples/",
+        "problink": "https://ioling.org/booklets/samples.en.pdf#page=19",
+        "solutionlink": "https://ioling.org/booklets/samples.solution.en.pdf",
+        "venue": "IOL",
+        "year": -1,
+        "number": "Hard-5",
+        "topic": "Toki Pona",
+        "author": "Bruno L’Astorina",
+        "draft": false
     }
 ]

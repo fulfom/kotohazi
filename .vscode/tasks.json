@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "local preview",
+            "type": "shell",
+            "command": "hugo server",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "make new blog article",
+            "type": "shell",
+            "command": "hugo new blog/${input:blogType}/${input:fileTitle}.md"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "blogType", // ${input:***}で指定したID
+            "description": "News or Release?", // 入力説明文
+            "options": [
+                "news",
+                "releases"
+            ],
+            "default": "releases", // デフォルト入力値
+            "type": "pickString" // 入力タイプ
+        },
+        {
+            "id": "fileTitle",
+            "description": "The title of this article: ",
+            "default": "$(date -f yyyyMMdd)",
+            "type": "promptString"
+        }
+    ]
+}

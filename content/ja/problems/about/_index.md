@@ -7,15 +7,17 @@ images:
 - problems/about/filter-thumbnail.png
 ---
 
-{{% note "更新 2020-07-22" %}}
+{{% note "更新 2020-07-30" %}}
 
-- 取説を書いた(これから更新情報はこちらに掲載します)
-- spreadsheet のデータを反映
-- ジャンル>その他からすべてのジャンルが指定可能に
-- ジャンルと便利がor検索だけでなくand検索できるように(一番最初の橙の&をonにするとand検索になる)
-- ジャンルとして立ててはいないが割と普及している「語対応」で検索可能に(=意味&対応)
-- {{< iconStack "check-square sort-utility-done|slash" >}} (まだ解いてない問題のみ絞り込むフィルター)を追加
-- 一覧以外の色んなところから{{< icon "check-square sort-utility-done fa-fw" >}}と{{< icon "heart sort-utility-like fa-fw" >}}がチェック可能に
+### 問題集
+
+- 翻訳・注釈つきの問題はカード右肩に{{< iconStack "comment fa-lg text-muted|~訳" "訳つきアイコン" >}}が表示されるようになった
+- 翻訳・注釈つきの問題を絞り込める{{< iconStack "comment fa-lg sort-utility-translation|~訳" "便利フィルター" >}}を追加
+- データ更新(主にIOL, JOLのサンプル問題)
+- 検索結果のセーブ&ロード・シェア・クリア機能追加
+  - ページを再読み込みしても検索結果がそのまま消えずに持ち越される
+  - {{< icon share SHARE >}} から検索結果がシェアできるように．おすすめ問題リストなどとして公開することを想定．詳細は下に．
+  - {{< icon "trash btnfn-danger" CLEAR >}}  (SHARE の右隣) を押すとフィルタリング一括解除 (再読み込みでフィルターが元通りにならなくなった代わり)
 
 {{% /note %}}
 
@@ -27,7 +29,8 @@ images:
 
 - 色々ある大会などの問題が一か所で一覧できる
 - 各問題に難易度とジャンルの情報がついている
-- 難易度やジャンルで検索・絞り込みできる
+- 難易度やジャンルで絞り込み検索できる
+- 検索結果をシェアできる
 
 **ヒントと解説**
 
@@ -46,8 +49,8 @@ images:
 各問題の情報は一枚のカードで表されています．例として第一回IOL個人戦第一問とサンプルを示します．
 
 {{< blocks/row class="mx-0 mb-3">}}
-{{< problems/probcard id=1 class="col-md-5 col-lg-4 p-0 mr-md-3 mb-3 mb-md-0">}}
-{{< problems/probcard id=-1 class="col-md-5 col-lg-4 p-0" >}}
+{{< problems/probcard id=1 class="col-md-10 col-lg-5 p-0 mr-lg-3 mb-3 mb-lg-0">}}
+{{< problems/probcard id=-1 class="col-md-10 col-lg-5 p-0" >}}
 {{< /blocks/row >}}
 
 出題元・タイトル・難易度とジャンル・問題へのリンクが縦に並んでいます．
@@ -62,16 +65,19 @@ images:
 
 <!--{{< icon "icons text-muted" >}}-->
 <a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb center&#34;><div class=&#34;icon material&#34;><i class=&#34;fas fa-icons&#34;></i></div></div><div class=&#34;card-body p-2&#34;><h5 class=&#34;card-title mb-1&#34;>追加資料を入手</h5></div></div>"><i class="fas fa-icons fa-fw"></i></a>
-: 音声や動画などの追加資料へのリンク
+: 音声や動画などの**追加資料**へのリンク
 
 {{< icon "exclamation-circle text-muted" >}}
-: 問題訂正 or 解答訂正(詳細ページに詳しく記載)
+: **問題訂正** or **解答訂正** (詳細ページに詳しく記載)
+
+{{< iconStack "comment fa-lg text-muted|~訳" >}}
+: **翻訳**や注釈がついていること (詳細ページに詳しく記載)
 
 {{< icon "lightbulb text-muted" >}}
-: 問題にヒントがついていること(詳細ページに詳しく記載)
+: 問題に**ヒント**がついていること (詳細ページに詳しく記載)
 
 {{< icon "chalkboard-teacher text-muted" >}}
-: 解説ブログへのリンク
+: **解説ブログ**へのリンク
 
 ### 詳細ページ
 
@@ -91,7 +97,12 @@ images:
 
 など役立つ情報が掲載されています．
 
-今のところまだ情報が充実していません．今後のアップデートをお待ちください．必要な情報があるときは{{< devs "fulfom" >}}宛てにツイート/DMするか，GitHubアカウントをお持ちの方は各ページ右上の {{< icon " fab fa-github" "ドキュメントのissueを作成" >}} からissueを投げてくださればなるべく優先的に情報を追加したいと思います．
+今のところまだ情報が充実していません．今後のアップデートをお待ちください．必要な情報があるときは以下の方法でお知らせくださればなるべく優先的に情報を追加したいと思います
+
+- {{< devs "fulfom" >}}宛てにツイート/DM
+- または GitHubアカウントをお持ちの方: ↓どちらかのリンクからissueを投げる
+    - 共通: 各ページ一番下の「このページは役に立ちましたか？」に yes/no で答えると出てくる「改善点を教えてください」
+    - PC: 各ページ右上の {{< icon " fab fa-github" "ドキュメントのissueを作成" >}}
 
 ### 便利なボタン
 
@@ -112,17 +123,19 @@ images:
 
 チェックしておくことで後からチェックしたものだけを絞り込むことができます．次の節からこの絞り込みなどについてご紹介していきます．
 
-## 検索・絞り込み・ソート
+## テキスト検索・絞り込み・ソート・シェア
 
-ページ上部の検索フォーム・フィルターを使って一覧の中から解きたい問題を絞り込むことができます．
+ページ上部のテキスト検索フォーム・フィルターを使って一覧の中から解きたい問題を絞り込むことができます．
 
-> {{< figure src=filter.png title="図: 検索フォームとフィルター" >}}
+> {{< figure src=filter.png title="図: テキスト検索フォームとフィルター" >}}
 
-最上部にある検索フォームでカード上のテキストの全文検索ができます(正規表現可)．
+最上段にあるテキスト検索フォームでカード上のテキストの全文検索ができます(正規表現可)．
 
-> {{< figure src=filter-search.png title="図: 検索フォーム" >}}
+> {{< figure src=filter-search.png title="図: テキスト検索フォーム" >}}
 
-以下，より便利なフィルターについてご紹介します．
+最下段にはヒットした問題数の表示と2つのボタンがあります．{{< icon "trash btnfn-danger" CLEAR >}} を押すと現在のテキスト検索・絞り込み・ソートがリセットされます．
+
+以下，より便利なフィルターと{{< icon share SHARE >}} についてご紹介します．
 
 ### 出題元
 
@@ -208,6 +221,9 @@ kotohazi
 
 > {{< figure src=filter-utility.png title="図: 便利フィルター" >}}
 
+{{< iconStack "comment fa-lg sort-utility-translation|~訳" >}}
+: 翻訳つきのみ
+
 {{< icon "lightbulb sort-utility-hint" >}}
 : ヒントつきのみ
 
@@ -233,3 +249,46 @@ kotohazi
 
 > {{< figure src=filter-sort.png title="図: ソート" >}}
 
+### SHARE
+
+{{< icon share SHARE >}} で検索結果を他の人にシェアすることができます．
+
+たとえば「語用論」のジャンルを誰かに紹介したいとしましょう．自分のところで「語用論」の問題を絞り込み，{{< icon share SHARE >}} を押します．
+
+> {{< figure src=share-push.png title="図: シェアボタンを押したところ" >}}
+
+{{< icon clipboard Copy >}} を押すとリンクをコピーできます．このリンクにアクセスした人はすでに「語用論」で絞り込まれた問題一覧を見ることができます．アクセスしてみてください → <https://kotohazi.netlify.app/problems/?v=1&c=06-x_23>
+
+基本的にはこのように {{< icon share SHARE >}} → リンクをコピペ で見えているページをシェアできます．
+
+テキスト検索もシェアすることができます．
+
+> {{< figure src=share-japanese.png title="図: 日本語で解ける問題のシェア" >}}
+
+↑のページへのリンク: <https://kotohazi.netlify.app/problems/?v=1&t=SU9MMjAoMVs1LTldfFteMDFdXGQpfEpPTHxBUExPfOaXpeacrOiqnuiosw>
+
+---
+
+{{< icon "check-square sort-utility-done" >}} {{< iconStack "check-square sort-utility-done|slash" >}} {{< icon "heart sort-utility-like" >}} のいずれかで絞り込んでいる場合は特殊な動きをします．これらのフィルターが個人的なものだからです．上記の例では絞り込むのに使っている**テキストやフィルター**をシェアしますが，こちらは絞り込まれた**問題の一覧**をシェアします．
+
+試しにオノマトペみたいな名前の言語に {{< icon "heart sort-utility-like" >}} をつけて絞り込んでみました．
+
+> {{< figure src=share-onomatopoeic.png title="図: オノマトペみたいな名前の言語" >}}
+
+タイトルがつけられるようになっています↓．
+
+> {{< figure src=share-named.png title="図: タイトルをつける" >}}
+
+このリンクに飛ぶと，こんなページが表示されます．
+
+> {{< figure src=share-shared.png title="図: シェアされたページ" >}}
+
+別の人が開いて {{< icon "check-square sort-utility-done" >}} {{< icon "heart sort-utility-like" >}} がその人のものになっても，ちゃんと問題一覧が表示されました．
+
+右上の {{< icon "filter sort-utility-primary" これだけ >}} を押して解除する({{< icon "filter sort-utility-primary" >}} > {{< icon "filter" >}})と，フィルターが出てきてシェアされた問題一覧をさらに絞り込むことができます．
+
+> {{< figure src=share-filtered.png title="図: シェアされたページをさらに絞り込み" >}}
+
+{{< icon "filter sort-utility-primary" これだけ >}} のすぐ下の {{< icon "trash btnfn-danger" CLEAR >}} を押すとシェアされた検索結果を消すことができます．
+
+シェア機能の説明は以上です．「おすすめの良問10選」「解けなさすぎる問題リスト」「今日の勉強会で解く問題」など便利に使えると思います．

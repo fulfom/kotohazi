@@ -1,6 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ $color := .Get "color" | default "primary" }}
 {{ $title := .Get 0 | default "NOTE" }}
+{{ $title := cond (eq "更新 " $title) (delimit (slice "更新 " (.Page.Date.Format "2006-01-02")) "" ) $title }}
 <div class="alert alert-{{ $color }} note" role="alert">
 <h4 class="alert-heading pl-2">{{$title}}</h4>
 {{ .Inner | markdownify }}

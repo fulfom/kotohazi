@@ -27,8 +27,8 @@ $spacers: map-merge(
   $spacers
 );
 
-$font-family-base: helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
-$headings-font-family: Open sans,helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
+$font-family-base: "Font Awesome 5 Free", helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
+$headings-font-family: "Font Awesome 5 Free", Open sans,helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
 
 $headings-margin-bottom: 1rem;
 
@@ -56,6 +56,18 @@ dd{
 .td-content{
     p{
         max-width: unset !important;
+    }
+}
+
+.detail-translation{
+    @extend .td-content;
+}
+
+$listStyleList: lower-latin, upper-latin, lower-roman, upper-roman, hiragana, katakana, none;
+
+@each $listStyle in $listStyleList{
+    .list-#{$listStyle}+ol{
+        list-style: #{$listStyle};
     }
 }
 
@@ -306,7 +318,7 @@ $form-feedback-valid-color: #28a745;
     border: 1px solid $primary;
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
-    transition: 0.25s all ease;
+    transition: 0.2s all ease;
     cursor: pointer;
 }
 .checkedbtn{
@@ -325,6 +337,20 @@ $form-feedback-valid-color: #28a745;
     }
 }
 
+.btnfn{
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 0.25rem !important;
+    box-shadow: unset !important;
+    transition: filter .15s ease;
+    &:hover{
+        filter: brightness(0.9);
+    }
+}
+
+.btnfn-danger{
+    color: var(--danger);
+}
+
 .pagerbtn{
     @extend .basicbtn, .notcheckedbtn;
     padding: 0.25rem 0.5rem;
@@ -336,6 +362,135 @@ $form-feedback-valid-color: #28a745;
     &.disabled{
         display: none;
     }
+}
+
+#clipbtn{
+    line-height: 1;
+    padding: 0.35rem .5rem !important;
+
+}
+
+#search-console{
+    transition: .15s;
+}
+
+#private-title{
+    @extend .lead;
+    display: none;
+    border: solid 1px gray;
+    border-right: none;
+    border-left: none;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    &.private{
+        display: flex;
+    }
+}
+
+#private-filter-btngroup{
+    @extend .btn-group-vertical, .ml-3;
+    #private-filter-off{
+        background-color: #eee;
+    }
+    #private-filter-off-input:checked + #private-filter-off{
+        background-color: $primary;
+        color: white;
+    }
+}
+
+.loading{
+    opacity: 0;
+    position: relative;
+    /*!
+        The MIT License (MIT)
+        Copyright (c) 2014 Luke Haas
+    */
+    & + #loading-spinner{
+        color: $primary;
+        font-size: 100px;
+        text-indent: -9999em;
+        overflow: hidden;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        //margin: 72px auto;
+        position: absolute;
+        top: calc( 50% - 50px );
+        left: calc( 50% - 50px );
+        transform: translate(-50%, -50%);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+        animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    }
+    @-webkit-keyframes load6 {
+        0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+        5%,
+        95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+        10%,
+        59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+        }
+        20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+        }
+        38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+        }
+        100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+    }
+    @keyframes load6 {
+        0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+        5%,
+        95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+        10%,
+        59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+        }
+        20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+        }
+        38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+        }
+        100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+    }
+    @-webkit-keyframes round {
+        0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        }
+        100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        }
+    }
+    @keyframes round {
+        0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        }
+        100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        }
+    }
+    /*!
+        over
+    */
 }
 
 .filter-group input[type="checkbox"]{
@@ -456,12 +611,20 @@ i.fa-angle-right{
     width: 1.25em;
 }
 
+.fa-stack-text{
+    margin-left: 1px;
+    margin-top: -1px;
+    color: #e7e1e0;
+    @extend .fa-xs;
+}
+
 $sort-colors:(
     "hint": var(--yellow),
     "expl": black,
     "done": var(--teal),
     "like": red,
-    "primary": $primary
+    "primary": $primary,
+    "translation": #7b372f
 );
 
 @each $class, $sort-color in $sort-colors {
