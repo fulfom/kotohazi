@@ -374,12 +374,6 @@ $form-feedback-valid-color: #28a745;
     transition: .15s;
 }
 
-#allfilter{
-    &.private{
-        display: none;
-    }
-}
-
 #private-title{
     @extend .lead;
     display: none;
@@ -389,7 +383,18 @@ $form-feedback-valid-color: #28a745;
     padding: 1rem 0;
     margin-top: 1rem;
     &.private{
-        display: block;
+        display: flex;
+    }
+}
+
+#private-filter-btngroup{
+    @extend .btn-group-vertical, .ml-3;
+    #private-filter-off{
+        background-color: #eee;
+    }
+    #private-filter-off-input:checked + #private-filter-off{
+        background-color: $primary;
+        color: white;
     }
 }
 

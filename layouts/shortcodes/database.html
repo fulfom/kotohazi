@@ -28,6 +28,21 @@
 
 <div class="position-relative">
 <div id="search-console" class="loading">
+<div id="private-title" class="align-items-center">
+    <p class="mr-auto d-inline-flex mb-0">
+        <i class="fas fa-share align-self-center mr-2"></i>
+        <span id="private-title-text"></span>
+    </p>
+        <div id="private-filter-btngroup">
+            <input type="checkbox" hidden id="private-filter-off-input">
+            <label class="btn btnfn mb-2" id="private-filter-off" for="private-filter-off-input">
+                <i class="fas fa-filter fa-fw"></i>これだけ
+            </label>
+            <button class="btn btnfn btnfn-danger" id="private-filter-clear">
+                <i class="fas fa-trash fa-fw"></i>CLEAR
+            </button>
+        </div>
+</div>
 <div id="allfilter">
 <p><input type="text" class="quicksearch form-control" id="quicksearch" placeholder="検索" /></p>
 
@@ -114,7 +129,6 @@
 </div>
 
 </div>
-<p id="private-title"><i class="fas fa-share mr-2"></i><span id="private-title-text"></span></p>
 
 <div>
     <span>ソート</span>
@@ -184,6 +198,28 @@
 
 <script language="JavaScript" type="text/javascript">
     $(function() {
+        
+        var filterValue = '*';
+        var categoryFilterValue = '*';
+        var utilityFilterValue = '*';
+        var qsRegex;
+        var isprivate = false;
+        var privateFilter = [];
+        var $sc = $('#search-console');
+        var $filterOff = $('#private-filter-off-input');
+        var $allfilter = $('#allfilter');
+        var $qs = $('#quicksearch');
+        var $filterInputs = $('.filter-input');
+        var $checkboxes = $('#filter input[type="checkbox"]');
+        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
+        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
+        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
+        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
+        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
+        var $hide = $('.hide');
+        var $catandor = $('#catandor');
+        var $utiandor = $('#utiandor');
+        
         var $iso = $('#filter-container').isotope({
             // options
             itemSelector: '.filter-item',
@@ -197,7 +233,8 @@
                 var filterResult = filterValue ? $this.is( filterValue ) : true;
                 var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
                 var utilityFilterResult = utilityFilterValue ? $this.is( utilityFilterValue ) : true;
-                return isprivate ? privateFilter[this.getAttribute('data-id')-1] : searchResult && filterResult && categoryFilterResult && utilityFilterResult;
+                var privateFilterResult = isprivate ? privateFilter[this.getAttribute('data-id')-1] : true;
+                return $filterOff.prop('checked') ? privateFilterResult : privateFilterResult && searchResult && filterResult && categoryFilterResult && utilityFilterResult;
             },
             getSortData: {
                 venue: '.sort-venue',
@@ -211,6 +248,7 @@
                 }
             },
         });
+        var iso = $iso.data('isotope');
 
         var db = new Dexie("done-like");
         db.version(2).stores({
@@ -221,26 +259,6 @@
             text: 'id, text'
         });
 
-        var iso = $iso.data('isotope');
-        var filterValue = '*';
-        var categoryFilterValue = '*';
-        var utilityFilterValue = '*';
-        var qsRegex;
-        var isprivate = false;
-        var privateFilter = [];
-        var $sc = $('#search-console');
-        var $allfilter = $('#allfilter');
-        var $qs = $('#quicksearch');
-        var $filterInputs = $('.filter-input');
-        var $checkboxes = $('#filter input[type="checkbox"]');
-        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
-        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
-        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
-        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
-        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
-        var $hide = $('.hide');
-        var $catandor = $('#catandor');
-        var $utiandor = $('#utiandor');
         const DELIMIT_AND = '';
         const DELIMIT_OR = ', ';
         const CHAR64 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
@@ -508,26 +526,31 @@
         //クリアボタン押下時
         //フィルター類をデフォルトに戻す
         $('#clear').on('click', function(){
-            if(isprivate){
-                location.search = '';
-            }
-            else{
-                $filterInputs.each(function(){
-                    if($(this).hasClass('default-notchecked')){
-                        $(this).prop('checked',false);
-                    }
-                    else{
-                        $(this).prop('checked',true);
-                    }
-                });
-                $('#sort-by-button-group label').removeClass('active').addClass('isSortAscending');
-                $('#sort-by-button-group input').removeProp('checked');
-                updateFilters();
-                $qs.val('');
-                qsRegex = '';
-                db.text.put({id: 'quicksearch', text: ''});
-                endUpdate({ sortBy : 'original-order', sortAscending: true });
-            }
+            $filterInputs.each(function(){
+                if($(this).hasClass('default-notchecked')){
+                    $(this).prop('checked',false);
+                }
+                else{
+                    $(this).prop('checked',true);
+                }
+            });
+            $('#sort-by-button-group label').removeClass('active').addClass('isSortAscending');
+            $('#sort-by-button-group input').removeProp('checked');
+            updateFilters();
+            $qs.val('');
+            qsRegex = '';
+            db.text.put({id: 'quicksearch', text: ''});
+            endUpdate({ sortBy : 'original-order', sortAscending: true });
+        });
+
+        $('#private-filter-off').on('click',function(){
+            $allfilter.toggle(250);
+            endUpdate();
+        });
+
+        //private filter 解除
+        $('#private-filter-clear').on('click', function(){
+            location.search = '';
         });
 
         //URL生成
@@ -546,7 +569,7 @@
             var private = veqp();
             var boollist = [];
             
-            if(private){
+            if(private || isprivate ){
                 query.v = 'p';
                 iso.filteredItems.map((v) => {
                     boollist[v.sortData.probid-1] = true;
@@ -574,9 +597,6 @@
                 query.c = compress0(to64(boollist));
             }
             var genurl = location.origin + '/problems/?' + $.param(query);
-            if(isprivate){
-                genurl = location.href;
-            }
             return genurl;
         }
 
@@ -595,7 +615,7 @@
             await genURL().then(v =>{
                 genurl = v;
             });
-            var addhtml = private && !isprivate ? '<p class="mt-2"><input type="text" class="form-control" id="private-title-form" value="' + privateTitle + '" placeholder="タイトル？" /></p>' : '';
+            var addhtml = private || isprivate ? '<p class="mt-2"><input type="text" class="form-control" id="private-title-form" value="' + privateTitle + '" placeholder="タイトル？" /></p>' : '';
             $this.popover('dispose');
             $this.popover({
                 title: title(genurl),
@@ -662,12 +682,12 @@
                 var title = getParam('s');
                 var change = getParam('c');
                 if(change){
-                    if(title){
-                        $('#private-title-text').text(Base64.decode(title));
-                        $('#private-title').addClass('private');
-                    }
-                    $allfilter.addClass('private');
+                    decodedTitle = title ? Base64.decode(title) : 'シェアされた検索結果';
+                    $('#private-title-text').text(decodedTitle);
+                    $('#private-title').addClass('private');
                     isprivate = true;
+                    $filterOff.prop('checked', true);
+                    $allfilter.hide();
                     privateFilter = from64(expand0(change));
                 }
             }
