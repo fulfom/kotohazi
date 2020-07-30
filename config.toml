@@ -1,4 +1,4 @@
-baseURL = "https://kotohazi.netlify.com/"
+baseURL = "https://kotohazi.netlify.app/"
 title = "ことはじ"
 
 enableRobotsTXT = true

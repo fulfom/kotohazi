@@ -7,13 +7,17 @@ images:
 - problems/about/filter-thumbnail.png
 ---
 
-{{% note "更新 2020-07-27" %}}
+{{% note "更新 2020-07-30" %}}
 
 ### 問題集
 
 - 翻訳・注釈つきの問題はカード右肩に{{< iconStack "comment fa-lg text-muted|~訳" "訳つきアイコン" >}}が表示されるようになった
 - 翻訳・注釈つきの問題を絞り込める{{< iconStack "comment fa-lg sort-utility-translation|~訳" "便利フィルター" >}}を追加
 - データ更新(主にIOL, JOLのサンプル問題)
+- 検索結果のセーブ&ロード・シェア・クリア機能追加
+  - ページを再読み込みしても検索結果がそのまま消えずに持ち越される
+  - {{< icon share SHARE >}} から検索結果がシェアできるように．おすすめ問題リストなどとして公開することを想定．詳細は下に．
+  - {{< icon "trash btnfn-danger" CLEAR >}}  (SHARE の右隣) を押すとフィルタリング一括解除 (再読み込みでフィルターが元通りにならなくなった代わり)
 
 {{% /note %}}
 
@@ -25,7 +29,8 @@ images:
 
 - 色々ある大会などの問題が一か所で一覧できる
 - 各問題に難易度とジャンルの情報がついている
-- 難易度やジャンルで検索・絞り込みできる
+- 難易度やジャンルで絞り込み検索できる
+- 検索結果をシェアできる
 
 **ヒントと解説**
 
@@ -118,17 +123,19 @@ images:
 
 チェックしておくことで後からチェックしたものだけを絞り込むことができます．次の節からこの絞り込みなどについてご紹介していきます．
 
-## 検索・絞り込み・ソート
+## テキスト検索・絞り込み・ソート・シェア
 
-ページ上部の検索フォーム・フィルターを使って一覧の中から解きたい問題を絞り込むことができます．
+ページ上部のテキスト検索フォーム・フィルターを使って一覧の中から解きたい問題を絞り込むことができます．
 
-> {{< figure src=filter.png title="図: 検索フォームとフィルター" >}}
+> {{< figure src=filter.png title="図: テキスト検索フォームとフィルター" >}}
 
-最上部にある検索フォームでカード上のテキストの全文検索ができます(正規表現可)．
+最上段にあるテキスト検索フォームでカード上のテキストの全文検索ができます(正規表現可)．
 
-> {{< figure src=filter-search.png title="図: 検索フォーム" >}}
+> {{< figure src=filter-search.png title="図: テキスト検索フォーム" >}}
 
-以下，より便利なフィルターについてご紹介します．
+最下段にはヒットした問題数の表示と2つのボタンがあります．{{< icon "trash btnfn-danger" CLEAR >}} を押すと現在のテキスト検索・絞り込み・ソートがリセットされます．
+
+以下，より便利なフィルターと{{< icon share SHARE >}} についてご紹介します．
 
 ### 出題元
 
@@ -242,3 +249,46 @@ kotohazi
 
 > {{< figure src=filter-sort.png title="図: ソート" >}}
 
+### SHARE
+
+{{< icon share SHARE >}} で検索結果を他の人にシェアすることができます．
+
+たとえば「語用論」のジャンルを誰かに紹介したいとしましょう．自分のところで「語用論」の問題を絞り込み，{{< icon share SHARE >}} を押します．
+
+> {{< figure src=share-push.png title="図: シェアボタンを押したところ" >}}
+
+{{< icon clipboard Copy >}} を押すとリンクをコピーできます．このリンクにアクセスした人はすでに「語用論」で絞り込まれた問題一覧を見ることができます．アクセスしてみてください → <https://kotohazi.netlify.app/problems/?v=1&c=06-x_23>
+
+基本的にはこのように {{< icon share SHARE >}} → リンクをコピペ で見えているページをシェアできます．
+
+テキスト検索もシェアすることができます．
+
+> {{< figure src=share-japanese.png title="図: 日本語で解ける問題のシェア" >}}
+
+↑のページへのリンク: <https://kotohazi.netlify.app/problems/?v=1&t=SU9MMjAoMVs1LTldfFteMDFdXGQpfEpPTHxBUExPfOaXpeacrOiqnuiosw>
+
+---
+
+{{< icon "check-square sort-utility-done" >}} {{< iconStack "check-square sort-utility-done|slash" >}} {{< icon "heart sort-utility-like" >}} のいずれかで絞り込んでいる場合は特殊な動きをします．これらのフィルターが個人的なものだからです．上記の例では絞り込むのに使っている**テキストやフィルター**をシェアしますが，こちらは絞り込まれた**問題の一覧**をシェアします．
+
+試しにオノマトペみたいな名前の言語に {{< icon "heart sort-utility-like" >}} をつけて絞り込んでみました．
+
+> {{< figure src=share-onomatopoeic.png title="図: オノマトペみたいな名前の言語" >}}
+
+タイトルがつけられるようになっています↓．
+
+> {{< figure src=share-named.png title="図: タイトルをつける" >}}
+
+このリンクに飛ぶと，こんなページが表示されます．
+
+> {{< figure src=share-shared.png title="図: シェアされたページ" >}}
+
+別の人が開いて {{< icon "check-square sort-utility-done" >}} {{< icon "heart sort-utility-like" >}} がその人のものになっても，ちゃんと問題一覧が表示されました．
+
+右上の {{< icon "filter sort-utility-primary" これだけ >}} を押して解除する({{< icon "filter sort-utility-primary" >}} > {{< icon "filter" >}})と，フィルターが出てきてシェアされた問題一覧をさらに絞り込むことができます．
+
+> {{< figure src=share-filtered.png title="図: シェアされたページをさらに絞り込み" >}}
+
+{{< icon "filter sort-utility-primary" これだけ >}} のすぐ下の {{< icon "trash btnfn-danger" CLEAR >}} を押すとシェアされた検索結果を消すことができます．
+
+シェア機能の説明は以上です．「おすすめの良問10選」「解けなさすぎる問題リスト」「今日の勉強会で解く問題」など便利に使えると思います．
