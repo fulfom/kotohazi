@@ -27,8 +27,8 @@ $spacers: map-merge(
   $spacers
 );
 
-$font-family-base: helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
-$headings-font-family: Open sans,helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
+$font-family-base: "Font Awesome 5 Free", helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
+$headings-font-family: "Font Awesome 5 Free", Open sans,helvetica,Segoe UI,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium,游ゴシック,Yu Gothic,メイリオ,Meiryo,sans-serif;
 
 $headings-margin-bottom: 1rem;
 
@@ -364,8 +364,33 @@ $form-feedback-valid-color: #28a745;
     }
 }
 
+#clipbtn{
+    line-height: 1;
+    padding: 0.35rem .5rem !important;
+
+}
+
 #search-console{
     transition: .15s;
+}
+
+#allfilter{
+    &.private{
+        display: none;
+    }
+}
+
+#private-title{
+    @extend .lead;
+    display: none;
+    border: solid 1px gray;
+    border-right: none;
+    border-left: none;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    &.private{
+        display: block;
+    }
 }
 
 .loading{

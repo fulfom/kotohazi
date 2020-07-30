@@ -201,39 +201,43 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 	name = "†語対応"
 	query = ".意味.対応"
 [[params.utility]]
-	class = "translation"
+	id = "translation"
 	query = ".translation"
 	value = "日本語版"
 	stack = true
 	icon = ["comment sort-utility-translation fa-lg","~訳"]
 [[params.utility]]
-	class = "hint"
+	id = "hint"
 	query = ".hint"
 	value = "ヒント"
 	icon = "lightbulb"
 	color = "var(--yellow)"
 [[params.utility]]
-	class = "expl"
+	id = "expl"
 	query = ".expl"
 	value = "解説付き"
 	icon = "chalkboard-teacher"
 [[params.utility]]
-	class = "done"
+	id = "done"
+	class = "uti-private"
 	query = ".done"
 	value = "挑戦済み"
 	icon = "check-square"
 [[params.utility]]
-	class = "notdone"
+	id = "notdone"
+	class = "uti-private"
 	query = ":not(.done)"
 	stack = true
 	icon = ["check-square sort-utility-done","slash"]
 [[params.utility]]
-	class = "like"
+	id = "like"
+	class = "uti-private"
 	query = ".like"
 	value = "お気に入り"
 	icon = "heart"
 #[[params.utility]]
-#	class = "notlike"
+#	id = "notlike"
+#   class = "uti-private"
 #	query = ":not(.like)"
 #	stack = true
 # 	icon = ["heart sort-utility-like","slash"]

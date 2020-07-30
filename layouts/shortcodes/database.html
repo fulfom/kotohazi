@@ -28,6 +28,7 @@
 
 <div class="position-relative">
 <div id="search-console" class="loading">
+<div id="allfilter">
 <p><input type="text" class="quicksearch form-control" id="quicksearch" placeholder="検索" /></p>
 
 <div id="filter">
@@ -102,15 +103,18 @@
     <label class="andor" for="utiandor">{{$andor}}</label>
     <div class="unmot">
     {{range .Site.Params.utility}}
-        <input class="filter-input default-notchecked" type="checkbox" hidden id="{{.class}}" data-filter="{{.query}}" autocomplete="off">
-        <label class="{{.class}}" for="{{.class}}">{{if .stack}}
+        <input class="filter-input default-notchecked {{.class}}" type="checkbox" hidden id="{{.id}}" data-filter="{{.query}}" autocomplete="off">
+        <label class="{{.id}}" for="{{.id}}">{{if .stack}}
             <span class="fa-stack stack-small fa-1x">{{range .icon}}{{if hasPrefix . "~"}}
                 <i class="fas fa-stack-1x fa-stack-text">{{strings.TrimLeft "~" .}}</i>{{else}}
                 <i class="fas fa-{{.}} fa-stack-1x"></i>{{end}}{{end}}
-            </span>{{else}}<i class="fas fa-{{.icon}} fa-fw sort-utility-{{.class}}"></i>{{end}}</label>
+            </span>{{else}}<i class="fas fa-{{.icon}} fa-fw sort-utility-{{.id}}"></i>{{end}}</label>
     {{end}}
     </div>
 </div>
+
+</div>
+<p id="private-title"><i class="fas fa-share mr-2"></i><span id="private-title-text"></span></p>
 
 <div>
     <span>ソート</span>
@@ -149,7 +153,7 @@
 {{$detailpath = $detailpath | append ((delimit $teamnum "-") | urlize)}}
 {{$problink := .problink | default .link}}
 
-<div id="prob{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} 未分類{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}{{with .translation}} translation{{end}}">
+<div id="prob{{.id}}" data-id="{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} 未分類{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}{{with .translation}} translation{{end}}">
     <div class="card">
     <div class="card-body">
         <div class="d-flex">
@@ -193,7 +197,7 @@
                 var filterResult = filterValue ? $this.is( filterValue ) : true;
                 var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
                 var utilityFilterResult = utilityFilterValue ? $this.is( utilityFilterValue ) : true;
-                return searchResult && filterResult && categoryFilterResult && utilityFilterResult;
+                return isprivate ? privateFilter[this.getAttribute('data-id')-1] : searchResult && filterResult && categoryFilterResult && utilityFilterResult;
             },
             getSortData: {
                 venue: '.sort-venue',
@@ -202,6 +206,9 @@
                 num: '.sort-num parseInt',
                 title: '.sort-title',
                 difficulty: '.sort-difficulty parseInt',
+                probid: (itemElem) => {
+                    return parseInt(itemElem.getAttribute('data-id'));
+                }
             },
         });
 
@@ -213,6 +220,68 @@
             notchecked: 'id', 
             text: 'id, text'
         });
+
+        var iso = $iso.data('isotope');
+        var filterValue = '*';
+        var categoryFilterValue = '*';
+        var utilityFilterValue = '*';
+        var qsRegex;
+        var isprivate = false;
+        var privateFilter = [];
+        var $sc = $('#search-console');
+        var $allfilter = $('#allfilter');
+        var $qs = $('#quicksearch');
+        var $filterInputs = $('.filter-input');
+        var $checkboxes = $('#filter input[type="checkbox"]');
+        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
+        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
+        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
+        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
+        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
+        var $hide = $('.hide');
+        var $catandor = $('#catandor');
+        var $utiandor = $('#utiandor');
+        const DELIMIT_AND = '';
+        const DELIMIT_OR = ', ';
+        const CHAR64 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
+        function to64(arr){
+            var result = '';
+            for(var i = 0; i*6 < arr.length; i++){
+                result += CHAR64.charAt((() => {
+                    var num = 0;
+                    for(var j = 0; j < 6; j++){
+                        if(arr[i*6+j]){
+                            num += 2 ** j;
+                        }
+                    }
+                    return num;
+                })());
+            }
+            return result;
+        }
+        function from64(str){
+            var result = [];
+            for(var i = 0; i < str.length; i++){
+                var num = CHAR64.indexOf(str.charAt(i));
+                for(var j = 0; j < 6 ; j++){
+                    result[i*6+j] = num % 2 ** (j + 1)  >= 2 ** j;
+                }
+            }
+            return result;
+        }
+        function compress0(s){
+            //0の連続を 0n (nは連続数 < 64)に置き換える
+            //00はありえなくなる 0 > 01, 00 > 02, 000 > 03, 0が63個 > 0_
+            return s.replace(/([0_])\1{0,62}/g, function(a, c) {
+                return c + CHAR64.charAt(a.length);
+            });
+        }
+        function expand0(s){
+            //0n > 000... } n個
+            return s.replace(/([0_])(\S)/g, function(a, c, n) {
+                return new Array(CHAR64.indexOf(n)+1).join(c);
+            });
+        }
 
         //sort
         $('#sort-by-button-group').on( 'click', 'label', function() {
@@ -232,26 +301,7 @@
             $iso.isotope('shuffle');
         });
 
-        var iso = $iso.data('isotope');
-        var filterValue = '*';
-        var categoryFilterValue = '*';
-        var utilityFilterValue = '*';
-        var qsRegex;
-        var $qs = $('#quicksearch');
-        var $filterInputs = $('.filter-input');
-        var $checkboxes = $('#filter input[type="checkbox"]');
-        var $categoryCheckboxes = $('#filter-category input[type="checkbox"]:not(#catandor)');
-        var $subcategoryCheckboxes = $('#filter-subcategory input[type="checkbox"]');
-        var $allcategoryCheckboxes = $('#filter-category input[type="checkbox"]:not(.filterfn), #filter-subcategory input[type="checkbox"]:not(.filterfn');
-        var $utilityCheckboxes = $('#filter-utility input[type="checkbox"]:not(#utiandor)');
-        var $venueCheckboxes = $('#filter-venue input[type="checkbox"]');
-        var $hide = $('.hide');
-        var $catandor = $('#catandor');
-        var $utiandor = $('#utiandor');
-        const DELIMIT_AND = '';
-        const DELIMIT_OR = ', ';
-        const DEGIT = 8;
-
+        //テキスト検索
         $qs.keyup( debounce( function() {
             qsRegex = new RegExp( $qs.val(), 'gi' );
             db.text.put({id: 'quicksearch', text: $qs.val()});
@@ -273,6 +323,7 @@
             };
         }
 
+        //フィルター(カテゴリーと便利以外)
         function updateCheck(){
 
             //要らないフィルターを消す class で hide を指定すると消えうるものになり, showVENUE でその venue のときだけ表示されるように
@@ -312,7 +363,7 @@
             endUpdate();
         });
 
-
+        //カテゴリーフィルター
         function updateCatCheck(){
             var filters = [];
             $allcategoryCheckboxes.each(function(i, elem){
@@ -369,6 +420,7 @@
             endUpdate();
         });
 
+        //便利フィルター
         function updateUtiCheck(){
             var filters = [];
             $utilityCheckboxes.each(function(i, elem){
@@ -394,6 +446,9 @@
             endUpdate();
         });
 
+        //これ以降共通機能
+
+        //反転
         function reverse($this){
             var $checked = $this.siblings('input[type="checkbox"]:checked:not([style="display: none;"])');
             var $siblings = $this.siblings('input[type="checkbox"]:not([style="display: none;"])');
@@ -408,11 +463,13 @@
             return;
         };
 
+        //ヒット数
         function countHit(){
             var text = iso.filteredItems.length;
             $('#output').text( '—— ' + text + '問');
         }
 
+        //IndexedDBを現在のinputに合わせて更新
         function updateIndexedDB(){
             db.checked.clear();
             db.notchecked.clear();
@@ -436,6 +493,7 @@
             });
         }
 
+        //input to フィルター
         function endUpdate(option = {}){
             updateIndexedDB();
             return new Promise(resolve => 
@@ -450,129 +508,182 @@
         //クリアボタン押下時
         //フィルター類をデフォルトに戻す
         $('#clear').on('click', function(){
-            $filterInputs.each(function(){
-                if($(this).hasClass('default-notchecked')){
-                    $(this).prop('checked',false);
-                }
-                else{
-                    $(this).prop('checked',true);
-                }
-            });
-            $('#sort-by-button-group label').removeClass('active').addClass('isSortAscending');
-            $('#sort-by-button-group input').removeProp('checked');
-            updateFilters();
-            $qs.val('');
-            qsRegex = '';
-            db.text.put({id: 'quicksearch', text: ''});
-            endUpdate({ sortBy : 'original-order', sortAscending: true });
+            if(isprivate){
+                location.search = '';
+            }
+            else{
+                $filterInputs.each(function(){
+                    if($(this).hasClass('default-notchecked')){
+                        $(this).prop('checked',false);
+                    }
+                    else{
+                        $(this).prop('checked',true);
+                    }
+                });
+                $('#sort-by-button-group label').removeClass('active').addClass('isSortAscending');
+                $('#sort-by-button-group input').removeProp('checked');
+                updateFilters();
+                $qs.val('');
+                qsRegex = '';
+                db.text.put({id: 'quicksearch', text: ''});
+                endUpdate({ sortBy : 'original-order', sortAscending: true });
+            }
         });
 
-        $('#share').on('click', async function(){
-            //DBtoQuery
-            var long = false;
+        //URL生成
+        var privateTitle = '';
+
+        function veqp(){
+            var private = false;
+            $('.uti-private').each((i, elem) => {
+                private |= $(elem).prop('checked');
+            });
+            return private;
+        }
+
+        async function genURL(){
             var query = {};
-            if(long){
-                query.v = 'long';
-                await Promise.all([
-                    db.checked.toCollection().primaryKeys(function(keysArray){
-                        query.checked = encodeURIComponent(keysArray.join('|'));
-                    }),
-                    db.notchecked.toCollection().primaryKeys(function(keysArray){
-                        query.notchecked = encodeURIComponent(keysArray.join('|'));
-                    }),
-                    db.text.get('quicksearch',function(v){
-                        if(v){
-                            query.text = encodeURIComponent(v.text);
-                        }
-                    })
-                ]);
+            var private = veqp();
+            var boollist = [];
+            
+            if(private){
+                query.v = 'p';
+                iso.filteredItems.map((v) => {
+                    boollist[v.sortData.probid-1] = true;
+                });
+                if(privateTitle){
+                    query.s = Base64.encodeURI(privateTitle);
+                }
             }
             else{
                 query.v = 1;
-                var num = new Array(Math.ceil($filterInputs.length/DEGIT));
-                for(var i = 0; i < Math.ceil($filterInputs.length/DEGIT) ;i++){
-                    num[i] = 0;
+                var text = $qs.val();
+                if(text){
+                    query.t = Base64.encodeURI(text);
                 }
                 await Promise.all([
                     db.checked.toCollection().each(function(item){
-                        num[Math.floor(item.num/DEGIT)] += 2**(item.num % DEGIT);
+                        boollist[item.num] = true;
                     }),
                     db.notchecked.toCollection().each(function(item){
-                        num[Math.floor(item.num/DEGIT)] += 2**(item.num % DEGIT);
-                        console.log(Math.floor(item.num/DEGIT), item)
-                    }),
-                    db.text.get('quicksearch',function(v){
-                        if(v){
-                            query.text = encodeURIComponent(v.text);
-                        }
+                        boollist[item.num] = true;
                     })
                 ]);
-                
-                var num32 = [];
-                num.forEach((elem,i) => {
-                    num32[i] = ('00' + elem.toString(32)).substr(-2);
-                })
-                query.change = num32.join('');
             }
-            
+            if(boollist.length){
+                query.c = compress0(to64(boollist));
+            }
             var genurl = '{{$.Site.BaseURL}}problems/?' + $.param(query);
-            console.log(num, num32, genurl);
+            if(isprivate){
+                genurl = location.href;
+            }
+            return genurl;
+        }
+
+        function content(genurl){
+            return '<div id="popover-link"><a href="' + genurl + '">' + genurl + '</a>' + '</div>';
+        }
+        function title(genurl){
+            return '<div class="d-flex"><span class="mr-auto align-self-center"><i class="fas fa-search fa-fw"></i>検索結果をシェア！</span>' + '<button id="clipbtn" class="btn btn-primary btnfn rounded-circle" data-clipboard-text="' + genurl + '"><i class="fas fa-clipboard"></i></button></div>';
+        }
+
+        //shareボタン押下時
+        $('#share').on('click', async function(){
+            var $this = $(this);
+            var private = veqp();
+            var genurl = '';
+            await genURL().then(v =>{
+                genurl = v;
+            });
+            var addhtml = private && !isprivate ? '<p class="mt-2"><input type="text" class="form-control" id="private-title-form" value="' + privateTitle + '" placeholder="タイトル？" /></p>' : '';
+            $this.popover('dispose');
+            $this.popover({
+                title: title(genurl),
+                content: content(genurl) + addhtml,
+                html: true,
+                placement: 'top',
+                trigger: 'click'
+            });
+            $this.popover('show');
+            $('#clipbtn').tooltip({
+                title: 'Copy',
+                trigger: 'hover'
+            });
         });
 
+        $(document).on('keyup', '#private-title-form', debounce( async function() {
+            //キーが打たれる度に，urlを生成しなおして，popover の html のリンク部分を直接変える．
+            privateTitle = $('#private-title-form').val();
+            var genurl = '';
+            await genURL().then(v =>{
+                genurl = v;
+            });
+            $('#' + $('#share').attr('aria-describedby')).find('#popover-link').html(content(genurl));
+            $('#' + $('#share').attr('aria-describedby')).find('.popover-header').html(title(genurl));
+            $('#clipbtn').tooltip({
+                title: 'Copy',
+                trigger: 'hover'
+            });
+        }));
+
+        $('body').on('click', function (e) {
+            $('#share').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    $(this).popover('hide');
+                }
+            });
+        });
+    
+        var clipboard = new ClipboardJS('#clipbtn');
+        clipboard.on('success', function(e) {
+            $('#clipbtn').tooltip('dispose').tooltip({title: 'Copied!'}).tooltip('show');
+        });
+
+        //画面ロード時に実行する関数
         init();
 
         async function querytoDB(){
             var data = [[],[],[]];
             var result = [];
-            var isshort = (null != getParam('short'));
+            var v = getParam('v');
             var table = [db.checked, db.notchecked, db.text];
             var flag = false;
 
-            if(isshort){
-                var text = getParam('text');
-                var change = getParam('change');
-                if(text){
-                    flag = true;
-                    data[2].push({id:'quicksearch',text: decodeURIComponent(text)});
+            //p=vのときはtextないけど
+            var text = getParam('t');
+            if(text){
+                flag = true;
+                data[2].push({id:'quicksearch',text: Base64.decode(text)});
+            }
+
+            if('p' == v){
+                var title = getParam('s');
+                var change = getParam('c');
+                if(change){
+                    if(title){
+                        $('#private-title-text').text(Base64.decode(title));
+                        $('#private-title').addClass('private');
+                    }
+                    $allfilter.addClass('private');
+                    isprivate = true;
+                    privateFilter = from64(expand0(change));
                 }
+            }
+            else{
+                var change = getParam('c');
                 if(change){
                     flag = true;
-                    var str = change.match(/.{2}/g);
-                    var num = [];
-                    if(str.length != Math.ceil($filterInputs.length/DEGIT)){
-                        console.log('桁が違う');
-                        return true;
-                    }
-                    for(var i = 0; i < str.length ;i++){
-                        num[i] = parseInt(str[i], 32);
-                    }
-                    console.log(num);
+                    var boollist = from64(expand0(change));
                     $filterInputs.each((i, elem) => {
-                        //対応するnum[i]とビット演算してヒットしたら DB に登録があったら 変化してたら
-                        if(num[Math.floor(i/DEGIT)]%(2**(i%DEGIT+1)) >= (2**(i%DEGIT))){
+                        if(boollist[i]){
                             var isnotchecked = $(elem).hasClass('default-notchecked')?0:1;
                             var id = $(elem).attr('id');
                             data[isnotchecked].push({id:id, num: i});
                         }
                     });
                 }
-
-            }
-            else{
-                var query = [getParam('checked'),getParam('notchecked'),getParam('text')];
-                query.forEach((param, index) => {
-                    if(param){
-                        flag = true;
-                        decodeURIComponent(param).split('|').forEach((elem) => {
-                            if(2==index){
-                                data[index].push({id:'quicksearch',text: elem});
-                            }
-                            else if(document.getElementById(elem) != null){
-                                data[index].push({id: elem});
-                            }
-                        });
-                    }
-                });
             }
             if(flag){
                 table.forEach((param, index) => {
@@ -580,6 +691,7 @@
                     result.push(param.bulkPut(data[index]));
                 });
                 await Promise.all(result);
+                location.search = '';
             }
             return true;
         }
@@ -603,7 +715,7 @@
             ]);
             updateFilters();
             await endUpdate();
-            $('#search-console').removeClass('loading');
+            $sc.removeClass('loading');
         }
 
         function getParam(name, url) {
@@ -623,7 +735,7 @@
             }
         }
 
-        //フィルターのアップデート
+        //全フィルターのアップデート
         function updateFilters(){
             updateCheck();
             var $checkedCategory = $('#filter-category input[type="checkbox"]:checked');
