@@ -573,7 +573,7 @@
             if(boollist.length){
                 query.c = compress0(to64(boollist));
             }
-            var genurl = '{{$.Site.BaseURL}}problems/?' + $.param(query);
+            var genurl = location.origin + '/problems/?' + $.param(query);
             if(isprivate){
                 genurl = location.href;
             }
