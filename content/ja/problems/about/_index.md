@@ -257,7 +257,7 @@ kotohazi
 
 > {{< figure src=share-push.png title="図: シェアボタンを押したところ" >}}
 
-{{< icon clipboard Copy >}} を押すとリンクをコピーできます．このリンクにアクセスした人はすでに「語用論」で絞り込まれた問題一覧を見ることができます．アクセスしてみてください → <https://kotohazi.netlify.app/problems/?v=1&c=06-x_23>
+{{< icon clipboard Copy >}} を押すとリンクをコピーできます．このリンクにアクセスした人はすでに「語用論」で絞り込まれた問題一覧を見ることができます．[アクセスしてみてください](https://kotohazi.netlify.app/problems/?v=1&c=06-x_23)
 
 基本的にはこのように {{< icon share SHARE >}} → リンクをコピペ で見えているページをシェアできます．
 
@@ -265,7 +265,7 @@ kotohazi
 
 > {{< figure src=share-japanese.png title="図: 日本語で解ける問題のシェア" >}}
 
-↑のページへのリンク: <https://kotohazi.netlify.app/problems/?v=1&t=SU9MMjAoMVs1LTldfFteMDFdXGQpfEpPTHxBUExPfOaXpeacrOiqnuiosw>
+[↑のページへのリンク](https://kotohazi.netlify.app/problems/?v=1&t=SU9MMjAoMVs1LTldfFteMDFdXGQpfEpPTHxBUExPfOaXpeacrOiqnuiosw)
 
 ---
 
