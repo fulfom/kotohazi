@@ -1,45 +1,154 @@
 # サイト
 
-## 道具
+## 環境構築
 
-Hugo というフレームワークと，Docsy というテーマを使っている．
+GitHub 上でソースコードを書き換えてウェブサイトを更新，というのもできなくはないが不便なので自分のPC上で編集できるようにする方法を以下に書く．
 
-content/ja の中の md, html ファイルをマークダウン(htmlもマークダウンでOK)で書いていけば，あとは Hugo と Docsy がいい感じのウェブページにしてくれる．GitHub に push すると勝手に netlify がビルドとデプロイをしてくれる．
+[Hugo](https://gohugo.io/)というフレームワークを使うので，pc上にインストールしておく．[chocolatey](https://chocolatey.org/install)などでインストールするのが便利．まず chocolatey をインストールしたのち，以下のコマンドをコマンドプロンプトなどで実行する．
 
-なのでやることは マークダウンで記事を書く → ローカルで add, commit, push → おしまい．branch 切ったりは今後考える．
+```choco install hugo-extended -confirm```
+
+エディタは vscode をおすすめする．CL上でコマンド打たなくて済むようになる(ようにする設定を共有できる)．vscode を使うなら *Git Graph* という拡張機能をインストールしておくことをおすすめする．以下 vscode を使うものとして話をすすめる．
+
+ここまで済んだら GitHub からローカルにデータを取ってくる．適当な場所に https://github.com/fulfom/kotohazi.git をクローンする．vscode 上でやるのが使いやすい．[vscode 上での git の使い方はここを参照](https://qiita.com/mnao305/items/b3c5f5943066a0bb8e2e#init)．クローンできたら，ローカルでプレビューしてみる．<kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>b</kbd></kbd>でビルドできるはず．10秒くらい待ったらリンクが出てくるのでそこに飛ぶ(localhost:1313 だと思う)．ローカルサーバーが走っている間，Hugo はファイルに変更があるとリアルタイムでビルドしなおしてくれるので今後サーバを止めない限り手動でビルドする必要はない．が，ごくまれに変な挙動をしたときは一旦サーバを止めて手動でビルドしなおすと直ることがある．
+
+本来，ウェブサイトを公開するには手元のデータをビルドしてサーバに挙げる必要があるが，そこは netlify を使って自動化してある．GitHub に push するだけでOK．1分ぐらいすると自動でウェブサイトが更新される．
+
+## Git 管理
+
+私が git 初心者で結構つまづいたとこもあったのでここに色々書いておく．git はソースコードのバージョンを管理してくれる．慣れるとすごい便利だが，慣れるのに多少苦労する．
+
+ファイルを書き換えても，ローカルプレビューは更新されるが，ウェブサイトには更新されない．ウェブサイトに反映するには
+
+1. ソースコードの変更を コミット する
+1. リモート(GitHub)と同期する
+1. 開発用ブランチや機能追加ブランチから master ブランチにマージする
+
+という行程を取る．(細かくは色々あるが追々)．[適宜 git の使い方を参照](https://qiita.com/mnao305/items/b3c5f5943066a0bb8e2e#init)．
+
+### ソースコードの変更を コミット する
+
+ソースコードの変更に区切りがついたら，コミットする．コミットすることでファイルの変更が git で管理されるようになる．何をもって区切りがついたとするかは個人の裁量に任せる．
+
+コミットする際にはコミットメッセージを書く．コミットメッセージは先頭に
+
+add
+: 機能追加
+
+change
+: 仕様変更
+
+update
+: 更新
+
+fix
+: 修正
+
+をつけ，その後ろにより詳しい説明を続けるのが理想．
+
+コミットする際には対象ファイルを選択できる．対象にすることをステージ(= add)という．普段は全部ステージしていって問題ない．がたとえば違う機能を同時に実装してしまった！とか○○機能を実装し終わったのにコミットし忘れて違うところも編集してしまった！というときには機能ごとに分けてコミットした方が後で便利なのでステージするファイルを選んでコミットする．
+
+### リモート(GitHub)と同期する
+
+コミットできたらそれをリモート(GitHub)に送る．同期ボタンを押すといい感じにやってくれる．適宜リモート上の他の人のコミットをローカルに取り入れたくなるだろうが，それも同期をすれば良い．
+
+リモートにコミットを持っていくことをプッシュという．リモートからコミットを取り入れることをプルという．これを同時にやるのがたぶん同期．厳密には，pull = fetch + merge らしい．気になる人はググってください．
+
+### 開発用ブランチや機能追加ブランチから master ブランチにマージする
+
+面倒だが，公開版に問題を残さない・複数人による開発を便利にするために必要なのが「ブランチを分ける」ことである．コミットはブランチごとに記録されるので，ブランチを分けると本番環境や他の人に影響を与えないようにコミットできる．ブランチの中でも重要なのが以下の2つである．
+
+master
+: 公開版
+
+develop
+: 開発版
+
+基本的にコミットは開発版である develop ブランチにしていく．こうすることで master に触れないままコミットを共有できる．機能が完成したらコミットを develop > master に持っていく(マージ merge)．このマージは GitHub 上で行う．マージして！というのをGitHubではプルリクエストという(リモート > ローカルのプルとは少し意味合いと由来が異なるらしい)．プルリクエスト時には衝突チェックが行われたりする．プルリクエストを承認してコミットが master ブランチにマージされると，晴れて公開版のウェブサイトが更新される．
+
+しかしそれでは不便なことが出てくる．機能が完成したから master にマージしたいのに，他の同時開発中の機能が完成しておらず，このままマージすると開発途中のものが公開されてしまう，という場合である．この問題を解決するために2つのブランチが使われる．
+
+release
+: develop → master の間に入れる．一旦 develop から切られて，リリース用の調整をここでしたのち master にマージされる．
+
+feature-XX
+: ある程度時間のかかることが予想される大きな機能の追加には先に別ブランチを用意する．develop から切られ，develop にマージされる．他の機能の開発・公開に影響を与えずにコミットできるようになる．
+
+本来はないことが望ましいが，master に緊急のトラブルが発覚した場合，現在開発中の機能とは関係なく，そこだけ直したい．しかしそのまま master に修正のコミットをしてしまうとよろしくない．master へのこのコミットを develop にマージしようとすると release ブランチからマージされたコミットなども一緒にマージされてしまうからである．こういう逆流を防ぐために hotfix というブランチが作られる．master から切られ，hotfix ブランチ上で修正を施した後，master と develop にマージされる．
+
+以上がブランチを分ける意義と流れである．ブランチの分け方には流派があり，これは *git-flow* というやり方である．現場に合わせて調整していくのが良いと思う．
+
+Git Graph はコミットやマージの履歴を視覚的に分かりやすく表示してくれる．
+
+他にもブランチを間違えたときの対処法とか，特定のコミットだけマージするやり方とかあるので必要な時にググってほしい．
 
 ## 内容
 
-[About のページ](https://kotohazi.netlify.com/about/) を読んでください．
+content/ja の中の md, html ファイルをマークダウン(htmlもマークダウンでOK)で書いていく．その下はこうしたい↓
+
+/
+: トップページ
+
+/about/
+: このサイトについて
+
+/docs/
+: シリーズ立っていない個別記事
+
+/chart/
+: 入門講座
+
+/problems/
+: 問題集
+
+/blog/
+: お知らせと更新情報
+
+今後機能が追加されたら増やしていく．
 
 ## ディレクトリ
 
-サイト開いたときに表示されるページは content/ja/_index.html で，content/ja トップにあるフォルダが nav のメニューになる．
+### html 系
 
-たとえば About に飛ぶと，content/ja/about/_index.html が表示される．
-入門講座 に飛ぶと，content/ja/docs/_index.md が表示される．
+Hugo のサイトに詳しく載っているが，ソースコードのディレクトリの構成がほぼそのままサイトの構成になる．たとえば docs フォルダーに保存されている refs.md はサイト上でも docs/refs という URL になる．_index.md が例外で，problems/about/_index.md は problems/about/ になる．要は _index.md を使うとフォルダーが1ページに，使わないとファイルが1ページになるということ．フォルダーを1ページにした方が画像をページごとにまとめておけたりして便利なので基本はこちらにする．
 
-各フォルダのトップにある _index.html, _index.md の一番上に設定欄があって，リンクの文字列は linkTitle で設定できる．nav 内の順序は weight の値が小さい順に並ぶ．
+ものによっては md ではなく _index.html になっているが変わらない．
 
-以上がホームと nav から飛べる各ページだが，入門講座とか問題集とかはさらに下に階層が作れる．これもホームと各ページの関係と一緒で，今度は content/ja/docs/_index.md がホームにあたるものになり，content/ja/docs/FILE1/_index.md とか，もっと下にcontent/ja/docs/FILE1/FILE2/_index.md とか深くしていける．入門講座はレベル1, 2, 3... みたいな感じで分けるので，docs/Lv1/Stage1/_index.md みたいな感じになる．
+サイト開いたときに表示されるトップページは content/ja/_index.html．ここをベースにしてそれ以下がディレクトリと対応する．たとえば kotohazi.netlify.app/docs/ に飛ぶと，content/ja/docs/_index.md が表示される．kotohazi.netlify.app/problems/iol/2003 に飛ぶと，content/ja/problems/iol/2003/_index.md が表示される．
 
-## ショートコード
+content/ja トップにあるフォルダが nav のメニューになる．
 
-```{{%  %}}``` とか ```{{<  >}}``` はショートコードというものだそう．```{{% XXX %}}``` で終わるものと，```{{% YYY %}}何とか{{% /YYY %}}```のように挟むタイプのと二つある．
+_index.html, _index.md の一番上に設定欄がある．たとえばリンクの文字列が linkTitle で設定できる．nav や目次上の順序はこれの weight の値が小さい順に並ぶ．
 
-```{{% pageinfo %}}ほにゃらら{{% /pageinfo %}}```
+### CSS
 
-は
+SCSS で書かれている．普通に css のつもりで書いて良い．変数やループが使えたりして嬉しい．```$XXX``` が変数．
 
-```<div class="pageinfo">ほにゃらら</div>```
+themes/docsy/assets/scss 内に色々ある．ただし書き換えたいとき，これをいじっても反映されない．代わりに assets/scss 内を編集する．_variables_project.scss に書くか，テーマのと同名のファイルを置けばこっちを優先的に参照してくれる．後述の shortcode も一緒．
 
-になる．マークダウン内に生の html がなくてうれしい．
+### JS
 
----
+assets/js 内に載せる．ただし問題集のjsだけはショートコード内に書いていってしまっている．
 
-引数を取れる: ```{{% XXX 引数1 引数2... %}}```
+### cdn の読み込みなど
 
-Font awesome の icon を表示するのに使っている．
+layout/partials/scripts.html に書く
+
+### 問題のデータベース
+
+data/problems.json にある．spreadsheet をスクリプトで json 化したら，これを上書きする．
+
+## Hugo の機能
+
+### ショートコード
+
+要は html のテンプレート．複雑な html を毎回書かなくてもショートコードで書けば簡単に書ける．
+
+```{{%  %}}``` とか ```{{<  >}}``` と書く．前者は中身をマークダウンで解釈し，後者は html で解釈する．```{{% XXX %}}``` で終わるものと，```{{% YYY %}}何とか{{% /YYY %}}```のように挟むタイプのと二つあり，後者はテンプレ内部の{{.Inner}}があるところに挟まれた部分が挿入される．
+
+引数を取れる: ```{{% ショートコードの名前 引数1 引数2... %}}```
+
+たとえば Font awesome の icon を表示するのに使っている，
 
 ```{{% icon XXX %}}```
 
@@ -49,7 +158,7 @@ Font awesome の icon を表示するのに使っている．
 
 になる
 
-```{{% icon XXX YYY%}}```
+```{{% icon XXX YYY %}}```
 
 は
 
@@ -57,77 +166,20 @@ Font awesome の icon を表示するのに使っている．
 
 になる (説明上省いたがほんとはさらに全体がspanで囲ってある．途中で改行しなくなるような class が指定してある)．
 
----
+**参考**
 
-layouts/shortcodes, themes/docsy/layouts/shortcodes 内に定義されている．
+```{{% icon "XXX YYY" %}}```
 
-## CSS
+と書くと
 
-SCSS で書かれている．普通に css のつもりで書いて良いっぽい．変数が使えたりして嬉しいらしい．```$XXX``` が変数．
-
-themes/docsy/assets/scss 内に色々ある．ただし書き換えたいとき，これをいじっても反映されない．代わりに assets/scss 内を編集する．_variables_project.scss に書くか，テーマのと同名のファイルを置けばこっちを優先的に参照してくれる．上述の shortcode も一緒．
-
-## その他
-
-詳しくは [Docsy のドキュメンテーション](https://www.docsy.dev/docs/) を参照
+```<i class="fas fa-XXX YYY"></i>```
 
 ---
 
-# Docsy Example
+layouts/shortcodes, themes/docsy/layouts/shortcodes 内に定義されている．色々作ってあるが blocks/ はトップページとaboutページの枠組み，ex/ は答え合わせフォームのパーツ，problems/ は詳細ページのパーツ，その他は比較的汎用なものや一個で完結するものなど．
 
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
+## 参考
 
-This Docsy Example Project is hosted at [https://example.docsy.dev/](https://example.docsy.dev/).
-
-You can find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs/
-
-This is not an officially supported Google product. This project is currently maintained.
-
-## Cloning the Docsy Example Project
-
-The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't pull down some of the code you need to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
-
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
-cd docsy-example
-hugo server
-```
-
-The theme is included as a Git submodule:
-
-```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
-```
-
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS` (not needed for `hugo server`):
-
-```bash
-npm install
-```
-
-<!--### Cloning the Example from the Theme Project
-
-
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/docsy.git
-cd tech-doc-hugo-theme/exampleSite
-HUGO_THEMESDIR="../.." hugo server
-```
-
-
-Note that the Hugo Theme Site requires the `exampleSite` to live in a subfolder of the theme itself. To avoid recursive duplication, the example site is added as a Git subtree:
-
-```bash
-git subtree add --prefix exampleSite https://github.com/google/docsy.git  master --squash
-```
-
-To pull in changes, see `pull-deps.sh` script in the theme.-->
-
-## Running the website locally
-
-Once you've cloned the site repo, from the repo root folder, run:
-
-```
-hugo server
-```
+- [Hugo](https://gohugo.io/)
+- [Docsy](https://www.docsy.dev/docs/)
+- [Firebase (認証とデータベース機能が非常便利)](https://firebase.google.com/)
