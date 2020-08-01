@@ -2,24 +2,10 @@
 title: "取説"
 weight: 1
 type: docs
-description: "問題集の使い方"
+description: "問題集の使い方．[更新情報](/blog/releases/)"
 images:
 - problems/about/filter-thumbnail.png
 ---
-
-{{% note "更新 2020-07-30" %}}
-
-### 問題集
-
-- 翻訳・注釈つきの問題はカード右肩に{{< iconStack "comment fa-lg text-muted|~訳" "訳つきアイコン" >}}が表示されるようになった
-- 翻訳・注釈つきの問題を絞り込める{{< iconStack "comment fa-lg sort-utility-translation|~訳" "便利フィルター" >}}を追加
-- データ更新(主にIOL, JOLのサンプル問題)
-- 検索結果のセーブ&ロード・シェア・クリア機能追加
-  - ページを再読み込みしても検索結果がそのまま消えずに持ち越される
-  - {{< icon share SHARE >}} から検索結果がシェアできるように．おすすめ問題リストなどとして公開することを想定．詳細は下に．
-  - {{< icon "trash btnfn-danger" CLEAR >}}  (SHARE の右隣) を押すとフィルタリング一括解除 (再読み込みでフィルターが元通りにならなくなった代わり)
-
-{{% /note %}}
 
 ## 概要
 
@@ -53,9 +39,7 @@ images:
 {{< problems/probcard id=-1 class="col-md-10 col-lg-5 p-0" >}}
 {{< /blocks/row >}}
 
-出題元・タイトル・難易度とジャンル・問題へのリンクが縦に並んでいます．
-
-難易度とジャンルは私たちががんばってつけました！参考になれば幸いです．
+出題元・タイトル・難易度とジャンル・問題へのリンクが縦に並んでいます．難易度とジャンルは独自基準です．
 
 さらに便利な機能を以下でご紹介します．
 
