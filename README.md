@@ -112,9 +112,9 @@ content/ja の中の md, html ファイルをマークダウン(htmlもマーク
 
 Hugo のサイトに詳しく載っているが，ソースコードのディレクトリの構成がほぼそのままサイトの構成になる．たとえば docs フォルダーに保存されている refs.md はサイト上でも docs/refs という URL になる．_index.md が例外で，problems/about/_index.md は problems/about/ になる．要は _index.md を使うとフォルダーが1ページに，使わないとファイルが1ページになるということ．フォルダーを1ページにした方が画像をページごとにまとめておけたりして便利なので基本はこちらにする．
 
-ものによっては md ではなく _index.html になっているが変わらない．
+ものによっては md ではなく _index.html になっているが変わらない(中身をmarkdownとして解釈するような包みで内容を囲むため)．
 
-サイト開いたときに表示されるトップページは content/ja/_index.html．ここをベースにしてそれ以下がディレクトリと対応する．たとえば kotohazi.netlify.app/docs/ に飛ぶと，content/ja/docs/_index.md が表示される．kotohazi.netlify.app/problems/iol/2003 に飛ぶと，content/ja/problems/iol/2003/_index.md が表示される．
+サイトを開いたときに表示されるトップページは content/ja/_index.html．ここをベースにしてそれ以下がディレクトリと対応する．たとえば kotohazi.netlify.app/docs/ に飛ぶと，content/ja/docs/_index.md が表示される．kotohazi.netlify.app/problems/iol/2003 に飛ぶと，content/ja/problems/iol/2003/_index.md が表示される．
 
 content/ja トップにあるフォルダが nav のメニューになる．
 
@@ -139,6 +139,8 @@ layout/partials/scripts.html に書く
 data/problems.json にある．spreadsheet をスクリプトで json 化したら，これを上書きする．
 
 ## Hugo の機能
+
+css を scss にすることで 変数やループを使えるようにしたように，html を Hugo にする(一旦 Hugo の仕様通りに書いて，それを Hugo に html 化してもらう)ことで，変数やループや諸々が使えるようになる．記法は [Hugo のサイト](https://gohugo.io/) に載っているので参考にしてほしい．
 
 ### ショートコード
 
@@ -176,7 +178,7 @@ data/problems.json にある．spreadsheet をスクリプトで json 化した�
 
 ---
 
-layouts/shortcodes, themes/docsy/layouts/shortcodes 内に定義されている．色々作ってあるが blocks/ はトップページとaboutページの枠組み，ex/ は答え合わせフォームのパーツ，problems/ は詳細ページのパーツ，その他は比較的汎用なものや一個で完結するものなど．
+layouts/shortcodes, themes/docsy/layouts/shortcodes 内に定義されている．ショートコードは自前で定義できるが，自前で定義したものは前者に入っている．色々作ってあるが blocks/ はトップページとaboutページの枠組み，ex/ は答え合わせフォームのパーツ，problems/ は詳細ページのパーツ，その他は比較的汎用なものや一個で完結するものなど．
 
 ## 参考
 

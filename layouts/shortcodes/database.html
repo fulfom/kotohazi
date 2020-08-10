@@ -666,7 +666,6 @@
 
         async function querytoDB(){
             var data = [[],[],[]];
-            var result = [];
             var v = getParam('v');
             var table = [db.checked, db.notchecked, db.text];
             var flag = false;
@@ -706,9 +705,10 @@
                 }
             }
             if(flag){
+                var result = new Array(table.length);
                 table.forEach((param, index) => {
                     param.clear();
-                    result.push(param.bulkPut(data[index]));
+                    result[index] = param.bulkPut(data[index]);
                 });
                 await Promise.all(result);
                 location.search = '';
