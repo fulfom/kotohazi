@@ -1,12 +1,18 @@
 ---
 title: "IOL2006-team-1 アメリカ手話"
-weight: 991
+weight: 26
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 26
 ---
+
+{{% hasProbdata id=26 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=26 %}}{{% /hasProbdata %}}
 
 ## 情報
 

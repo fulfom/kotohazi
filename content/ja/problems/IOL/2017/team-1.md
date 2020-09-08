@@ -1,12 +1,18 @@
 ---
 title: "IOL2017-team-1 絵文字/インドネシア語"
-weight: 991
+weight: 92
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 92
 ---
+
+{{% hasProbdata id=92 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=92 %}}{{% /hasProbdata %}}
 
 ## 情報
 

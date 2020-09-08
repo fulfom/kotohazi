@@ -1,12 +1,18 @@
 ---
 title: "IOL2003-team-1 トカラ語"
-weight: 991
+weight: 6
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 6
 ---
+
+{{% hasProbdata id=6 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=6 %}}{{% /hasProbdata %}}
 
 ## 情報
 

@@ -1,12 +1,18 @@
 ---
 title: "IOL2015-team-1 北ソト語"
-weight: 991
+weight: 80
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 80
 ---
+
+{{% hasProbdata id=80 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=80 %}}{{% /hasProbdata %}}
 
 ## 情報
 

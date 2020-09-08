@@ -1,12 +1,18 @@
 ---
 title: "IOL2003-team-3 動詞"
-weight: 993
+weight: 8
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 8
 ---
+
+{{% hasProbdata id=8 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=8 %}}{{% /hasProbdata %}}
 
 ## 情報
 

@@ -1,12 +1,18 @@
 ---
 title: "IOL2011-team-1 サンスクリット詩"
-weight: 991
+weight: 56
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 56
 ---
+
+{{% hasProbdata id=56 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=56 %}}{{% /hasProbdata %}}
 
 ## 情報
 

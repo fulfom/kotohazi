@@ -1,12 +1,18 @@
 ---
 title: "IOL2010-team-1 モンゴル語"
-weight: 991
+weight: 50
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 50
 ---
+
+{{% hasProbdata id=50 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=50 %}}{{% /hasProbdata %}}
 
 ## 情報
 

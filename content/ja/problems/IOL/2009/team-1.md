@@ -1,12 +1,18 @@
 ---
 title: "IOL2009-team-1 ベトナム語"
-weight: 991
+weight: 44
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 44
 ---
+
+{{% hasProbdata id=44 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=44 %}}{{% /hasProbdata %}}
 
 ## 情報
 

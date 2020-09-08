@@ -1,12 +1,18 @@
 ---
 title: "IOL2012-team-1 ラオ語"
-weight: 991
+weight: 62
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 62
 ---
+
+{{% hasProbdata id=62 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=62 %}}{{% /hasProbdata %}}
 
 ## 情報
 

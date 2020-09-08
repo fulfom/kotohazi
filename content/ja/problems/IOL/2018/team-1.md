@@ -1,12 +1,18 @@
 ---
 title: "IOL2018-team-1 メンベンゴクレ語，シャバンチ語，クリンカチー語"
-weight: 991
+weight: 98
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 98
 ---
+
+{{% hasProbdata id=98 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=98 %}}{{% /hasProbdata %}}
 
 ## 情報
 

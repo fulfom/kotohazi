@@ -1,12 +1,18 @@
 ---
 title: "IOL2016-team-1 タア語"
-weight: 991
+weight: 86
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 86
 ---
+
+{{% hasProbdata id=86 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=86 %}}{{% /hasProbdata %}}
 
 ## 情報
 
