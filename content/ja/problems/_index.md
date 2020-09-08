@@ -7,6 +7,7 @@ menu:
   main:
     weight: 30
 description: "問題の一覧．難易度やジャンルで絞り込める機能つき．[取説](about/)"
+database: true
 ---
 
 {{% database %}}
