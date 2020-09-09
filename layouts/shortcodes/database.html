@@ -234,7 +234,7 @@
                 var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
                 var utilityFilterResult = utilityFilterValue ? $this.is( utilityFilterValue ) : true;
                 var privateFilterResult = isprivate ? privateFilter[this.getAttribute('data-id')-1] : true;
-                return $filterOff.prop('checked') ? privateFilterResult : privateFilterResult && searchResult && filterResult && categoryFilterResult && utilityFilterResult;
+                return isprivate && $filterOff.prop('checked') ? privateFilterResult : privateFilterResult && searchResult && filterResult && categoryFilterResult && utilityFilterResult;
             },
             getSortData: {
                 venue: '.sort-venue',
@@ -569,14 +569,14 @@
             var private = veqp();
             var boollist = [];
             
+            if(privateTitle){
+                query.s = Base64.encodeURI(privateTitle);
+            }
             if(private || isprivate ){
                 query.v = 'p';
                 iso.filteredItems.map((v) => {
                     boollist[v.sortData.probid-1] = true;
                 });
-                if(privateTitle){
-                    query.s = Base64.encodeURI(privateTitle);
-                }
             }
             else{
                 query.v = 1;
@@ -711,7 +711,33 @@
                     result[index] = param.bulkPut(data[index]);
                 });
                 await Promise.all(result);
-                location.search = '';
+                var title = getParam('s');
+                if(title){
+                    await Promise.all([
+                        //indexedDBからデータ取得してprop反映
+                        db.checked.toCollection().primaryKeys(function(keysArray){
+                            DBtoFilters(keysArray, true);
+                        }),
+                        db.notchecked.toCollection().primaryKeys(function(keysArray){
+                            DBtoFilters(keysArray, false);
+                        }),
+                        db.text.get('quicksearch',function(v){
+                            if(v){
+                                $qs.val(v.text);
+                                qsRegex = v.text;
+                            }
+                        })
+                    ]);
+                    updateFilters();
+                    await endUpdate();
+                    isprivate = true;
+                    var genurl = '';
+                    await genURL().then(v =>{
+                        genurl = v;
+                    });
+                    location = genurl + '&s=' + title;
+                }
+                else location.search = '';
             }
             return true;
         }

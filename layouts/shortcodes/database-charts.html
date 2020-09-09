@@ -1,0 +1,149 @@
+{{$problems := $.Site.Data.problems}}
+
+{{$contestCat := newScratch}}
+{{$contests := slice "JOL" "海外予選" "APLO" "IOL"}}
+{{range $contests}}
+    {{$cat := newScratch}}
+    {{range where $problems "venue" .}}
+        {{with index . "category"}}
+            {{range .}}
+                {{$cat.Add . 1}}
+            {{end}}
+        {{end}}
+    {{end}}
+    {{$contestCat.Set . $cat.Values}}
+{{end}}
+
+{{$categoryNames := slice}}
+{{$diffAll := newScratch}}
+{{$catAll := newScratch}}
+{{range $problems}}
+    {{with index . "difficulty"}}
+        {{$diffAll.Add (.typical | int | string) 1}}
+    {{else}}
+        {{$diffAll.Add "未定" 1}}
+    {{end}}
+    {{with index . "category"}}
+        {{range .}}
+            {{if eq . "ジャンル" | or (eq . "未分類")}}{{else}}
+                {{$name := strings.TrimPrefix "!" .}}
+                {{$categoryNames = $categoryNames | append $name}}
+                {{$catAll.Add $name 1}}
+            {{end}}
+        {{end}}
+    {{end}}
+{{end}}
+{{$categoryNames = $categoryNames | uniq}}
+{{$othercat := slice}}
+{{range $categoryNames}}
+{{if in $.Site.Params.probCategory.value .}}{{else}}
+    {{$othercat = $othercat | append .}}
+{{end}}
+{{end}}
+
+<div id="drawDifficultyOfEachContest"></div>
+<div id="drawCategoryOfEachContest"></div>
+<div id="drawCategory"></div>
+
+<script type="text/javascript">
+    function drawCharts() {
+        drawDifficultyOfEachContest();
+        drawCategoryOfEachContest();
+        drawCategory();
+    }
+
+    function drawDifficultyOfEachContest(){
+
+        var data = [
+            ['', '1', '2', '3', '4', '5', '6', '7', '8']
+        ];
+
+        {{$contests := slice "JOL" "海外予選" "APLO" "IOL"}}
+        {{range $k,$v := $contests}}
+            {{$diff := newScratch}}
+            {{range where $problems "venue" .}}
+                {{with index . "difficulty"}}
+                    {{$diff.Add (.typical | int | string) 1}}
+                {{else}}
+                    {{$diff.Add "未定" 1}}
+                {{end}}
+            {{end}}
+            {{$index := $k | add 1}}
+            {{$data := slice $v}}
+            {{$diffarray := slice}}
+            {{range (slice "1" "2" "3" "4" "5" "6" "7" "8")}}
+                {{$data = $data | append (($diff.Get .) | default 0)}}
+            {{end}}
+            data.push({{$data}});
+        {{end}}
+
+        var options_fullStacked = {
+            title: '大会ごとの難易度分布',
+            isStacked: 'percent',
+            height: 300,
+            legend: {position: 'top', maxLines: 3},
+            colors: ['#BCAAA4', '#9CCC65', '#26C6DA', '#1E88E5', '#FDD835', '#FF9800', '#F44336', '#8E24AA'],
+            hAxis: {
+                minValue: 0,
+                ticks: [0, .3, .6, .9, 1]
+            }
+        };
+        var visualization = new google.visualization.BarChart(document.getElementById('drawDifficultyOfEachContest'));
+        visualization.draw(google.visualization.arrayToDataTable(data), options_fullStacked);
+    }
+
+    function drawCategoryOfEachContest() {
+        {{$categories := $.Site.Params.probCategory.value}}
+        var colh = ["cat"].concat({{$categories}});
+        var data = [colh];
+        {{range $k,$v := $contests}}
+            {{$data := slice $v}}
+            {{range $categories}}
+                {{$data = $data | append ((index ($contestCat.Get $v) .) | int)}}
+            {{end}}
+            data.push({{$data}});
+        {{end}}
+
+        var options = {
+            title: '大会ごとの主要ジャンル出題割合',
+            isStacked: 'percent',
+            height: 300,
+            legend: { position: 'top', maxLines: 3 },
+            hAxis: {
+                minValue: 0,
+                ticks: [0, .3, .6, .9, 1]
+            }
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('drawCategoryOfEachContest'));
+        chart.draw(google.visualization.arrayToDataTable(data), options);
+    }
+
+    function drawCategory(){
+        var colh = [['cat','freq']];
+        var data = [];
+            {{range $categoryNames}}
+                {{$data := slice . (($catAll.Get .) | int)}}
+                data.push({{$data}});
+            {{end}}
+        data.sort((a,b)=>{
+            return b[1] - a[1];
+        })
+        var data = colh.concat(data);
+        var options = {
+            title: 'ジャンル出題回数ランキング',
+            height: data.length * 20 + 80,
+            chartArea:{
+                left:'100',
+                height: data.length * 20
+            },
+            legend: { position: 'none', maxLines: 3 },
+            hAxis: {
+                minValue: 0
+            }
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('drawCategory'));
+        chart.draw(google.visualization.arrayToDataTable(data), options);
+    }
+
+</script>

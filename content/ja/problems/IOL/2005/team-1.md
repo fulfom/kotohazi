@@ -1,12 +1,18 @@
 ---
 title: "IOL2005-team-1 フィギグ語"
-weight: 991
+weight: 20
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 20
 ---
+
+{{% hasProbdata id=20 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=20 %}}{{% /hasProbdata %}}
 
 ## 情報
 

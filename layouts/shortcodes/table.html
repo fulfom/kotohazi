@@ -1,0 +1,7 @@
+{{ $attrs := "" }}
+{{ range $k, $v := .Params }}
+  {{ $attrs = printf "%s %s=\"%v\"" $attrs $k $v }}
+{{ end }}
+
+{{ $newTable := printf "<table %s>" $attrs }}
+{{ (replace (.Inner | markdownify) "<table>" $newTable) | safeHTML }}

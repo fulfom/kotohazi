@@ -3111,23 +3111,28 @@
         "hint": {
             "name": "karngati",
             "value": [
-                "解答するためには語の種類，語の使い分けかた，語の並べかたが分かればよい．",
-                "\"to cusin\"「君のいとこ（単数）」，\"il nestri cusin irlandês\"「私たちのアイルランド人のいとこ」，\"i miei cusins\"「私のいとこ達」を比べると？",
-                "cusin, cusinsが「いとこ，いとこ達」などを意味することが分かる．",
-                "更にcjase/cjases，biciclete/bicicletes，sûr/sûrsを比べると？",
+                "\"to cusin\"「君のいとこ（単数）」，\"il nestri cusin irlandês\"「私たちのアイルランド人のいとこ」，\"i miei cusins\"「私のいとこ達」に共通するのは？",
+                "cusin, cusins「いとこ，いとこ達」が共通しており，この語の意味が分かる．",
+                "更にcjase/cjases，biciclete/bicicletes，sûr/sûrsが出てくる例を比べると？",
                 "語尾の-sが複数を意味することが分かる．",
-                "\"mê sûr\"「私の姉（単数）」, \"nestri fradi\"「私たちの兄（単数）」, \"to cusin\"「君のいとこ（単数）」の前半部分は何を意味している？",
-                "mê, nestri, toはそれぞれ「私の」「私たちの」「君の」を意味することが分かる．",
                 "フリウリ語のla, lisは何を表しているだろうか．\"lis cjases\",「その（特定の）家（複数）」， \"la biciclete\"「その（特定の）自転車（単数）」を手掛かりにすると？",
                 "la, lisは日本語訳の「その（特定の）」に当たり，英語のtheのような対象の定性を表す定冠詞だと想像できる．",
-                "更に分析を進めるために語の順番を考えよう．cjaseやcusinなどの中心となる語，mêなど「～～の」を表す語，定冠詞，irlandese/irlandêsはどのように並んでいる？",
-                "(定冠詞)-(所有者)-中心の名詞-(irlandese/irlandês) という順に並んでいる．",
-                "まだ機能の分からない語はi, il, tôs, nestris, gno, nestre, mieiである．これらの機能はは定冠詞，所有者のどれだろうか．語順に注目して考えよう．",
-                "il, iが定冠詞，tôs,が「君の」 ，nestris, nestreが「私たちの」， miei, gnoが「私の」を意味すると分かる．",
-                "ここで単語を整理しよう．</br>定冠詞……la, lis, i, il</br>「私の」……mê, gno, mês, miei</br>「私達の」……nestris, nestri, nestre</br>「君の」……tôs, to</br>まずｈlaだけに注目しよう．\"la mê cjase\"「私の家（単数）」，\"la biciclete\"「その（特定の）自転車（単数）」，\"la nestre ave irlandese\"「私たちのアイルランド人のおばあちゃん」に共通していることは？",
-                "いずれも中心となる名詞が単数である．同様に，ほかの定冠詞，所有者を表す部分も数に着目して分析しよう．",
-                "以下のようなことが分かる．<table> <tbody><tr> <th></th> <th>単数</th> <th>複数</th> </tr> <tr> <td>定冠詞　</td> <td>la, il</td> <td>lis, a</td> </tr> <tr> <td>私の</td> <td>mê, gno</td> <td>mês, miei</td> </tr> <tr> <td>私達の</td> <td>nestre, nestri　</td> <td>nestris</td> </tr> <tr> <td>君の</td> <td>to</td> <td>tôs</td> </tr> </tbody></table>",
-                "つぎにlaとi，meとgnoなどの使い分けかたを考えよう．"
+                "mêはどんな意味？",
+                "\"la mê cjase\"，\"mê sûr\"から「私の」だと分かる．",
+                "分析の手がかりとするため，語順を明らかにしよう．cjaseやcusinのような中心となる語（=日本語訳で一番後ろに来る語），mêのような所有者，定冠詞はどんな順番で並んでいる？また，それ以外の要素はある？",
+                "(定冠詞) - (所有者) - 名詞 の順に並んでいる．また，irlandese/irlandês「アイルランド人の」は最後に来る．",
+                "定冠詞，所有者のリストを作ろう．これらの機能は定冠詞，所有者のどれだろうか．語順に注目して考えよう．",
+                "| | |\n| - | - |\n|定冠詞|i, il, la, lis|\n|私の|gno, miei, mê, mês|\n|私達の|nestre, nestri, nestris|\n|君の|to, tôs|\nでは，これらの形はどのように使い分けられている？",
+                "たとえば定冠詞のlaを含む例，lisを含む例に注目し，それぞれの共通点を探そう．\n >| |  |\n >| - | - |\n >| la mê cjase | 私の家（単数）| \n>| la biciclete| その（特定の）自転車（単数）| \n>| la nestre ave irlandese | 私たちのアイルランド人のおばあちゃん |\n \n>|  |  | \n>| - | - | \n>| lis cjases| その（特定の）家（複数）| \n>| lis tôs bicicletes | 君の自転車（複数）| \n>| lis mês sûrs| 私の姉達| ",
+                "laは単数のとき，lisは複数のときに使われている．同様にほかの定冠詞，所有者を表す代名詞も数に着目して分析し，上のリストに単数/複数の軸を加えて表にまとめてみよう．",
+                "以下のような表が作れる．\n| | 単数 | 複数 |\n| - | - | - |\n|定冠詞| il, la| a, lis|\n|私の|gno, mê | miei, mês|\n|私達の| nestri, nestre| nestris|\n|君の|to |tôs |\n",
+                "さらに使い分けの条件を探そう．まずはilとlaが出てくる例の**形**を見ると？\n>| | | \n>| - | - | \n>|la mê cjase|私の家（単数）| \n>|la biciclete|私の自転車（単数）| \n>|la nestre ave irlandese|私達のアイルランド人のおばあちゃん| \n\n>||| \n>|-|-| \n>|il gno lavôr|私の仕事（単数）| \n>|il nestri cusin irladês|私達のアイルランド人のいとこ（単数）|",
+                "語末が-eのときはla，そうでないときはilが使われている．lisとi，meとgnoなどのペアもこれに基づいて調べてみよう．全てこの条件で説明できるだろうか．",
+                "e（複数のときはes）で終わるときとそうでないときで冠詞などが使い分けられているが，sûr(s)「姉（達）」は例外的にeで終わるグループと同じ形が使われている．\n| | | 単数| 複数| | - | - | - | - |\n|定冠詞| -e | la | lis | \n|  | その他 | il | i | \n|私の| -e | me | mês | \n| | その他 | gno | miei| \n|私達の | -e | nestre |  | \n| | その他 | nestri | nestris | \n|君の| -e | | | \n| | その他 | to | tôs|\nlaが使われるグループには「おばあちゃん」「姉」といった女性の名称，ilが使われるグループには「兄」「いとこ」などの女性以外の名称が含まれている．これはインド＝ヨーロッパ語族の言語によくみられる文法性に従ったグループ分けである．",
+                "irlandeseとirlandêsはどのように使い分けられている？",
+                "名詞の文法性によって使い分けられている．",
+                "いくつかの例では定冠詞が付いていない．どのような場合に定冠詞が付かないか？",
+                "中心となる名詞が親族名称であり，単数であり，かつ「アイルランド人の」によって修飾されていないときである．\nこれでフリウリ語への翻訳ができる．"
             ]
         },
         "draft": false
@@ -4542,6 +4547,9 @@
         "number": "R1-7",
         "topic": "Waorani",
         "author": "Drago Radev",
+        "category": [
+            "数式"
+        ],
         "difficulty": {
             "typical": 1,
             "typicalStar": 1
@@ -4576,6 +4584,19 @@
         "number": "R1-9",
         "topic": "Waanyi",
         "author": "Mary Laughren",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 6
+            }
+        ],
         "draft": false
     },
     {
@@ -4588,6 +4609,19 @@
         "number": "R2-1",
         "topic": "English",
         "author": "Patrick Littell",
+        "category": [
+            "非言語"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
@@ -4600,7 +4634,21 @@
         "number": "R2-2",
         "topic": "Luiseño",
         "author": "Ronald Langacker (via Dick Hudson)",
-        "draft": false
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 4
+            }
+        ],
+        "draft": false,
+        "memo": "語順とか対格(?)について解答ではまったく指定されてない"
     },
     {
         "id": 164,
@@ -4612,6 +4660,19 @@
         "number": "R2-3",
         "topic": "English",
         "author": "James Pustejovsky, Patrick Littell",
+        "category": [
+            "意味"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4636,6 +4697,20 @@
         "number": "R2-5",
         "topic": "Catalan",
         "author": "Boris Iomdin",
+        "category": [
+            "音韻",
+            "韻律"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 6
+            }
+        ],
         "draft": false
     },
     {
@@ -4648,6 +4723,19 @@
         "number": "R1-1",
         "topic": "English",
         "author": "Harold Somers",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4660,6 +4748,19 @@
         "year": 2013,
         "number": "R1-2",
         "topic": "Isthmus Zapotex",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4672,6 +4773,19 @@
         "number": "R1-3",
         "topic": "Pali",
         "author": "Babette Newsome",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4684,6 +4798,19 @@
         "number": "R1-4a",
         "topic": "Arabic",
         "author": "David Palfreyman",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4696,6 +4823,19 @@
         "number": "R1-4s",
         "topic": "English – Shavian",
         "author": "Babette Newsome",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4708,6 +4848,20 @@
         "number": "R1-5",
         "topic": "Bulgarian",
         "author": "Bozhidar Bozhanov",
+        "category": [
+            "形態",
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -4720,6 +4874,19 @@
         "number": "R1-6",
         "topic": "English",
         "author": "Dick Hudson",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4732,6 +4899,19 @@
         "number": "R1-7",
         "topic": "Phoenician",
         "author": "Harold Somers",
+        "category": [
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
@@ -4744,6 +4924,19 @@
         "number": "R1-8",
         "topic": "Dutch",
         "author": "Harold Somers",
+        "category": [
+            "音韻"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
@@ -4756,6 +4949,19 @@
         "number": "R1-9",
         "topic": "Bengali",
         "author": "Bozhidar Bozhanov",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 7
+            }
+        ],
         "draft": false
     },
     {
@@ -4768,6 +4974,20 @@
         "number": "R2-1",
         "topic": "Quechua",
         "author": "Patrick Littell",
+        "category": [
+            "統語",
+            "文章"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -4780,6 +5000,20 @@
         "number": "R2-2",
         "topic": "Georgian, Armenian",
         "author": "Drago Radev",
+        "category": [
+            "文字",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 7
+            }
+        ],
         "draft": false
     },
     {
@@ -4792,6 +5026,19 @@
         "number": "R2-3",
         "topic": "Beja",
         "author": "Dick Hudson",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 7
+            }
+        ],
         "draft": false
     },
     {
@@ -4804,6 +5051,19 @@
         "number": "R2-4",
         "topic": "Swedish",
         "author": "Patrick Littell",
+        "category": [
+            "未分類"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 6
+            }
+        ],
         "draft": false
     },
     {
@@ -6139,7 +6399,7 @@
         ],
         "translation": {
             "name": "fulfom",
-            "value": ">こんな文を言った人がいたとしよう：\n>\n>1. 花子はモリス的でスラシい\n>1. 春子はケンセンでブラス的だ\n>1. 夏海と航助はスラシいがダンジい\n>1. その先生はダンジくてクルブい\n>1. 千尋はブリシいがクルブい\n>1. 揚介はスロシカなだけでなくウイジくもある\n>1. 洋一はフラマジいのにスロシカだ\n>1. 昭子はツラギくてツラヒいので見ていると笑顔になれる\n>1. 太郎はウイジいのにツラギい\n>1. 冬子はブリシいがツラヒい\n>1. その営業さんたちはケンセンだったがスラシくはなかった\n>\n>問1. 次のうちどれがあり得る文か？\n>\n><div class=\"list-lower-latin\"></div>\n>\n>1. 雅美はブリシくてブラス的だ\n>1. その歌手はモリス的なだけでなくケンセンでもあった\n>1. 咲月はダンジいがスロシカな犬を見つけた\n>\n>問2. 人に求めたくなるような性質はどれか？(複数選択可)\r\n>\r\n><div class=\"list-lower-latin\"></div>\n>\n>1. ブリシい\n>1. ウイジい\n>1. スロシカだ\n>1. フラマジい\n>\n>:source:"
+            "value": ">こんな文を言った人がいたとしよう：\n>\n>1. 花子はモリス的でスラシい\n>1. 春子はケンセンでブラス的だ\n>1. 夏海と航助はスラシいがダンジい\n>1. その先生はダンジくてクルブい\n>1. 千尋はブリシいがクルブい\n>1. 揚介はスロシカなだけでなくウイジくもある\n>1. 洋一はフラマジいのにスロシカだ\n>1. 昭子はツラギくてツラヒいので見ていると笑顔になれる\n>1. 太郎はウイジいのにツラギい\n>1. 冬子はブリシいがツラヒい\n>1. その営業さんたちはケンセンだったがスラシくはなかった\n>\n>問1. 次のうちどれがあり得る文か？\n>\n><div class=\"list-lower-latin\"></div>\n>\n>1. 雅美はブリシくてブラス的だ\n>1. その歌手はモリス的なだけでなくケンセンでもあった\n>1. 咲月はダンジいがスロシカな犬を見つけた\n>\n>問2. 人に求めたくなるような性質はどれか？(複数選択可)\n>\n><div class=\"list-lower-latin\"></div>\n>\n>1. ブリシい\n>1. ウイジい\n>1. スロシカだ\n>1. フラマジい\n>\n>:source:"
         },
         "draft": false
     },

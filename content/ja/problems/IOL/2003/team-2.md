@@ -1,12 +1,18 @@
 ---
 title: "IOL2003-team-2 添え字"
-weight: 992
+weight: 7
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 7
 ---
+
+{{% hasProbdata id=7 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=7 %}}{{% /hasProbdata %}}
 
 ## 情報
 

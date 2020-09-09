@@ -1,12 +1,18 @@
 ---
 title: "IOL2004-team-1 アルメニア語"
-weight: 991
+weight: 14
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 14
 ---
+
+{{% hasProbdata id=14 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=14 %}}{{% /hasProbdata %}}
 
 ## 情報
 

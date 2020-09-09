@@ -1,12 +1,18 @@
 ---
 title: "IOL2008-team-1 反切"
-weight: 991
+weight: 38
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 38
 ---
+
+{{% hasProbdata id=38 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=38 %}}{{% /hasProbdata %}}
 
 ## 情報
 

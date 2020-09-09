@@ -9,6 +9,12 @@ problems:
 - {{$id}}
 ---
 
+{{% hasProbdata id={{$id}} key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id={{$id}} %}}{{% /hasProbdata %}}
+
 ## 情報
 
 {{% problems/probcard id={{$id}} detailed=true %}}{{% hasProbdata id={{$id}} key="probcorrection" %}}

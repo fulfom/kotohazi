@@ -1,12 +1,18 @@
 ---
 title: "IOL2019-team-1 新体操"
-weight: 991
+weight: 104
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 104
 ---
+
+{{% hasProbdata id=104 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=104 %}}{{% /hasProbdata %}}
 
 ## 情報
 

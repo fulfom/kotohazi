@@ -1,12 +1,18 @@
 ---
 title: "IOL2007-team-1 ハワイ語"
-weight: 991
+weight: 32
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 32
 ---
+
+{{% hasProbdata id=32 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=32 %}}{{% /hasProbdata %}}
 
 ## 情報
 

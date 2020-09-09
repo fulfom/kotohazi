@@ -8,6 +8,12 @@ problems:
 - 291
 ---
 
+{{% hasProbdata id=291 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=291 %}}{{% /hasProbdata %}}
+
 ## 情報
 
 {{% problems/probcard id=291 detailed=true %}}{{% hasProbdata id=291 key="probcorrection" %}}

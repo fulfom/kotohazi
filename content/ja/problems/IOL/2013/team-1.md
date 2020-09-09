@@ -1,12 +1,18 @@
 ---
 title: "IOL2013-team-1 グルジア語"
-weight: 991
+weight: 68
 type: docs
 pagetype: prob
 description: "翻訳・ヒント・解答・解説のまとめ"
 problems: 
 - 68
 ---
+
+{{% hasProbdata id=68 key="introduction" %}}
+
+## 紹介
+
+{{% problems/introduction id=68 %}}{{% /hasProbdata %}}
 
 ## 情報
 

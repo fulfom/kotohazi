@@ -88,6 +88,17 @@ figcaption{
     }
 }
 
+.transition-none{
+    transition: none;
+    &.collapsing{
+        transition: none;
+    }
+}
+
+.ml-1_25{
+    margin-left: 1.25rem;
+}
+
 a {
     word-break: break-all;
 }
