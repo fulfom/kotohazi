@@ -88,6 +88,12 @@ figcaption{
     }
 }
 
+.style-markdown{
+    table{
+        @extend .table;
+    }
+}
+
 .transition-none{
     transition: none;
     &.collapsing{
