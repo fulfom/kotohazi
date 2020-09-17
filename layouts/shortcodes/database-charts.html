@@ -5,9 +5,11 @@
 {{range $contests}}
     {{$cat := newScratch}}
     {{range where $problems "venue" .}}
-        {{with index . "category"}}
-            {{range .}}
-                {{$cat.Add . 1}}
+        {{if gt .year 0}}
+            {{with index . "category"}}
+                {{range .}}
+                    {{$cat.Add . 1}}
+                {{end}}
             {{end}}
         {{end}}
     {{end}}
@@ -61,11 +63,13 @@
         {{$contests := slice "JOL" "海外予選" "APLO" "IOL"}}
         {{range $k,$v := $contests}}
             {{$diff := newScratch}}
-            {{range where $problems "venue" .}}
-                {{with index . "difficulty"}}
-                    {{$diff.Add (.typical | int | string) 1}}
-                {{else}}
-                    {{$diff.Add "未定" 1}}
+            {{range where $problems "venue" .}}        
+                {{if gt .year 0}}
+                    {{with index . "difficulty"}}
+                        {{$diff.Add (.typical | int | string) 1}}
+                    {{else}}
+                        {{$diff.Add "未定" 1}}
+                    {{end}}
                 {{end}}
             {{end}}
             {{$index := $k | add 1}}
