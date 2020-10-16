@@ -18,4 +18,8 @@ database: true
 {{< /list >}}
 {{< /wrap >}}
 
+{{< wrap tag=div class="simplebox" >}}
+右肩に{{< icon "exclamation-circle text-muted" >}}がある問題は誤植などの訂正があります．問題を解く前にアイコンをタップor詳細ページへ．
+{{< /wrap >}}
+
 {{% database %}}
