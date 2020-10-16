@@ -46,6 +46,13 @@ dd{
     margin-left: 5rem !important;
 }
 
+.simplebox{
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 2px #eee;
+}
+
 //とりあえず
 .mw-lg-80{
     @media (min-width: 992px){
