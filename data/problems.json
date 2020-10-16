@@ -3159,6 +3159,9 @@
         "category": [
             "文章"
         ],
+        "explanationlinks": [
+            "https://www.all-for-nothing.com/entry/2020/01/03/154208"
+        ],
         "difficulty": {
             "typical": 4,
             "typicalStar": 4
@@ -6333,6 +6336,7 @@
         "number": "Easy-2",
         "topic": "Ancient Greek",
         "author": "Todor Tchervenkov",
+        "probcorrection": "(1) the donkey of the masterō は ō が余分",
         "explanationlinks": [
             "https://ameblo.jp/vaca-ajo-001/entry-12590625817.html"
         ],
@@ -6384,7 +6388,7 @@
         "number": "Easy-5",
         "topic": "Lalana Chinantec",
         "author": "Rachel Nordlinger; Data from Merrifield, W. et al (2003). *Laboratory Manual for Morphology and Syntax*, 7th edition. Dallas: SIL International. ",
-        "solcorrection": "3-b 誤: ",
+        "solcorrection": "3-b 誤: mo:h → 正: kwɨ:",
         "explanationlinks": [
             "https://ameblo.jp/vaca-ajo-001/entry-12590677842.html"
         ],
@@ -6497,6 +6501,7 @@
         "number": "Intermediate-5",
         "topic": "Basque",
         "author": "Anna Pazelskaya",
+        "probcorrection": "数式の7-8行目 bost × zazpi = hogeita の後が 誤: hama <改行> bost zazpi …… → 正: hamabost <改行> zazpi ……",
         "draft": false
     },
     {
