@@ -143,8 +143,8 @@
         "id": 18,
         "venue": "APLO",
         "year": 2019,
-        "prob": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
-        "probsol": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view"
+        "prob": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-prob.ja_.pdf",
+        "probsol": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-sol.ja_.pdf"
     },
     {
         "id": 19,
@@ -263,5 +263,12 @@
         "venuecompatiable": "oversea",
         "year": 2020,
         "prob": "https://www.uklo.org/problems-2020"
+    },
+    {
+        "id": 36,
+        "venue": "APLO",
+        "year": 2020,
+        "prob": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf",
+        "probsol": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf"
     }
 ]
