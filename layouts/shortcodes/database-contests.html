@@ -97,7 +97,7 @@
 {{range ($prob.Get $key)}}
     {{$problem := index $arrrayProbdata .}}
     {{with $problem.probcorrection}}
-        {{$probcorrection = $probcorrection | append (slice (delimit (slice $problem.number $problem.probcorrection) ": "))}}
+        {{$probcorrection = $probcorrection | append (slice (delimit (slice "- " $problem.number ": " $problem.probcorrection "\n") ""))}}
     {{end}}
     {{with $problem.solcorrection}}
         {{$solcorrection = true}}
@@ -108,11 +108,11 @@
         <div class="card-header">{{$problinktext := "問題"}}{{$sollinktext := "解答"}}{{if eq $tmpVenue "IOL" | and (gt . 0)}}{{$problinktext = "個人戦問題"}}{{$sollinktext = "個人戦解答"}}{{end}}{{with $contest.probsol}}{{else}}{{$problinktext = "問題と解答"}}{{end}}
             <div class="d-flex">
                 <h5 class="mr-auto"><a class="text-dark" href="{{path.Join $detailpath}}"><span class="sort-venue">{{$tmpVenue}}</span><span class="sort-year sr-only">{{.}}</span>{{$namedyear}}</a></h5>
-                {{with $probcorrection}}<h5 class="text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-content="{{delimit . "\n"}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h5>{{end}}
+                {{with $probcorrection}}<h5 class="text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-html="true" data-content="{{(delimit . "") | markdownify | safeHTMLAttr}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h5>{{end}}
                 {{with $solcorrection}}<h5 class="text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="解答訂正" data-content="解答の訂正あり"><i class="fas fa-exclamation-circle fa-fw"></i></a></h5>{{end}}
             </div>
             <a href="{{$contest.prob}}" class="card-link unmot ml-1_25" target="_blank">{{$problinktext}}</a>
-            {{if eq $tmpVenue "IOL"  | and (ne . -1)}}{{$teamdetailpath := (slice "/problems" "iol" (string .)) | append ("team-1" | urlize)}}
+            {{if eq $tmpVenue "IOL"  | and (gt . -1)}}{{$teamdetailpath := (slice "/problems" "iol" (string .)) | append ("team-1" | urlize)}}
             <a href="{{$contest.teamprob | default (path.Join $teamdetailpath) }}" class="card-link unmot" target="_blank">団体戦</a>{{end}}
             {{with $contest.probsol}}<a href="{{.}}" class="card-link unmot" target="_blank">{{$sollinktext}}</a>{{end}}
             {{with $contest.teamsol}}<a href="{{.}}" class="card-link unmot" target="_blank">団体戦解答</a>{{end}}
