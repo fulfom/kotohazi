@@ -2938,8 +2938,8 @@
         "title": "Ik",
         "titlejp": "イク語",
         "link": "https://aplo.asia/problems-by-year/",
-        "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
-        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-prob.ja_.pdf#page=2",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-sol.ja_.pdf#page=1",
         "venue": "APLO",
         "year": 2019,
         "number": 1,
@@ -2956,8 +2956,8 @@
         "title": "Urarina",
         "titlejp": "ウラリナ語",
         "link": "https://aplo.asia/problems-by-year/",
-        "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
-        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-prob.ja_.pdf#page=3",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-sol.ja_.pdf#page=2",
         "venue": "APLO",
         "year": 2019,
         "number": 2,
@@ -2976,8 +2976,8 @@
         "title": "Mee",
         "titlejp": "メエ語",
         "link": "https://aplo.asia/problems-by-year/",
-        "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
-        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-prob.ja_.pdf#page=4",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-sol.ja_.pdf#page=3",
         "venue": "APLO",
         "year": 2019,
         "number": 3,
@@ -2994,8 +2994,8 @@
         "title": "Hebrew",
         "titlejp": "ヘブライ語",
         "link": "https://aplo.asia/problems-by-year/",
-        "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
-        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-prob.ja_.pdf#page=5",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-sol.ja_.pdf#page=4",
         "venue": "APLO",
         "year": 2019,
         "number": 4,
@@ -3013,8 +3013,8 @@
         "title": "Old Turkic Script",
         "titlejp": "古チュルク文字",
         "link": "https://aplo.asia/problems-by-year/",
-        "problink": "https://drive.google.com/file/d/1kUJr2BAg7WaA-e7qhLqENC3PfPxrD0gW/view",
-        "solutionlink": "https://drive.google.com/file/d/1I7DKVv8o22M-csddn5upRUt7YXs4MVvu/view",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-prob.ja_.pdf#page=6",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2019-sol.ja_.pdf#page=5",
         "venue": "APLO",
         "year": 2019,
         "number": 5,
@@ -5124,6 +5124,23 @@
         "number": "R1-3",
         "topic": "Mokilese",
         "author": "Jeff Siegel",
+        "category": [
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
+        "translation": {
+            "name": "fulfom",
+            "value": ">モキル語はミクロネシア連邦のポンペイ州，モキル島というサンゴ礁でできたわっか状の島(環礁)で話されている，話者数500人ほどの言語．\n>\n>以下の例はそれぞれ，数・名詞('dog', 'pencil' など)・3種類ある「類別詞」のうちのどれか一種類を含んでいる．類別詞というのはその言語の話者が重要だと思う基準で物や人などの事物を分類するのに使われるもの．(訳者注: 「(一)匹」「(二)人」「(三)台」のようなもの)\n\nデータは問題pdfを参照．reed: 葦(アシ)，block of land: 土地の区画，turtle: 亀\n\n>Q3.1. 以下を意味する語または語の部品を見つけてください\n>\n><div class=\"list-lower-latin\"></div>\n>\n>1. ‘three’\n>1. ‘four’\n>1. ‘five’ \n>\n>Q3.2. 3つの類別詞とその用法(つまりどういう分類か)をリストにしてください\n>\n>Q3.3. 数・名詞・類別詞はどの順番で現れるでしょうか？一つの語がいくつかの部品から成り立っている場合は，同じ語に属す部品同士を + でつなげて書いてください．\n>\n>:source:"
+        },
         "draft": false
     },
     {
@@ -6587,6 +6604,76 @@
         "number": "Hard-5",
         "topic": "Toki Pona",
         "author": "Bruno L’Astorina",
+        "draft": false
+    },
+    {
+        "id": 296,
+        "title": "Iaai",
+        "titlejp": "イアアイ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf#page=2",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf#page=1",
+        "venue": "APLO",
+        "year": 2020,
+        "number": 1,
+        "topic": "Iaai",
+        "author": "Rujul Gandhi",
+        "draft": false
+    },
+    {
+        "id": 297,
+        "title": "Walman",
+        "titlejp": "ワルマン語",
+        "link": "https://aplo.asia/problems-by-year//",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf#page=3",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf#page=2",
+        "venue": "APLO",
+        "year": 2020,
+        "number": 2,
+        "topic": "Walman",
+        "author": "Samuel Ahmed",
+        "draft": false
+    },
+    {
+        "id": 298,
+        "title": "Koyra Chiini",
+        "titlejp": "コイラ・チーニ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf#page=4",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf#page=3",
+        "venue": "APLO",
+        "year": 2020,
+        "number": 3,
+        "topic": "Koyra Chiini",
+        "author": "Jaeyeong Yang",
+        "draft": false
+    },
+    {
+        "id": 299,
+        "title": "Tübatulabal",
+        "titlejp": "トゥバトゥラバル語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf#page=5",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf#page=3",
+        "venue": "APLO",
+        "year": 2020,
+        "number": 4,
+        "topic": "Tübatulabal",
+        "author": "Rujul Gandhi, Shardul Chiplunkar",
+        "draft": false
+    },
+    {
+        "id": 300,
+        "title": "Mantauran",
+        "titlejp": "マンタウラン語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf#page=6",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf#page=4",
+        "venue": "APLO",
+        "year": 2020,
+        "number": 5,
+        "topic": "Mantauran",
+        "author": "Yung-Jui Yao",
         "draft": false
     }
 ]
