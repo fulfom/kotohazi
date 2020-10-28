@@ -6675,5 +6675,172 @@
         "topic": "Mantauran",
         "author": "Yung-Jui Yao",
         "draft": false
+    },
+    {
+        "id": 301,
+        "title": "Dutch",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/1.-Dutch-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-1",
+        "topic": "Dutch",
+        "author": "Liam McKnight"
+    },
+    {
+        "id": 302,
+        "title": "Curious cuneiform",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/2.-Cuneiform-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-2",
+        "topic": "Cuneiform for Babylonian",
+        "author": "Martin Worthington"
+    },
+    {
+        "id": 303,
+        "title": "Norwedish?",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/3.-Norwedish-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-3",
+        "topic": "Norwegian, Swedish",
+        "author": "Babette"
+    },
+    {
+        "id": 304,
+        "title": "The long and short of Ligurian",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/4.-Ligurian-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-4",
+        "topic": "Ligurian",
+        "author": "Kevin Liang"
+    },
+    {
+        "id": 305,
+        "title": "Hello Mongo!",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/05/5.-Mongo-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-5",
+        "topic": "Mongo",
+        "author": "Kevin Liang"
+    },
+    {
+        "id": 306,
+        "title": "Idalion tablet",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/4-Ute.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-6",
+        "topic": "Cypriot script",
+        "author": "Michael Salter",
+        "memo": "IntermediateとAdvancedが載ってるけどフォーマットがちょっと違うだけで中身は同じっぽい"
+    },
+    {
+        "id": 307,
+        "title": "A Cat in a Hat",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/05/7.-chintang-I-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-7",
+        "topic": "Chintang",
+        "author": "Aleka Blackwell",
+        "memo": "IntermediateとAdvancedが載ってるけどフォーマットがちょっと違うだけで中身は同じっぽい"
+    },
+    {
+        "id": 308,
+        "title": "Stressed out in the Caribbean",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/05/8.-Papiamentu-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-8",
+        "topic": "Papiamentu",
+        "author": "Harold Sommers"
+    },
+    {
+        "id": 309,
+        "title": "Can Yukaghir?",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/9.-yukhagir-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-9",
+        "topic": "Kolyma Yukaghir",
+        "author": "Kobayashi Tsuyoshi"
+    },
+    {
+        "id": 310,
+        "title": "Iñapari",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/10.-inapari-PSE.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R1-10",
+        "topic": "Iñapar",
+        "author": "Sam Ahmed"
+    },
+    {
+        "id": 311,
+        "title": "Taiwan Paiwan",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/05/1-Paiwan.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R2-1",
+        "topic": "Paiwan",
+        "author": "Sam Ahmed"
+    },
+    {
+        "id": 312,
+        "title": "Yoruba numbers",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/2-Yoruba.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R2-2",
+        "topic": "Yoruba",
+        "author": "Harold Somers"
+    },
+    {
+        "id": 313,
+        "title": "A toad's miao",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/3-Miao.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R2-3",
+        "topic": "Miao",
+        "author": "Ethan Chi"
+    },
+    {
+        "id": 314,
+        "title": "Imitating Ute",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/4-Ute.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R2-4",
+        "topic": "Ute",
+        "author": "Liam McKnight"
+    },
+    {
+        "id": 315,
+        "title": "Arapaho morphology",
+        "link": "https://www.uklo.org/wp-content/uploads/2020/04/5-Arapaho.pdf",
+        "venue": "海外予選",
+        "venuedetail": "UKLO",
+        "year": 2020,
+        "number": "R2-5",
+        "topic": "Arapaho",
+        "author": "Daniel Lovsted"
     }
 ]
