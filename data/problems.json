@@ -6685,7 +6685,8 @@
         "year": 2020,
         "number": "R1-1",
         "topic": "Dutch",
-        "author": "Liam McKnight"
+        "author": "Liam McKnight",
+        "draft": false
     },
     {
         "id": 302,
@@ -6696,7 +6697,8 @@
         "year": 2020,
         "number": "R1-2",
         "topic": "Cuneiform for Babylonian",
-        "author": "Martin Worthington"
+        "author": "Martin Worthington",
+        "draft": false
     },
     {
         "id": 303,
@@ -6707,7 +6709,8 @@
         "year": 2020,
         "number": "R1-3",
         "topic": "Norwegian, Swedish",
-        "author": "Babette"
+        "author": "Babette",
+        "draft": false
     },
     {
         "id": 304,
@@ -6718,7 +6721,8 @@
         "year": 2020,
         "number": "R1-4",
         "topic": "Ligurian",
-        "author": "Kevin Liang"
+        "author": "Kevin Liang",
+        "draft": false
     },
     {
         "id": 305,
@@ -6729,7 +6733,8 @@
         "year": 2020,
         "number": "R1-5",
         "topic": "Mongo",
-        "author": "Kevin Liang"
+        "author": "Kevin Liang",
+        "draft": false
     },
     {
         "id": 306,
@@ -6741,6 +6746,7 @@
         "number": "R1-6",
         "topic": "Cypriot script",
         "author": "Michael Salter",
+        "draft": false,
         "memo": "IntermediateとAdvancedが載ってるけどフォーマットがちょっと違うだけで中身は同じっぽい"
     },
     {
@@ -6753,6 +6759,7 @@
         "number": "R1-7",
         "topic": "Chintang",
         "author": "Aleka Blackwell",
+        "draft": false,
         "memo": "IntermediateとAdvancedが載ってるけどフォーマットがちょっと違うだけで中身は同じっぽい"
     },
     {
@@ -6764,7 +6771,8 @@
         "year": 2020,
         "number": "R1-8",
         "topic": "Papiamentu",
-        "author": "Harold Sommers"
+        "author": "Harold Sommers",
+        "draft": false
     },
     {
         "id": 309,
@@ -6775,7 +6783,8 @@
         "year": 2020,
         "number": "R1-9",
         "topic": "Kolyma Yukaghir",
-        "author": "Kobayashi Tsuyoshi"
+        "author": "Kobayashi Tsuyoshi",
+        "draft": false
     },
     {
         "id": 310,
@@ -6786,7 +6795,8 @@
         "year": 2020,
         "number": "R1-10",
         "topic": "Iñapar",
-        "author": "Sam Ahmed"
+        "author": "Sam Ahmed",
+        "draft": false
     },
     {
         "id": 311,
@@ -6797,7 +6807,8 @@
         "year": 2020,
         "number": "R2-1",
         "topic": "Paiwan",
-        "author": "Sam Ahmed"
+        "author": "Sam Ahmed",
+        "draft": false
     },
     {
         "id": 312,
@@ -6808,7 +6819,8 @@
         "year": 2020,
         "number": "R2-2",
         "topic": "Yoruba",
-        "author": "Harold Somers"
+        "author": "Harold Somers",
+        "draft": false
     },
     {
         "id": 313,
@@ -6819,7 +6831,8 @@
         "year": 2020,
         "number": "R2-3",
         "topic": "Miao",
-        "author": "Ethan Chi"
+        "author": "Ethan Chi",
+        "draft": false
     },
     {
         "id": 314,
@@ -6830,7 +6843,8 @@
         "year": 2020,
         "number": "R2-4",
         "topic": "Ute",
-        "author": "Liam McKnight"
+        "author": "Liam McKnight",
+        "draft": false
     },
     {
         "id": 315,
@@ -6841,6 +6855,297 @@
         "year": 2020,
         "number": "R2-5",
         "topic": "Arapaho",
-        "author": "Daniel Lovsted"
+        "author": "Daniel Lovsted",
+        "draft": false
+    },
+    {
+        "id": 316,
+        "title": "Swedish Manual Alphabet",
+        "link": "https://onling.org/contests/practice-2019/online/eng/",
+        "venue": "非LO",
+        "venuedetail": "Onling Practice Contest",
+        "year": 2019,
+        "number": 1,
+        "topic": "Swedish manual alphabet",
+        "draft": false
+    },
+    {
+        "id": 317,
+        "title": "Zulu numerals",
+        "link": "https://onling.org/contests/practice-2019/online/eng/",
+        "venue": "非LO",
+        "venuedetail": "Onling Practice Contest",
+        "year": 2019,
+        "number": 2,
+        "topic": "Zulu",
+        "draft": false
+    },
+    {
+        "id": 318,
+        "title": "Mokilese",
+        "link": "https://onling.org/contests/2019/online/eng/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2019,
+        "number": 1,
+        "topic": "Mokilese",
+        "draft": false
+    },
+    {
+        "id": 319,
+        "title": "Lillooet",
+        "link": "https://onling.org/contests/2019/online/eng/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2019,
+        "number": 2,
+        "topic": "Lillooet",
+        "draft": false
+    },
+    {
+        "id": 320,
+        "title": "American Sign Language",
+        "titlejp": "アメリカ手話",
+        "link": "https://onling.org/contests/2019/online/eng/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2019,
+        "number": 3,
+        "topic": "American Sign Language",
+        "draft": false
+    },
+    {
+        "id": 321,
+        "title": "Luganda",
+        "link": "https://onling.org/contests/2019/online/eng/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2019,
+        "number": 4,
+        "topic": "Luganda",
+        "draft": false
+    },
+    {
+        "id": 322,
+        "title": "カンナダ語",
+        "link": "https://onling.org/contests/practice-2020/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling Practice Contest",
+        "year": 2020,
+        "number": 1,
+        "topic": "Kannada",
+        "draft": false
+    },
+    {
+        "id": 323,
+        "title": "カインガング語",
+        "link": "https://onling.org/contests/practice-2020/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling Practice Contest",
+        "year": 2020,
+        "number": 2,
+        "topic": "Kaingang",
+        "draft": false
+    },
+    {
+        "id": 324,
+        "title": "読唇術",
+        "link": "https://onling.org/contests/2020/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2020,
+        "number": 1,
+        "topic": "Hawaiian",
+        "draft": false
+    },
+    {
+        "id": 325,
+        "title": "ルバ語",
+        "link": "https://onling.org/contests/2020/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2020,
+        "number": 2,
+        "topic": "Ciluba",
+        "draft": false
+    },
+    {
+        "id": 326,
+        "title": "イビビオ語",
+        "link": "https://onling.org/contests/2020/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2020,
+        "number": 3,
+        "topic": "Ibibio",
+        "draft": false
+    },
+    {
+        "id": 327,
+        "title": "テトゥン語",
+        "link": "https://onling.org/contests/2020/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2020,
+        "number": 4,
+        "topic": "Tetun",
+        "draft": false
+    },
+    {
+        "id": 328,
+        "title": "タイ語",
+        "link": "https://onling.org/contests/2021/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2021,
+        "number": 1,
+        "topic": "Thai",
+        "category": [
+            "語用論"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 2
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 329,
+        "title": "オロワリ語",
+        "link": "https://onling.org/contests/2021/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2021,
+        "number": 2,
+        "topic": "Wari",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 330,
+        "title": "トルコ口笛語",
+        "link": "https://onling.org/contests/2021/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2021,
+        "number": 3,
+        "topic": "Turkish Bird Language",
+        "category": [
+            "音声"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 7
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 331,
+        "title": "ウルホボ語",
+        "link": "https://onling.org/contests/2021/online/jpn/",
+        "venue": "非LO",
+        "venuedetail": "Onling",
+        "year": 2021,
+        "number": 4,
+        "topic": "Urhobo",
+        "category": [
+            "韻律"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "karngati",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 332,
+        "title": "カビル語",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
+        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "venue": "JOL",
+        "year": 2021,
+        "number": 1,
+        "topic": "Kabyle",
+        "category": [
+            "統語"
+        ],
+        "draft": false
+    },
+    {
+        "id": 333,
+        "title": "ツツバ語の数詞",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
+        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "venue": "JOL",
+        "year": 2021,
+        "number": 2,
+        "topic": "Tutuba",
+        "category": [
+            "命数"
+        ],
+        "draft": false
+    },
+    {
+        "id": 334,
+        "title": "シャレイア語",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
+        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "venue": "JOL",
+        "year": 2021,
+        "number": 3,
+        "topic": "Shaleian",
+        "category": [
+            "統語"
+        ],
+        "draft": false
+    },
+    {
+        "id": 335,
+        "title": "マプチェ語",
+        "link": "https://iolingjapan.org/preparation/",
+        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
+        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "venue": "JOL",
+        "year": 2021,
+        "number": 4,
+        "topic": "Mapuche",
+        "category": [
+            "形態",
+            "韻律"
+        ],
+        "draft": false
     }
 ]
