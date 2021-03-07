@@ -270,5 +270,37 @@
         "year": 2020,
         "prob": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-prob.ja_.pdf",
         "probsol": "https://aplo.asia/wp-content/uploads/2020/10/aplo-2020-sol.ja_.pdf"
+    },
+    {
+        "id": 37,
+        "venue": "Onling Practice Contest",
+        "venuecompatiable": "Onling",
+        "year": 2019,
+        "prob": "https://onling.org/contests/practice-2019/online/eng/"
+    },
+    {
+        "id": 38,
+        "venue": "Onling",
+        "year": 2019,
+        "prob": "https://onling.org/contests/2019/online/eng/"
+    },
+    {
+        "id": 39,
+        "venue": "Onling Practice Contest",
+        "venuecompatiable": "Onling",
+        "year": 2020,
+        "prob": "https://onling.org/contests/practice-2020/online/jpn/"
+    },
+    {
+        "id": 40,
+        "venue": "Onling",
+        "year": 2020,
+        "prob": "https://onling.org/contests/2020/online/jpn/"
+    },
+    {
+        "id": 41,
+        "venue": "Onling",
+        "year": 2021,
+        "prob": "https://onling.org/contests/2021/online/jpn/"
     }
 ]

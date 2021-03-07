@@ -179,7 +179,7 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 [[params.prob.1venue]]
 	name = "出題元"
 	datakey = "venue"
-	value = ["IOL","APLO","JOL","海外予選","kotohazi","非LO"]
+	value = ["IOL","APLO","JOL","Onling","海外予選","kotohazi","非LO"]
 [[params.prob.2year]]
 	name = "年"
 	datakey = "year"
