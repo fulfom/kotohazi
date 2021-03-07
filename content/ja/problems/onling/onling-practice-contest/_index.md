@@ -1,6 +1,6 @@
 ---
 title: "Onling Practice Contest"
-linkTitle: "Onling Practice Contest"
+linkTitle: "OnlingPC"
 weight: 1
 type: docs
 description: >

@@ -50,8 +50,9 @@
     {{ with $filterVenue }}
     <div class="unmot">
         {{range .}}
-            <input class="filter-input" type="checkbox" checked hidden id="{{.}}" data-filter=":not(.{{.}})" autocomplete="off">
-            <label class="{{.}}" for="{{.}}">{{.}}</label>
+            {{$this := replace . " " "-"}}
+            <input class="filter-input" type="checkbox" checked hidden id="{{$this}}" data-filter=":not(.{{$this}})" autocomplete="off">
+            <label class="{{$this}}" for="{{$this}}">{{.}}</label>
         {{end}}
     </div>
     {{end}}
@@ -87,6 +88,7 @@
 {{range ($prob.Get .)}}
 {{$contest := index (where (where $contestdata "venue" $tmpVenue) "year" .) 0}}
 {{$key := string (delimit (slice $tmpVenue (string .)) "")}}
+{{$id := replace (string (delimit (slice $tmpVenue (string .)) "")) " " "-"}}
 {{$detailpath := slice "/problems"}}
 {{with $contest.venuecompatiable}}{{$detailpath = $detailpath | append (. | urlize)}}{{end}}
 {{$detailpath = $detailpath | append ($contest.venue | urlize)}}
@@ -103,7 +105,7 @@
         {{$solcorrection = true}}
     {{end}}
 {{end}}
-<div id="{{$key}}" data-id="{{$key}}" class="filter-item {{$tmpVenue}} col-12">
+<div id="{{$id}}" data-id="{{$id}}" class="filter-item {{replace $tmpVenue " " "-"}} col-12">
     <div class="card">
         <div class="card-header">{{$problinktext := "問題"}}{{$sollinktext := "解答"}}{{if eq $tmpVenue "IOL" | and (gt . 0)}}{{$problinktext = "個人戦問題"}}{{$sollinktext = "個人戦解答"}}{{end}}{{with $contest.probsol}}{{else}}{{$problinktext = "問題と解答"}}{{end}}
             <div class="d-flex">
@@ -116,9 +118,9 @@
             <a href="{{$contest.teamprob | default (path.Join $teamdetailpath) }}" class="card-link unmot" target="_blank">団体戦</a>{{end}}
             {{with $contest.probsol}}<a href="{{.}}" class="card-link unmot" target="_blank">{{$sollinktext}}</a>{{end}}
             {{with $contest.teamsol}}<a href="{{.}}" class="card-link unmot" target="_blank">団体戦解答</a>{{end}}
-            <a class="card-link unmot" data-toggle="collapse" href data-target="#collapse{{$key}}" role="button" aria-expanded="false" aria-controls="collapse{{$key}}"><i class="fas fa-angle-right fa-fw"></i>出題問題一覧</a>
+            <a class="card-link unmot" data-toggle="collapse" href data-target="#collapse{{$id}}" role="button" aria-expanded="false" aria-controls="collapse{{$id}}"><i class="fas fa-angle-right fa-fw"></i>出題問題一覧</a>
         </div>
-        <div class="card-body collapse itmclps transition-none" id="collapse{{$key}}">
+        <div class="card-body collapse itmclps transition-none" id="collapse{{$id}}">
             <div class="card-title">出題問題一覧</div>
             <table class="table">
                 <tbody>
