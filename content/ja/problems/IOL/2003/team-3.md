@@ -28,11 +28,7 @@ problems:
 
 ## ヒント
 
-{{% problems/hint id=8 %}}{{% /hasProbdata %}}
-
-## 解答
-
-[解答]({{% probdata id=8 key="solution" default="link" %}}){{% hasProbdata id=8 key="solcorrection" %}}
+{{% problems/hint id=8 %}}{{% /hasProbdata %}}{{% hasProbdata id=8 key="solcorrection" %}}
 
 ### 解答訂正
 

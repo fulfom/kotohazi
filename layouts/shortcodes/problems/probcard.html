@@ -12,6 +12,7 @@
 {{$titlejp := index $prob "titlejp"}}
 {{$link := index $prob "link"}}
 {{$problink := index $prob "problink"}}
+{{$sollink := index $prob "solutionlink"}}
 {{$probmaterial := index $prob "probmaterial"}}
 {{$topic := index $prob "topic"}}
 {{$author := index $prob "author"}}
@@ -52,7 +53,8 @@
         {{if $detailed}}<hr>
         <p class="card-text text-muted">主題：{{$topic}}<br>作問：{{$author}}</p>{{end}}
         <div class="d-flex">
-            <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>
+            <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>{{with $sollink}}
+            <a href="{{.}}" class="card-link" target="_blank">解答</a>{{end}}
             {{if $detailed}}{{with $probmaterial}}<a href="{{.}}" class="card-link" target="_blank">資料</a>{{end}}
             {{with $problink}}<a href="{{$link}}" class="card-link" target="_blank">掲載元</a>{{end}}
             {{else}}<a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>{{end}}

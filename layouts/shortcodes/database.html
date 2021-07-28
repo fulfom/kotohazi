@@ -166,6 +166,7 @@
 {{end}}
 {{$detailpath = $detailpath | append ((delimit $teamnum "-") | urlize)}}
 {{$problink := .problink | default .link}}
+{{$sollink := .solutionlink}}
 
 <div id="prob{{.id}}" data-id="{{.id}}" class="filter-item col-md-6 col-lg-4 {{$venue}} y{{$year}} {{if eq .team "team" }}団体{{else}}個人{{end}} ★{{with .difficulty.typicalStar}}{{.}}{{else}}未定{{end}}{{range .category}}{{if hasPrefix . "!"}}{{else}} {{.}}{{end}}{{else}} 未分類{{end}}{{with .hint}} hint{{end}}{{with .explanationlinks}} expl{{end}}{{with .translation}} translation{{end}}">
     <div class="card">
@@ -184,7 +185,8 @@
         <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range index . "diffeach"}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") ((index . "difficulty").typicalStar|int) |safeHTML}}<span class="sort-difficulty">{{with (index . "difficulty").typical}}{{.}}{{else}}<span hidden>100</span>{{end}}</span></a> {{range .category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span> {{end}}{{else}}<span class="tag m-1 unmot">未分類</span>{{end}}</h6>
         <div class="d-flex">
             <a href="{{$problink}}" class="card-link" target="_blank">問題</a>
-            <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>
+            <a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>{{with $sollink}}
+            <a href="{{.}}" class="card-link" target="_blank">解答</a>{{end}}
             <input class="check-check" type="checkbox" hidden id="done{{.id}}" data-id="{{.id}}">
             <label class="ml-auto mb-0" role="button" for="done{{.id}}"><i class="fas fa-check-square"></i></a></label>
             <input class="check-heart" type="checkbox" hidden id="like{{.id}}" data-id="{{.id}}">

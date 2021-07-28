@@ -150,29 +150,29 @@
         "id": 19,
         "venue": "JOL",
         "year": 2017,
-        "prob": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
-        "probsol": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view"
+        "prob": "https://iolingjapan.org/pdf/jol2017.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2017-sol.pdf"
     },
     {
         "id": 20,
         "venue": "JOL",
         "year": 2018,
-        "prob": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "prob": "https://iolingjapan.org/pdf/jol2018.pdf",
         "probsol": "http://zohe.hatenablog.com/entry/2019/03/04/145808"
     },
     {
         "id": 21,
         "venue": "JOL",
         "year": 2019,
-        "prob": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
-        "probsol": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh"
+        "prob": "https://iolingjapan.org/pdf/jol2019.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2019-sol.pdf"
     },
     {
         "id": 22,
         "venue": "JOL",
         "year": 2020,
-        "prob": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
-        "probsol": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic"
+        "prob": "https://iolingjapan.org/pdf/jol2020.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2020-sol.pdf"
     },
     {
         "id": 23,
@@ -302,5 +302,28 @@
         "venue": "Onling",
         "year": 2021,
         "prob": "https://onling.org/contests/2021/online/jpn/"
+    },
+    {
+        "id": 42,
+        "venue": "JOL",
+        "year": 2021,
+        "prob": "https://iolingjapan.org/pdf/jol2021-se.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2021-sol.pdff"
+    },
+    {
+        "id": 43,
+        "venue": "APLO",
+        "year": 2021,
+        "prob": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-prob.ja_.pdf",
+        "probsol": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-sol.ja_.pdf"
+    },
+    {
+        "id": 44,
+        "venue": "IOL",
+        "year": 2021,
+        "prob": "https://ioling.org/booklets/iol-2021-indiv-prob.ja.pdf",
+        "probsol": "https://ioling.org/booklets/iol-2021-indiv-sol.ja.pdf",
+        "teamprob": "https://ioling.org/booklets/iol-2021-team-prob.ja.pdf",
+        "teamsol": "https://ioling.org/booklets/iol-2021-team-sol.ja.pdf"
     }
 ]

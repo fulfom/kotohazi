@@ -563,13 +563,13 @@
             "音声"
         ],
         "difficulty": {
-            "typical": 7,
-            "typicalStar": 7
+            "typical": 6,
+            "typicalStar": 6
         },
         "diffeach": [
             {
                 "name": "fulfom",
-                "diff": 7
+                "diff": 6
             }
         ],
         "draft": false
@@ -3029,8 +3029,8 @@
         "id": 110,
         "title": "ロシア語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
-        "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
+        "problink": "https://iolingjapan.org/pdf/jol2017.pdf#page=2",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2017-sol.pdf#page=1",
         "venue": "JOL",
         "year": 2017,
         "number": 1,
@@ -3086,8 +3086,8 @@
         "id": 111,
         "title": "フリウリ語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
-        "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
+        "problink": "https://iolingjapan.org/pdf/jol2017.pdf#page=4",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2017-sol.pdf#page=2",
         "venue": "JOL",
         "year": 2017,
         "number": 2,
@@ -3150,8 +3150,8 @@
         "id": 112,
         "title": "モンゴル語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1DSG3MISTszSPeMeG-VmnyKA0kFe7iywZ/view",
-        "solutionlink": "https://drive.google.com/file/d/1GSyrZ7f6hvOAQ3sc19mFAOzRlUYK0W0q/view",
+        "problink": "https://iolingjapan.org/pdf/jol2017.pdf#page=6",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2017-sol.pdf#page=3",
         "venue": "JOL",
         "year": 2017,
         "number": 3,
@@ -3186,7 +3186,7 @@
         "id": 113,
         "title": "英語，チェコ語，ポーランド語，スウェーデン語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "problink": "https://iolingjapan.org/pdf/jol2018.pdf#page=2",
         "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
         "venue": "JOL",
         "year": 2018,
@@ -3224,7 +3224,7 @@
         "id": 114,
         "title": "ベジャ語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "problink": "https://iolingjapan.org/pdf/jol2018.pdf#page=4",
         "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
         "venue": "JOL",
         "year": 2018,
@@ -3262,7 +3262,7 @@
         "id": 115,
         "title": "ナーナイ語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "problink": "https://iolingjapan.org/pdf/jol2018.pdf#page=6",
         "solutionlink": "https://docs.google.com/document/d/1b2P6Fx5ULQyhmMuZ3NxnBhsYMtcXbpAyz9Y41MvzEos/edit",
         "venue": "JOL",
         "year": 2018,
@@ -3300,7 +3300,7 @@
         "id": 116,
         "title": "オルホン文字/古テュルク語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "problink": "https://iolingjapan.org/pdf/jol2018.pdf#page=8",
         "solutionlink": "https://drive.google.com/file/d/1fVN74xSN__LzxS0T8e2qXg0YEHSlO5J0/view",
         "venue": "JOL",
         "year": 2018,
@@ -3338,7 +3338,7 @@
         "id": 117,
         "title": "モンゴル語とチベット語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/17anbddEBxNaZe_kDGRQPxvpzlR1lMYb2/view",
+        "problink": "https://iolingjapan.org/pdf/jol2018.pdf#page=10",
         "solutionlink": "http://zohe.hatenablog.com/entry/2019/03/04/145808",
         "venue": "JOL",
         "year": 2018,
@@ -3379,8 +3379,8 @@
         "id": 118,
         "title": "ハングル",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
-        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "problink": "https://iolingjapan.org/pdf/jol2019.pdf#page=2",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2019-sol.pdf#page=1",
         "venue": "JOL",
         "year": 2019,
         "number": 1,
@@ -3438,8 +3438,8 @@
         "id": 119,
         "title": "国際音声記号",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
-        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "problink": "https://iolingjapan.org/pdf/jol2019.pdf#page=3",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2019-sol.pdf#page=1",
         "venue": "JOL",
         "year": 2019,
         "number": 2,
@@ -3475,8 +3475,8 @@
         "id": 120,
         "title": "フィンランド語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
-        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "problink": "https://iolingjapan.org/pdf/jol2019.pdf#page=4",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2019-sol.pdf#page=1",
         "venue": "JOL",
         "year": 2019,
         "number": 3,
@@ -3512,8 +3512,8 @@
         "id": 121,
         "title": "イヌクティトゥット語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
-        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "problink": "https://iolingjapan.org/pdf/jol2019.pdf#page=5",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2019-sol.pdf#page=2",
         "venue": "JOL",
         "year": 2019,
         "number": 4,
@@ -3549,8 +3549,8 @@
         "id": 122,
         "title": "コリマ・ユカギール語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1BjNVq20Ne9LVAqGEa9nLPsF9FhuhDjAA/view",
-        "solutionlink": "https://drive.google.com/open?id=1-lHLG82BcwZSuWnCuXD8GwTXFS2vv_Lh",
+        "problink": "https://iolingjapan.org/pdf/jol2019.pdf#page=6",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2019-sol.pdf#page=2",
         "venue": "JOL",
         "year": 2019,
         "number": 5,
@@ -3589,8 +3589,8 @@
         "id": 123,
         "title": "アラビア文字/アラビア語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
-        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "problink": "https://iolingjapan.org/pdf/jol2020.pdf#page=2",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2020-sol.pdf",
         "venue": "JOL",
         "year": 2020,
         "number": 1,
@@ -3626,8 +3626,8 @@
         "id": 124,
         "title": "エウェンキ語，オロチ語，ナーナイ語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
-        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "problink": "https://iolingjapan.org/pdf/jol2020.pdf#page=4",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2020-sol.pdf",
         "venue": "JOL",
         "year": 2020,
         "number": 2,
@@ -3667,8 +3667,8 @@
         "id": 125,
         "title": "バスク語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
-        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "problink": "https://iolingjapan.org/pdf/jol2020.pdf#page=6",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2020-sol.pdf",
         "venue": "JOL",
         "year": 2020,
         "number": 3,
@@ -3704,8 +3704,8 @@
         "id": 126,
         "title": "リヴォニア語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
-        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "problink": "https://iolingjapan.org/pdf/jol2020.pdf#page=8",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2020-sol.pdf",
         "venue": "JOL",
         "year": 2020,
         "number": 4,
@@ -3742,8 +3742,8 @@
         "id": 127,
         "title": "ウルドゥー語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/1FPhk59e8A0FIXgOliitzg1qU95V7fppV/view",
-        "solutionlink": "https://drive.google.com/open?id=1EWBp7YEriz4L6cCEkiqeDwo5ku-qh-ic",
+        "problink": "https://iolingjapan.org/pdf/jol2020.pdf#page=10",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2020-sol.pdf",
         "venue": "JOL",
         "year": 2020,
         "number": 5,
@@ -6213,11 +6213,16 @@
     {
         "id": 273,
         "title": "トンガ語",
-        "venue": "kotohazi",
-        "number": 3,
+        "link": "https://iolingjapan.org/sample-problems/",
+        "venue": "JOL",
+        "year": -1,
+        "number": 5,
         "topic": "Tonga (Austronesian)",
-        "author": "fulfom",
-        "draft": true
+        "category": [
+            "命数",
+            "数式"
+        ],
+        "draft": false
     },
     {
         "id": 274,
@@ -6923,7 +6928,8 @@
     },
     {
         "id": 322,
-        "title": "カンナダ語",
+        "title": "Kannada",
+        "titlejp": "カンナダ語",
         "link": "https://onling.org/contests/practice-2020/online/jpn/",
         "venue": "Onling",
         "venuedetail": "Onling Practice Contest",
@@ -6934,7 +6940,8 @@
     },
     {
         "id": 323,
-        "title": "カインガング語",
+        "title": "Kaingang",
+        "titlejp": "カインガング語",
         "link": "https://onling.org/contests/practice-2020/online/jpn/",
         "venue": "Onling",
         "venuedetail": "Onling Practice Contest",
@@ -6945,7 +6952,8 @@
     },
     {
         "id": 324,
-        "title": "読唇術",
+        "title": "Lipreading",
+        "titlejp": "読唇術",
         "link": "https://onling.org/contests/2020/online/jpn/",
         "venue": "Onling",
         "year": 2020,
@@ -6955,7 +6963,8 @@
     },
     {
         "id": 325,
-        "title": "ルバ語",
+        "title": "Ciluba",
+        "titlejp": "ルバ語",
         "link": "https://onling.org/contests/2020/online/jpn/",
         "venue": "Onling",
         "year": 2020,
@@ -6965,7 +6974,8 @@
     },
     {
         "id": 326,
-        "title": "イビビオ語",
+        "title": "Ibibio",
+        "titlejp": "イビビオ語",
         "link": "https://onling.org/contests/2020/online/jpn/",
         "venue": "Onling",
         "year": 2020,
@@ -6975,7 +6985,8 @@
     },
     {
         "id": 327,
-        "title": "テトゥン語",
+        "title": "Tetun",
+        "titlejp": "テトゥン語",
         "link": "https://onling.org/contests/2020/online/jpn/",
         "venue": "Onling",
         "year": 2020,
@@ -6985,7 +6996,8 @@
     },
     {
         "id": 328,
-        "title": "タイ語",
+        "title": "Thai",
+        "titlejp": "タイ語",
         "link": "https://onling.org/contests/2021/online/jpn/",
         "venue": "Onling",
         "year": 2021,
@@ -7008,7 +7020,8 @@
     },
     {
         "id": 329,
-        "title": "オロワリ語",
+        "title": "Wari",
+        "titlejp": "オロワリ語",
         "link": "https://onling.org/contests/2021/online/jpn/",
         "venue": "Onling",
         "year": 2021,
@@ -7031,7 +7044,8 @@
     },
     {
         "id": 330,
-        "title": "トルコ口笛語",
+        "title": "Turkish Bird Language",
+        "titlejp": "トルコ口笛語",
         "link": "https://onling.org/contests/2021/online/jpn/",
         "venue": "Onling",
         "year": 2021,
@@ -7054,7 +7068,8 @@
     },
     {
         "id": 331,
-        "title": "ウルホボ語",
+        "title": "Urhobo",
+        "titlejp": "ウルホボ語",
         "link": "https://onling.org/contests/2021/online/jpn/",
         "venue": "Onling",
         "year": 2021,
@@ -7079,8 +7094,8 @@
         "id": 332,
         "title": "カビル語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
-        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "problink": "https://iolingjapan.org/pdf/jol2021-se.pdf#page=2",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2021-sol.pdf",
         "venue": "JOL",
         "year": 2021,
         "number": 1,
@@ -7088,14 +7103,24 @@
         "category": [
             "統語"
         ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
         "id": 333,
         "title": "ツツバ語の数詞",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
-        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "problink": "https://iolingjapan.org/pdf/jol2021-se.pdf#page=3",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2021-sol.pdf",
         "venue": "JOL",
         "year": 2021,
         "number": 2,
@@ -7103,14 +7128,24 @@
         "category": [
             "命数"
         ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
         "id": 334,
         "title": "シャレイア語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
-        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "problink": "https://iolingjapan.org/pdf/jol2021-se.pdf#page=5",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2021-sol.pdf",
         "venue": "JOL",
         "year": 2021,
         "number": 3,
@@ -7118,14 +7153,24 @@
         "category": [
             "統語"
         ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
         "id": 335,
         "title": "マプチェ語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://drive.google.com/file/d/10ZjQaznmDk51Iy1OID2mKHnrff4JR-RY/view?usp=sharing",
-        "solutionlink": "https://drive.google.com/file/d/1sOahvs8QypYyEckuH6NDBga_pijffWq-/view?usp=sharing",
+        "problink": "https://iolingjapan.org/pdf/jol2021-se.pdf#page=6",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2021-sol.pdf",
         "venue": "JOL",
         "year": 2021,
         "number": 4,
@@ -7133,6 +7178,322 @@
         "category": [
             "形態",
             "韻律"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 336,
+        "title": "Pitjantjatjara",
+        "titlejp": "ピチャンチャチャラ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-prob.ja_.pdf#page=2",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-sol.ja_.pdf#page=1",
+        "venue": "APLO",
+        "year": 2021,
+        "number": 1,
+        "topic": "Pitjantjatjara",
+        "author": "Vlad A. Neacșu",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 337,
+        "title": "Cushillococha Ticuna",
+        "titlejp": "クシヨコチャ・ティクナ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-prob.ja_.pdf#page=4",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-sol.ja_.pdf#page=2",
+        "venue": "APLO",
+        "year": 2021,
+        "number": 2,
+        "topic": "Cushillococha Ticuna",
+        "author": "Tsuyoshi Kobayashi",
+        "category": [
+            "形態",
+            "韻律"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 338,
+        "title": "Osmanya script",
+        "titlejp": "オスマニヤ文字",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-prob.ja_.pdf#page=5",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-sol.ja_.pdf#page=3",
+        "venue": "APLO",
+        "year": 2021,
+        "number": 3,
+        "topic": "Osmanya script",
+        "author": "Minkyu Kim",
+        "category": [
+            "命数",
+            "数式",
+            "文字"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 339,
+        "title": "Hdi",
+        "titlejp": "フディ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-prob.ja_.pdf#page=6",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-sol.ja_.pdf#page=4",
+        "venue": "APLO",
+        "year": 2021,
+        "number": 4,
+        "topic": "Hdi",
+        "author": "Chih-Chun Wang",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 340,
+        "title": "Sandawe",
+        "titlejp": "サンダウェ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-prob.ja_.pdf#page=7",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2021/04/aplo-2021-sol.ja_.pdf#page=5",
+        "venue": "APLO",
+        "year": 2021,
+        "number": 5,
+        "topic": "Sandawe",
+        "author": "Shen-Chang Huang",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 341,
+        "title": "Ekari",
+        "titlejp": "エカリ語",
+        "link": "https://ioling.org/problems/2021/",
+        "problink": "https://ioling.org/booklets/iol-2021-indiv-prob.ja.pdf#page=1",
+        "venue": "IOL",
+        "year": 2021,
+        "number": 1,
+        "topic": "Ekari (Trans-New Guinea)",
+        "author": "Aleksejs Peguševs",
+        "category": [
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 342,
+        "title": "Zuni",
+        "titlejp": "ズニ語",
+        "link": "https://ioling.org/problems/2021/",
+        "problink": "https://ioling.org/booklets/iol-2021-indiv-prob.ja.pdf#page=2",
+        "venue": "IOL",
+        "year": 2021,
+        "number": 2,
+        "topic": "Zuni (isolate)",
+        "author": "Elysia Warner, Samuel Ahmed",
+        "category": [
+            "意味",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 7
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 343,
+        "title": "Kilivila",
+        "titlejp": "キリヴィラ語",
+        "link": "https://ioling.org/problems/2021/",
+        "problink": "https://ioling.org/booklets/iol-2021-indiv-prob.ja.pdf#page=3",
+        "venue": "IOL",
+        "year": 2021,
+        "number": 3,
+        "topic": "Kilivila (Austronesian)",
+        "author": "Samuel Ahmed",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 344,
+        "title": "Agbirigba",
+        "titlejp": "アビリバ語",
+        "link": "https://ioling.org/problems/2021/",
+        "problink": "https://ioling.org/booklets/iol-2021-indiv-prob.ja.pdf#page=4",
+        "venue": "IOL",
+        "year": 2021,
+        "number": 4,
+        "topic": "Ikwerre (Atlantic-Congo)",
+        "author": "Liam McKnight",
+        "category": [
+            "音韻"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 345,
+        "title": "Rikbaktsa",
+        "titlejp": "リクバクチァ語",
+        "link": "https://ioling.org/problems/2021/",
+        "problink": "https://ioling.org/booklets/iol-2021-indiv-prob.ja.pdf#page=5",
+        "venue": "IOL",
+        "year": 2021,
+        "number": 5,
+        "topic": "Rikbaktsa (Macro-Jê)",
+        "author": "André Nikulin",
+        "category": [
+            "形態",
+            "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 346,
+        "title": "Garífuna, Lokono and Kari’ña",
+        "titlejp": "ガリフナ語，ロコノ語，カリナ語",
+        "link": "https://ioling.org/problems/2021/",
+        "problink": "https://ioling.org/booklets/iol-2021-team-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2021,
+        "team": "team",
+        "number": 1,
+        "difficulty": {
+            "typical": 7,
+            "typicalStar": 7
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 7
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 347,
+        "title": "スワヒリ語",
+        "link": "https://iolingjapan.org/sample-problems/",
+        "venue": "JOL",
+        "year": -1,
+        "number": 6,
+        "topic": "Swahili",
+        "category": [
+            "形態",
+            "動詞形態"
         ],
         "draft": false
     }
