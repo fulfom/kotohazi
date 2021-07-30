@@ -226,6 +226,16 @@
         "category": [
             "統語"
         ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
         "draft": false,
         "page": 2
     },
@@ -244,6 +254,16 @@
         "author": "Boris Iomdin",
         "category": [
             "語用論"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ],
         "draft": false,
         "page": 2
@@ -1919,6 +1939,10 @@
             {
                 "name": "irotirihs",
                 "diff": 6
+            },
+            {
+                "name": "fulfom",
+                "diff": 6
             }
         ],
         "draft": false,
@@ -2122,6 +2146,16 @@
             "形態",
             "動詞形態"
         ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
         "draft": false,
         "page": 2
     },
@@ -2141,6 +2175,16 @@
             "音韻",
             "非言語"
         ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
         "draft": false,
         "page": 3
     },
@@ -2158,6 +2202,16 @@
         "author": "Ksenia Gilyarova",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
         ],
         "draft": false,
         "page": 4
@@ -2468,6 +2522,16 @@
         "author": "Bruno L'Astorina",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
         ],
         "draft": false,
         "page": 3
@@ -3596,7 +3660,8 @@
         "number": 1,
         "topic": "Arabic",
         "category": [
-            "文字"
+            "文字",
+            "対応"
         ],
         "difficulty": {
             "typical": 2,
@@ -4753,8 +4818,9 @@
     {
         "id": 168,
         "title": "My foot, his feet in Zapotex",
-        "link": "https://www.uklo.org/wp-content/uploads/2013/01/F-questions2.pdf",
-        "problink": "https://www.uklo.org/wp-content/uploads/2013/01/FI-solutions4.pdf",
+        "link": "https://www.uklo.org/test-papers-for-2013-retrospective",
+        "problink": "https://www.uklo.org/wp-content/uploads/2013/01/F-questions2.pdf",
+        "solutionlink": "https://www.uklo.org/wp-content/uploads/2013/01/FI-solutions4.pdf",
         "venue": "海外予選",
         "venuedetail": "UKLO",
         "year": 2013,
@@ -4764,13 +4830,17 @@
             "形態"
         ],
         "difficulty": {
-            "typical": 1,
-            "typicalStar": 1
+            "typical": 1.5,
+            "typicalStar": 2
         },
         "diffeach": [
             {
                 "name": "karngati",
                 "diff": 1
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
             }
         ],
         "draft": false
