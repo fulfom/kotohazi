@@ -325,5 +325,11 @@
         "probsol": "https://ioling.org/booklets/iol-2021-indiv-sol.ja.pdf",
         "teamprob": "https://ioling.org/booklets/iol-2021-team-prob.ja.pdf",
         "teamsol": "https://ioling.org/booklets/iol-2021-team-sol.ja.pdf"
+    },
+    {
+        "id": 45,
+        "venue": "JOL",
+        "year": 2016,
+        "prob": "https://iolingjapan.org/pdf/jol2016.pdf"
     }
 ]
