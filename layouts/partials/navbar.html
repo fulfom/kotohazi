@@ -32,7 +32,7 @@
 	<div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
 	{{with .Site.Params.login}}
 	<div id="user-info" class="dropdown td-navbar-nav-scroll" style="min-width: 200px; overflow: visible;">
-		<a id="login" href="{{.login_url | relLangURL}}" style="width: 200px;" class="navbar-nav mt-2 mt-lg-0 text-center">
+		<a id="login" href="{{delimit (slice .login_url "?redirect=" $.RelPermalink) "" | relLangURL}}" style="width: 200px;" class="navbar-nav mt-2 mt-lg-0 text-center">
 			<p class="nav-link active mb-0"><span class="active">ログイン</span></p>
 		</a>
 		<div id="account" style="width: 200px;" class="navbar-nav mt-2 mt-lg-0">
@@ -44,9 +44,9 @@
 					<div class="card-header"></div>
 					<div class="card-body p-0">
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item p-none">機能1</li>
-							<li class="list-group-item p-none">機能2</li>
-							<li class="list-group-item">ログアウト</li>
+							<button class="list-group-item list-group-item-action" onclick=""><i class="fas fa-user fa-fw"></i>機能1</button>
+							<button class="list-group-item list-group-item-action" onclick=""><i class="fas fa-sign-out-alt fa-fw"></i>機能2</button>
+							<button class="list-group-item list-group-item-action" onclick="logout()"><i class="fas fa-sign-out-alt fa-fw"></i>ログアウト</button>
 						</ul>
 					</div>
 				</div>

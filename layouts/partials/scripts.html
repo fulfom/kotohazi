@@ -30,25 +30,27 @@
 
 {{ $firebaseInitialize := resources.Get "js/firebase-initialize.js" }}
 
-{{ if .Site.IsServer }}
-
-<script type="module" src="{{ $firebaseInitialize.RelPermalink }}"></script>
-{{with .Params.import}}
-{{range .}}
-<script type="module" src="{{ (resources.Get .).RelPermalink }}"></script>
-{{end}}
-{{end}}
-
-{{else}}
 {{ $importjs := slice $firebaseInitialize}}
 {{with .Params.import}}
 {{range .}}
-{{ $importjs = $importjs | append (resources.Get .)}}
+{{$importjs = $importjs | append (resources.Get .)}}
 {{end}}
 {{end}}
 <script type="module" src="{{ ($importjs | resources.Concat "js/import.js").RelPermalink }}"></script>
 
-{{end}}
+<script>
+function logout(){
+    firebase.auth().onAuthStateChanged((user) => {
+        firebase.auth().signOut().then(()=>{
+        console.log("ログアウトしました");
+        location.href = "/login/"
+        })
+        .catch( (error)=>{
+        console.log(`ログアウト時にエラーが発生しました (${error})`);
+        });
+    });
+}
+</script>
 
 {{if .Params.ex}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>

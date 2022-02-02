@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    firebase.auth().onAuthStateChanged(async (user) => {
+        if(user){
+            console.log("login")
+            location.href = "/account/";
+        }
+    });
+});
 
 // Initialize the FirebaseUI Widget using Firebase.
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
@@ -20,7 +28,7 @@ uiShown: function() {
 },
 // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
 signInFlow: 'redirect',
-signInSuccessUrl: '/account/',
+signInSuccessUrl: getUrlQueries() && getUrlQueries().redirect || '/account/',
 signInOptions: [
 // Leave the lines as is for the providers you want to offer your users.
 firebase.auth.GoogleAuthProvider.PROVIDER_ID,
