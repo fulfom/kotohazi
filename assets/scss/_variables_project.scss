@@ -660,3 +660,26 @@ $sort-colors:(
       color: $sort-color;
     }
 }
+
+// user-info
+
+#user-info{
+    #login{
+        display: block;
+    }
+    #account{
+        display: none;
+    }
+    &.hasuser{
+        #login{
+            display: none;
+        }
+        #account{
+            display: block;
+        }
+    }
+}
+
+#user-detail{
+    background-color: $primary;
+}

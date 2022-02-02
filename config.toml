@@ -268,3 +268,6 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 	person = "address-card"
 	material = "icons"
 	default = "file"
+
+[params.login]
+	login_url = "/login/"
