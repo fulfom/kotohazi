@@ -30,20 +30,24 @@
 
 {{ $firebaseInitialize := resources.Get "js/firebase-initialize.js" }}
 
-{{ $importjs := slice $firebaseInitialize}}
+{{ $importjs := newScratch }}
+
+{{ $importjs.Set "js" (slice $firebaseInitialize)}}
+{{ $importjs.Set "title" (slice "js/import") }}
 {{with .Params.import}}
 {{range .}}
-{{$importjs = $importjs | append (resources.Get .)}}
+{{$importjs.Set "js" (($importjs.Get "js") | append (resources.Get .))}}
+{{$importjs.Set "title" (($importjs.Get "title") | append (replace (strings.TrimPrefix "js/" (strings.TrimSuffix ".js" .)) "/" "_"))}}
 {{end}}
 {{end}}
-<script type="module" src="{{ ($importjs | resources.Concat "js/import.js").RelPermalink }}"></script>
+<script src="{{ ($importjs.Get "js" | resources.Concat (delimit ($importjs.Get "title" | append ".js") "")).RelPermalink }}"></script>
 
 <script>
 function logout(){
     firebase.auth().onAuthStateChanged((user) => {
         firebase.auth().signOut().then(()=>{
         console.log("ログアウトしました");
-        location.href = "/login/"
+        location.href = "/account/login/"
         })
         .catch( (error)=>{
         console.log(`ログアウト時にエラーが発生しました (${error})`);

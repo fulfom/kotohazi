@@ -1,10 +1,9 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-    firebase.auth().onAuthStateChanged(async (user) => {
-        if(user){
-            console.log("login")
+firebase.auth().onAuthStateChanged(async (user) => {
+    if(user){
+        if(location.pathname == "/account/login/"){
             location.href = "/account/";
         }
-    });
+    }
 });
 
 // Initialize the FirebaseUI Widget using Firebase.
@@ -39,9 +38,9 @@ firebase.auth.GoogleAuthProvider.PROVIDER_ID,
 }
 ],
 // Terms of service url.
-tosUrl: '/term-of-service/',
+tosUrl: '/account/term-of-service/',
 // Privacy policy url.
-privacyPolicyUrl: '/privacy-policy/'
+privacyPolicyUrl: '/account/privacy-policy/'
 };
 
 // The start method will wait until the DOM is loaded.

@@ -36,15 +36,15 @@
 			<p class="nav-link active mb-0"><span class="active">ログイン</span></p>
 		</a>
 		<div id="account" style="width: 200px;" class="navbar-nav mt-2 mt-lg-0">
-			<div style="cursor: pointer;" class="text-center" data-toggle="collapse" data-target="#user-detail" aria-expanded="false" aria-controls="user-detail">
-				<p class="nav-link active mb-0"><span id="user-name">ユーザー</span><span id=""></span></p>
+			<div style="cursor: pointer;" class="justify-content-center row collapsed" data-toggle="collapse" data-target="#user-detail" aria-expanded="false" aria-controls="user-detail">
+				<p class="nav-link active mb-0"><span class="d-block text-truncate user-name" style="max-width: 158px;">ユーザー</span></p>
+				<p class="nav-link active mb-0"><i class="fas fa-chevron-down collapsed-show"></i><i class="fas fa-chevron-up collapsed-hide"></i></p>
 			</div>
 			<div class="collapse" id="user-detail" style="position: absolute; width: 200px;">
 				<div class="card text-dark">
-					<div class="card-header"></div>
 					<div class="card-body p-0">
 						<ul class="list-group list-group-flush">
-							<button class="list-group-item list-group-item-action" onclick=""><i class="fas fa-user fa-fw"></i>機能1</button>
+							<a class="list-group-item list-group-item-action" href="/account/"><i class="fas fa-user fa-fw"></i>プロフィール</a>
 							<button class="list-group-item list-group-item-action" onclick=""><i class="fas fa-sign-out-alt fa-fw"></i>機能2</button>
 							<button class="list-group-item list-group-item-action" onclick="logout()"><i class="fas fa-sign-out-alt fa-fw"></i>ログアウト</button>
 						</ul>

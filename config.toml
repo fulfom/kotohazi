@@ -270,4 +270,4 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 	default = "file"
 
 [params.login]
-	login_url = "/login/"
+	login_url = "/account/login/"
