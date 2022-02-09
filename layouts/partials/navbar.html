@@ -31,7 +31,7 @@
 	</div>
 	<div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
 	{{with .Site.Params.login}}
-	<div id="user-info" class="dropdown td-navbar-nav-scroll" style="min-width: 200px; overflow: visible;">
+	<div id="user-info" class="dropdown td-navbar-nav-scroll" style="min-width: 200px; overflow: visible; display: none;">
 		<a id="login" href="{{delimit (slice .login_url "?redirect=" $.RelPermalink) "" | relLangURL}}" style="width: 200px;" class="navbar-nav mt-2 mt-lg-0 text-center">
 			<p class="nav-link active mb-0"><span class="active">ログイン</span></p>
 		</a>
