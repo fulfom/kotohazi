@@ -11,6 +11,51 @@
 <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+
+{{with .Params.cdn}}
+{{range .}}
+<script src="{{.}}"></script>
+{{end}}
+{{end}}
+
+{{ $firebaseInitialize := resources.Get "js/firebase-initialize.js" }}
+
+{{ $importjs := newScratch }}
+
+{{ $importjs.Set "js" (slice $firebaseInitialize)}}
+{{ $importjs.Set "title" (slice "js/import") }}
+{{with .Params.import}}
+{{range .}}
+{{$importjs.Set "js" (($importjs.Get "js") | append (resources.Get .))}}
+{{$importjs.Set "title" (($importjs.Get "title") | append (replace (strings.TrimPrefix "js/" (strings.TrimSuffix ".js" .)) "/" "_"))}}
+{{end}}
+{{end}}
+<script src="{{ ($importjs.Get "js" | resources.Concat (delimit ($importjs.Get "title" | append ".js") "")).RelPermalink }}"></script>
+
+<script>
+function logout(){
+    firebase.auth().onAuthStateChanged((user) => {
+        firebase.auth().signOut().then(()=>{
+        console.log("ログアウトしました");
+        location.href = "/account/login/"
+        })
+        .catch( (error)=>{
+        console.log(`ログアウト時にエラーが発生しました (${error})`);
+        });
+    });
+}
+</script>
+
 {{if .Params.ex}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>

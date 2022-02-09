@@ -660,3 +660,46 @@ $sort-colors:(
       color: $sort-color;
     }
 }
+
+// user-info
+
+#user-info{
+    #login{
+        display: block;
+    }
+    #account{
+        display: none;
+    }
+    &.hasuser{
+        #login{
+            display: none;
+        }
+        #account{
+            display: block;
+        }
+    }
+}
+
+.list-group-item-action{
+    cursor: pointer;
+}
+
+.collapsed-show{
+    display: none !important;
+}
+.collapsed{
+    .collapsed-hide{
+        display: none;
+    }
+    .collapsed-show{
+        display: unset !important;
+    }
+}
+
+.form-control:focus{
+    border-radius: 0.25rem !important;
+}
+
+:focus{
+    outline: none;
+}

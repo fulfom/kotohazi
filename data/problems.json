@@ -3105,6 +3105,9 @@
         "category": [
             "形態"
         ],
+        "explanationlinks": [
+            "https://note.com/clob_linguistics/n/n025b864bd4b5"
+        ],
         "difficulty": {
             "typical": 1,
             "typicalStar": 1
@@ -3161,6 +3164,9 @@
         "topic": "Furiulian",
         "category": [
             "形態"
+        ],
+        "explanationlinks": [
+            "https://note.com/clob_linguistics/n/n3a2981dcf42e"
         ],
         "difficulty": {
             "typical": 2,
@@ -3229,7 +3235,8 @@
             "文章"
         ],
         "explanationlinks": [
-            "https://www.all-for-nothing.com/entry/2020/01/03/154208"
+            "https://www.all-for-nothing.com/entry/2020/01/03/154208",
+            "https://note.com/clob_linguistics/n/n9a87cd863d82"
         ],
         "difficulty": {
             "typical": 4,
@@ -3265,6 +3272,9 @@
             "文字"
         ],
         "probcorrection": "スウェーデン語の「主の祈り」最後の行 誤 vighet -> 正 evighet",
+        "explanationlinks": [
+            "https://note.com/clob_linguistics/n/nb7bfe3511d61"
+        ],
         "difficulty": {
             "typical": 2,
             "typicalStar": 2
@@ -3302,6 +3312,9 @@
         "category": [
             "統語",
             "対応"
+        ],
+        "explanationlinks": [
+            "https://note.com/clob_linguistics/n/necede0ebeb1b"
         ],
         "difficulty": {
             "typical": 2,
@@ -3341,6 +3354,9 @@
             "形態",
             "動詞形態"
         ],
+        "explanationlinks": [
+            "https://note.com/clob_linguistics/n/nec268d056691"
+        ],
         "difficulty": {
             "typical": 2,
             "typicalStar": 2
@@ -3378,6 +3394,9 @@
         "category": [
             "文字",
             "音韻"
+        ],
+        "explanationlinks": [
+            "https://note.com/clob_linguistics/n/n7ca4135408b4"
         ],
         "difficulty": {
             "typical": 5,
@@ -7577,6 +7596,7 @@
         "title": "私は見つけて喜んだ（ソマリ語）",
         "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2016.pdf#page=2",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2016-sol.pdf",
         "venue": "JOL",
         "year": 2016,
         "number": "A",
@@ -7587,9 +7607,85 @@
         "title": "アダム・ピーターソンのおばあちゃん（スロベニア語）",
         "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2016.pdf#page=4",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2016-sol.pdff",
         "venue": "JOL",
         "year": 2016,
         "number": "B",
+        "draft": false
+    },
+    {
+        "id": 350,
+        "title": "タグバヌワ文字",
+        "link": "https://iolingjapan.org/preparation//",
+        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=2",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
+        "venue": "JOL",
+        "year": 2022,
+        "number": 1,
+        "author": "ヴラド・A・ネアクシュ",
+        "category": [
+            "文字"
+        ],
+        "draft": false
+    },
+    {
+        "id": 351,
+        "title": "タワラ語",
+        "link": "https://iolingjapan.org/preparation//",
+        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=3",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
+        "venue": "JOL",
+        "year": 2022,
+        "number": 2,
+        "author": "佐藤和音",
+        "category": [
+            "韻律"
+        ],
+        "draft": false
+    },
+    {
+        "id": 352,
+        "title": "ムンダ語",
+        "link": "https://iolingjapan.org/preparation//",
+        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=4",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
+        "venue": "JOL",
+        "year": 2022,
+        "number": 3,
+        "author": "高橋翼",
+        "category": [
+            "統語"
+        ],
+        "draft": false
+    },
+    {
+        "id": 353,
+        "title": "ヤオ語",
+        "link": "https://iolingjapan.org/preparation//",
+        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=5",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
+        "venue": "JOL",
+        "year": 2022,
+        "number": 4,
+        "author": "ヴラド・A・ネアクシュ、パン・トンロー（潘同樂）",
+        "category": [
+            "親族名称"
+        ],
+        "draft": false
+    },
+    {
+        "id": 354,
+        "title": "ティンリン語",
+        "link": "https://iolingjapan.org/preparation//",
+        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=6",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
+        "venue": "JOL",
+        "year": 2022,
+        "number": 5,
+        "author": "小林剛士",
+        "category": [
+            "統語"
+        ],
         "draft": false
     }
 ]

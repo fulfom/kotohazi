@@ -330,6 +330,14 @@
         "id": 45,
         "venue": "JOL",
         "year": 2016,
-        "prob": "https://iolingjapan.org/pdf/jol2016.pdf"
+        "prob": "https://iolingjapan.org/pdf/jol2016.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2016-sol.pdf"
+    },
+    {
+        "id": 46,
+        "venue": "JOL",
+        "year": 2022,
+        "prob": "https://iolingjapan.org/pdf/jol2022-se.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2022-sol.pdf"
     }
 ]
