@@ -7194,6 +7194,7 @@
         "year": 2021,
         "number": 1,
         "topic": "Kabyle",
+        "author": "佐藤和音",
         "category": [
             "統語"
         ],
@@ -7219,6 +7220,7 @@
         "year": 2021,
         "number": 2,
         "topic": "Tutuba",
+        "author": "高橋翼",
         "category": [
             "命数"
         ],
@@ -7244,6 +7246,7 @@
         "year": 2021,
         "number": 3,
         "topic": "Shaleian",
+        "author": "大勢拓実",
         "category": [
             "統語"
         ],
@@ -7269,6 +7272,7 @@
         "year": 2021,
         "number": 4,
         "topic": "Mapuche",
+        "author": "梶田純之介",
         "category": [
             "形態",
             "韻律"
@@ -7589,6 +7593,16 @@
             "形態",
             "動詞形態"
         ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 1
+            }
+        ],
         "draft": false
     },
     {
@@ -7600,6 +7614,16 @@
         "venue": "JOL",
         "year": 2016,
         "number": "A",
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -7611,80 +7635,280 @@
         "venue": "JOL",
         "year": 2016,
         "number": "B",
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
         "id": 350,
         "title": "タグバヌワ文字",
-        "link": "https://iolingjapan.org/preparation//",
+        "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=2",
         "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
         "venue": "JOL",
         "year": 2022,
         "number": 1,
+        "topic": "Tagbanwa script",
         "author": "ヴラド・A・ネアクシュ",
         "category": [
             "文字"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ],
         "draft": false
     },
     {
         "id": 351,
         "title": "タワラ語",
-        "link": "https://iolingjapan.org/preparation//",
+        "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=3",
         "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
         "venue": "JOL",
         "year": 2022,
         "number": 2,
+        "topic": "Tawala",
         "author": "佐藤和音",
         "category": [
             "韻律"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ],
         "draft": false
     },
     {
         "id": 352,
         "title": "ムンダ語",
-        "link": "https://iolingjapan.org/preparation//",
+        "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=4",
         "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
         "venue": "JOL",
         "year": 2022,
         "number": 3,
+        "topic": "Munda",
         "author": "高橋翼",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
         ],
         "draft": false
     },
     {
         "id": 353,
         "title": "ヤオ語",
-        "link": "https://iolingjapan.org/preparation//",
+        "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=5",
         "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
         "venue": "JOL",
         "year": 2022,
         "number": 4,
+        "topic": "Yao",
         "author": "ヴラド・A・ネアクシュ、パン・トンロー（潘同樂）",
         "category": [
             "親族名称"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
         ],
         "draft": false
     },
     {
         "id": 354,
         "title": "ティンリン語",
-        "link": "https://iolingjapan.org/preparation//",
+        "link": "https://iolingjapan.org/preparation/",
         "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=6",
         "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
         "venue": "JOL",
         "year": 2022,
         "number": 5,
+        "topic": "Tîrî",
         "author": "小林剛士",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 355,
+        "title": "Panará",
+        "titlejp": "パナラ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf#page=2",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf#page=1",
+        "venue": "APLO",
+        "year": 2022,
+        "number": 1,
+        "topic": "Panará",
+        "author": "João Henrique Fontes",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 356,
+        "title": "Wayuu",
+        "titlejp": "ワユ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf#page=3",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf#page=2",
+        "venue": "APLO",
+        "year": 2022,
+        "number": 2,
+        "topic": "Wayuu",
+        "author": "Vlad A. Neacșu",
+        "category": [
+            "形態"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 357,
+        "title": "Jarawara",
+        "titlejp": "ジャラワラ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf#page=4",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf#page=3",
+        "venue": "APLO",
+        "year": 2022,
+        "number": 3,
+        "topic": "Jarawara",
+        "author": "Hoju Cha, Jaeyeong Yang",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 358,
+        "title": "Ngkolmpu",
+        "titlejp": "ンコルンプ語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf#page=5",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf#page=4",
+        "venue": "APLO",
+        "year": 2022,
+        "number": 4,
+        "topic": "Ngkolmpu",
+        "author": "Ji Hun Wang, Minkyu Kim",
+        "category": [
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 359,
+        "title": "Miskito",
+        "titlejp": "ミスキート語",
+        "link": "https://aplo.asia/problems-by-year/",
+        "problink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf#page=6",
+        "solutionlink": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf#page=5",
+        "venue": "APLO",
+        "year": 2022,
+        "number": 5,
+        "topic": "Miskito",
+        "author": "Chih-Chun Wang, Vlad A. Neacșu (consultant: Elmor Wood)",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
         ],
         "draft": false
     }
