@@ -339,5 +339,12 @@
         "year": 2022,
         "prob": "https://iolingjapan.org/pdf/jol2022-se.pdf",
         "probsol": "https://iolingjapan.org/pdf/jol2022-sol.pdf"
+    },
+    {
+        "id": 47,
+        "venue": "APLO",
+        "year": 2022,
+        "prob": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf",
+        "probsol": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf"
     }
 ]
