@@ -1,3 +1,0 @@
-[build]
-command = "npm run build && cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
-functions="./functions"

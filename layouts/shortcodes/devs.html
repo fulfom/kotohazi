@@ -1,8 +1,0 @@
-{{ $name := .Get 0 }}
-{{ $type := .Get 1 | default "twitter" }}
-{{ $profile := index (where $.Site.Params.devs "name" $name) 0 }}
-{{ if eq $type "twitter" }}
-<a href="{{$profile.twitter | safeURL}}">
-    <i class="fab fa-twitter fa-fw"></i>{{$name}}
-</a>
-{{ end }}

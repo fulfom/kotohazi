@@ -1,3 +1,0 @@
-{{(delimit (slice "<" (.Get "tag") " class=" (.Get "class") ">") "") | safeHTML}}
-{{.Inner | markdownify}}
-{{(delimit (slice "</" (.Get "tag") ">") "") | safeHTML}}

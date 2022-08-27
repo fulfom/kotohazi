@@ -1,187 +1,34 @@
-# サイト
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 環境構築
+## Getting Started
 
-GitHub 上でソースコードを書き換えてウェブサイトを更新，というのもできなくはないが不便なので自分のPC上で編集できるようにする方法を以下に書く．
+First, run the development server:
 
-[Hugo](https://gohugo.io/)というフレームワークを使うので，pc上にインストールしておく．[chocolatey](https://chocolatey.org/install)などでインストールするのが便利．まず chocolatey をインストールしたのち，以下のコマンドをコマンドプロンプトなどで実行する．
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-```choco install hugo-extended -confirm```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-エディタは vscode をおすすめする．CL上でコマンド打たなくて済むようになる(ようにする設定を共有できる)．vscode を使うなら *Git Graph* という拡張機能をインストールしておくことをおすすめする．以下 vscode を使うものとして話をすすめる．
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-ここまで済んだら GitHub からローカルにデータを取ってくる．適当な場所に https://github.com/fulfom/kotohazi.git をクローンする．vscode 上でやるのが使いやすい．[vscode 上での git の使い方はここを参照](https://qiita.com/mnao305/items/b3c5f5943066a0bb8e2e#init)．クローンできたら，ローカルでプレビューしてみる．クローンしたフォルダー(kotohazi)を開いたら，<kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>b</kbd></kbd>でビルドできるはず．10秒くらい待ったらリンクが出てくるのでそこに飛ぶ(localhost:1313 だと思う)．ローカルサーバーが走っている間，Hugo はファイルに変更があるとリアルタイムでビルドしなおしてくれるので今後サーバを止めない限り手動でビルドする必要はない．が，ごくまれに変な挙動をしたときは一旦サーバを止めて手動でビルドしなおすと直ることがある．
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-本来，ウェブサイトを公開するには手元のデータをビルドしてサーバに挙げる必要があるが，そこは netlify を使って自動化してある．GitHub に push するだけでOK．1分ぐらいすると自動でウェブサイトが更新される．
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Git 管理
+## Learn More
 
-私が git 初心者で結構つまづいたとこもあったのでここに色々書いておく．git はソースコードのバージョンを管理してくれる．慣れるとすごい便利だが，慣れるのに多少苦労する．
+To learn more about Next.js, take a look at the following resources:
 
-ファイルを書き換えても，ローカルプレビューは更新されるが，ウェブサイトには更新されない．ウェブサイトに反映するには
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. ソースコードの変更を コミット する
-1. リモート(GitHub)と同期する
-1. 開発用ブランチや機能追加ブランチから master ブランチにマージする
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-という行程を取る．(細かくは色々あるが追々)．[適宜 git の使い方を参照](https://qiita.com/mnao305/items/b3c5f5943066a0bb8e2e#init)．
+## Deploy on Vercel
 
-### ソースコードの変更を コミット する
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-ソースコードの変更に区切りがついたら，コミットする．コミットすることでファイルの変更が git で管理されるようになる．何をもって区切りがついたとするかは個人の裁量に任せる．
-
-コミットする際にはコミットメッセージを書く．コミットメッセージは先頭に
-
-add
-: 機能追加
-
-change
-: 仕様変更
-
-update
-: 更新
-
-fix
-: 修正
-
-をつけ，その後ろにより詳しい説明を続けるのが理想．
-
-コミットする際には対象ファイルを選択できる．対象にすることをステージ(= add)という．普段は全部ステージしていって問題ない．がたとえば違う機能を同時に実装してしまった！とか○○機能を実装し終わったのにコミットし忘れて違うところも編集してしまった！というときには機能ごとに分けてコミットした方が後で便利なのでステージするファイルを選んでコミットする．
-
-### リモート(GitHub)と同期する
-
-コミットできたらそれをリモート(GitHub)に送る．同期ボタンを押すといい感じにやってくれる．適宜リモート上の他の人のコミットをローカルに取り入れたくなるだろうが，それも同期をすれば良い．
-
-リモートにコミットを持っていくことをプッシュという．リモートからコミットを取り入れることをプルという．これを同時にやるのがたぶん同期．厳密には，pull = fetch + merge らしい．気になる人はググってください．
-
-### 開発用ブランチや機能追加ブランチから master ブランチにマージする
-
-面倒だが，公開版に問題を残さない・複数人による開発を便利にするために必要なのが「ブランチを分ける」ことである．コミットはブランチごとに記録されるので，ブランチを分けると本番環境や他の人に影響を与えないようにコミットできる．ブランチの中でも重要なのが以下の2つである．
-
-master
-: 公開版
-
-develop
-: 開発版
-
-基本的にコミットは開発版である develop ブランチにしていく．こうすることで master に触れないままコミットを共有できる．機能が完成したらコミットを develop > master に持っていく(マージ merge)．このマージは GitHub 上で行う．マージして！というのをGitHubではプルリクエストという(リモート > ローカルのプルとは少し意味合いと由来が異なるらしい)．プルリクエスト時には衝突チェックが行われたりする．プルリクエストを承認してコミットが master ブランチにマージされると，晴れて公開版のウェブサイトが更新される．
-
-しかしそれでは不便なことが出てくる．機能が完成したから master にマージしたいのに，他の同時開発中の機能が完成しておらず，このままマージすると開発途中のものが公開されてしまう，という場合である．この問題を解決するために2つのブランチが使われる．
-
-release
-: develop → master の間に入れる．一旦 develop から切られて，リリース用の調整をここでしたのち master にマージされる．
-
-feature-XX
-: ある程度時間のかかることが予想される大きな機能の追加には先に別ブランチを用意する．develop から切られ，master と develop にマージされる．他の機能の開発・公開に影響を与えずにコミットできるようになる．
-
-本来はないことが望ましいが，master に緊急のトラブルが発覚した場合，現在開発中の機能とは関係なく，そこだけ直したい．しかしそのまま master に修正のコミットをしてしまうとよろしくない．master へのこのコミットを develop にマージしようとすると release ブランチからマージされたコミットなども一緒にマージされてしまうからである．こういう逆流を防ぐために hotfix というブランチが作られる．master から切られ，hotfix ブランチ上で修正を施した後，master と develop にマージされる．
-
-以上がブランチを分ける意義と流れである．ブランチの分け方には流派があり，これは *git-flow* というやり方である．現場に合わせて調整していくのが良いと思う．
-
-Git Graph はコミットやマージの履歴を視覚的に分かりやすく表示してくれる．
-
-他にもブランチを間違えたときの対処法とか，特定のコミットだけマージするやり方とかあるので必要な時にググってほしい．
-
-## 内容
-
-content/ja の中の md, html ファイルをマークダウン(htmlもマークダウンでOK)で書いていく．その下はこうしたい↓
-
-/
-: トップページ
-
-/about/
-: このサイトについて
-
-/docs/
-: シリーズ立っていない個別記事
-
-/chart/
-: 入門講座
-
-/problems/
-: 問題集
-
-/blog/
-: お知らせと更新情報
-
-今後機能が追加されたら増やしていく．issue #12
-
-## ディレクトリ
-
-### html 系
-
-Hugo のサイトに詳しく載っているが，ソースコードのディレクトリの構成がほぼそのままサイトの構成になる．たとえば docs フォルダーに保存されている refs.md はサイト上でも docs/refs という URL になる．_index.md が例外で，problems/about/_index.md は problems/about/ になる．要は _index.md を使うとフォルダーが1ページに，使わないとファイルが1ページになるということ．フォルダーを1ページにした方が画像をページごとにまとめておけたりして便利なので基本はこちらにする．
-
-ものによっては md ではなく _index.html になっているが変わらない(中身をmarkdownとして解釈するような包みで内容を囲むため)．
-
-サイトを開いたときに表示されるトップページは content/ja/_index.html．ここをベースにしてそれ以下がディレクトリと対応する．たとえば kotohazi.netlify.app/docs/ に飛ぶと，content/ja/docs/_index.md が表示される．kotohazi.netlify.app/problems/iol/2003 に飛ぶと，content/ja/problems/iol/2003/_index.md が表示される．
-
-content/ja トップにあるフォルダが nav のメニューになる．
-
-_index.html, _index.md の一番上に設定欄がある．たとえばリンクの文字列が linkTitle で設定できる．nav や目次上の順序はこれの weight の値が小さい順に並ぶ．
-
-### CSS
-
-SCSS で書かれている．普通に css のつもりで書いて良い．変数やループが使えたりして嬉しい．```$XXX``` が変数．
-
-themes/docsy/assets/scss 内に色々ある．ただし書き換えたいとき，これをいじっても反映されない．代わりに assets/scss 内を編集する．_variables_project.scss に書くか，テーマのと同名のファイルを置けばこっちを優先的に参照してくれる．後述の shortcode も一緒．
-
-### JS
-
-assets/js 内に載せる．ただし問題集のjsだけはショートコード内に書いていってしまっている．
-
-### cdn の読み込みなど
-
-layout/partials/scripts.html に書く
-
-### 問題のデータベース
-
-data/problems.json にある．spreadsheet をスクリプトで json 化したら，これを上書きする．
-
-## Hugo の機能
-
-css を scss にすることで 変数やループを使えるようにしたように，html を Hugo にする(一旦 Hugo の仕様通りに書いて，それを Hugo に html 化してもらう)ことで，変数やループや諸々が使えるようになる．記法は [Hugo のサイト](https://gohugo.io/) に載っているので参考にしてほしい．
-
-### ショートコード
-
-要は html のテンプレート．複雑な html を毎回書かなくてもショートコードで書けば簡単に書ける．
-
-```{{%  %}}``` とか ```{{<  >}}``` と書く．前者は中身をマークダウンで解釈し，後者は html で解釈する．```{{% XXX %}}``` で終わるものと，```{{% YYY %}}何とか{{% /YYY %}}```のように挟むタイプのと二つあり，後者はテンプレ内部の{{.Inner}}があるところに挟まれた部分が挿入される．
-
-引数を取れる: ```{{% ショートコードの名前 引数1 引数2... %}}```
-
-たとえば Font awesome の icon を表示するのに使っている，
-
-```{{% icon XXX %}}```
-
-は
-
-```<i class="fas fa-XXX"></i>```
-
-になる
-
-```{{% icon XXX YYY %}}```
-
-は
-
-```<i class="fas fa-XXX fa-fw"></i>YYY```
-
-になる (説明上省いたがほんとはさらに全体がspanで囲ってある．途中で改行しなくなるような class が指定してある)．
-
-**参考**
-
-```{{% icon "XXX YYY" %}}```
-
-と書くと
-
-```<i class="fas fa-XXX YYY"></i>```
-
----
-
-layouts/shortcodes, themes/docsy/layouts/shortcodes 内に定義されている．ショートコードは自前で定義できるが，自前で定義したものは前者に入っている．色々作ってあるが blocks/ はトップページとaboutページの枠組み，ex/ は答え合わせフォームのパーツ，problems/ は詳細ページのパーツ，その他は比較的汎用なものや一個で完結するものなど．
-
-## 参考
-
-- [Hugo](https://gohugo.io/)
-- [Docsy](https://www.docsy.dev/docs/)
-- [Firebase (認証とデータベース機能が非常便利)](https://firebase.google.com/)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

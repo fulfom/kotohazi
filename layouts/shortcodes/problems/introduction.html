@@ -1,6 +1,0 @@
-{{$id := .Get "id"}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
-{{$prob := index $arrayProbData 0}}
-{{$introduction := $prob.introduction }}
-
-<div class="p-2 style-markdown">{{ $introduction | markdownify }}</div>

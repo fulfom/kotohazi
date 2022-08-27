@@ -1,3 +1,0 @@
-{{$id := .Get "id"}}{{$arrayProbData := where $.Site.Data.problems "id" $id}}{{$prob := index $arrayProbData 0}}{{$key := .Get "key"}}{{$default := .Get "default"}}
-
-{{- index $prob $key | default (index $prob $default) -}}

@@ -1,36 +1,24 @@
 {
   "name": "kotohazi",
-  "version": "0.0.1",
-  "description": "Hugo theme for technical documentation.",
-  "main": "none.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "netlify-lambda build assets/functions/",
-    "serve": "netlify-lambda serve assets/functions/"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bep/tech-doc-hugo.git"
-  },
-  "author": "fulfom",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bep/tech-doc-hugo/issues"
-  },
-  "homepage": "https://github.com/bep/tech-doc-hugo#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "firebase": "^9.6.5",
-    "got": "^10.7.0",
-    "metascraper": "^5.11.6",
-    "metascraper-author": "^5.11.6",
-    "metascraper-description": "^5.11.6",
-    "metascraper-image": "^5.11.6",
-    "metascraper-title": "^5.11.6"
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "netlify-lambda": "^1.6.3",
-    "postcss-cli": "^7.1.0"
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "4.8.2"
   }
 }
