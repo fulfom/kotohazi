@@ -1,0 +1,143 @@
+@use 'bootstrap/scss/bootstrap.scss' as bs;
+
+@import './ogpcard.scss';
+
+$primary: #00bcd4;
+$info: bs.$orange-700;
+
+$listStyleList: lower-latin, upper-latin, lower-roman, upper-roman, hiragana, katakana, none;
+
+@each $listStyle in $listStyleList {
+  .list-#{$listStyle}+ol {
+    list-style: #{$listStyle};
+  }
+}
+
+$font-family-base: helvetica, Segoe UI, 游ゴシック体, YuGothic, 游ゴシック Medium, Yu Gothic Medium, 游ゴシック, Yu Gothic, メイリオ, Meiryo, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$headings-font-family: Open sans, helvetica, Segoe UI, 游ゴシック体, YuGothic, 游ゴシック Medium, Yu Gothic Medium, 游ゴシック, Yu Gothic, メイリオ, Meiryo, sans-serif;
+
+$headings-margin-bottom: 1rem;
+
+$navbar-dark-color: rgba(#fff, .75);
+
+$badge-font-weight: 400;
+
+$btn-active-bg-shade-amount: 0%;
+$btn-active-bg-tint-amount: 0%;
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
+.check-icon {
+  & {
+    cursor: pointer;
+    position: relative;
+    color: #ccc;
+  }
+
+  input:checked+& {
+    animation: largerbound .5s;
+
+    @keyframes largerbound {
+      0% {
+        transform: scale(.8);
+      }
+
+      40% {
+        transform: scale(1.2);
+      }
+
+      80% {
+        transform: scale(1);
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 2em;
+      height: 2em;
+      border: 1px solid;
+      border-color: inherit;
+      border-radius: 50%;
+      animation: circleout .5s ease-out;
+      position: absolute;
+      left: calc(50% - 1em);
+      top: 0;
+      opacity: 0;
+
+      @keyframes circleout {
+        0% {
+          transform: scale(.95);
+          opacity: 1
+        }
+
+        100% {
+          opacity: .1
+        }
+
+        to {
+          transform: scale(1.2, 1.2);
+          opacity: 0
+        }
+      }
+    }
+  }
+}
+
+.btn-primary {
+  --bs-btn-color: white;
+  --bs-btn-active-color: #fff;
+}
+
+.generate-with-shadow {
+  animation: shadow 5s ease 0;
+}
+
+@keyframes shadow {
+  from {
+    filter: drop-shadow(1rem 1rem 2.75rem black);
+  }
+
+  to {
+    // filter: drop-shadow(0 0 0 transparent);
+    filter: drop-shadow(1rem 1rem 2.75rem black);
+
+  }
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: bs.$blue;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}

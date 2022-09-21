@@ -6,7 +6,7 @@
         {
             "label": "local preview",
             "type": "shell",
-            "command": "hugo server",
+            "command": "npm run dev",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -14,9 +14,12 @@
             }
         },
         {
-            "label": "make new blog article",
-            "type": "shell",
-            "command": "hugo new blog/${input:blogType}/${input:fileTitle}.md"
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "next build"
         }
     ],
     "inputs": [
