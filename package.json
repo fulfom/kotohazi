@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bep/tech-doc-hugo#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "firebase": "^9.6.5",
     "got": "^10.7.0",
     "metascraper": "^5.11.6",
