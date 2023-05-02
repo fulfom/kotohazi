@@ -9,6 +9,13 @@ function probcard(props: { prob: prob, detailed: boolean, bookmarks: boolean[], 
 
     const diffstar = ["", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★", <span className='fst-italic fs-5'>★</span>, <span className='fst-italic fs-5'>★★</span>, <span className='fst-italic fs-5'>★★★</span>]
 
+    const detailpath = [
+        "/problems",
+        `${props.prob.venue === "海外予選" ? ("oversea/" + props.prob.venuedetail) : props.prob.venue}`,
+        props.prob.year === -1 ? "sample" : String(props.prob.year),
+        props.prob.team ? [props.prob.team, String(props.prob.number)].join("-") : String(props.prob.number)
+    ].join("/").toLowerCase();
+
     const popover = (prob: prob, util: typeof utilsContent[number], url = "") => (
         <Popover>
             <Popover.Header as="h3">Popover right</Popover.Header>
@@ -116,7 +123,7 @@ function probcard(props: { prob: prob, detailed: boolean, bookmarks: boolean[], 
                     {props.detailed && props.prob.probmaterial ?
                         <a href={props.prob.probmaterial} className="card-link" target="_blank">資料</a> : <></>}
                     {props.detailed && props.prob.problink ? <a href={props.prob.link} className="card-link" target="_blank">掲載元</a> : <></>}
-                    {props.detailed ? <></> : <a href="/{path.Join props.prob.detailpath }" className="card-link">詳細</a>}
+                    {props.detailed ? <></> : <a href={detailpath} className="card-link">詳細</a>}
                     <ToggleButton
                         key={`done-${props.prob.id}`}
                         id={`done-${props.prob.id}`}
