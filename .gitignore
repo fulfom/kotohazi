@@ -3,4 +3,5 @@ public/
 resources/
 node_modules/
 tech-doc-hugo
-
+.next/
+next-env.d.ts
