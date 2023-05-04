@@ -178,71 +178,61 @@
         "id": 23,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2010,
-        "prob": "https://www.uklo.org/2010-2/uklo-2010"
+        "year": 2010
     },
     {
         "id": 24,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2011,
-        "prob": "https://www.uklo.org/problems/uklo-tests-2011"
+        "year": 2011
     },
     {
         "id": 25,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2012,
-        "prob": "https://www.uklo.org/test-papers-2012"
+        "year": 2012
     },
     {
         "id": 26,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2013,
-        "prob": "https://www.uklo.org/test-papers-for-2013-retrospective"
+        "year": 2013
     },
     {
         "id": 27,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2014,
-        "prob": "https://www.uklo.org/papers-2014"
+        "year": 2014
     },
     {
         "id": 28,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2015,
-        "prob": "https://www.uklo.org/papers-2015-2"
+        "year": 2015
     },
     {
         "id": 29,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2016,
-        "prob": "https://www.uklo.org/problems-2016"
+        "year": 2016
     },
     {
         "id": 30,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2017,
-        "prob": "https://www.uklo.org/problems-2017"
+        "year": 2017
     },
     {
         "id": 31,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2018,
-        "prob": "https://www.uklo.org/problems-2018"
+        "year": 2018
     },
     {
         "id": 32,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2019,
-        "prob": "https://www.uklo.org/problems-2019"
+        "year": 2019
     },
     {
         "id": 33,
@@ -261,8 +251,7 @@
         "id": 35,
         "venue": "UKLO",
         "venuecompatiable": "oversea",
-        "year": 2020,
-        "prob": "https://www.uklo.org/problems-2020"
+        "year": 2020
     },
     {
         "id": 36,
@@ -346,5 +335,47 @@
         "year": 2022,
         "prob": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-prob.ja_.pdf",
         "probsol": "https://aplo.asia/wp-content/uploads/2022/04/aplo-2022-sol.ja_.pdf"
+    },
+    {
+        "id": 48,
+        "venue": "UKLO",
+        "venuecompatiable": "oversea",
+        "year": 2021
+    },
+    {
+        "id": 49,
+        "venue": "UKLO",
+        "venuecompatiable": "oversea",
+        "year": 2022
+    },
+    {
+        "id": 50,
+        "venue": "IOL",
+        "year": 2022,
+        "prob": "https://ioling.org/booklets/iol-2022-indiv-prob.ja.pdf",
+        "probsol": "https://ioling.org/booklets/iol-2022-indiv-sol.ja.pdf",
+        "teamprob": "https://ioling.org/booklets/iol-2022-team-prob.ja.pdf",
+        "teamsol": "https://ioling.org/booklets/iol-2022-team-sol.ja.pdf"
+    },
+    {
+        "id": 51,
+        "venue": "Onling",
+        "year": 2023,
+        "prob": "https://onling.org/contests/student-2023/online/jpn/",
+        "probsol": "https://onling.org/contests/student-2023/online/jpn/"
+    },
+    {
+        "id": 52,
+        "venue": "APLO",
+        "year": 2023,
+        "prob": "https://aplo.asia/wp-content/uploads/2023/04/aplo-2023-prob.ja_.pdf",
+        "probsol": "https://aplo.asia/wp-content/uploads/2023/04/aplo-2023-sol.ja_.pdf"
+    },
+    {
+        "id": 53,
+        "venue": "JOL",
+        "year": 2023,
+        "prob": "https://iolingjapan.org/pdf/jol2023-se.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2023-sol.pdf"
     }
 ]
