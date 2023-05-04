@@ -25,7 +25,7 @@ const MyNavbar = () => {
                     <Nav className="ms-auto">
                         <Nav.Link href="/about/">About</Nav.Link>
                         <Nav.Link href="/problems/">問題集</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
                                 Another action
@@ -35,7 +35,7 @@ const MyNavbar = () => {
                             <NavDropdown.Item href="#action/3.4">
                                 Separated link
                             </NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
