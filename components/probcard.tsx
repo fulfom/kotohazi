@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Badge, Button, ButtonGroup, ButtonToolbar, Overlay, OverlayTrigger, Popover, ToggleButton } from 'react-bootstrap'
-import { prob, utilities } from 'pages/problems';
+import { Prob, utilities } from 'pages/problems';
 import { FaCheckSquare, FaHeart } from 'react-icons/fa';
 
-function probcard(props: { prob: prob, detailed: boolean, bookmarks: boolean[], onBookmarkChange: Function }) {
+function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], onBookmarkChange: Function }) {
     const utilsContent = utilities.slice(0, 5)
 
     const diffstar = ["", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★", <span className='fst-italic fs-5'>★</span>, <span className='fst-italic fs-5'>★★</span>, <span className='fst-italic fs-5'>★★★</span>]
@@ -16,7 +16,7 @@ function probcard(props: { prob: prob, detailed: boolean, bookmarks: boolean[], 
         props.prob.team ? [props.prob.team, String(props.prob.number)].join("-") : String(props.prob.number)
     ].join("/").toLowerCase();
 
-    const popover = (prob: prob, util: typeof utilsContent[number], url = "") => (
+    const popover = (prob: Prob, util: typeof utilsContent[number], url = "") => (
         <Popover>
             <Popover.Header as="h3">Popover right</Popover.Header>
             <Popover.Body>
@@ -65,7 +65,7 @@ function probcard(props: { prob: prob, detailed: boolean, bookmarks: boolean[], 
         )
     }
 
-    const utils = (data: prob) => {
+    const utils = (data: Prob) => {
 
         let r = [];
 

@@ -16,7 +16,7 @@ import { TbLanguageHiragana } from "react-icons/tb";
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from 'pages/api/db'
 
-export interface prob {
+export interface Prob {
   id: number,
   title: string,
   titlejp?: string,
@@ -207,7 +207,7 @@ const Problems: NextPage = () => {
     return <li key={v.venue + v.year}>{v.venue + v.year}</li>
   })
 
-  const otherCategories = uniq(problemsData.reduce((p, c: prob) => {
+  const otherCategories = uniq(problemsData.reduce((p, c: Prob) => {
     return p.concat(c.category ? c.category : [])
   }, [] as string[])).filter((v: string) => (v[0] !== "!" && !CATEGORIES.includes(v))).sort()
 
@@ -421,7 +421,7 @@ const Problems: NextPage = () => {
             <div className='d-inline-block ms-1'>
               {filterItem(uniq(problemsData
                 .filter((v) => (checked.venue.length ? checked.venue.includes(v.venue) : true))
-                .map((v: prob) => {
+                .map((v: Prob) => {
                   return v.year || "未定"
                 })).filter((v) => (v)).sort(), "year", checked.year, (v: string | number) => (v === -1 ? "sample" : v))}
             </div>
@@ -429,7 +429,7 @@ const Problems: NextPage = () => {
           <div>
             <span>難易度</span>
             <div className='d-inline-block ms-1'>
-              {filterItem(uniq(problemsData.map((v: prob) => {
+              {filterItem(uniq(problemsData.map((v: Prob) => {
                 return (v.difficulty?.typicalStar) || "未定"
               })).filter((v) => (v)).sort(), "difficulty", checked.difficulty, (v: string | number) => (`★${v}`))}
             </div>
