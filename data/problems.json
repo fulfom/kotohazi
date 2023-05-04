@@ -8268,7 +8268,8 @@
         "year": 2021,
         "number": "R1-1",
         "topic": "Gaelic",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 361,
@@ -8280,7 +8281,8 @@
         "year": 2021,
         "number": "R1-2",
         "topic": "Kabyle",
-        "author": "Kazune Sato, Simi Hellsten"
+        "author": "Kazune Sato, Simi Hellsten",
+        "draft": false
     },
     {
         "id": 362,
@@ -8292,7 +8294,8 @@
         "year": 2021,
         "number": "R1-3",
         "topic": "Waama",
-        "author": "Aleka Blackwell"
+        "author": "Aleka Blackwell",
+        "draft": false
     },
     {
         "id": 363,
@@ -8304,7 +8307,8 @@
         "year": 2021,
         "number": "R1-4",
         "topic": "Ditema",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 364,
@@ -8316,7 +8320,8 @@
         "year": 2021,
         "number": "R1-5",
         "topic": "Filipino",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 365,
@@ -8328,7 +8333,8 @@
         "year": 2021,
         "number": "R1-6",
         "topic": "Longgu",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 366,
@@ -8340,7 +8346,8 @@
         "year": 2021,
         "number": "R1-7",
         "topic": "Latvian",
-        "author": "Aleka Blackwell"
+        "author": "Aleka Blackwell",
+        "draft": false
     },
     {
         "id": 367,
@@ -8352,7 +8359,8 @@
         "year": 2021,
         "number": "R1-A1",
         "topic": "Mandombe",
-        "author": "Ryan Chi"
+        "author": "Ryan Chi",
+        "draft": false
     },
     {
         "id": 368,
@@ -8364,7 +8372,8 @@
         "year": 2021,
         "number": "R1-A2",
         "topic": "Old Chinese",
-        "author": "Ethan Chi"
+        "author": "Ethan Chi",
+        "draft": false
     },
     {
         "id": 369,
@@ -8376,7 +8385,8 @@
         "year": 2021,
         "number": "R1-A3",
         "topic": "Ngkolmpu",
-        "author": "Simi Hellsten"
+        "author": "Simi Hellsten",
+        "draft": false
     },
     {
         "id": 370,
@@ -8388,7 +8398,8 @@
         "year": 2021,
         "number": "R1-A4",
         "topic": "Sauk",
-        "author": "Ryan Chi"
+        "author": "Ryan Chi",
+        "draft": false
     },
     {
         "id": 371,
@@ -8400,7 +8411,8 @@
         "year": 2021,
         "number": "R1-A5",
         "topic": "Dagaare",
-        "author": "Ethan Chi"
+        "author": "Ethan Chi",
+        "draft": false
     },
     {
         "id": 372,
@@ -8412,7 +8424,8 @@
         "year": 2021,
         "number": "R2-1",
         "topic": "Kakawin",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 373,
@@ -8424,7 +8437,8 @@
         "year": 2021,
         "number": "R2-2",
         "topic": "Hawu and Dhao",
-        "author": "Evan Hochstein"
+        "author": "Evan Hochstein",
+        "draft": false
     },
     {
         "id": 374,
@@ -8436,7 +8450,8 @@
         "year": 2021,
         "number": "R2-3",
         "topic": "Ainu",
-        "author": "Vlad A. Neacșu"
+        "author": "Vlad A. Neacșu",
+        "draft": false
     },
     {
         "id": 375,
@@ -8448,7 +8463,8 @@
         "year": 2021,
         "number": "R2-4",
         "topic": "Hmong",
-        "author": "Simi Hellsten"
+        "author": "Simi Hellsten",
+        "draft": false
     },
     {
         "id": 376,
@@ -8460,7 +8476,8 @@
         "year": 2021,
         "number": "R2-5",
         "topic": "Tawala",
-        "author": "Simi Hellsten"
+        "author": "Simi Hellsten",
+        "draft": false
     },
     {
         "id": 377,
@@ -8472,7 +8489,8 @@
         "year": 2022,
         "number": "R1-1",
         "topic": "Swedish",
-        "author": "David Hellsten"
+        "author": "David Hellsten",
+        "draft": false
     },
     {
         "id": 378,
@@ -8484,7 +8502,8 @@
         "year": 2022,
         "number": "R1-2",
         "topic": "Buhid",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 379,
@@ -8496,7 +8515,8 @@
         "year": 2022,
         "number": "R1-3",
         "topic": "Italian",
-        "author": "Julia Barron"
+        "author": "Julia Barron",
+        "draft": false
     },
     {
         "id": 380,
@@ -8508,7 +8528,8 @@
         "year": 2022,
         "number": "R1-4",
         "topic": "Maltese",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 381,
@@ -8520,7 +8541,8 @@
         "year": 2022,
         "number": "R1-5",
         "topic": "Arhuaco",
-        "author": "Babette Verhoeven"
+        "author": "Babette Verhoeven",
+        "draft": false
     },
     {
         "id": 382,
@@ -8532,7 +8554,8 @@
         "year": 2022,
         "number": "R1-6",
         "topic": "Bislama",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 383,
@@ -8544,7 +8567,8 @@
         "year": 2022,
         "number": "R1-7",
         "topic": "Korowai and Haruai",
-        "author": "Simi Hellsten"
+        "author": "Simi Hellsten",
+        "draft": false
     },
     {
         "id": 384,
@@ -8556,7 +8580,8 @@
         "year": 2022,
         "number": "R1-8",
         "topic": "Zuni",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 385,
@@ -8568,7 +8593,8 @@
         "year": 2022,
         "number": "R1-9",
         "topic": "Tseltal",
-        "author": "Simi Hellsten"
+        "author": "Simi Hellsten",
+        "draft": false
     },
     {
         "id": 386,
@@ -8580,7 +8606,8 @@
         "year": 2022,
         "number": "R1-10",
         "topic": "Mazateco",
-        "author": "Michael Salter"
+        "author": "Michael Salter",
+        "draft": false
     },
     {
         "id": 387,
@@ -8592,7 +8619,8 @@
         "year": 2022,
         "number": "R2-1",
         "topic": "Mapudungun",
-        "author": "Junnosuke Kajita, Kazune Sato"
+        "author": "Junnosuke Kajita, Kazune Sato",
+        "draft": false
     },
     {
         "id": 388,
@@ -8604,7 +8632,8 @@
         "year": 2022,
         "number": "R2-2",
         "topic": "Wik-Mungkan",
-        "author": "Ryan Chi"
+        "author": "Ryan Chi",
+        "draft": false
     },
     {
         "id": 389,
@@ -8619,7 +8648,8 @@
         "author": "Simi Hellsten",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 390,
@@ -8631,7 +8661,8 @@
         "year": 2022,
         "number": "R2-4",
         "topic": "Dinka",
-        "author": "Simi Hellsten"
+        "author": "Simi Hellsten",
+        "draft": false
     },
     {
         "id": 391,
@@ -8646,7 +8677,8 @@
         "author": "Simi Hellsten",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 392,
@@ -8657,7 +8689,8 @@
         "year": 2023,
         "number": 1,
         "topic": "Avainc",
-        "author": "Wong Tok Shing Henry"
+        "author": "Wong Tok Shing Henry",
+        "draft": false
     },
     {
         "id": 393,
@@ -8668,7 +8701,8 @@
         "year": 2023,
         "number": 2,
         "topic": "Yele",
-        "author": "Arul Kolla"
+        "author": "Arul Kolla",
+        "draft": false
     },
     {
         "id": 394,
@@ -8679,7 +8713,8 @@
         "year": 2023,
         "number": 3,
         "topic": "Wyandot",
-        "author": "Daria Kryvosheieva"
+        "author": "Daria Kryvosheieva",
+        "draft": false
     },
     {
         "id": 395,
@@ -8690,7 +8725,8 @@
         "year": 2023,
         "number": 4,
         "topic": "Tlapanec",
-        "author": "Emmy Bonser, Faraz Ahmed"
+        "author": "Emmy Bonser, Faraz Ahmed",
+        "draft": false
     },
     {
         "id": 396,
@@ -8703,7 +8739,8 @@
         "year": 2022,
         "number": 1,
         "topic": "Ubykh",
-        "author": "Peter Arkadiev"
+        "author": "Peter Arkadiev",
+        "draft": false
     },
     {
         "id": 397,
@@ -8716,7 +8753,8 @@
         "year": 2022,
         "number": 2,
         "topic": "Alabama",
-        "author": "Ivan Derzhanski"
+        "author": "Ivan Derzhanski",
+        "draft": false
     },
     {
         "id": 398,
@@ -8729,7 +8767,8 @@
         "year": 2022,
         "number": 3,
         "topic": "Nǀuuki",
-        "author": "Liam McKnight, Samuel Ahmed"
+        "author": "Liam McKnight, Samuel Ahmed",
+        "draft": false
     },
     {
         "id": 399,
@@ -8742,7 +8781,8 @@
         "year": 2022,
         "number": 4,
         "topic": "Arabana",
-        "author": "Tom McCoy"
+        "author": "Tom McCoy",
+        "draft": false
     },
     {
         "id": 400,
@@ -8755,7 +8795,8 @@
         "year": 2022,
         "number": 5,
         "topic": "Proto-Chamic, Phan Rang Cham and Tsat",
-        "author": "Tung-Le Pan"
+        "author": "Tung-Le Pan",
+        "draft": false
     },
     {
         "id": 401,
@@ -8769,7 +8810,8 @@
         "team": "team",
         "number": 1,
         "topic": "Manchu",
-        "author": "Minkyu Kim"
+        "author": "Minkyu Kim",
+        "draft": false
     },
     {
         "id": 402,
@@ -8796,7 +8838,8 @@
                 "name": "karngati",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 403,
@@ -8824,7 +8867,8 @@
                 "name": "karngati",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 404,
@@ -8851,7 +8895,8 @@
                 "name": "karngati",
                 "diff": 7
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 405,
@@ -8877,7 +8922,8 @@
                 "name": "karngati",
                 "diff": 5
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 406,
@@ -8904,7 +8950,8 @@
                 "name": "karngati",
                 "diff": 4
             }
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 407,
@@ -8919,7 +8966,8 @@
         "author": "小林剛士",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 408,
@@ -8934,7 +8982,8 @@
         "author": "久保宮玲於奈",
         "category": [
             "音韻"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 409,
@@ -8950,7 +8999,8 @@
         "category": [
             "意味",
             "対応"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 410,
@@ -8965,7 +9015,8 @@
         "author": "佐藤和音",
         "category": [
             "統語"
-        ]
+        ],
+        "draft": false
     },
     {
         "id": 411,
@@ -8981,6 +9032,7 @@
         "category": [
             "形態",
             "動詞形態"
-        ]
+        ],
+        "draft": false
     }
 ]
