@@ -13,6 +13,9 @@ import MyBreadcrumb from "@/components/breadcrumb";
 
 // "https://script.googleapis.com/v1/scripts/AKfycbx0ik-z7o4mi1VxJABGjiOezF_YlJZa0Z0CUBbd3kro5F4rSpTseMp7HeSAZO8i4vyrXw:run"
 
+const getAllProblems = () => { }
+
+// getStaticProps は app router のなって廃止．乗り換え
 type PageProp = { prob: Prob }
 type StaticProps = { params: { slug: string[] } };
 export const getStaticProps = async ({ params }: StaticProps) => {
