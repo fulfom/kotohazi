@@ -377,5 +377,14 @@
         "year": 2023,
         "prob": "https://iolingjapan.org/pdf/jol2023-se.pdf",
         "probsol": "https://iolingjapan.org/pdf/jol2023-sol.pdf"
+    },
+    {
+        "id": 54,
+        "venue": "IOL",
+        "year": 2023,
+        "prob": "https://ioling.org/booklets/iol-2023-indiv-prob.ja.pdf",
+        "probsol": "https://ioling.org/booklets/iol-2023-indiv-sol.ja.pdf",
+        "teamprob": "https://ioling.org/booklets/iol-2023-team-prob.ja.pdf",
+        "teamsol": "https://ioling.org/booklets/iol-2023-team-sol.ja.pdf"
     }
 ]
