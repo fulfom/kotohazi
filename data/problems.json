@@ -8097,7 +8097,7 @@
         "id": 354,
         "title": "ティンリン語",
         "link": "https://iolingjapan.org/preparation/",
-        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=6",
+        "problink": "https://iolingjapan.org/pdf/jol2022-se.pdf#page=7",
         "solutionlink": "https://iolingjapan.org/pdf/jol2022-sol.pdf",
         "venue": "JOL",
         "year": 2022,
@@ -8560,6 +8560,7 @@
     {
         "id": 383,
         "title": "Korowai and Haruai",
+        "titlejp": "コロワイ語とハルアイ語",
         "link": "https://www.uklo.org/past-exam-papers/",
         "problink": "https://www.uklo.org/wp-content/uploads/2022/06/7_Intermediate_UKLO-2022-Korowai-and-Haruai__Complete-Script.pdf",
         "venue": "海外予選",
@@ -8625,6 +8626,7 @@
     {
         "id": 388,
         "title": "Wik-Mungkan",
+        "titlejp": "ウィク・ムンカン語",
         "link": "https://www.uklo.org/past-exam-papers/",
         "problink": "https://www.uklo.org/wp-content/uploads/2022/05/2022_R2_2_Wik-Mungkan.pdf",
         "venue": "海外予選",
@@ -8638,6 +8640,7 @@
     {
         "id": 389,
         "title": "Niuean",
+        "titlejp": "ニウエ語",
         "link": "https://www.uklo.org/past-exam-papers/",
         "problink": "https://www.uklo.org/wp-content/uploads/2022/05/2022_R2_3_Niuean.pdf",
         "venue": "海外予選",
@@ -8654,6 +8657,7 @@
     {
         "id": 390,
         "title": "Dinka",
+        "titlejp": "ディンカ語",
         "link": "https://www.uklo.org/past-exam-papers/",
         "problink": "https://www.uklo.org/wp-content/uploads/2022/05/2022_R2_4_Dinka.pdf",
         "venue": "海外予選",
@@ -8667,6 +8671,7 @@
     {
         "id": 391,
         "title": "Taos",
+        "titlejp": "タオス語",
         "link": "https://www.uklo.org/past-exam-papers/",
         "problink": "https://www.uklo.org/wp-content/uploads/2022/05/2022_R2_5_Taos.pdf",
         "venue": "海外予選",
@@ -8690,6 +8695,19 @@
         "number": 1,
         "topic": "Avainc",
         "author": "Wong Tok Shing Henry",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
@@ -8702,6 +8720,20 @@
         "number": 2,
         "topic": "Yele",
         "author": "Arul Kolla",
+        "category": [
+            "意味",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
         "draft": false
     },
     {
@@ -8714,6 +8746,20 @@
         "number": 3,
         "topic": "Wyandot",
         "author": "Daria Kryvosheieva",
+        "category": [
+            "形態",
+            "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
         "draft": false
     },
     {
@@ -8726,6 +8772,20 @@
         "number": 4,
         "topic": "Tlapanec",
         "author": "Emmy Bonser, Faraz Ahmed",
+        "category": [
+            "命数",
+            "数式"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
+        ],
         "draft": false
     },
     {
@@ -8740,6 +8800,20 @@
         "number": 1,
         "topic": "Ubykh",
         "author": "Peter Arkadiev",
+        "category": [
+            "形態",
+            "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
+        ],
         "draft": false
     },
     {
@@ -8754,6 +8828,21 @@
         "number": 2,
         "topic": "Alabama",
         "author": "Ivan Derzhanski",
+        "category": [
+            "形態",
+            "動詞形態",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
+        ],
         "draft": false
     },
     {
@@ -8768,6 +8857,19 @@
         "number": 3,
         "topic": "Nǀuuki",
         "author": "Liam McKnight, Samuel Ahmed",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
         "draft": false
     },
     {
@@ -8782,6 +8884,21 @@
         "number": 4,
         "topic": "Arabana",
         "author": "Tom McCoy",
+        "category": [
+            "意味",
+            "親族名称",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
         "draft": false
     },
     {
@@ -8796,6 +8913,20 @@
         "number": 5,
         "topic": "Proto-Chamic, Phan Rang Cham and Tsat",
         "author": "Tung-Le Pan",
+        "category": [
+            "音韻",
+            "比較"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
         "draft": false
     },
     {
@@ -8811,6 +8942,21 @@
         "number": 1,
         "topic": "Manchu",
         "author": "Minkyu Kim",
+        "category": [
+            "統語",
+            "文字",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
+        ],
         "draft": false
     },
     {
@@ -8827,7 +8973,9 @@
         "author": "Vlad A. Neacșu, Tamila Krashtan",
         "category": [
             "形態",
-            "動詞形態"
+            "動詞形態",
+            "比較",
+            "対応"
         ],
         "difficulty": {
             "typical": 7,
@@ -8835,7 +8983,15 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 6
+            },
+            {
                 "name": "karngati",
+                "diff": 7
+            },
+            {
+                "name": "fulfom",
                 "diff": 7
             }
         ],
@@ -8864,8 +9020,16 @@
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 4
+            },
+            {
                 "name": "karngati",
                 "diff": 5
+            },
+            {
+                "name": "fulfom",
+                "diff": 7
             }
         ],
         "draft": false
@@ -8887,13 +9051,21 @@
             "数式"
         ],
         "difficulty": {
-            "typical": 7,
-            "typicalStar": 7
+            "typical": 6,
+            "typicalStar": 6
         },
         "diffeach": [
             {
+                "name": "irotirihs",
+                "diff": 6
+            },
+            {
                 "name": "karngati",
                 "diff": 7
+            },
+            {
+                "name": "fulfom",
+                "diff": 3
             }
         ],
         "draft": false
@@ -8914,13 +9086,17 @@
             "統語"
         ],
         "difficulty": {
-            "typical": 5,
-            "typicalStar": 5
+            "typical": 5.5,
+            "typicalStar": 6
         },
         "diffeach": [
             {
                 "name": "karngati",
                 "diff": 5
+            },
+            {
+                "name": "fulfom",
+                "diff": 6
             }
         ],
         "draft": false
@@ -8942,13 +9118,17 @@
             "!音韻"
         ],
         "difficulty": {
-            "typical": 4,
-            "typicalStar": 4
+            "typical": 5,
+            "typicalStar": 5
         },
         "diffeach": [
             {
                 "name": "karngati",
                 "diff": 4
+            },
+            {
+                "name": "fulfom",
+                "diff": 6
             }
         ],
         "draft": false
@@ -8967,6 +9147,24 @@
         "category": [
             "統語"
         ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            },
+            {
+                "name": "karngati",
+                "diff": 2
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -8982,6 +9180,24 @@
         "author": "久保宮玲於奈",
         "category": [
             "音韻"
+        ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 1
+            },
+            {
+                "name": "karngati",
+                "diff": 1
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
         ],
         "draft": false
     },
@@ -9000,6 +9216,24 @@
             "意味",
             "対応"
         ],
+        "difficulty": {
+            "typical": 1,
+            "typicalStar": 1
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 1
+            },
+            {
+                "name": "karngati",
+                "diff": 1
+            },
+            {
+                "name": "fulfom",
+                "diff": 2
+            }
+        ],
         "draft": false
     },
     {
@@ -9015,6 +9249,24 @@
         "author": "佐藤和音",
         "category": [
             "統語"
+        ],
+        "difficulty": {
+            "typical": 2,
+            "typicalStar": 2
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 2
+            },
+            {
+                "name": "karngati",
+                "diff": 2
+            },
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
         ],
         "draft": false
     },
@@ -9032,6 +9284,188 @@
         "category": [
             "形態",
             "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 4,
+            "typicalStar": 4
+        },
+        "diffeach": [
+            {
+                "name": "irotirihs",
+                "diff": 3
+            },
+            {
+                "name": "karngati",
+                "diff": 4
+            },
+            {
+                "name": "fulfom",
+                "diff": 4
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 412,
+        "title": "Guazacapán Xinka",
+        "titlejp": "グアサカパンシンカ語",
+        "link": "https://ioling.org/problems/2023/",
+        "problink": "https://ioling.org/booklets/iol-2023-indiv-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2023,
+        "number": 1,
+        "topic": "Guazacapán Xinka (Xincan)",
+        "author": "Samuel Ahmed",
+        "category": [
+            "形態",
+            "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 413,
+        "title": "Apurinã",
+        "titlejp": "アプリナ語",
+        "link": "https://ioling.org/problems/2023/",
+        "problink": "https://ioling.org/booklets/iol-2023-indiv-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2023,
+        "number": 2,
+        "topic": "Apurinã (Arawakan)",
+        "author": "Ksenia Gilyarova",
+        "category": [
+            "統語"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 414,
+        "title": "Coastal Marind",
+        "titlejp": "海岸部マリンド語",
+        "link": "https://ioling.org/problems/2023/",
+        "problink": "https://ioling.org/booklets/iol-2023-indiv-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2023,
+        "number": 3,
+        "topic": "Coastal Marind (Anim)",
+        "author": "David Hultman",
+        "category": [
+            "形態",
+            "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 6,
+            "typicalStar": 6
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 6
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 415,
+        "title": "Plains Cree",
+        "titlejp": "平原クリー語",
+        "link": "https://ioling.org/problems/2023/",
+        "problink": "https://ioling.org/booklets/iol-2023-indiv-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2023,
+        "number": 4,
+        "topic": "Plains Cree (Algic)",
+        "author": "Lidija Stanovnik, Aleksejs Peguševs",
+        "category": [
+            "形態",
+            "動詞形態"
+        ],
+        "difficulty": {
+            "typical": 5,
+            "typicalStar": 5
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 5
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 416,
+        "title": "Supyire",
+        "titlejp": "スピレ語",
+        "link": "https://ioling.org/problems/2023/",
+        "problink": "https://ioling.org/booklets/iol-2023-indiv-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2023,
+        "number": 5,
+        "topic": "Supyire (Atlantic-Congo)",
+        "author": "Aleksejs Peguševs",
+        "category": [
+            "命数"
+        ],
+        "difficulty": {
+            "typical": 3,
+            "typicalStar": 3
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 3
+            }
+        ],
+        "draft": false
+    },
+    {
+        "id": 417,
+        "title": "Murrinh-patha",
+        "titlejp": "ムリンパタ語",
+        "link": "https://ioling.org/problems/2023/",
+        "problink": "https://ioling.org/booklets/iol-2023-team-prob.ja.pdf",
+        "venue": "IOL",
+        "year": 2023,
+        "team": "team",
+        "number": 1,
+        "topic": "Murrinh-patha (Southern Daly?)",
+        "author": "Boris Iomdin, Milena Veneva",
+        "category": [
+            "統語",
+            "形態",
+            "動詞形態",
+            "意味",
+            "対応"
+        ],
+        "difficulty": {
+            "typical": 8,
+            "typicalStar": 8
+        },
+        "diffeach": [
+            {
+                "name": "fulfom",
+                "diff": 8
+            }
         ],
         "draft": false
     }
