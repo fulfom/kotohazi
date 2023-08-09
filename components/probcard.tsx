@@ -107,7 +107,7 @@ function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], 
                 <h5 className="card-subtitle mb-2 text-muted">
                     {props.prob.difficulty ?
                         <OverlayTrigger trigger={["hover", "focus"]} overlay={props.prob.diffeach ? popoverDiff : <></>}>
-                            <Badge bg="light" text="dark" className='text-muted' tabIndex={0}>{diffstar[Math.trunc(props.prob.difficulty!.typicalStar)]}{props.prob.difficulty!.typical}</Badge>
+                            <Badge bg="light" text="dark" className='text-muted' tabIndex={0}>{diffstar[Math.trunc(props.prob.difficulty!.typicalStar)]}<span className="ms-1">{props.prob.difficulty!.typical}</span></Badge>
                         </OverlayTrigger> : <></>}
                     {props.prob.category ? props.prob.category!.map((v) => {
                         return v[0] === "!" ? "" : <Badge key={`${props.prob.id}-${v}`} className="text-muted" bg="light" text="dark">{v}</Badge>
@@ -116,7 +116,7 @@ function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], 
                 {props.detailed ?
                     <p className="card-text text-muted"><hr />主題：{props.prob.topic}<br />作問：{props.prob.author}</p> : <></>
                 }
-                <div className="d-flex">
+                <div className="d-flex align-items-center">
                     <a href={props.prob.problink || props.prob.link} className="card-link" target="_blank">問題</a>
                     {props.prob.solutionlink ?
                         <a href={props.prob.solutionlink} className="card-link" target="_blank">解答</a> : <></>}
@@ -132,8 +132,8 @@ function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], 
                         onChange={(e) => props.onBookmarkChange("dones", props.prob.id, !props.bookmarks[0])}
                         value={"1"}
                         variant={""}
-                        className='check-icon ms-auto mb-0 py-1 px-2 shadow-none border-0'
-                        style={{ transition: ".15s all ease", color: props.bookmarks[0] ? "var(--bs-teal)" : "#ccc" }}
+                        className='check-icon ms-auto mb-0 p-0 shadow-none border-0'
+                        style={{ lineHeight: "0", transition: ".15s all ease", color: props.bookmarks[0] ? "var(--bs-teal)" : "#ccc" }}
                     >
                         <FaCheckSquare />
                     </ToggleButton>
@@ -145,8 +145,8 @@ function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], 
                         onChange={(e) => props.onBookmarkChange("likes", props.prob.id, !props.bookmarks[1])}
                         value={"1"}
                         variant={""}
-                        className='check-icon ms-3 mb-0 py-1 px-2 shadow-none border-0'
-                        style={{ transition: ".15s all ease", color: props.bookmarks[1] ? "red" : "#ccc" }}
+                        className='check-icon ms-3 mb-0 p-0 shadow-none border-0'
+                        style={{ lineHeight: "0", transition: ".15s all ease", color: props.bookmarks[1] ? "red" : "#ccc" }}
                     >
                         <FaHeart />
                     </ToggleButton>

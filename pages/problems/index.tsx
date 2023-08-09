@@ -477,7 +477,7 @@ const Problems: NextPage = () => {
           <p className='text-muted mb-0 align-self-center'>—— {probcards.length}問</p>
           <Button
             id="share"
-            onClick={setFiltersToInit}
+            onClick={setFiltersToInit} //TODO
             value="1"
             variant={"light"}
             className='ms-auto my-1 py-1 px-2 shadow-none'
