@@ -10,7 +10,8 @@ export class MySubClassedDexie extends Dexie {
     likes!: Table<Items>;
 
     constructor() {
-        super('done-like', { indexedDB: indexedDB, IDBKeyRange: IDBKeyRange });
+        super('done-like');
+        // super('done-like', { indexedDB: indexedDB, IDBKeyRange: IDBKeyRange });
         this.version(2).stores({
             dones: 'id',
             likes: 'id',

@@ -2,22 +2,20 @@ import { FaLightbulb } from 'react-icons/fa'
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import MyNavbar from '../components/navbar'
-import MyHead from '../components/head'
 import styles from '../styles/Home.module.scss'
 import Footer from '../components/footer'
 
 
-const Home: NextPage = () => {
+export default function HomePage() {
   return (
     <div className={styles.container}>
-      <MyHead></MyHead>
       <MyNavbar></MyNavbar>
       <main className={"bg-primary text-white bg-opacity-75 " + styles.main} style={{ position: 'relative' }}>
         <div style={{ zIndex: -1 }}>
-          <Image src="/new-background.jpg" layout='fill'></Image>
+          <Image src="/new-background.jpg" fill alt='backgroud'></Image>
         </div>
 
-        <Image src="/logo.svg" width={300} height={300}></Image>
+        <Image src="/logo.svg" width={300} height={300} alt='logo'></Image>
         <h1 className={styles.title}>
           ことはじ
         </h1>
@@ -44,5 +42,3 @@ const Home: NextPage = () => {
     </div >
   )
 }
-
-export default Home

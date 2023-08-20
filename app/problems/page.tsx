@@ -1,3 +1,5 @@
+"use client";
+
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Footer from '@/components/footer'
@@ -14,7 +16,7 @@ import { Button, ButtonGroup, ToggleButton } from 'react-bootstrap'
 import { FaChalkboardTeacher, FaCheckSquare, FaComment, FaExclamationCircle, FaHeart, FaLightbulb, FaRandom, FaShare, FaSlash, FaSortDown, FaSortUp, FaTrash } from 'react-icons/fa'
 import { TbLanguageHiragana } from "react-icons/tb";
 import { useLiveQuery } from 'dexie-react-hooks'
-import { db } from 'pages/api/db'
+import { db } from 'app/api/db/route'
 
 export interface Prob {
   id: number,
@@ -400,7 +402,6 @@ const Problems: NextPage = () => {
 
   return (
     <div>
-      <MyHead></MyHead>
       <MyNavbar></MyNavbar>
       <main className='px-2 px-md-5 pt-3'>
 

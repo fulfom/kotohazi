@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Badge, Button, ButtonGroup, ButtonToolbar, Overlay, OverlayTrigger, Popover, ToggleButton } from 'react-bootstrap'
-import { Prob, utilities } from 'pages/problems';
+import { Prob, utilities } from 'app/problems/page';
 import { FaCheckSquare, FaHeart } from 'react-icons/fa';
 
 function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], onBookmarkChange: Function }) {
