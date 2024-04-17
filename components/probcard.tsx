@@ -7,7 +7,7 @@ import { FaCheckSquare, FaHeart } from 'react-icons/fa';
 function probcard(props: { prob: Prob, detailed: boolean, bookmarks: boolean[], onBookmarkChange: Function }) {
     const utilsContent = utilities.slice(0, 5)
 
-    const diffstar = ["", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★", <span className='fst-italic fs-5'>★</span>, <span className='fst-italic fs-5'>★★</span>, <span className='fst-italic fs-5'>★★★</span>]
+    const diffstar = ["", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★", <span key="6" className='fst-italic fs-5'>★</span>, <span key="7" className='fst-italic fs-5'>★★</span>, <span key="8" className='fst-italic fs-5'>★★★</span>]
 
     const detailpath = [
         "/problems",
