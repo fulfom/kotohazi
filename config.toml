@@ -56,15 +56,15 @@ id = "UA-126571045-2"
 [languages.ja]
 title = "ことはじ"
 description = "言オリについてまとめました"
-languageName ="日本語"
+languageName = "日本語"
 contentDir = "content/ja"
 time_format_default = "2006年01月02日"
 time_format_blog = "2006年01月02日"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 # Everything below this are Site Params
 
@@ -111,7 +111,7 @@ algolia_docsearch = false
 offlineSearch = false
 
 # Netlify functions
-OgpApiEndpoint = "https://kotohazi.netlify.com/.netlify/functions/getOGP?url="
+OgpApiEndpoint = "https://kotohazi.netlify.app/.netlify/functions/getOGP?url="
 
 # User interface configuration
 [params.ui]
@@ -131,7 +131,7 @@ footer_about_disable = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'ありがとうございます！良ければ<a href="https://github.com/fulfom/kotohazi/issues/new">改善点を教えてください</a>.'
 no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotohazi/issues/new">改善点を教えてください</a>.'
@@ -142,99 +142,109 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 #	name = "User mailing list"
 #	url = "https://example.org/mail"
 #	icon = "fa fa-envelope"
- #       desc = "Discussion and help from your fellow users"
+#       desc = "Discussion and help from your fellow users"
 [[params.links.user]]
-	name ="Twitter"
-	url = "https://twitter.com/fulfom"
-	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
+name = "Twitter"
+url = "https://twitter.com/fulfom"
+icon = "fab fa-twitter"
+desc = "Follow us on Twitter to get the latest news!"
 #[[params.links.user]]
 #	name = "Stack Overflow"
 #	url = "https://example.org/stack"
 #	icon = "fab fa-stack-overflow"
- #       desc = "Practical questions and curated answers"
+#       desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/fulfom/kotohazi"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
+name = "GitHub"
+url = "https://github.com/fulfom/kotohazi"
+icon = "fab fa-github"
+desc = "Development takes place here!"
 #[[params.links.developer]]
 #	name = "Slack"
 #	url = "https://example.org/slack"
 #	icon = "fab fa-slack"
- #       desc = "Chat with other project developers"
+#       desc = "Chat with other project developers"
 #[[params.links.developer]]
 #	name = "Developer mailing list"
 #	url = "https://example.org/mail"
 #	icon = "fa fa-envelope"
- #       desc = "Discuss development issues around the project"
+#       desc = "Discuss development issues around the project"
 
 # 執筆陣のプロフィール
 [[params.devs]]
-	name = "fulfom"
-	twitter = "https://twitter.com/fulfom"
+name = "fulfom"
+twitter = "https://twitter.com/fulfom"
 
 [params.prob]
 [[params.prob.1venue]]
-	name = "出題元"
-	datakey = "venue"
-	value = ["IOL","APLO","JOL","Onling","海外予選","kotohazi","非LO"]
+name = "出題元"
+datakey = "venue"
+value = ["IOL", "APLO", "JOL", "Onling", "海外予選", "kotohazi", "非LO"]
 [[params.prob.2year]]
-	name = "年"
-	datakey = "year"
+name = "年"
+datakey = "year"
 [[params.prob.3team]]
-	name = "個人戦・団体戦"
-	value = ["個人","団体"]
-	datakey = "team"
+name = "個人戦・団体戦"
+value = ["個人", "団体"]
+datakey = "team"
 [[params.prob.4difficulty]]
-	name = "難易度"
-	datakey = "difficulty"
-	value = ["★1","★2","★3","★4","★5","★6","★7","★8","★未定"]
+name = "難易度"
+datakey = "difficulty"
+value = ["★1", "★2", "★3", "★4", "★5", "★6", "★7", "★8", "★未定"]
 [params.diffstar]
-	value = ["","★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★","<span class='bigstar'>★</span> ","<span class='bigstar'>★★</span> ","<span class='bigstar'>★★★</span> "]
+value = [
+	"",
+	"★☆☆☆☆",
+	"★★☆☆☆",
+	"★★★☆☆",
+	"★★★★☆",
+	"★★★★★",
+	"<span class='bigstar'>★</span> ",
+	"<span class='bigstar'>★★</span> ",
+	"<span class='bigstar'>★★★</span> ",
+]
 [params.probCategory]
-	name = "ジャンル"
-	subname = ""
-	value = ["統語","形態","音韻","韻律","文字","命数","意味"]
+name = "ジャンル"
+subname = ""
+value = ["統語", "形態", "音韻", "韻律", "文字", "命数", "意味"]
 [[params.categoryForCompatiability]]
-	name = "†語対応"
-	query = ".意味.対応"
+name = "†語対応"
+query = ".意味.対応"
 [[params.utility]]
-	id = "translation"
-	query = ".translation"
-	value = "日本語版"
-	stack = true
-	icon = ["comment sort-utility-translation fa-lg","~訳"]
+id = "translation"
+query = ".translation"
+value = "日本語版"
+stack = true
+icon = ["comment sort-utility-translation fa-lg", "~訳"]
 [[params.utility]]
-	id = "hint"
-	query = ".hint"
-	value = "ヒント"
-	icon = "lightbulb"
-	color = "var(--yellow)"
+id = "hint"
+query = ".hint"
+value = "ヒント"
+icon = "lightbulb"
+color = "var(--yellow)"
 [[params.utility]]
-	id = "expl"
-	query = ".expl"
-	value = "解説付き"
-	icon = "chalkboard-teacher"
+id = "expl"
+query = ".expl"
+value = "解説付き"
+icon = "chalkboard-teacher"
 [[params.utility]]
-	id = "done"
-	class = "uti-private"
-	query = ".done"
-	value = "挑戦済み"
-	icon = "check-square"
+id = "done"
+class = "uti-private"
+query = ".done"
+value = "挑戦済み"
+icon = "check-square"
 [[params.utility]]
-	id = "notdone"
-	class = "uti-private"
-	query = ":not(.done)"
-	stack = true
-	icon = ["check-square sort-utility-done","slash"]
+id = "notdone"
+class = "uti-private"
+query = ":not(.done)"
+stack = true
+icon = ["check-square sort-utility-done", "slash"]
 [[params.utility]]
-	id = "like"
-	class = "uti-private"
-	query = ".like"
-	value = "お気に入り"
-	icon = "heart"
+id = "like"
+class = "uti-private"
+query = ".like"
+value = "お気に入り"
+icon = "heart"
 #[[params.utility]]
 #	id = "notlike"
 #   class = "uti-private"
@@ -243,31 +253,31 @@ no = 'ごめんなさい！良ければ<a href="https://github.com/fulfom/kotoha
 # 	icon = ["heart sort-utility-like","slash"]
 [params.sort]
 [[params.sort.1year]]
-	dataSortBy = "year-venue-team-num"
-	name = "年"
+dataSortBy = "year-venue-team-num"
+name = "年"
 [[params.sort.2title]]
-	dataSortBy = "title"
-	name = "題名"
+dataSortBy = "title"
+name = "題名"
 [[params.sort.3difficulty]]
-	dataSortBy = "difficulty"
-	name = "難易度"
+dataSortBy = "difficulty"
+name = "難易度"
 [params.venuedetail]
-	'海外予選' = "oversea"
-	'非LO' = "nonlo"
+'海外予選' = "oversea"
+'非LO' = "nonlo"
 [params.namedyear]
-	-1 = "sample"
+-1 = "sample"
 [params.pagetype]
-	level = "star"
-	stage = "flag"
-	solve = "pen"
-	know = "book-open"
-	magic = "hat-wizard"
-	hard = "dragon"
-	refs = "book"
-	prob = "lightbulb"
-	person = "address-card"
-	material = "icons"
-	default = "file"
+level = "star"
+stage = "flag"
+solve = "pen"
+know = "book-open"
+magic = "hat-wizard"
+hard = "dragon"
+refs = "book"
+prob = "lightbulb"
+person = "address-card"
+material = "icons"
+default = "file"
 
 [params.login]
-	login_url = "/account/login/"
+login_url = "/account/login/"

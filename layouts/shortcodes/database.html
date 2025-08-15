@@ -1,7 +1,13 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ $color := .Get "color" | default "primary" }}
 
-{{$arrrayProbdata := where $.Site.Data.problems "draft" false}}
+{{ $arrrayProbdata := slice }}
+
+{{ range $.Site.Data.problems }}
+{{ if ne .draft true }}
+{{ $arrrayProbdata = $arrrayProbdata | append . }}
+{{ end }}
+{{ end }}
 
 {{$prob := newScratch}}
 {{$year := newScratch}}
@@ -235,7 +241,7 @@
                 var filterResult = filterValue ? $this.is( filterValue ) : true;
                 var categoryFilterResult = categoryFilterValue ? $this.is( categoryFilterValue ) : true;
                 var utilityFilterResult = utilityFilterValue ? $this.is( utilityFilterValue ) : true;
-                var privateFilterResult = isprivate ? privateFilter[this.getAttribute('data-id')-1] : true;
+                var privateFilterResult = isprivate ? privateFilter[Number(this.getAttribute('data-id'))-1] : true;
                 return isprivate && $filterOff.prop('checked') ? privateFilterResult : privateFilterResult && searchResult && filterResult && categoryFilterResult && utilityFilterResult;
             },
             getSortData: {
@@ -246,9 +252,11 @@
                 title: '.sort-title',
                 difficulty: '.sort-difficulty parseInt',
                 probid: (itemElem) => {
-                    return parseInt(itemElem.getAttribute('data-id'));
+                    return Number(itemElem.getAttribute('data-id'));
                 }
             },
+            sortBy : 'probid', 
+            sortAscending: true
         });
         var iso = $iso.data('isotope');
 
@@ -542,7 +550,7 @@
             $qs.val('');
             qsRegex = '';
             db.text.put({id: 'quicksearch', text: ''});
-            endUpdate({ sortBy : 'original-order', sortAscending: true });
+            endUpdate({ sortBy : 'probid', sortAscending: true });
         });
 
         $('#private-filter-off').on('click',function(){

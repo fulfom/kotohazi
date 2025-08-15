@@ -1,6 +1,5 @@
 {{$id := .Get "id"}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
-{{$prob := index $arrayProbData 0}}
+{{$prob := index $.Site.Data.problems ($id | string)}}
 {{$translation := $prob.translation }}
 {{$source := $prob.problink | default $prob.link }}
 

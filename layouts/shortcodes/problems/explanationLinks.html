@@ -1,7 +1,6 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{$id := .Get "id"}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
-{{$prob := index $arrayProbData 0}}
+{{$prob := index $.Site.Data.problems ($id | string)}}
 
 {{with $prob.explanationlinks}}
 {{range . }}
