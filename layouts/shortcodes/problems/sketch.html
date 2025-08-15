@@ -1,6 +1,5 @@
 {{$id := .Get "id"}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
-{{$prob := index $arrayProbData 0}}
+{{$prob := index $.Site.Data.problems ($id | string)}}
 {{$sketch := $prob.sketch }}
 
 <p class="m-0"><a data-toggle="collapse" href="#sketch" role="button" aria-expanded="false" aria-controls="sketch"><i class="fas fa-angle-right fa-fw"></i>コメント</a></p>

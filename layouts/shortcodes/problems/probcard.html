@@ -1,8 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{$id := .Get "id"}}
 {{$detailed := .Get "detailed" | default false}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
-{{$prob := index $arrayProbData 0}}
+{{$prob := index $.Site.Data.problems ($id | string)}}
 {{$venue := index $prob "venue"}}
 {{$venuedetail := index $prob "venuedetail"}}
 {{$year := index $prob "year"}}
@@ -36,32 +35,48 @@
 {{end}}
 {{$detailpath = $detailpath | append ((delimit $teamnum "-") | urlize)}}
 
-<div class="card{{with (.Get "class")}} {{.}}{{end}}">
+<div class="card{{with (.Get " class")}} {{.}}{{end}}">
     <div class="card-body">
         <div class="d-flex">
             <h6 class="card-subtitle mb-2 text-muted mr-auto">{{$venuedetail | default $venue}}{{$namedyear}}-{{with $team}}{{.}}-{{end}}{{$number}}</h6>
-            {{with $probmaterial}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="{{$url := .}}{{$title := "必要な追加資料を入手"}}<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;{{$url}}&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb center&#34;><div class=&#34;icon material&#34;><i class=&#34;fas fa-icons&#34;></i></div></div><div class=&#34;card-body p-2&#34;><h5 class=&#34;card-title mb-1&#34;>{{$title}}</h5></div></div>"><i class="fas fa-icons fa-fw"></i></a></h6>{{end}}
-            {{with $probcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-content="{{.}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
-            {{with $solcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="解答訂正" data-content="解答の訂正あり"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
-            {{with $translation}}<h6 class="card-subtitle mb-2 mr-1 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="翻訳・注釈" data-content="詳細ページに翻訳・注釈あり"><span class="fa-stack stack-small fa-1x fa-fw"><i class="fas fa-comment fa-lg fa-stack-1x"></i><i class="fas fa-stack-1x fa-stack-text">訳</i></span></a></h6>{{end}}
-            {{with $hint}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="ヒント" data-content="ヒントあり"><i class="fas fa-lightbulb fa-fw"></i></a></h6>{{end}}
-            {{with $explanationlinks}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="詳しい解説" data-html="true" data-content="{{range $explanationlinks}}{{$url := .}}{{ $jsonData := getJSON $.Page.Site.Params.OgpApiEndpoint $url }}{{ $title := $jsonData.title }}{{ $description := $jsonData.description }}{{ $image := $jsonData.image }}{{ $urlInfo := urls.Parse $url }}{{ $host := printf "%s://%s" $urlInfo.Scheme $urlInfo.Host }}{{ $prefix := "https://www.google.com/s2/favicons?domain=" }}{{ $favicon := printf "%s%s" $prefix $urlInfo.Host }}<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;{{ $url }}&#34; target=&#34;_blank&#34;></a><div class=&#34;thumb&#34;><img src=&#34;{{ $image }}&#34; alt=&#34;Card image cap&#34;></div><div class=&#34;card-body p-2&#34;><div class=&#34;d-flex&#34;><a href=&#34;{{ $host }}&#34; target=&#34;_blank&#34;><img src=&#34;{{ $favicon }}&#34; alt=&#34;&#34; class=&#34;favicon&#34;></a><h5 class=&#34;card-title ml-1 mb-1&#34;>{{$title}}</h5></div><p class=&#34;card-text text-muted&#34;>{{$description}}</p></div></div>{{end}}"><i class="fas fa-chalkboard-teacher fa-fw"></i></a></h6>{{end}}
-        </div>
-        {{with $titlejp}}<h6 class="card-subtitle mb-2 text-muted">{{$title}}</h6>{{end}}
-        <h5 class="card-title">{{with $titlejp}}{{.}}{{else}}{{$title}}{{end}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span>{{end}}{{else}}<span class="tag m-1 unmot">未分類</span>{{end}}</h6>
-        {{if $detailed}}<hr>
-        <p class="card-text text-muted">主題：{{$topic}}<br>作問：{{$author}}</p>{{end}}
-        <div class="d-flex">
-            <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>{{with $sollink}}
-            <a href="{{.}}" class="card-link" target="_blank">解答</a>{{end}}
-            {{if $detailed}}{{with $probmaterial}}<a href="{{.}}" class="card-link" target="_blank">資料</a>{{end}}
-            {{with $problink}}<a href="{{$link}}" class="card-link" target="_blank">掲載元</a>{{end}}
-            {{else}}<a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>{{end}}
-            <input class="check-check" type="checkbox" hidden id="done{{$id}}" data-id="{{$id}}">
-            <label class="ml-auto mb-0" role="button" for="done{{$id}}"><i class="fas fa-check-square"></i></a></label>
-            <input class="check-heart" type="checkbox" hidden id="like{{$id}}" data-id="{{$id}}">
-            <label class="ml-3 mb-0" role="button" for="like{{$id}}"><i class="fas fa-heart"></i></a></label>
-        </div>
-    </div>
+            {{with $probmaterial}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" data-content="{{$url := .}}{{$title := " 必要な追加資料を入手"}}<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;{{$url}}&#34; target=&#34;_blank&#34;></a>
+                    <div class=&#34;thumb center&#34;>
+                        <div class=&#34;icon material&#34;><i class=&#34;fas fa-icons&#34;></i></div>
+                    </div>
+                    <div class=&#34;card-body p-2&#34;>
+                        <h5 class=&#34;card-title mb-1&#34;>{{$title}}</h5>
+                    </div>
+        </div>"><i class="fas fa-icons fa-fw"></i></a></h6>{{end}}
+        {{with $probcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="問題訂正" data-content="{{.}}"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
+        {{with $solcorrection}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="解答訂正" data-content="解答の訂正あり"><i class="fas fa-exclamation-circle fa-fw"></i></a></h6>{{end}}
+        {{with $translation}}<h6 class="card-subtitle mb-2 mr-1 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="翻訳・注釈" data-content="詳細ページに翻訳・注釈あり"><span class="fa-stack stack-small fa-1x fa-fw"><i class="fas fa-comment fa-lg fa-stack-1x"></i><i class="fas fa-stack-1x fa-stack-text">訳</i></span></a></h6>{{end}}
+        {{with $hint}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="ヒント" data-content="ヒントあり"><i class="fas fa-lightbulb fa-fw"></i></a></h6>{{end}}
+        {{with $explanationlinks}}<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="詳しい解説" data-html="true" data-content="{{range $explanationlinks}}{{$url := .}}{{ $jsonData := getJSON $.Page.Site.Params.OgpApiEndpoint $url }}{{ $title := $jsonData.title }}{{ $description := $jsonData.description }}{{ $image := $jsonData.image }}{{ $urlInfo := urls.Parse $url }}{{ $host := printf " %s://%s" $urlInfo.Scheme $urlInfo.Host }}{{ $prefix :="https://www.google.com/s2/favicons?domain=" }}{{ $favicon :=printf "%s%s" $prefix $urlInfo.Host }}<div class=&#34;card web-card d-flex flex-row mb-3&#34;><a href=&#34;{{ $url }}&#34; target=&#34;_blank&#34;></a>
+                <div class=&#34;thumb&#34;><img src=&#34;{{ $image }}&#34; alt=&#34;Card image cap&#34;></div>
+                <div class=&#34;card-body p-2&#34;>
+                    <div class=&#34;d-flex&#34;><a href=&#34;{{ $host }}&#34; target=&#34;_blank&#34;><img src=&#34;{{ $favicon }}&#34; alt=&#34;&#34; class=&#34;favicon&#34;></a>
+                        <h5 class=&#34;card-title ml-1 mb-1&#34;>{{$title}}</h5>
+                    </div>
+                    <p class=&#34;card-text text-muted&#34;>{{$description}}</p>
+                </div>
+    </div>{{end}}"><i class="fas fa-chalkboard-teacher fa-fw"></i></a></h6>{{end}}
+</div>
+{{with $titlejp}}<h6 class="card-subtitle mb-2 text-muted">{{$title}}</h6>{{end}}
+<h5 class="card-title">{{with $titlejp}}{{.}}{{else}}{{$title}}{{end}}</h5>
+<h6 class="card-subtitle mb-2 text-muted"><a class="text-muted" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="難易度の評定" data-content="{{range $diffeach}}{{.diff}} by {{.name}}; {{end}}">{{index (index $.Site.Params.diffstar "value") (($difficulty).typicalStar|int) |safeHTML}}{{($difficulty).typical}}</a> {{range $category}}{{if hasPrefix . "!"}}{{else}}<span class="tag m-1 unmot">{{.}}</span>{{end}}{{else}}<span class="tag m-1 unmot">未分類</span>{{end}}</h6>
+{{if $detailed}}
+<hr>
+<p class="card-text text-muted">主題：{{$topic}}<br>作問：{{$author}}</p>{{end}}
+<div class="d-flex">
+    <a href="{{$problink | default $link}}" class="card-link" target="_blank">問題</a>{{with $sollink}}
+    <a href="{{.}}" class="card-link" target="_blank">解答</a>{{end}}
+    {{if $detailed}}{{with $probmaterial}}<a href="{{.}}" class="card-link" target="_blank">資料</a>{{end}}
+    {{with $problink}}<a href="{{$link}}" class="card-link" target="_blank">掲載元</a>{{end}}
+    {{else}}<a href="/{{path.Join $detailpath }}" class="card-link">詳細</a>{{end}}
+    <input class="check-check" type="checkbox" hidden id="done{{$id}}" data-id="{{$id}}">
+    <label class="ml-auto mb-0" role="button" for="done{{$id}}"><i class="fas fa-check-square"></i></a></label>
+    <input class="check-heart" type="checkbox" hidden id="like{{$id}}" data-id="{{$id}}">
+    <label class="ml-3 mb-0" role="button" for="like{{$id}}"><i class="fas fa-heart"></i></a></label>
+</div>
+</div>
 </div>

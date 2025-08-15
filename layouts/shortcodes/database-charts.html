@@ -1,4 +1,10 @@
-{{$problems := $.Site.Data.problems}}
+{{ $problems := slice }}
+
+{{ range $.Site.Data.problems }}
+{{ if ne .draft true }}
+{{ $problems = $problems | append . }}
+{{ end }}
+{{ end }}
 
 {{$contestCat := newScratch}}
 {{$contests := slice "JOL" "海外予選" "APLO" "IOL"}}

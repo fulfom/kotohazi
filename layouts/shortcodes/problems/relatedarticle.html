@@ -8,10 +8,9 @@
 {{$same := slice 0}}
 
 {{with $id}}
-{{$arrayProbData := where $.Site.Data.problems "id" $id}}
-{{$this := index $arrayProbData 0}}
-{{$categories = $this.category}}
-{{$diff = $this.difficulty.typicalStar}}
+{{$prob := index $.Site.Data.problems ($id | string)}}
+{{$categories = $prob.category}}
+{{$diff = $prob.difficulty.typicalStar}}
 {{end}}
 
 {{with $pageid}}

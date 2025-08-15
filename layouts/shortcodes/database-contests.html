@@ -1,8 +1,23 @@
-{{$arrrayProbdata := where $.Site.Data.problems "draft" false}}
-{{$contestdata := $.Site.Data.contests}}
+{{ $arrrayProbdata := slice }}
+{{ range $.Site.Data.problems }}
+{{ if ne .draft true }}
+{{ $arrrayProbdata = $arrrayProbdata | append (merge . (dict "order" (int .id))) }}
+{{ end }}
+{{ end }}
+
+{{ $arrrayProbdata = sort $arrrayProbdata "order" "asc" }}
+
+{{ $contestdata := slice }}
+{{ range $.Site.Data.contests }}
+{{ if ne .draft true }}
+{{ $contestdata = $contestdata | append (merge . (dict "order" (int .id))) }}
+{{ end }}
+{{ end }}
+
+{{ $contestdata = sort $contestdata "order" "asc" }}
 
 {{$prob := newScratch}}
-{{range $k, $v := $arrrayProbdata}}
+{{range $v := $arrrayProbdata}}
     {{ $tmpVenue := "" }}
     {{ if isset $v "venue" }}
         {{ $tmpVenue = $v.venue }}
@@ -12,7 +27,7 @@
         {{ $prob.Add "venue" (slice $tmpVenue )}}
         {{if isset $v "year" }}
             {{ $prob.Add $tmpVenue (slice $v.year )}}
-            {{ $prob.Add (string (delimit (slice $tmpVenue (string $v.year)) "")) (slice $k) }}
+            {{ $prob.Add (string (delimit (slice $tmpVenue (string $v.year)) "")) (slice $v.id) }}
         {{end}}
     {{end}}
 {{end}}
@@ -97,7 +112,7 @@
 {{$probcorrection := slice}}
 {{$solcorrection := false}}
 {{range ($prob.Get $key)}}
-    {{$problem := index $arrrayProbdata .}}
+    {{$problem := index (where $arrrayProbdata "id" .) 0 }}
     {{with $problem.probcorrection}}
         {{$probcorrection = $probcorrection | append (slice (delimit (slice "- " $problem.number ": " $problem.probcorrection "\n") ""))}}
     {{end}}
@@ -126,7 +141,7 @@
                 <tbody>
                 {{range ($prob.Get $key)}}
                 {{$yearteamnum := $detailpath}}
-                {{$problem := index $arrrayProbdata .}}
+                {{$problem := index (where $arrrayProbdata "id" .) 0 }}
                 {{$teamnum := slice "" }}
                 {{if isset $problem "team"}}{{$teamnum = slice "team" $problem.number}}
                 {{else}}{{$teamnum = slice $problem.number}}
