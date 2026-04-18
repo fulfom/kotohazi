@@ -10166,6 +10166,147 @@
         "author": "Samuel Ahmed",
         "draft": false
     },
+    "456": {
+        "id": 456,
+        "title": "モクシャ語",
+        "venue": "JOL",
+        "year": 2026,
+        "number": 1,
+        "author": "大勢拓実",
+        "category": [
+            "音韻"
+        ]
+    },
+    "457": {
+        "id": 457,
+        "title": "ヤノマム語ヤノママ方言",
+        "venue": "JOL",
+        "year": 2026,
+        "number": 2,
+        "author": "吉野匠，佐藤和音",
+        "category": [
+            "形態"
+        ]
+    },
+    "458": {
+        "id": 458,
+        "title": "ケット語",
+        "venue": "JOL",
+        "year": 2026,
+        "number": 3,
+        "author": "小林剛士",
+        "category": [
+            "形態",
+            "動詞形態",
+            "意味",
+            "対応"
+        ]
+    },
+    "459": {
+        "id": 459,
+        "title": "ヒリモツ語",
+        "venue": "JOL",
+        "year": 2026,
+        "number": 4,
+        "author": "小林剛士",
+        "category": [
+            "統語",
+            "親族名称"
+        ]
+    },
+    "460": {
+        "id": 460,
+        "title": "チョル語",
+        "venue": "JOL",
+        "year": 2026,
+        "number": 5,
+        "author": "佐藤和音",
+        "category": [
+            "統語"
+        ]
+    },
+    "461": {
+        "id": 461,
+        "title": "Ja’a Kumiai",
+        "titlejp": "クミアイ語ハア方言",
+        "link": "https://aplo.asia/problems/problems-by-year/",
+        "problink": "https://aplo.asia/booklets/aplo-2026-prob.ja.pdf",
+        "solutionlink": "https://aplo.asia/booklets/aplo-2026-sol.ja.pdf",
+        "venue": "APLO",
+        "year": 2026,
+        "number": 1,
+        "topic": "Ja’a Kumiai",
+        "author": "Arul Kolla",
+        "category": [
+            "形態",
+            "動詞形態"
+        ]
+    },
+    "462": {
+        "id": 462,
+        "title": "Hiaki",
+        "titlejp": "ヤキ語",
+        "link": "https://aplo.asia/problems/problems-by-year/",
+        "problink": "https://aplo.asia/booklets/aplo-2026-prob.ja.pdf",
+        "solutionlink": "https://aplo.asia/booklets/aplo-2026-sol.ja.pdf",
+        "venue": "APLO",
+        "year": 2026,
+        "number": 2,
+        "topic": "Hiaki",
+        "author": "Kazune Sato, Tsuyoshi Kobayashi",
+        "category": [
+            "統語"
+        ]
+    },
+    "463": {
+        "id": 463,
+        "title": "Ngiti",
+        "titlejp": "ンギティ語",
+        "link": "https://aplo.asia/problems/problems-by-year/",
+        "problink": "https://aplo.asia/booklets/aplo-2026-prob.ja.pdf",
+        "solutionlink": "https://aplo.asia/booklets/aplo-2026-sol.ja.pdf",
+        "venue": "APLO",
+        "year": 2026,
+        "number": 3,
+        "topic": "Ngiti",
+        "author": "Minkyu Kim, Vlad A. Neacșu",
+        "category": [
+            "命数"
+        ]
+    },
+    "464": {
+        "id": 464,
+        "title": "Lulamogi",
+        "titlejp": "ルラモギ語",
+        "link": "https://aplo.asia/problems/problems-by-year/",
+        "problink": "https://aplo.asia/booklets/aplo-2026-prob.ja.pdf",
+        "solutionlink": "https://aplo.asia/booklets/aplo-2026-sol.ja.pdf",
+        "venue": "APLO",
+        "year": 2026,
+        "number": 4,
+        "topic": "Lulamogi",
+        "author": "Ji Hun Wang",
+        "category": [
+            "形態",
+            "動詞形態"
+        ]
+    },
+    "465": {
+        "id": 465,
+        "title": "Bangime",
+        "titlejp": "バンギメ語",
+        "link": "https://aplo.asia/problems/problems-by-year/",
+        "problink": "https://aplo.asia/booklets/aplo-2026-prob.ja.pdf",
+        "solutionlink": "https://aplo.asia/booklets/aplo-2026-sol.ja.pdf",
+        "venue": "APLO",
+        "year": 2026,
+        "number": 5,
+        "topic": "Bangime",
+        "author": "Panawat Tiacharoen, Faraz Ahmed",
+        "category": [
+            "形態"
+        ]
+    },
     "-1": {
         "id": -1,
         "title": "Original Title",

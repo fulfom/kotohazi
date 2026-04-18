@@ -445,5 +445,19 @@
         "probsol": "https://ioling.org/booklets/iol-2025-indiv-sol.ja.pdf",
         "teamprob": "https://ioling.org/booklets/iol-2025-team-prob.ja.pdf",
         "teamsol": "https://ioling.org/booklets/iol-2025-team-sol.ja.pdf"
+    },
+    "63": {
+        "id": 63,
+        "venue": "JOL",
+        "year": 2026,
+        "prob": "https://iolingjapan.org/pdf/jol2026-se.pdf",
+        "probsol": "https://iolingjapan.org/pdf/jol2026-sol.pdf"
+    },
+    "64": {
+        "id": 64,
+        "venue": "APLO",
+        "year": 2026,
+        "prob": "https://aplo.asia/booklets/aplo-2026-prob.ja.pdf",
+        "probsol": "https://aplo.asia/booklets/aplo-2026-sol.ja.pdf"
     }
 }
