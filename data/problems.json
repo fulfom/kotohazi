@@ -10169,6 +10169,9 @@
     "456": {
         "id": 456,
         "title": "モクシャ語",
+        "link": "https://iolingjapan.org/problems/jol2026/",
+        "problink": "https://iolingjapan.org/pdf/jol2026-se.pdf#page=3",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2026-sol.pdf#page=2",
         "venue": "JOL",
         "year": 2026,
         "number": 1,
@@ -10180,6 +10183,9 @@
     "457": {
         "id": 457,
         "title": "ヤノマム語ヤノママ方言",
+        "link": "https://iolingjapan.org/problems/jol2026/",
+        "problink": "https://iolingjapan.org/pdf/jol2026-se.pdf#page=4",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2026-sol.pdf#page=3",
         "venue": "JOL",
         "year": 2026,
         "number": 2,
@@ -10191,6 +10197,9 @@
     "458": {
         "id": 458,
         "title": "ケット語",
+        "link": "https://iolingjapan.org/problems/jol2026/",
+        "problink": "https://iolingjapan.org/pdf/jol2026-se.pdf#page=6",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2026-sol.pdf#page=5",
         "venue": "JOL",
         "year": 2026,
         "number": 3,
@@ -10205,6 +10214,9 @@
     "459": {
         "id": 459,
         "title": "ヒリモツ語",
+        "link": "https://iolingjapan.org/problems/jol2026/",
+        "problink": "https://iolingjapan.org/pdf/jol2026-se.pdf#page=7",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2026-sol.pdf#page=7",
         "venue": "JOL",
         "year": 2026,
         "number": 4,
@@ -10217,6 +10229,9 @@
     "460": {
         "id": 460,
         "title": "チョル語",
+        "link": "https://iolingjapan.org/problems/jol2026/",
+        "problink": "https://iolingjapan.org/pdf/jol2026-se.pdf#page=9",
+        "solutionlink": "https://iolingjapan.org/pdf/jol2026-sol.pdf#page=9",
         "venue": "JOL",
         "year": 2026,
         "number": 5,
